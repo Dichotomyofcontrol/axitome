@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/og.js": {
-      "includeFiles": "{assets/fonts/**,public/quotes.json}"
+      "includeFiles": "{assets/fonts/**,public/quotes.json,node_modules/@napi-rs/canvas-linux-x64-gnu/**,node_modules/@napi-rs/canvas-linux-x64-musl/**}"
     }
   }
 }

@@ -1,13 +1,18 @@
 import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
-const { loadQuotes, catalog } = require('../scripts/lib/quotes.js');
-const { renderQuoteCard, renderAuthorCard } = require('../scripts/lib/card.js');
 
 let cached = null;
 function items() {
-  if (!cached) cached = catalog(loadQuotes());
+  if (!cached) {
+    const { loadQuotes, catalog } = require('../scripts/lib/quotes.js');
+    cached = catalog(loadQuotes());
+  }
   return cached;
+}
+
+function cards() {
+  return require('../scripts/lib/card.js');
 }
 
 function param(req, name) {
@@ -29,11 +34,11 @@ export default function handler(req, res) {
     if (slug) {
       const quote = all.find((item) => item.slug === slug);
       if (!quote) return res.status(404).json({ error: 'Not found' });
-      png = renderQuoteCard(quote, 'square');
+      png = cards().renderQuoteCard(quote, 'square');
     } else if (author) {
       const group = all.filter((item) => item.authorSlug === author);
       if (!group.length) return res.status(404).json({ error: 'Not found' });
-      png = renderAuthorCard(group[0].a, group.length);
+      png = cards().renderAuthorCard(group[0].a, group.length);
     } else {
       return res.status(400).json({ error: 'Missing slug or author' });
     }
@@ -42,6 +47,6 @@ export default function handler(req, res) {
     res.status(200).send(png);
   } catch (err) {
     console.error('OG card failed:', err);
-    res.status(500).json({ error: 'Card failed' });
+    res.status(500).json({ error: 'Card failed', detail: String(err && err.message ? err.message : err).slice(0, 400) });
   }
 }
