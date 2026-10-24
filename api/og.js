@@ -11,10 +11,6 @@ function items() {
   return cached;
 }
 
-function cards() {
-  return require('../scripts/lib/card.js');
-}
-
 function param(req, name) {
   if (req.query && req.query[name]) return String(req.query[name]);
   try {
@@ -25,8 +21,9 @@ function param(req, name) {
   }
 }
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   try {
+    const { renderQuoteOg, renderAuthorOg } = require('../scripts/lib/og-image.js');
     const slug = param(req, 'slug').trim();
     const author = param(req, 'author').trim();
     const all = items();
@@ -34,11 +31,11 @@ export default function handler(req, res) {
     if (slug) {
       const quote = all.find((item) => item.slug === slug);
       if (!quote) return res.status(404).json({ error: 'Not found' });
-      png = cards().renderQuoteCard(quote, 'square');
+      png = await renderQuoteOg(quote);
     } else if (author) {
       const group = all.filter((item) => item.authorSlug === author);
       if (!group.length) return res.status(404).json({ error: 'Not found' });
-      png = cards().renderAuthorCard(group[0].a, group.length);
+      png = await renderAuthorOg(group[0].a, group.length);
     } else {
       return res.status(400).json({ error: 'Missing slug or author' });
     }
