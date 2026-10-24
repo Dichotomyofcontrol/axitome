@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joseph Campbell on purpose: “If the path before you is clear, you're probably on someone else's.” | Axitome</title>
+<meta name="description" content="“If the path before you is clear, you're probably on someone else's.” — Joseph Campbell">
+<link rel="canonical" href="https://www.axitome.com/q/joseph-campbell-if-the-path-before-you-is-clear-you-re-probably">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="Joseph Campbell on purpose: “If the path before you is clear, you're probably on someone else's.” | Axitome">
+<meta property="og:description" content="“If the path before you is clear, you're probably on someone else's.” — Joseph Campbell">
+<meta property="og:url" content="https://www.axitome.com/q/joseph-campbell-if-the-path-before-you-is-clear-you-re-probably">
+<meta property="og:image" content="https://www.axitome.com/api/og?slug=joseph-campbell-if-the-path-before-you-is-clear-you-re-probably">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Joseph Campbell on purpose: “If the path before you is clear, you're probably on someone else's.” | Axitome">
+<meta name="twitter:description" content="“If the path before you is clear, you're probably on someone else's.” — Joseph Campbell">
+<meta name="twitter:image" content="https://www.axitome.com/api/og?slug=joseph-campbell-if-the-path-before-you-is-clear-you-re-probably">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="/page.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Quotation","text":"If the path before you is clear, you're probably on someone else's.","url":"https://www.axitome.com/q/joseph-campbell-if-the-path-before-you-is-clear-you-re-probably","inLanguage":"en","creator":{"@type":"Person","name":"Joseph Campbell"},"spokenByCharacter":{"@type":"Person","name":"Joseph Campbell"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Axitome","item":"https://www.axitome.com/"},{"@type":"ListItem","position":2,"name":"Joseph Campbell","item":"https://www.axitome.com/a/joseph-campbell"},{"@type":"ListItem","position":3,"name":"If the path before you is clear, you're probably on someone else's.","item":"https://www.axitome.com/q/joseph-campbell-if-the-path-before-you-is-clear-you-re-probably"}]}</script>
+</head>
+<body>
+<div class="glow"></div>
+<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <article>
+    <h1 class="quote">If the path before you is clear, you're probably on someone else's.</h1>
+    <p class="by"><a href="/a/joseph-campbell">Joseph Campbell</a></p>
+    
+    <p class="themes">Purpose</p>
+  </article>
+  <section class="related"><h2>Related</h2><ul><li><a href="/q/joseph-campbell-as-you-proceed-through-life-following-your-own-p"><p>As you proceed through life, following your own path, birds will shit on you. Don’t bother to brush it off.</p><span>Joseph Campbell</span></a></li><li><a href="/q/vizi-andrei-author-instagram-we-choose-outcomes-as-goals-and-treat-processes"><p>We choose outcomes as goals and treat processes as chores. A wiser approach is to set processes as goals and treat outcomes as by-products.</p><span>Vizi Andrei (Author / Instagram)</span></a></li><li><a href="/q/cato-the-elder-i-would-much-rather-have-men-ask-why-i-have-no-s"><p>I would much rather have men ask why I have no statue, than why I have one.</p><span>Cato the Elder</span></a></li></ul></section>
+  <section class="signup">
+  <h2>Get one quote a day by email</h2>
+  <p>A single line, each morning.</p>
+  <form id="subscribeForm" method="post" action="/api/subscribe">
+    <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+    <input type="hidden" name="next" value="/q/joseph-campbell-if-the-path-before-you-is-clear-you-re-probably">
+    <div class="row">
+      <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="note" id="subscribeNote" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+  if (!window.fetch) return;
+  e.preventDefault();
+  var note = document.getElementById('subscribeNote');
+  note.textContent = 'One moment.';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: this.email.value, company: this.company.value, next: this.next.value })
+  }).then(function (r) {
+    return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+  }).then(function (res) {
+    note.textContent = res.ok ? 'Saved. One quote, each morning.' : (res.d && res.d.error ? res.d.error : 'Signup is not open yet.');
+  }).catch(function () {
+    note.textContent = 'Signup is not open yet.';
+  });
+});
+</script>
+</main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>George Bernard Shaw on creativity: “Life isn't about finding yourself. Life is about creating yourself.” | Axitome</title>
+<meta name="description" content="“Life isn't about finding yourself. Life is about creating yourself.” — George Bernard Shaw">
+<link rel="canonical" href="https://www.axitome.com/q/george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="George Bernard Shaw on creativity: “Life isn't about finding yourself. Life is about creating yourself.” | Axitome">
+<meta property="og:description" content="“Life isn't about finding yourself. Life is about creating yourself.” — George Bernard Shaw">
+<meta property="og:url" content="https://www.axitome.com/q/george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about">
+<meta property="og:image" content="https://www.axitome.com/api/og?slug=george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="George Bernard Shaw on creativity: “Life isn't about finding yourself. Life is about creating yourself.” | Axitome">
+<meta name="twitter:description" content="“Life isn't about finding yourself. Life is about creating yourself.” — George Bernard Shaw">
+<meta name="twitter:image" content="https://www.axitome.com/api/og?slug=george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="/page.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Quotation","text":"Life isn't about finding yourself. Life is about creating yourself.","url":"https://www.axitome.com/q/george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about","inLanguage":"en","creator":{"@type":"Person","name":"George Bernard Shaw"},"spokenByCharacter":{"@type":"Person","name":"George Bernard Shaw"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Axitome","item":"https://www.axitome.com/"},{"@type":"ListItem","position":2,"name":"George Bernard Shaw","item":"https://www.axitome.com/a/george-bernard-shaw"},{"@type":"ListItem","position":3,"name":"Life isn't about finding yourself. Life is about creating yourself.","item":"https://www.axitome.com/q/george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about"}]}</script>
+</head>
+<body>
+<div class="glow"></div>
+<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <article>
+    <h1 class="quote">Life isn't about finding yourself. Life is about creating yourself.</h1>
+    <p class="by"><a href="/a/george-bernard-shaw">George Bernard Shaw</a></p>
+    
+    <p class="themes">Creativity · Solitude</p>
+  </article>
+  <section class="related"><h2>Related</h2><ul><li><a href="/q/george-bernard-shaw-never-wrestle-with-pigs-you-both-get-dirty-and-t"><p>Never wrestle with pigs. You both get dirty, and the pig likes it.</p><span>George Bernard Shaw</span></a></li><li><a href="/q/george-bernard-shaw-the-only-man-i-know-who-behaves-sensibly-is-my-t"><p>The only man I know who behaves sensibly is my tailor; he takes my measurements anew each time he sees me. The rest go on with their old measurements and expect me to fit them.</p><span>George Bernard Shaw</span></a></li><li><a href="/q/george-bernard-shaw-two-things-define-you-your-patience-when-you-hav"><p>Two things define you: Your patience when you have nothing and your attitude when you have everything.</p><span>George Bernard Shaw</span></a></li></ul></section>
+  <section class="signup">
+  <h2>Get one quote a day by email</h2>
+  <p>A single line, each morning.</p>
+  <form id="subscribeForm" method="post" action="/api/subscribe">
+    <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+    <input type="hidden" name="next" value="/q/george-bernard-shaw-life-isn-t-about-finding-yourself-life-is-about">
+    <div class="row">
+      <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="note" id="subscribeNote" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+  if (!window.fetch) return;
+  e.preventDefault();
+  var note = document.getElementById('subscribeNote');
+  note.textContent = 'One moment.';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: this.email.value, company: this.company.value, next: this.next.value })
+  }).then(function (r) {
+    return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+  }).then(function (res) {
+    note.textContent = res.ok ? 'Saved. One quote, each morning.' : (res.d && res.d.error ? res.d.error : 'Signup is not open yet.');
+  }).catch(function () {
+    note.textContent = 'Signup is not open yet.';
+  });
+});
+</script>
+</main>
+</body>
+</html>

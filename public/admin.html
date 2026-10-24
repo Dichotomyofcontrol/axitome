@@ -47,7 +47,9 @@ button:hover{background:#d4b578}
   <div class="stats">
     <div class="stat"><div class="stat-val" id="totalLikes">-</div><div class="stat-lbl">Total likes</div></div>
     <div class="stat"><div class="stat-val" id="totalQuotes">-</div><div class="stat-lbl">Liked quotes</div></div>
+    <div class="stat"><div class="stat-val" id="totalSubs">-</div><div class="stat-lbl">Email signups</div></div>
   </div>
+  <div id="subs"></div>
   <div id="list"></div>
 </div>
 <script>
@@ -75,6 +77,16 @@ function render(data){
   document.getElementById('dashboard').style.display='block';
   document.getElementById('totalLikes').textContent=data.total_likes;
   document.getElementById('totalQuotes').textContent=data.quotes.length;
+  document.getElementById('totalSubs').textContent=data.subscriber_count||0;
+  var subs=data.subscribers||[];
+  var subHtml=subs.length?'':'';
+  if(subs.length){
+    subHtml='<div class="subtitle" style="margin-top:1.5rem">Email list</div>';
+    subs.forEach(function(s){
+      subHtml+='<div class="quote-row"><div class="quote-info"><div class="quote-text">'+escH(s.email)+'</div><div class="quote-date">'+escH(s.at||'')+'</div></div></div>';
+    });
+  }
+  document.getElementById('subs').innerHTML=subHtml;
   document.getElementById('updated').textContent='Updated '+new Date().toLocaleString();
   var html='';
   if(!data.quotes.length){html='<div class="empty">No likes yet</div>'}

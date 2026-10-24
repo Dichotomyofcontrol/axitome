@@ -1,7 +1,15 @@
 {
   "name": "axitome",
   "private": true,
+  "scripts": {
+    "build": "node scripts/build-pages.js",
+    "tweet": "node scripts/daily-tweet.js",
+    "reel": "node scripts/render-reel.js",
+    "verify": "node scripts/verify.js"
+  },
   "dependencies": {
-    "@vercel/kv": "^2.0.0"
+    "@napi-rs/canvas": "^0.1.80",
+    "@vercel/kv": "^2.0.0",
+    "twitter-api-v2": "^1.24.0"
   }
 }

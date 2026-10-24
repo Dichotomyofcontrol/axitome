@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quotes by Aristotle | Axitome</title>
+<meta name="description" content="6 quotes by Aristotle, kept by Axitome.">
+<link rel="canonical" href="https://www.axitome.com/a/aristotle">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="Quotes by Aristotle | Axitome">
+<meta property="og:description" content="6 quotes by Aristotle, kept by Axitome.">
+<meta property="og:url" content="https://www.axitome.com/a/aristotle">
+<meta property="og:image" content="https://www.axitome.com/api/og?author=aristotle">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quotes by Aristotle | Axitome">
+<meta name="twitter:description" content="6 quotes by Aristotle, kept by Axitome.">
+<meta name="twitter:image" content="https://www.axitome.com/api/og?author=aristotle">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="/page.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Quotes by Aristotle | Axitome","url":"https://www.axitome.com/a/aristotle","mainEntity":{"@type":"ItemList","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.axitome.com/q/aristotle-we-become-builders-by-building-and-harpists-by-p","name":"We become builders by building and harpists by playing the harp. Similarly, it is by doing just acts that we become…"},{"@type":"ListItem","position":2,"url":"https://www.axitome.com/q/aristotle-there-is-only-one-way-to-avoid-criticism-do-noth","name":"There is only one way to avoid criticism: do nothing, say nothing, and be nothing."},{"@type":"ListItem","position":3,"url":"https://www.axitome.com/q/aristotle-we-must-destroy-even-what-is-close-to-us-if-that","name":"We must destroy even what is close to us if that is the way to preserve truth."},{"@type":"ListItem","position":4,"url":"https://www.axitome.com/q/aristotle-the-good-for-man-is-activity-of-the-soul-in-acco","name":"The good for man is activity of the soul in accordance with virtue."},{"@type":"ListItem","position":5,"url":"https://www.axitome.com/q/aristotle-one-swallow-does-not-make-a-summer-nor-does-one","name":"One swallow does not make a summer, nor does one day; and so too one day, or a short time, does not make a man blessed…"},{"@type":"ListItem","position":6,"url":"https://www.axitome.com/q/aristotle-suffering-becomes-beautiful-when-anyone-bears-gr","name":"Suffering becomes beautiful when anyone bears great calamities with cheerfulness, not through insensibility, but…"}]}}</script>
+</head>
+<body>
+<div class="glow"></div>
+<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <p class="kicker">6 quotes</p>
+  <h1 class="quote">Aristotle</h1>
+  <ul class="author-list"><li><a href="/q/aristotle-we-become-builders-by-building-and-harpists-by-p"><p>We become builders by building and harpists by playing the harp. Similarly, it is by doing just acts that we become just, by doing temperate acts that we become temperate, by doing courageous acts that we become courageous.</p></a></li><li><a href="/q/aristotle-there-is-only-one-way-to-avoid-criticism-do-noth"><p>There is only one way to avoid criticism: do nothing, say nothing, and be nothing.</p></a></li><li><a href="/q/aristotle-we-must-destroy-even-what-is-close-to-us-if-that"><p>We must destroy even what is close to us if that is the way to preserve truth.</p></a></li><li><a href="/q/aristotle-the-good-for-man-is-activity-of-the-soul-in-acco"><p>The good for man is activity of the soul in accordance with virtue.</p></a></li><li><a href="/q/aristotle-one-swallow-does-not-make-a-summer-nor-does-one"><p>One swallow does not make a summer, nor does one day; and so too one day, or a short time, does not make a man blessed and happy.</p></a></li><li><a href="/q/aristotle-suffering-becomes-beautiful-when-anyone-bears-gr"><p>Suffering becomes beautiful when anyone bears great calamities with cheerfulness, not through insensibility, but through greatness of mind.</p></a></li></ul>
+  <section class="signup">
+  <h2>Get one quote a day by email</h2>
+  <p>A single line, each morning.</p>
+  <form id="subscribeForm" method="post" action="/api/subscribe">
+    <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+    <input type="hidden" name="next" value="/a/aristotle">
+    <div class="row">
+      <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="note" id="subscribeNote" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+  if (!window.fetch) return;
+  e.preventDefault();
+  var note = document.getElementById('subscribeNote');
+  note.textContent = 'One moment.';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: this.email.value, company: this.company.value, next: this.next.value })
+  }).then(function (r) {
+    return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+  }).then(function (res) {
+    note.textContent = res.ok ? 'Saved. One quote, each morning.' : (res.d && res.d.error ? res.d.error : 'Signup is not open yet.');
+  }).catch(function () {
+    note.textContent = 'Signup is not open yet.';
+  });
+});
+</script>
+</main>
+</body>
+</html>

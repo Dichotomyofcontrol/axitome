@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helen Schucman on love: “Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you…” | Axitome</title>
+<meta name="description" content="“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.” — Helen Schucman">
+<link rel="canonical" href="https://www.axitome.com/q/helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="Helen Schucman on love: “Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you…” | Axitome">
+<meta property="og:description" content="“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.” — Helen Schucman">
+<meta property="og:url" content="https://www.axitome.com/q/helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to">
+<meta property="og:image" content="https://www.axitome.com/api/og?slug=helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Helen Schucman on love: “Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you…” | Axitome">
+<meta name="twitter:description" content="“Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.” — Helen Schucman">
+<meta name="twitter:image" content="https://www.axitome.com/api/og?slug=helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="/page.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Quotation","text":"Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.","url":"https://www.axitome.com/q/helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to","inLanguage":"en","creator":{"@type":"Person","name":"Helen Schucman"},"spokenByCharacter":{"@type":"Person","name":"Helen Schucman"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Axitome","item":"https://www.axitome.com/"},{"@type":"ListItem","position":2,"name":"Helen Schucman","item":"https://www.axitome.com/a/helen-schucman"},{"@type":"ListItem","position":3,"name":"Your task is not to seek for love, but merely to seek and find all the…","item":"https://www.axitome.com/q/helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to"}]}</script>
+</head>
+<body>
+<div class="glow"></div>
+<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <article>
+    <h1 class="quote">Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.</h1>
+    <p class="by"><a href="/a/helen-schucman">Helen Schucman</a></p>
+    
+    <p class="themes">Love · Solitude</p>
+  </article>
+  <section class="related"><h2>Related</h2><ul><li><a href="/q/maya-angelou-without-courage-we-cannot-practice-any-other-vir"><p>Without courage we cannot practice any other virtue with consistency. We can’t be kind, true, merciful, generous, or honest.</p><span>Maya Angelou</span></a></li><li><a href="/q/james-clear-goals-are-for-people-who-care-about-winning-once"><p>Goals are for people who care about winning once. Systems are for people who care about winning repeatedly.</p><span>James Clear</span></a></li><li><a href="/q/jack-kornfield-if-your-compassion-does-not-include-yourself-it"><p>If your compassion does not include yourself, it is incomplete.</p><span>Jack Kornfield</span></a></li></ul></section>
+  <section class="signup">
+  <h2>Get one quote a day by email</h2>
+  <p>A single line, each morning.</p>
+  <form id="subscribeForm" method="post" action="/api/subscribe">
+    <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+    <input type="hidden" name="next" value="/q/helen-schucman-your-task-is-not-to-seek-for-love-but-merely-to">
+    <div class="row">
+      <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="note" id="subscribeNote" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+  if (!window.fetch) return;
+  e.preventDefault();
+  var note = document.getElementById('subscribeNote');
+  note.textContent = 'One moment.';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: this.email.value, company: this.company.value, next: this.next.value })
+  }).then(function (r) {
+    return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+  }).then(function (res) {
+    note.textContent = res.ok ? 'Saved. One quote, each morning.' : (res.d && res.d.error ? res.d.error : 'Signup is not open yet.');
+  }).catch(function () {
+    note.textContent = 'Signup is not open yet.';
+  });
+});
+</script>
+</main>
+</body>
+</html>

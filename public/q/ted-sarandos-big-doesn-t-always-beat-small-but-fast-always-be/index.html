@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ted Sarandos on action: “Big doesn’t always beat small, but fast always beats small.” | Axitome</title>
+<meta name="description" content="“Big doesn’t always beat small, but fast always beats small.” — Ted Sarandos">
+<link rel="canonical" href="https://www.axitome.com/q/ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="Ted Sarandos on action: “Big doesn’t always beat small, but fast always beats small.” | Axitome">
+<meta property="og:description" content="“Big doesn’t always beat small, but fast always beats small.” — Ted Sarandos">
+<meta property="og:url" content="https://www.axitome.com/q/ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be">
+<meta property="og:image" content="https://www.axitome.com/api/og?slug=ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ted Sarandos on action: “Big doesn’t always beat small, but fast always beats small.” | Axitome">
+<meta name="twitter:description" content="“Big doesn’t always beat small, but fast always beats small.” — Ted Sarandos">
+<meta name="twitter:image" content="https://www.axitome.com/api/og?slug=ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="/page.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Quotation","text":"Big doesn’t always beat small, but fast always beats small.","url":"https://www.axitome.com/q/ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be","inLanguage":"en","creator":{"@type":"Person","name":"Ted Sarandos"},"spokenByCharacter":{"@type":"Person","name":"Ted Sarandos"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Axitome","item":"https://www.axitome.com/"},{"@type":"ListItem","position":2,"name":"Ted Sarandos","item":"https://www.axitome.com/a/ted-sarandos"},{"@type":"ListItem","position":3,"name":"Big doesn’t always beat small, but fast always beats small.","item":"https://www.axitome.com/q/ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be"}]}</script>
+</head>
+<body>
+<div class="glow"></div>
+<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <article>
+    <h1 class="quote">Big doesn’t always beat small, but fast always beats small.</h1>
+    <p class="by"><a href="/a/ted-sarandos">Ted Sarandos</a></p>
+    
+    <p class="themes">Action</p>
+  </article>
+  <section class="related"><h2>Related</h2><ul><li><a href="/q/maya-angelou-without-courage-we-cannot-practice-any-other-vir"><p>Without courage we cannot practice any other virtue with consistency. We can’t be kind, true, merciful, generous, or honest.</p><span>Maya Angelou</span></a></li><li><a href="/q/dale-carnegie-inaction-breeds-doubt-and-fear-action-breeds-con"><p>Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer the negative elements in your life, don't sit at home and think about it. Go out and get busy!</p><span>Dale Carnegie</span></a></li><li><a href="/q/james-clear-some-things-work-and-some-things-don-t-there-is"><p>Some things work and some things don't. There is almost always another way to get where you want to go. Don't keep trying to open a locked door.</p><span>James Clear</span></a></li></ul></section>
+  <section class="signup">
+  <h2>Get one quote a day by email</h2>
+  <p>A single line, each morning.</p>
+  <form id="subscribeForm" method="post" action="/api/subscribe">
+    <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+    <input type="hidden" name="next" value="/q/ted-sarandos-big-doesn-t-always-beat-small-but-fast-always-be">
+    <div class="row">
+      <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="note" id="subscribeNote" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+  if (!window.fetch) return;
+  e.preventDefault();
+  var note = document.getElementById('subscribeNote');
+  note.textContent = 'One moment.';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: this.email.value, company: this.company.value, next: this.next.value })
+  }).then(function (r) {
+    return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+  }).then(function (res) {
+    note.textContent = res.ok ? 'Saved. One quote, each morning.' : (res.d && res.d.error ? res.d.error : 'Signup is not open yet.');
+  }).catch(function () {
+    note.textContent = 'Signup is not open yet.';
+  });
+});
+</script>
+</main>
+</body>
+</html>

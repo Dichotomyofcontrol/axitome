@@ -7,6 +7,11 @@
 <meta name="description" content="One quote. Every day. Let it sit with you.">
 <meta property="og:title" content="Axitome">
 <meta property="og:description" content="One quote. Every day. Let it sit with you.">
+<meta property="og:url" content="https://www.axitome.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Axitome">
+<meta name="twitter:description" content="One quote. Every day. Let it sit with you.">
+<link rel="canonical" href="https://www.axitome.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@200;300&display=swap" rel="stylesheet">
 <style>
@@ -93,6 +98,23 @@ body{min-height:100%;background:var(--bg);color:var(--cream);font-family:'DM San
 .countdown{margin-top:2.5rem;font-family:'JetBrains Mono',monospace;font-weight:200;font-size:.6rem;letter-spacing:.3em;color:var(--cream-faint);text-align:center}
 .countdown-label{font-family:'DM Sans',sans-serif;font-weight:300;font-size:.55rem;letter-spacing:.35em;text-transform:uppercase;color:rgba(240,235,227,.2);margin-bottom:.4rem}
 .countdown-time{font-size:1.1rem;color:var(--gold-dim);letter-spacing:.2em}
+.author a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.author a:hover{color:var(--cream);border-bottom-color:var(--gold-dim)}
+.source{font-weight:300;font-size:.62rem;letter-spacing:.08em;text-transform:none;color:rgba(245,241,235,.42);margin-top:.15rem}
+.quote-page-link{display:inline-block;margin-top:.45rem;font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:#c8a86e;text-decoration:none}
+.quote-page-link:hover{color:#f5f1eb}
+.quote-page-link[hidden]{display:none}
+.subscribe{margin-top:2.4rem;display:flex;flex-direction:column;align-items:center;gap:.7rem;width:min(440px,100%)}
+.subscribe-label{font-weight:300;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(245,241,235,.78)}
+.subscribe-row{display:flex;gap:.4rem;width:100%}
+.subscribe-row input[type=email]{flex:1;min-width:0;background:var(--surface);border:1px solid var(--cream-faint);color:var(--cream);padding:.7rem .95rem;border-radius:100px;font-family:'DM Sans',sans-serif;font-size:.75rem;font-weight:300;outline:none}
+.subscribe-row input[type=email]:focus{border-color:var(--gold-dim)}
+.subscribe-row button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:.7rem 1rem;border-radius:100px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase}
+.subscribe-row button:hover{background:rgba(200,168,110,.12)}
+.subscribe-note{min-height:1em;font-size:.68rem;letter-spacing:.03em;color:var(--cream-dim)}
+.hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.list-page{display:inline-block;margin-top:.4rem;font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:#c8a86e;text-decoration:none}
+.list-page:hover{color:var(--gold)}
 
 .list-view{display:none;min-height:100vh;padding:5.5rem 2rem 3rem;position:relative;z-index:1;max-width:720px;margin:0 auto}
 .list-view.active{display:block}
@@ -186,6 +208,8 @@ body{min-height:100%;background:var(--bg);color:var(--cream);font-family:'DM San
     <div class="attribution">
       <div class="rule"></div>
       <div class="author" id="authorName"></div>
+      <div class="source" id="sourceName" hidden></div>
+      <a class="quote-page-link" id="quotePageLink" hidden>This quote</a>
     </div>
     <div class="quote-tags" id="quoteTags"></div>
     <div class="actions">
@@ -206,6 +230,16 @@ body{min-height:100%;background:var(--bg);color:var(--cream);font-family:'DM San
       <div class="countdown-label">Next quote in</div>
       <div class="countdown-time" id="countdown"></div>
     </div>
+    <form class="subscribe" id="subscribeForm" method="post" action="/api/subscribe">
+      <div class="subscribe-label">Get one quote a day by email</div>
+      <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+      <input type="hidden" name="next" value="/">
+      <div class="subscribe-row">
+        <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </div>
+      <div class="subscribe-note" id="subscribeNote" role="status"></div>
+    </form>
   </div>
 </main>
 <div class="list-view" id="listView">
@@ -243,7 +277,7 @@ body{min-height:100%;background:var(--bg);color:var(--cream);font-family:'DM San
 </div>
 <canvas id="shareCanvas" width="1080" height="1080"></canvas>
 <script>
-var Q=[],currentIdx=0,busy=false,liked=new Set(),viewMode='single',likeCounts={};
+var Q=[],SLUGS=[],currentIdx=0,busy=false,liked=new Set(),viewMode='single',likeCounts={};
 var EPOCH=new Date(2026,0,1);
 try{var _lk=JSON.parse(localStorage.getItem('axitome-likes')||'[]');_lk.forEach(function(i){liked.add(i)})}catch(e){}
 function saveLikes(){try{localStorage.setItem('axitome-likes',JSON.stringify(Array.from(liked)))}catch(e){}}
@@ -300,11 +334,13 @@ function showListView(title,subtitle,items){
     html+='<div class="list-item-body">';
     html+='<div class="list-item-quote">'+escH(r.q.q)+'</div>';
     html+='<div class="list-item-author">'+escH(r.q.a)+'</div>';
+    if(SLUGS[r.idx]) html+='<a class="list-page" href="/q/'+SLUGS[r.idx].slug+'">This quote</a>';
     html+='</div></div>';
   });
   container.innerHTML=html;
   container.querySelectorAll('.list-item').forEach(function(el){
-    el.addEventListener('click',function(){
+    el.addEventListener('click',function(ev){
+      if(ev.target.closest && ev.target.closest('a')) return;
       showSingleView();show(parseInt(this.getAttribute('data-idx')),false);
     });
   });
@@ -320,7 +356,14 @@ function show(idx,anim){
     history.replaceState(null,'','#'+idxToDateStr(idx));
     document.getElementById('dateLabel').innerHTML=(td?'<span class="today-dot"></span>today &mdash; ':'')+fmtD(d);
     document.getElementById('quoteText').textContent=q.q;
-    document.getElementById('authorName').textContent=q.a;
+    var meta=SLUGS[idx]||null;
+    var authorEl=document.getElementById('authorName');
+    if(meta) authorEl.innerHTML='<a href="/a/'+meta.authorSlug+'">'+escH(q.a)+'</a>';
+    else authorEl.textContent=q.a;
+    var sourceEl=document.getElementById('sourceName');
+    if(q.s){sourceEl.hidden=false;sourceEl.textContent=q.s}else{sourceEl.hidden=true;sourceEl.textContent=''}
+    var pageLink=document.getElementById('quotePageLink');
+    if(meta){pageLink.hidden=false;pageLink.href='/q/'+meta.slug}else pageLink.hidden=true;
     var tagsEl=document.getElementById('quoteTags');tagsEl.innerHTML='';
     if(q.t){q.t.forEach(function(t){
       var sp=document.createElement('span');sp.className='quote-tag';sp.textContent=t;
@@ -384,7 +427,7 @@ function doSearch(){
   var mx=maxIdx(),items=[];
   for(var i=0;i<=mx&&i<Q.length;i++){
     var q=Q[i];
-    var hay=(q.q+' '+q.a+' '+(q.t?q.t.join(' '):'')).toLowerCase();
+    var hay=(q.q+' '+q.a+' '+(q.s||'')+' '+(q.t?q.t.join(' '):'')).toLowerCase();
     if(hay.indexOf(query)!==-1)items.push({idx:i,q:q});
   }
   showListView('Results for \u201C'+escH(query)+'\u201D',items.length+' quote'+(items.length===1?'':'s'),items);
@@ -429,7 +472,8 @@ document.getElementById('heartBtn').addEventListener('click',function(){
 /* Copy Quote */
 document.getElementById('copyBtn').addEventListener('click',function(){
   var q=Q[currentIdx];
-  navigator.clipboard.writeText('\u201C'+q.q+'\u201D\n\n\u2014 '+q.a).then(function(){toast('Quote copied')});
+  var credit=q.s?q.a+', '+q.s:q.a;
+  navigator.clipboard.writeText('\u201C'+q.q+'\u201D\n\n\u2014 '+credit).then(function(){toast('Quote copied')});
 });
 
 /* Share card */
@@ -460,13 +504,27 @@ function genCard(){
   ctx.fillStyle='rgba(240,235,227,0.5)';ctx.font='300 22px sans-serif';
   ctx.fillText(q.a.toUpperCase(),W/2,rY+45);
   if(q.t&&q.t.length){ctx.fillStyle='rgba(200,168,110,0.25)';ctx.font='200 16px sans-serif';ctx.fillText(q.t.map(function(t){return'#'+t}).join('  '),W/2,rY+80)}
-  ctx.fillStyle='rgba(240,235,227,0.12)';ctx.font='200 14px sans-serif';
-  ctx.fillText('AXITOME',W/2,H-50);
+  ctx.fillStyle='rgba(240,235,227,0.34)';ctx.font='200 15px sans-serif';
+  ctx.fillText('axitome.com',W/2,H-50);
   return c.toDataURL('image/png');
 }
 document.getElementById('shareBtn').addEventListener('click',function(){document.getElementById('modalPreview').src=genCard();document.getElementById('modalOverlay').classList.add('open')});
 document.getElementById('downloadCard').addEventListener('click',function(){var a=document.createElement('a');a.download='axitome-'+idxToDateStr(currentIdx)+'.png';a.href=genCard();a.click();toast('Image saved')});
-document.getElementById('copyLink').addEventListener('click',function(){navigator.clipboard.writeText(location.origin+location.pathname+'#'+idxToDateStr(currentIdx)).then(function(){toast('Link copied')})});
+document.getElementById('copyLink').addEventListener('click',function(){
+  var meta=SLUGS[currentIdx];
+  var url=meta?(location.origin+'/q/'+meta.slug):(location.origin+location.pathname+'#'+idxToDateStr(currentIdx));
+  navigator.clipboard.writeText(url).then(function(){toast('Link copied')});
+});
+document.getElementById('subscribeForm').addEventListener('submit',function(e){
+  if(!window.fetch)return;
+  e.preventDefault();
+  var form=this,note=document.getElementById('subscribeNote');
+  note.textContent='One moment.';
+  fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:form.email.value,company:form.company.value,next:'/'})})
+    .then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})})
+    .then(function(res){note.textContent=res.ok?'Saved. One quote, each morning.':(res.d&&res.d.error?res.d.error:'Signup is not open yet.')})
+    .catch(function(){note.textContent='Signup is not open yet.'});
+});
 document.getElementById('modalClose').addEventListener('click',function(){document.getElementById('modalOverlay').classList.remove('open')});
 document.getElementById('modalOverlay').addEventListener('click',function(e){if(e.target===e.currentTarget)e.currentTarget.classList.remove('open')});
 
@@ -490,10 +548,13 @@ document.addEventListener('touchend',function(e){
 });
 
 /* Init - fetch quotes from external JSON */
-fetch('quotes.json')
-  .then(function(r){return r.json()})
-  .then(function(data){
-    Q=data;
+Promise.all([
+  fetch('quotes.json').then(function(r){return r.json()}),
+  fetch('slugs.json').then(function(r){return r.ok?r.json():[]}).catch(function(){return []})
+])
+  .then(function(pair){
+    Q=pair[0];
+    SLUGS=pair[1]||[];
     var di=document.getElementById('dateInput');
     di.min=EPOCH.toISOString().split('T')[0];
     di.max=todayDate().toISOString().split('T')[0];

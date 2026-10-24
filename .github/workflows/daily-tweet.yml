@@ -2,8 +2,25 @@ name: Daily Quote Tweet
 
 on:
   schedule:
+    # 13:00 UTC is 6:00 AM Pacific Daylight Time.
+    # 14:00 UTC is 6:00 AM Pacific Standard Time.
+    # Both fire every day. scripts/la-hour.js continues only when
+    # America/Los_Angeles is in the 6 o'clock hour.
     - cron: '0 13 * * *'
+    - cron: '0 14 * * *'
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Render the card and reel, and log the text. Do not post.'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-quote
+  cancel-in-progress: false
 
 jobs:
   tweet:
@@ -15,13 +32,40 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Pacific hour guard
+        id: guard
+        run: node scripts/la-hour.js
+
       - name: Install dependencies
-        run: npm install @napi-rs/canvas twitter-api-v2
+        if: steps.guard.outputs.run == 'true'
+        run: npm ci
+
+      - name: Ensure ffmpeg
+        if: steps.guard.outputs.run == 'true'
+        run: command -v ffmpeg >/dev/null || (sudo apt-get update && sudo apt-get install -y ffmpeg)
 
       - name: Generate quote image and tweet
+        if: steps.guard.outputs.run == 'true'
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
           TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+          DRY_RUN: ${{ vars.AXITOME_DRY_RUN == '1' && '1' || ((github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '') }}
         run: node scripts/daily-tweet.js
+
+      - name: Render vertical reel
+        if: steps.guard.outputs.run == 'true'
+        run: node scripts/render-reel.js
+
+      - name: Save card, reel, and tweet id
+        if: steps.guard.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-quote-${{ github.run_id }}
+          retention-days: 90
+          path: |
+            out/quote-card.png
+            out/quote-story.png
+            out/quote-reel.mp4
+            out/tweet-log.jsonl

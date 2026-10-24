@@ -15,7 +15,22 @@ export default async function handler(req, res) {
       .filter(e => e.count > 0)
       .sort((a, b) => b.count - a.count);
 
-    return res.status(200).json({ total_likes: sorted.reduce((s, e) => s + e.count, 0), quotes: sorted });
+    let subscribers = [];
+    try {
+      const saved = await kv.hgetall('subscribers') || {};
+      subscribers = Object.entries(saved)
+        .map(([email, at]) => ({ email, at: String(at) }))
+        .sort((a, b) => b.at.localeCompare(a.at));
+    } catch (err) {
+      console.error('Subscriber read failed');
+    }
+
+    return res.status(200).json({
+      total_likes: sorted.reduce((s, e) => s + e.count, 0),
+      quotes: sorted,
+      subscriber_count: subscribers.length,
+      subscribers,
+    });
   } catch (e) {
     console.error('Admin API error:', e);
     return res.status(500).json({ error: 'Server error' });
