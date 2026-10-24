@@ -71,12 +71,16 @@ const sampleHtml = fs.readFileSync(path.join(root, 'public', 'q', sample.slug, '
 check('sample title', sampleHtml.includes('<title>') && sampleHtml.includes('Seneca'));
 check('sample canonical', sampleHtml.includes(`<link rel="canonical" href="https://www.axitome.com/q/${sample.slug}">`));
 check('sample schema', sampleHtml.includes('"@type":"Quotation"') && sampleHtml.includes('On Tranquility of Mind, 10.4b'));
-check('sample og', sampleHtml.includes(`https://www.axitome.com/api/og?slug=${encodeURIComponent(sample.slug)}`));
+check('sample og', sampleHtml.includes(`https://www.axitome.com/og/q/${sample.slug}.png`));
+const sampleCard = fs.readFileSync(path.join(root, 'public', 'og', 'q', `${sample.slug}.png`));
+check('sample og file', sampleCard.subarray(0, 4).toString('hex') === '89504e47');
+const authorCard = fs.readFileSync(path.join(root, 'public', 'og', 'a', `${sample.authorSlug}.png`));
+check('author og file', authorCard.subarray(0, 4).toString('hex') === '89504e47');
 check('sample twitter', sampleHtml.includes('summary_large_image'));
 check('no reflection filler', !/reflection|what this means/i.test(sampleHtml));
 
 const authorHtml = fs.readFileSync(path.join(root, 'public', 'a', sample.authorSlug, 'index.html'), 'utf8');
-check('author page', authorHtml.includes('Quotes by Seneca') && authorHtml.includes(`/q/${sample.slug}`));
+check('author page', authorHtml.includes('Quotes by Seneca') && authorHtml.includes(`/q/${sample.slug}`) && authorHtml.includes(`https://www.axitome.com/og/a/${sample.authorSlug}.png`));
 
 const home = fs.readFileSync(path.join(root, 'public', 'index.html'), 'utf8');
 check('home signup', home.includes('Get one quote a day by email') && home.includes('/api/subscribe'));

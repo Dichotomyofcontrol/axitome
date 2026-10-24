@@ -104,7 +104,7 @@ document.getElementById('subscribeForm').addEventListener('submit', function (e)
 
 function quotePage(entry, related) {
   const url = `${SITE}/q/${entry.slug}`;
-  const image = `${SITE}/api/og?slug=${encodeURIComponent(entry.slug)}`;
+  const image = `${SITE}/og/q/${entry.slug}.png`;
   const title = quoteTitle(entry);
   const description = quoteDescription(entry);
   const who = creator(entry.a);
@@ -155,7 +155,7 @@ function quotePage(entry, related) {
 
 function authorPage(name, authorSlug, entries) {
   const url = `${SITE}/a/${authorSlug}`;
-  const image = `${SITE}/api/og?author=${encodeURIComponent(authorSlug)}`;
+  const image = `${SITE}/og/a/${authorSlug}.png`;
   const title = `Quotes by ${name} | Axitome`;
   const description = clip(`${entries.length} quote${entries.length === 1 ? '' : 's'} by ${name}, kept by Axitome.`, 160);
   const list = {

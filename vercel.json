@@ -1,8 +1,0 @@
-{
-  "functions": {
-    "api/og.js": {
-      "maxDuration": 30,
-      "includeFiles": "{assets/fonts/**,public/quotes.json}"
-    }
-  }
-}

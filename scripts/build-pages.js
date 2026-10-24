@@ -1,7 +1,9 @@
+const { spawnSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { SITE, loadQuotes, catalog } = require('./lib/quotes');
 const { quotePage, authorPage, relatedQuotes } = require('./lib/html');
+const { renderQuoteCard, renderAuthorCard } = require('./lib/card');
 
 const root = path.join(__dirname, '..');
 const publicDir = path.join(root, 'public');
@@ -65,7 +67,40 @@ function main() {
     JSON.stringify(items.map((item) => ({ slug: item.slug, authorSlug: item.authorSlug })))
   );
 
-  console.log(`Built ${items.length} quote pages, ${byAuthor.size} author pages, ${urls.length} sitemap URLs.`);
+  const ogQuoteDir = path.join(publicDir, 'og', 'q');
+  const ogAuthorDir = path.join(publicDir, 'og', 'a');
+  resetDir(path.join(publicDir, 'og'));
+  fs.mkdirSync(ogQuoteDir, { recursive: true });
+  fs.mkdirSync(ogAuthorDir, { recursive: true });
+  for (const item of items) {
+    fs.writeFileSync(path.join(ogQuoteDir, `${item.slug}.png`), renderQuoteCard(item, 'square'));
+  }
+  for (const [authorSlug, entries] of byAuthor) {
+    fs.writeFileSync(
+      path.join(ogAuthorDir, `${authorSlug}.png`),
+      renderAuthorCard(entries[0].a, entries.length)
+    );
+  }
+  compressPngs([
+    ...items.map((item) => path.join(ogQuoteDir, `${item.slug}.png`)),
+    ...[...byAuthor.keys()].map((authorSlug) => path.join(ogAuthorDir, `${authorSlug}.png`)),
+  ]);
+
+  console.log(`Built ${items.length} quote pages, ${byAuthor.size} author pages, ${urls.length} sitemap URLs, ${items.length + byAuthor.size} share cards.`);
+}
+
+function compressPngs(files) {
+  const probe = spawnSync('pngquant', ['--version'], { stdio: 'ignore' });
+  if (probe.status !== 0) {
+    console.log('pngquant not installed; share cards left uncompressed.');
+    return;
+  }
+  const result = spawnSync('xargs', ['-P', '4', '-n', '1', 'pngquant', '--quality=70-95', '--skip-if-larger', '--force', '--ext', '.png'], {
+    input: `${files.join('\n')}\n`,
+  });
+  if (result.status !== 0) {
+    throw new Error(`pngquant failed: ${result.stderr ? result.stderr.toString() : result.status}`);
+  }
 }
 
 main();
