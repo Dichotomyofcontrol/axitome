@@ -116,9 +116,12 @@ function dayIndex(quotes, now = new Date()) {
 }
 
 function buildTweetText(quote) {
-  const credit = quote.s ? ` \u2014 ${quote.a}, ${quote.s}` : ` \u2014 ${quote.a}`;
-  const full = `\u201C${quote.q}\u201D${credit}`;
+  const credit = `\n\u2014 ${quote.a}${quote.s ? `, ${quote.s}` : ''}`;
+  const body = `\u201C${quote.q}\u201D${credit}`;
+  const full = quote.angle ? `${quote.angle}\n\n${body}` : body;
   if (full.length <= 280) return full;
+  // Over 280: drop the angle first, then fall back to truncating the quote.
+  if (quote.angle) return buildTweetText({ q: quote.q, a: quote.a, s: quote.s });
 
   const ellipsis = '\u2026';
   let room = 280 - (1 + ellipsis.length + 1 + credit.length);
@@ -134,13 +137,19 @@ function buildTweetText(quote) {
   return text.length <= 280 ? text : text.slice(0, 279) + ellipsis;
 }
 
+function buildReplyText() {
+  return 'One line a day: axitome.com';
+}
+
 function isDryRun(env = process.env) {
   const value = String(env.DRY_RUN || '').trim().toLowerCase();
   return value === '1' || value === 'true' || value === 'yes';
 }
 
 function shouldPostToday(env = process.env, now = new Date()) {
-  if (env.GITHUB_EVENT_NAME === 'schedule' && losAngelesHour(now) !== 6) return false;
+  // The once-per-day check lives in la-hour.js; here only enforce the window.
+  const hour = losAngelesHour(now);
+  if (env.GITHUB_EVENT_NAME === 'schedule' && (hour < 6 || hour > 11)) return false;
   return true;
 }
 
@@ -155,6 +164,7 @@ module.exports = {
   losAngelesHour,
   dayIndex,
   buildTweetText,
+  buildReplyText,
   isDryRun,
   shouldPostToday,
 };

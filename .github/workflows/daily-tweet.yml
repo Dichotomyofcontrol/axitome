@@ -2,12 +2,11 @@ name: Daily Quote Tweet
 
 on:
   schedule:
-    # 13:00 UTC is 6:00 AM Pacific Daylight Time.
-    # 14:00 UTC is 6:00 AM Pacific Standard Time.
-    # Both fire every day. scripts/la-hour.js continues only when
-    # America/Los_Angeles is in the 6 o'clock hour.
-    - cron: '0 13 * * *'
-    - cron: '0 14 * * *'
+    # Hourly 13:17-19:17 UTC covers 6-11 AM Pacific in both PDT and PST.
+    # :17 avoids the top-of-hour queue that delays GitHub cron starts.
+    # scripts/la-hour.js continues only inside 6-11 AM PT and only if
+    # state/last-posted.txt is not already today's Pacific date.
+    - cron: '17 13-19 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -16,7 +15,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write   # to commit state/last-posted.txt and state/history.json after a real post
 
 concurrency:
   group: daily-quote
@@ -27,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -45,6 +46,7 @@ jobs:
         run: command -v ffmpeg >/dev/null || (sudo apt-get update && sudo apt-get install -y ffmpeg)
 
       - name: Generate quote image and tweet
+        id: tweet
         if: steps.guard.outputs.run == 'true'
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
@@ -53,6 +55,22 @@ jobs:
           TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
           DRY_RUN: ${{ vars.AXITOME_DRY_RUN == '1' && '1' || ((github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '') }}
         run: node scripts/daily-tweet.js
+
+      # Immediately after the tweet, before reel or artifact steps. if: always()
+      # so a later failure still records a tweet that already went out.
+      - name: Record posted date
+        if: always() && steps.guard.outputs.run == 'true'
+        run: |
+          if git diff --quiet -- state/last-posted.txt state/history.json && ! git ls-files --others --exclude-standard -- state | grep -q .; then
+            echo "No new post recorded (dry run or failure)."
+            exit 0
+          fi
+          git config user.name "axitome-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/last-posted.txt state/history.json
+          git commit -m "state: posted ${{ steps.guard.outputs.date }} [skip ci]"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Render vertical reel
         if: steps.guard.outputs.run == 'true'

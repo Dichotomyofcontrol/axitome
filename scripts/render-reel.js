@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
-const { loadQuotes, catalog, dayIndex, losAngelesParts, shouldPostToday } = require('./lib/quotes');
-const { renderQuoteCard } = require('./lib/card');
+const { loadQuotes, catalog, losAngelesParts, shouldPostToday } = require('./lib/quotes');
+const { renderLedgerCard } = require('./lib/card');
+const { pick, isSunday } = require('./lib/select');
 
 function run(cmd, args) {
   const result = spawnSync(cmd, args, { encoding: 'utf8' });
@@ -12,20 +13,32 @@ function run(cmd, args) {
   return result.stdout;
 }
 
-function main() {
+async function main() {
   if (!shouldPostToday()) {
-    console.log('Not 6:00 America/Los_Angeles. Skipping the reel.');
+    console.log('Outside 6-11 AM America/Los_Angeles. Skipping the reel.');
     return;
   }
 
   const quotes = loadQuotes();
-  const quote = catalog(quotes)[dayIndex(quotes)];
+  const items = catalog(quotes);
   const la = losAngelesParts();
   const outDir = path.join(__dirname, '..', 'out');
   fs.mkdirSync(outDir, { recursive: true });
+  const selectionPath = path.join(outDir, 'selection.json');
+  let quote;
+  let date = la.date;
+  let dark = isSunday(date);
+  if (fs.existsSync(selectionPath)) {
+    const saved = JSON.parse(fs.readFileSync(selectionPath, 'utf8'));
+    quote = items.find((item) => item.idx === saved.idx) || null;
+    if (saved.date) date = saved.date;
+    if (typeof saved.dark === 'boolean') dark = saved.dark;
+  }
+  if (!quote) quote = pick(items, date, []);
+
   const png = path.join(outDir, 'quote-story.png');
   const mp4 = path.join(outDir, 'quote-reel.mp4');
-  fs.writeFileSync(png, renderQuoteCard(quote, 'story'));
+  fs.writeFileSync(png, await renderLedgerCard(quote, { date, dark, layout: 'story' }));
 
   const filter = [
     "zoompan=z='min(zoom+0.00035\\,1.08)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=210:s=1080x1920:fps=30",
@@ -63,13 +76,11 @@ function main() {
   if (audio) throw new Error('Reel must be silent');
   if (!(duration >= 6 && duration <= 8)) throw new Error(`Reel duration ${duration}s is outside 6–8s`);
 
-  console.log(`Reel ${la.date} ${quote.slug}: ${video.width}x${video.height}, ${duration.toFixed(2)}s, no audio`);
+  console.log(`Reel ${date} ${quote.slug}: ${video.width}x${video.height}, ${duration.toFixed(2)}s, no audio`);
   console.log(mp4);
 }
 
-try {
-  main();
-} catch (err) {
+main().catch((err) => {
   console.error('Failed:', err.message || err);
   process.exit(1);
-}
+});
