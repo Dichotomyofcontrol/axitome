@@ -1,0 +1,27 @@
+name: Dispatch Sunday quote
+
+# One-shot helper. The cloud agent token cannot call workflow_dispatch.
+# GITHUB_TOKEN can, and workflow_dispatch runs are not suppressed.
+# This file is removed after it dispatches Daily Quote Tweet.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/dispatch-sunday.yml
+
+permissions:
+  actions: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch Daily Quote Tweet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${{ github.repository }}/actions/workflows/daily-tweet.yml/dispatches" \
+            -f ref=main
+          echo "Dispatched daily-tweet.yml on main with dry_run left at its default (false)."
