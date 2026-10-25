@@ -399,7 +399,9 @@
     "a": "George Bernard Shaw",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Shaw. Quote Investigator traces the modern joke to Cyrus Ching and to earlier anonymous sayings, with no single author for this wording."
   },
   {
     "q": "More is lost by indecision than wrong decision.",
@@ -424,10 +426,13 @@
   },
   {
     "q": "Judge a man by his questions rather than by his answers.",
-    "a": "Voltaire",
+    "a": "Pierre-Marc-Gaston de Lévis",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not Voltaire. Wikiquote misattributed section: Maxim xviii of Maximes et réflexions (Paris, 1808). The English is a paraphrase of \"Il est encore plus facile de juger de l'esprit d'un homme par ses questions que par ses réponses.\"",
+    "s": "Maximes et réflexions, 1808"
   },
   {
     "q": "We are all humiliated by the sudden discovery of a fact which has existed very comfortably and perhaps been staring at us in private while we have been making up our world entirely without it.",
@@ -528,7 +533,9 @@
     "t": [
       "creativity",
       "solitude"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Shaw. Quote Investigator finds the line only in 1960s sources, with no earlier author."
   },
   {
     "q": "What is great in man is that he is a bridge and not a goal.",
@@ -817,7 +824,9 @@
     "a": "Richard Feynman",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Feynman source. Quote Investigator finds no evidence he said it."
   },
   {
     "q": "Success is getting what you want. Happiness is wanting what you get.",
@@ -1053,7 +1062,9 @@
     "t": [
       "solitude",
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Emerson. Barry Popik and Wikiquote: no Emerson source. E. E. Cummings wrote a different sentence in \"A Poet's Advice\" (1958), so Cummings is not the author of this wording either."
   },
   {
     "q": "Every job looks easy when you're not the one doing it.",
@@ -1291,14 +1302,9 @@
     "a": "F. Scott Fitzgerald",
     "t": [
       "wisdom"
-    ]
-  },
-  {
-    "q": "A person is unfair to themself when they are unable to be hard on themself.",
-    "a": "Me",
-    "t": [
-      "solitude"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No F. Scott Fitzgerald source has been found."
   },
   {
     "q": "A writer is unfair to himself when he is unable to be hard on himself.",
@@ -1319,7 +1325,9 @@
     "a": "George Bernard Shaw",
     "t": [
       "time"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Shaw. Modern internet line with no earlier author."
   },
   {
     "q": "I tell my kids, what is the difference between a hero and a coward? What is the difference between being [cowardly] and being brave? No difference. Only what you do. They both feel the same. They both fear dying and getting hurt. The man who is [cowardly] refuses to face up to what he’s got to face. The hero is more disciplined and he fights those feelings off and he does what he has to do. But they both feel the same, the hero and the coward. People who watch you judge you on what you do, not how you feel.",
@@ -1409,7 +1417,9 @@
     "a": "Seneca",
     "t": [
       "leadership"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Seneca. No source in his letters or essays; a modern meme."
   },
   {
     "q": "Often the difference between a successful person and a failure is not one's better abilities or ideas, but the courage that one has to bet on one's ideas, to take a calculated risk—and to act.",
@@ -1599,7 +1609,9 @@
     "t": [
       "nature",
       "growth"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in Van Gogh's letters (vangoghletters.org). No other author found."
   },
   {
     "q": "What the superior man seeks is in himself; what the small man seeks is in others.",
@@ -1897,10 +1909,12 @@
   },
   {
     "q": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.",
-    "a": "Aristotle",
+    "a": "Elbert Hubbard",
     "t": [
       "action"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not Aristotle. Quote Investigator (2015-01-09): Hubbard wrote the saying in Little Journeys (1898) and the familiar form by 1909. No Aristotle source."
   },
   {
     "q": "Swing easy.",
@@ -1978,7 +1992,9 @@
     "a": "Lao Tzu",
     "t": [
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Lao Tzu; there is no ant in the Tao Te Ching. taoistic.com traces the sentence to an anonymous Mexican proverb in Folk Wisdom of Mexico (1994). No named author."
   },
   {
     "q": "If I had to live my life again, I’d make the same mistakes, only sooner.",
@@ -2038,7 +2054,9 @@
       "leadership",
       "purpose",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not this sentence. Jung wrote \"Thinking is difficult, therefore let the herd pronounce judgment!\" (Collected Works 10, para 652). No author for the \"that's why most people judge\" wording."
   },
   {
     "q": "Freedom is nothing else but a chance to be better.",
@@ -2072,11 +2090,14 @@
   },
   {
     "q": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.",
-    "a": "Ernest Hemingway",
+    "a": "W. L. Sheldon",
     "t": [
       "solitude",
       "character"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not Hemingway. Quote Investigator (2017-03-11): W. L. Sheldon, \"What to Believe: An Ethical Creed,\" Ethical Addresses, April 1897. Hemingway was born in 1899; the 1963 Playboy \"A Man's Credo\" is not accepted by Hemingway specialists.",
+    "s": "Ethical Addresses, April 1897"
   },
   {
     "q": "The graveyard is the richest place on earth, because it is here that you will find all the hopes and dreams that were never fulfilled...",
@@ -2093,7 +2114,9 @@
     "a": "Sigmund Freud",
     "t": [
       "perseverance"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Freud source. Internet attribution only."
   },
   {
     "q": "When I was a child, I spoke as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things.",
@@ -2110,7 +2133,9 @@
       "solitude",
       "time",
       "growth"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in the Masnavi or the Divan, and not in Coleman Barks. No Persian original and no other author found."
   },
   {
     "q": "Do nothing which is of no use.",
@@ -2223,7 +2248,9 @@
       "nature",
       "leadership",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Muhammad Ali source. Viral caption."
   },
   {
     "q": "It is not enough to be busy. So are the ants. The question is: What are we busy about?",
@@ -2254,7 +2281,9 @@
     "t": [
       "love",
       "creativity"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in the Tao Te Ching. No other author found."
   },
   {
     "q": "There is only one way to happiness and that is to cease worrying about things which are beyond the power or our will.",
@@ -2277,7 +2306,9 @@
     "t": [
       "solitude",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Socrates. Modern line with no earlier author."
   },
   {
     "q": "Well-being is realized in small steps, but it is no small thing.",
@@ -2364,7 +2395,9 @@
     "t": [
       "discipline",
       "time"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Lincoln. Barry Popik: the Lincoln credit starts on Facebook on 17 June 2013. Augusta Kantra's 10 April 2010 essay says she had just read the line; her later authorship claim contradicts that. The closest earlier sentence is Ann Vertel, 24 May 2006, \"Discipline is the difference between what you want now and what you want most,\" which is not this wording. No reliable author for the \"choosing\" sentence."
   },
   {
     "q": "The richest man ain't the one with his first dollar, dog-- it's the one that still got his first friend.",
@@ -2449,7 +2482,9 @@
       "love",
       "freedom",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in the Tao Te Ching. No other author found."
   },
   {
     "q": "A bad rower blames the oar.",
@@ -2654,10 +2689,13 @@
   },
   {
     "q": "Do what you can, with what you have, where you are.",
-    "a": "Theodore Roosevelt",
+    "a": "Bill Widener",
     "t": [
       "action"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Roosevelt credited Squire Bill Widener of Widener's Valley in his Autobiography, not himself.",
+    "s": "quoted by Theodore Roosevelt, Autobiography (1913)"
   },
   {
     "q": "When one cannot see the future, the best you can do is the next right thing.",
@@ -2895,14 +2933,6 @@
     ]
   },
   {
-    "q": "Be wary of the self-sufficiency which rattles your humility.",
-    "a": "Seth Thomas",
-    "t": [
-      "solitude",
-      "simplicity"
-    ]
-  },
-  {
     "q": "We forfeit three-fourths of ourselves in order to be like other people.",
     "a": "Arthur Schopenhauer",
     "t": [
@@ -3017,7 +3047,9 @@
     "a": "Togo movie on Disney+",
     "t": [
       "death"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Credited to a film title, not a writer. No verified script line or author."
   },
   {
     "q": "Life happens so hard and fast I sometimes wonder who is me…",
@@ -3239,11 +3271,14 @@
     ]
   },
   {
-    "q": "When we find ourselves on the side of the majority, we should pause and reflect. Because it means we might be going along with the mob. We might have turned off our own mind. We might be muting our true colors.",
+    "q": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
     "a": "Mark Twain",
     "t": [
       "mind"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "The first sentence is Twain's notebook entry of 1904. The sentences about the mob were added later and are not his. Wording restored to the notebook.",
+    "s": "Notebook, 1904"
   },
   {
     "q": "If you are ever tempted to look for outside approval,” Epictetus said, “realize that you have compromised your integrity. If you need a witness, be your own.",
@@ -3637,7 +3672,9 @@
       "death",
       "action",
       "loss"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not a sourced Twain sentence. Wikiquote lists it as unsourced via Dawkins (2006); \"billions and billions\" is later than Twain. His Autobiography says \"Annihilation has no terrors for me, because I have already tried it before I was born,\" which is a different sentence."
   },
   {
     "q": "Do not despise your inner world.",
@@ -3976,7 +4013,9 @@
       "leadership",
       "simplicity",
       "purpose"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in Plato. Modern line with no earlier author."
   },
   {
     "q": "Anger by Seneca - 'I wish that the same principle applied to humankind as to bees, so that anger’s force would be broken along with its weapon and it would not be possible to inflict pain more than once, or to rely on another to enforce our hatred! For rage would be more easily exhausted if it sought datification only through its own efforts and risked death in spending its strength.'",
@@ -4139,7 +4178,9 @@
     "a": "Pablo Picasso",
     "t": [
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Picasso source."
   },
   {
     "q": "Action may not always bring happiness, but there is no happiness without action.",
@@ -4244,12 +4285,15 @@
     ]
   },
   {
-    "q": "You can’t stop the waves but you can learn to surf.",
-    "a": "Unknown",
+    "q": "You can’t stop the waves, but you can learn to surf.",
+    "a": "Swami Satchidananda",
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not an anonymous line, and not Jon Kabat-Zinn's own sentence. In Wherever You Go, There You Are (1994) he says a poster of Swami Satchidananda carried this caption. The comma is in that caption.",
+    "s": "poster caption, quoted in Wherever You Go, There You Are (1994)"
   },
   {
     "q": "The only person you are destined to become is the person you decide to be.",
@@ -4257,7 +4301,9 @@
     "t": [
       "growth",
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Emerson. Modern line with no earlier author."
   },
   {
     "q": "Do not despise the bottom rungs in the ascent to greatness. If you wish to reach the highest, begin at the lowest.",
@@ -4496,7 +4542,9 @@
     "a": "Albert Einstein",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Einstein. Quote Investigator (2024-05-04): the earliest note is Gilbert Fowler White's 1942 journal, with no primary source. QI leaves the creator anonymous. Wikiquote lists it as disputed."
   },
   {
     "q": "Take the course opposite to custom and you will do well.",
@@ -4862,7 +4910,9 @@
       "time",
       "death",
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Picasso source in the notebooks or a contemporary interview."
   },
   {
     "q": "We are the ones we have been waiting for.",
@@ -4994,7 +5044,9 @@
     "t": [
       "growth",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not a literal canonical line. fakebuddhaquotes.com and the Dhammapada translations treat it as a modern compression of Dhammapada 1–2. No author for this English sentence."
   },
   {
     "q": "The man on top of the mountain didn’t fall there.",
@@ -5017,7 +5069,9 @@
       "wisdom",
       "creativity",
       "time"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Einstein. His documented line, in the 1929 Viereck interview, is \"Imagination is more important than knowledge.\" No author for this wording."
   },
   {
     "q": "People don’t need to be managed, they need to be unleashed.",
@@ -5104,10 +5158,13 @@
   },
   {
     "q": "No one saves us but ourselves. No one can and no one may.",
-    "a": "Buddha",
+    "a": "Paul Carus",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "These English words are Paul Carus's 1894 verse paraphrase of Dhammapada 165 (and 276), not a literal canonical line. Fake Buddha Quotes documents the passage in Karma: A Story of Buddhist Ethics.",
+    "s": "Karma, 1894"
   },
   {
     "q": "Search others for their virtues, thyself for thy vices.",
@@ -5255,7 +5312,9 @@
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not a verified Twain sentence. Wikiquote leaves it unsourced. Quote Investigator traces related \"troubles that never happened\" sayings to earlier writers, without one author for this wording."
   },
   {
     "q": "Disrespect for traditions has not caused even one thousandth part of the great evil which was caused by the old prejudices, traditions, customs, and institutions which should not exist at present.",
@@ -5276,10 +5335,12 @@
   },
   {
     "q": "Kites rise highest against the wind.",
-    "a": "Winston Churchill",
+    "a": "John Neal",
     "t": [
       "nature"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not Churchill. Quote Investigator (2019-03-16): John Neal, \"Enterprise and Perseverance\" (1846), \"Kites rise against not with the wind.\" The word \"highest\" is a later compression. Churchill attributions start in 1963."
   },
   {
     "q": "Our passions are the most terrible tyrants, and we can be the slaves of them. Only self-sacrifice can free us from this slavery.",
@@ -5318,7 +5379,9 @@
     "a": "Tyler Dursen",
     "t": [
       "courage"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not a Fight Club line. The author name \"Tyler Dursen\" is a misspelling, and the sentence is not in the book. No source found."
   },
   {
     "q": "Greatness is when you're tested, when you're willing to step up, when the dream is so big you're scared.",
@@ -5386,10 +5449,13 @@
   },
   {
     "q": "Life is what happens when you're busy making other plans.",
-    "a": "John Lennon",
+    "a": "Allen Saunders",
     "t": [
       "leadership"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not Lennon's line. Quote Investigator: Allen Saunders, Reader's Digest, 1957 (\"Life is what happens to us while we are making other plans\"). Lennon quoted the saying in \"Beautiful Boy\" (1980).",
+    "s": "Reader's Digest, 1957"
   },
   {
     "q": "The only way to do great work is to love what you do.",
@@ -5404,7 +5470,9 @@
     "a": "Frank Sinatra",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Sinatra. Quote Investigator finds no evidence; the line is anonymous."
   },
   {
     "q": "The only limit to our realization of tomorrow will be our doubts of today.",
@@ -5422,7 +5490,9 @@
       "action",
       "purpose",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not a canonical Buddha quotation. fakebuddhaquotes.com: the wording comes from a 1934 Japanese compendium and distorts Dhammapada 348, which says to let go of the present as well. No single author."
   },
   {
     "q": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
@@ -5430,14 +5500,19 @@
     "t": [
       "courage",
       "perseverance"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Churchill. The International Churchill Society lists it as false. Quote Investigator (2013-09-03): the earliest full form is an anonymous 1938 Budweiser advertisement. A 1948 credit to George F. Tilton has no citation."
   },
   {
-    "q": "To succeed in life, you need two things: ignorance and confidence.",
+    "q": "All you need in this life is ignorance and confidence; then success is sure.",
     "a": "Mark Twain",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "The credit to Twain stands. Quote Investigator (2021-09-05) prints the 2 December 1887 letter to Mrs. Foote. The collection had a later paraphrase; the letter wording is restored. The audit's \"Twain never said it\" note does not match that letter.",
+    "s": "Letter to Mrs. Foote, 2 December 1887"
   },
   {
     "q": "Life is really simple, but we insist on making it complicated.",
@@ -5445,7 +5520,9 @@
     "t": [
       "leadership",
       "simplicity"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in the Analects. Wikiquote files it under misattributed, earliest print in Aero Digest (1949), author unknown."
   },
   {
     "q": "The best way to predict the future is to create it.",
@@ -5462,7 +5539,9 @@
       "creativity",
       "nature",
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Twain. Quote Investigator (2018-02-03): anonymous from a 1923 bank ad (\"Half the game of getting ahead is getting started\") and the exact line in Esar (1968). Twain and Christie credits are decades after their deaths."
   },
   {
     "q": "If you want to achieve greatness stop asking for permission.",
@@ -5537,14 +5616,18 @@
       "perseverance",
       "leadership",
       "loss"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Churchill. Quote Investigator (2014-06-28) and the International Churchill Society: absent from his canon. The earliest close match is anonymous, in David Guy Powers, How to Say a Few Words (1953)."
   },
   {
     "q": "In the middle of every difficulty lies opportunity.",
     "a": "Albert Einstein",
     "t": [
       "perseverance"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not a sourced Einstein sentence. Wikiquote: John Archibald Wheeler, Cosmic Search (1979), described Einstein's work with \"In the middle of difficulty lies opportunity\" and did not present it as Einstein's words. The \"every\" wording has no author."
   },
   {
     "q": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
@@ -5553,7 +5636,9 @@
       "happiness",
       "love",
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Albert Schweitzer source. First appears in 1990s self-help books, author unknown."
   },
   {
     "q": "You miss 100% of the shots you don't take.",
@@ -5568,7 +5653,9 @@
     "a": "Muhammad Ali",
     "t": [
       "action"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Muhammad Ali source, and it is also pinned on other names. No reliable author."
   },
   {
     "q": "The only thing that stands between you and your dream is the will to try and the belief that it is actually possible.",
@@ -5584,7 +5671,9 @@
     "a": "Samuel Goldwyn",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Goldwyn. Quote Investigator finds many earlier anonymous and named variants and no Goldwyn source. Monticello lists the Jefferson form as spurious."
   },
   {
     "q": "The road to success and the road to failure are almost exactly the same.",
@@ -5599,7 +5688,9 @@
     "a": "Thomas Jefferson",
     "t": [
       "wisdom"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Jefferson. Monticello.org lists it as spurious."
   },
   {
     "q": "Success is not in what you have, but who you are.",
@@ -5614,7 +5705,9 @@
     "t": [
       "time",
       "purpose"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "No Eleanor Roosevelt source. Circulating since the 1970s with no earlier author."
   },
   {
     "q": "You don't have to be great to start, but you have to start to be great.",
@@ -5630,7 +5723,9 @@
     "a": "Henry David Thoreau",
     "t": [
       "leadership"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Thoreau. The Walden Woods Project misquotation page: it appears in minor publications from the mid-20th century, then on the internet. No author."
   },
   {
     "q": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
@@ -5681,7 +5776,9 @@
     "a": "Epictetus",
     "t": [
       "discipline"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not Epictetus's words. A modern summary of Enchiridion 1 (\"Some things are in our control and others not\"). No author for the slogan."
   },
   {
     "q": "The chief task in life is simply this: to identify and separate matters so that I can say clearly to myself which are externals not under my control, and which have to do with the choices I actually control. Where then do I look for good and evil? Not to uncontrollable externals, but within myself to the choices that are my own . . .",
@@ -5762,21 +5859,6 @@
     ]
   },
   {
-    "q": "Engage, inspire and empower.",
-    "a": "Chris Jones @ DSM XLT offsite 2018, October 19",
-    "t": [
-      "creativity",
-      "leadership"
-    ]
-  },
-  {
-    "q": "Learning and helping.",
-    "a": "Mark Seneker @ DSM XLT offsite 2018, October 19th",
-    "t": [
-      "wisdom"
-    ]
-  },
-  {
     "q": "A valuable long-term mission can easily be derailed by emotionally-loaded (but ultimately meaningless) short-term drama. Focus on what matters.",
     "a": "Stoic Emperor",
     "t": [
@@ -5837,7 +5919,9 @@
       "discipline",
       "leadership",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "The text is a workplace note, not a sentence of John F. Kennedy's. No quotable source."
   },
   {
     "q": "If there is no struggle, there is no progress.",
@@ -6035,7 +6119,9 @@
     "t": [
       "creativity",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in The Ultimate Quotable Einstein. No primary source; a later paraphrase of the imagination theme."
   },
   {
     "q": "Let the man not be corrupted by external things. Let him be unconquerable and admire only himself. Let him be courageous in spirit and ready for any fate. Let him be the molder of his own life. Let not his confidence be without knowledge, nor his knowledge without firmness. Let his decisions once made abide. Let not his decrees be altered by any alteration. Let him be poised and well-ordered. Let him show majesty mingled with courtesy in his actions.",
@@ -6067,13 +6153,16 @@
   },
   {
     "q": "Better for me to remain quiet and thought a fool, than to open my mouth and remove all doubt.",
-    "a": "Abraham Lincoln",
+    "a": "Maurice Switzer",
     "t": [
       "wisdom",
       "solitude",
       "growth",
       "action"
-    ]
+    ],
+    "attribution": "corrected",
+    "attributionNote": "Not Lincoln. Quote Investigator (2010-05-17): Maurice Switzer, Mrs. Goose, Her Book (copyright 1906, published 1907): \"It is better to remain silent at the risk of being thought a fool, than to talk and remove all doubt of it.\" The biblical Proverbs 17:28 is a different sentence. Lincoln attributions begin in 1931.",
+    "s": "Mrs. Goose, Her Book, 1907"
   },
   {
     "q": "That's who I learned from, working hard, doing your job, paying attention to details, treating the players as fairly and honestly as you can treat them. If it's good, it's good, if it's bad, it's bad. Just being honest with them.",
@@ -6120,7 +6209,9 @@
       "wisdom",
       "action",
       "mind"
-    ]
+    ],
+    "attribution": "disputed",
+    "attributionNote": "Not in Leonardo's notebooks. No other author found."
   },
   {
     "q": "A truth unsaid can still be felt.",
