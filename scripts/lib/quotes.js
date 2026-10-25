@@ -103,14 +103,12 @@ function losAngelesHour(now) {
   return losAngelesParts(now).hour;
 }
 
-// Same day index the daily post has always used: Pacific calendar day
-// since 2026-01-01, modulo the quote count. Do not "fix" the timezone
-// parse; GitHub runners are UTC and this keeps the sequence stable.
+// Day index: Pacific calendar days since 2026-01-01, modulo the quote count.
+// Counted in UTC from the Pacific date parts so clock changes never shift it.
+// On UTC runners this matches the sequence the daily post has always used.
 function dayIndex(quotes, now = new Date()) {
-  const pacific = new Date(now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' }));
-  pacific.setHours(0, 0, 0, 0);
-  const epoch = new Date(2026, 0, 1);
-  const n = Math.floor((pacific - epoch) / 86400000);
+  const p = losAngelesParts(now);
+  const n = Math.round((Date.UTC(+p.year, +p.month - 1, +p.day) - Date.UTC(2026, 0, 1)) / 86400000);
   const len = quotes.length || 1;
   return ((n % len) + len) % len;
 }

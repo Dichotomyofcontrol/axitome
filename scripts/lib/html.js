@@ -62,15 +62,15 @@ function head({ title, description, url, image }) {
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${esc(image)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
 <link rel="stylesheet" href="/page.css">
 `;
 }
 
 function subscribeForm(nextPath) {
   return `<section class="signup">
-  <h2>Get one quote a day by email</h2>
-  <p>A single line, each morning.</p>
+  <h2>One line, each morning.</h2>
+  <p>Get one quote a day by email.</p>
   <form id="subscribeForm" method="post" action="/api/subscribe">
     <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
     <input type="hidden" name="next" value="${esc(nextPath)}">
@@ -102,6 +102,37 @@ document.getElementById('subscribeForm').addEventListener('submit', function (e)
 </script>`;
 }
 
+// Static pages are built ahead of time, so lines whose day has not come yet
+// are hidden in the browser. Day N is Pacific calendar days since 2026-01-01.
+const ARRIVED_SCRIPT = `<script>
+(function () {
+  var p = {};
+  try {
+    new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric' })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+  } catch (e) { var d = new Date(); p = { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() }; }
+  var today = Math.round((Date.UTC(+p.year, +p.month - 1, +p.day) - Date.UTC(2026, 0, 1)) / 864e5);
+  var R = ['M',1000,'CM',900,'D',500,'CD',400,'C',100,'XC',90,'L',50,'XL',40,'X',10,'IX',9,'V',5,'IV',4,'I',1];
+  function roman(n) { var o = ''; for (var i = 0; i < R.length; i += 2) while (n >= R[i + 1]) { o += R[i]; n -= R[i + 1]; } return o; }
+  var lists = document.querySelectorAll('[data-arrived]');
+  for (var l = 0; l < lists.length; l++) {
+    var list = lists[l], max = +list.getAttribute('data-max') || 999, shown = 0;
+    var items = list.querySelectorAll('[data-idx]');
+    for (var i = 0; i < items.length; i++) {
+      var idx = +items[i].getAttribute('data-idx');
+      if (idx > today || shown >= max) { items[i].hidden = true; continue; }
+      shown++;
+      var d = items[i].querySelector('.day');
+      if (d) { var dt = new Date(Date.UTC(2026, 0, 1 + idx)); d.textContent = 'Day ' + (idx + 1) + ' \u00b7 ' + roman(dt.getUTCDate()) + ' \u00b7 ' + roman(dt.getUTCMonth() + 1) + ' \u00b7 ' + roman(dt.getUTCFullYear()); }
+    }
+    var count = document.querySelector(list.getAttribute('data-count') || '#none');
+    if (count) count.textContent = shown + (shown === 1 ? ' line' : ' lines') + ' on the wall so far';
+    var sec = list.closest('[data-hide-empty]');
+    if (sec && !shown) sec.hidden = true;
+  }
+})();
+</script>`;
+
 function quotePage(entry, related) {
   const url = `${SITE}/q/${entry.slug}`;
   const image = `${SITE}/og/q/${entry.slug}.png`;
@@ -129,25 +160,28 @@ function quotePage(entry, related) {
   };
   const themes = (entry.t || []).map(themeLabel).join(' · ');
   const relatedHtml = related.length
-    ? `<section class="related"><h2>Related</h2><ul>${related.map((item) => `<li><a href="/q/${esc(item.slug)}"><p>${esc(item.q)}</p><span>${esc(item.a)}</span></a></li>`).join('')}</ul></section>`
+    ? `<section class="related" data-hide-empty><h2>Related</h2><ul data-arrived data-max="3">${related.map((item) => `<li data-idx="${item.idx}"><a href="/q/${esc(item.slug)}"><p>${esc(item.q)}</p><span>${esc(item.a)}</span></a></li>`).join('')}</ul></section>`
     : '';
   return `${head({ title, description, url, image })}
 <script type="application/ld+json">${jsonLd(quotation)}</script>
 <script type="application/ld+json">${jsonLd(crumbs)}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
   <article>
     <h1 class="quote">${esc(entry.q)}</h1>
+    <div class="cut" aria-hidden="true"></div>
     <p class="by"><a href="/a/${esc(entry.authorSlug)}">${esc(entry.a)}</a></p>
     ${entry.s ? `<p class="work">${esc(entry.s)}</p>` : ''}
     ${themes ? `<p class="themes">${esc(themes)}</p>` : ''}
   </article>
   ${relatedHtml}
-  ${subscribeForm(`/q/${entry.slug}`)}
 </main>
+<div class="dark">
+  ${subscribeForm(`/q/${entry.slug}`)}
+</div>
+${ARRIVED_SCRIPT}
 </body>
 </html>
 `;
@@ -174,25 +208,28 @@ function authorPage(name, authorSlug, entries) {
       })),
     },
   };
-  const items = entries.map((entry) => `<li><a href="/q/${esc(entry.slug)}"><p>${esc(entry.q)}</p></a></li>`).join('');
+  const items = entries.map((entry) => `<li data-idx="${entry.idx}"><a href="/q/${esc(entry.slug)}"><span class="day">Day ${entry.idx + 1}</span><p>${esc(entry.q)}</p></a></li>`).join('');
   return `${head({ title, description, url, image })}
 <script type="application/ld+json">${jsonLd(list)}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
-  <p class="kicker">${entries.length} quote${entries.length === 1 ? '' : 's'}</p>
-  <h1 class="quote">${esc(name)}</h1>
-  <ul class="author-list">${items}</ul>
-  ${subscribeForm(`/a/${authorSlug}`)}
+  <p class="kicker" id="arrivedCount">${entries.length} quote${entries.length === 1 ? '' : 's'}</p>
+  <h1 class="quote name">${esc(name)}</h1>
+  <div class="cut" aria-hidden="true"></div>
+  <ul class="author-list" data-arrived data-count="#arrivedCount">${items}</ul>
 </main>
+<div class="dark">
+  ${subscribeForm(`/a/${authorSlug}`)}
+</div>
+${ARRIVED_SCRIPT}
 </body>
 </html>
 `;
 }
 
-function relatedQuotes(items, entry, limit = 3) {
+function relatedQuotes(items, entry, limit = 8) {
   const tag = entry.t && entry.t[0];
   const sameAuthor = items.filter((item) => item.idx !== entry.idx && item.a === entry.a);
   const sameTheme = items.filter((item) => item.idx !== entry.idx && item.a !== entry.a && tag && item.t && item.t.includes(tag));

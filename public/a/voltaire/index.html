@@ -19,21 +19,23 @@
 <meta name="twitter:description" content="4 quotes by Voltaire, kept by Axitome.">
 <meta name="twitter:image" content="https://www.axitome.com/og/a/voltaire.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
 <link rel="stylesheet" href="/page.css">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Quotes by Voltaire | Axitome","url":"https://www.axitome.com/a/voltaire","mainEntity":{"@type":"ItemList","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.axitome.com/q/voltaire-judge-a-man-by-his-questions-rather-than-by-his","name":"Judge a man by his questions rather than by his answers."},{"@type":"ListItem","position":2,"url":"https://www.axitome.com/q/voltaire-there-are-truths-which-are-not-for-all-men-nor-f","name":"There are truths which are not for all men, nor for all times."},{"@type":"ListItem","position":3,"url":"https://www.axitome.com/q/voltaire-love-is-of-all-the-passions-the-strongest-for-it","name":"Love is of all the passions the strongest, for it attacks simultaneously the head, the heart, and the body."},{"@type":"ListItem","position":4,"url":"https://www.axitome.com/q/voltaire-it-is-forbidden-to-kill-therefore-all-murderers","name":"It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of…"}]}}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
-  <p class="kicker">4 quotes</p>
-  <h1 class="quote">Voltaire</h1>
-  <ul class="author-list"><li><a href="/q/voltaire-judge-a-man-by-his-questions-rather-than-by-his"><p>Judge a man by his questions rather than by his answers.</p></a></li><li><a href="/q/voltaire-there-are-truths-which-are-not-for-all-men-nor-f"><p>There are truths which are not for all men, nor for all times.</p></a></li><li><a href="/q/voltaire-love-is-of-all-the-passions-the-strongest-for-it"><p>Love is of all the passions the strongest, for it attacks simultaneously the head, the heart, and the body.</p></a></li><li><a href="/q/voltaire-it-is-forbidden-to-kill-therefore-all-murderers"><p>It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets.</p></a></li></ul>
+  <p class="kicker" id="arrivedCount">4 quotes</p>
+  <h1 class="quote name">Voltaire</h1>
+  <div class="cut" aria-hidden="true"></div>
+  <ul class="author-list" data-arrived data-count="#arrivedCount"><li data-idx="51"><a href="/q/voltaire-judge-a-man-by-his-questions-rather-than-by-his"><span class="day">Day 52</span><p>Judge a man by his questions rather than by his answers.</p></a></li><li data-idx="324"><a href="/q/voltaire-there-are-truths-which-are-not-for-all-men-nor-f"><span class="day">Day 325</span><p>There are truths which are not for all men, nor for all times.</p></a></li><li data-idx="408"><a href="/q/voltaire-love-is-of-all-the-passions-the-strongest-for-it"><span class="day">Day 409</span><p>Love is of all the passions the strongest, for it attacks simultaneously the head, the heart, and the body.</p></a></li><li data-idx="437"><a href="/q/voltaire-it-is-forbidden-to-kill-therefore-all-murderers"><span class="day">Day 438</span><p>It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets.</p></a></li></ul>
+</main>
+<div class="dark">
   <section class="signup">
-  <h2>Get one quote a day by email</h2>
-  <p>A single line, each morning.</p>
+  <h2>One line, each morning.</h2>
+  <p>Get one quote a day by email.</p>
   <form id="subscribeForm" method="post" action="/api/subscribe">
     <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
     <input type="hidden" name="next" value="/a/voltaire">
@@ -63,6 +65,34 @@ document.getElementById('subscribeForm').addEventListener('submit', function (e)
   });
 });
 </script>
-</main>
+</div>
+<script>
+(function () {
+  var p = {};
+  try {
+    new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric' })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+  } catch (e) { var d = new Date(); p = { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() }; }
+  var today = Math.round((Date.UTC(+p.year, +p.month - 1, +p.day) - Date.UTC(2026, 0, 1)) / 864e5);
+  var R = ['M',1000,'CM',900,'D',500,'CD',400,'C',100,'XC',90,'L',50,'XL',40,'X',10,'IX',9,'V',5,'IV',4,'I',1];
+  function roman(n) { var o = ''; for (var i = 0; i < R.length; i += 2) while (n >= R[i + 1]) { o += R[i]; n -= R[i + 1]; } return o; }
+  var lists = document.querySelectorAll('[data-arrived]');
+  for (var l = 0; l < lists.length; l++) {
+    var list = lists[l], max = +list.getAttribute('data-max') || 999, shown = 0;
+    var items = list.querySelectorAll('[data-idx]');
+    for (var i = 0; i < items.length; i++) {
+      var idx = +items[i].getAttribute('data-idx');
+      if (idx > today || shown >= max) { items[i].hidden = true; continue; }
+      shown++;
+      var d = items[i].querySelector('.day');
+      if (d) { var dt = new Date(Date.UTC(2026, 0, 1 + idx)); d.textContent = 'Day ' + (idx + 1) + ' · ' + roman(dt.getUTCDate()) + ' · ' + roman(dt.getUTCMonth() + 1) + ' · ' + roman(dt.getUTCFullYear()); }
+    }
+    var count = document.querySelector(list.getAttribute('data-count') || '#none');
+    if (count) count.textContent = shown + (shown === 1 ? ' line' : ' lines') + ' on the wall so far';
+    var sec = list.closest('[data-hide-empty]');
+    if (sec && !shown) sec.hidden = true;
+  }
+})();
+</script>
 </body>
 </html>

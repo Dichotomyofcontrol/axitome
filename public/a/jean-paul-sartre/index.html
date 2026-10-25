@@ -19,21 +19,23 @@
 <meta name="twitter:description" content="5 quotes by Jean-Paul Sartre, kept by Axitome.">
 <meta name="twitter:image" content="https://www.axitome.com/og/a/jean-paul-sartre.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
 <link rel="stylesheet" href="/page.css">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Quotes by Jean-Paul Sartre | Axitome","url":"https://www.axitome.com/a/jean-paul-sartre","mainEntity":{"@type":"ItemList","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.axitome.com/q/jean-paul-sartre-if-you-are-lonely-when-you-re-alone-you-are-in-b","name":"If you are lonely when you're alone, you are in bad company."},{"@type":"ListItem","position":2,"url":"https://www.axitome.com/q/jean-paul-sartre-man-must-create-his-own-essence-it-is-in-throwin","name":"Man must create his own essence: it is in throwing himself into the world, suffering there, struggling there, that he…"},{"@type":"ListItem","position":3,"url":"https://www.axitome.com/q/jean-paul-sartre-to-know-what-life-is-worth-you-have-to-risk-it-o","name":"To know what life is worth you have to risk it once in a while."},{"@type":"ListItem","position":4,"url":"https://www.axitome.com/q/jean-paul-sartre-we-are-our-choices","name":"We are our choices."},{"@type":"ListItem","position":5,"url":"https://www.axitome.com/q/jean-paul-sartre-once-you-hear-the-details-of-a-victory-it-is-har","name":"Once you hear the details of a victory it is hard to distinguish it from a defeat."}]}}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
-  <p class="kicker">5 quotes</p>
-  <h1 class="quote">Jean-Paul Sartre</h1>
-  <ul class="author-list"><li><a href="/q/jean-paul-sartre-if-you-are-lonely-when-you-re-alone-you-are-in-b"><p>If you are lonely when you're alone, you are in bad company.</p></a></li><li><a href="/q/jean-paul-sartre-man-must-create-his-own-essence-it-is-in-throwin"><p>Man must create his own essence: it is in throwing himself into the world, suffering there, struggling there, that he gradually defines himself.</p></a></li><li><a href="/q/jean-paul-sartre-to-know-what-life-is-worth-you-have-to-risk-it-o"><p>To know what life is worth you have to risk it once in a while.</p></a></li><li><a href="/q/jean-paul-sartre-we-are-our-choices"><p>We are our choices.</p></a></li><li><a href="/q/jean-paul-sartre-once-you-hear-the-details-of-a-victory-it-is-har"><p>Once you hear the details of a victory it is hard to distinguish it from a defeat.</p></a></li></ul>
+  <p class="kicker" id="arrivedCount">5 quotes</p>
+  <h1 class="quote name">Jean-Paul Sartre</h1>
+  <div class="cut" aria-hidden="true"></div>
+  <ul class="author-list" data-arrived data-count="#arrivedCount"><li data-idx="181"><a href="/q/jean-paul-sartre-if-you-are-lonely-when-you-re-alone-you-are-in-b"><span class="day">Day 182</span><p>If you are lonely when you're alone, you are in bad company.</p></a></li><li data-idx="183"><a href="/q/jean-paul-sartre-man-must-create-his-own-essence-it-is-in-throwin"><span class="day">Day 184</span><p>Man must create his own essence: it is in throwing himself into the world, suffering there, struggling there, that he gradually defines himself.</p></a></li><li data-idx="242"><a href="/q/jean-paul-sartre-to-know-what-life-is-worth-you-have-to-risk-it-o"><span class="day">Day 243</span><p>To know what life is worth you have to risk it once in a while.</p></a></li><li data-idx="291"><a href="/q/jean-paul-sartre-we-are-our-choices"><span class="day">Day 292</span><p>We are our choices.</p></a></li><li data-idx="335"><a href="/q/jean-paul-sartre-once-you-hear-the-details-of-a-victory-it-is-har"><span class="day">Day 336</span><p>Once you hear the details of a victory it is hard to distinguish it from a defeat.</p></a></li></ul>
+</main>
+<div class="dark">
   <section class="signup">
-  <h2>Get one quote a day by email</h2>
-  <p>A single line, each morning.</p>
+  <h2>One line, each morning.</h2>
+  <p>Get one quote a day by email.</p>
   <form id="subscribeForm" method="post" action="/api/subscribe">
     <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
     <input type="hidden" name="next" value="/a/jean-paul-sartre">
@@ -63,6 +65,34 @@ document.getElementById('subscribeForm').addEventListener('submit', function (e)
   });
 });
 </script>
-</main>
+</div>
+<script>
+(function () {
+  var p = {};
+  try {
+    new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric' })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+  } catch (e) { var d = new Date(); p = { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() }; }
+  var today = Math.round((Date.UTC(+p.year, +p.month - 1, +p.day) - Date.UTC(2026, 0, 1)) / 864e5);
+  var R = ['M',1000,'CM',900,'D',500,'CD',400,'C',100,'XC',90,'L',50,'XL',40,'X',10,'IX',9,'V',5,'IV',4,'I',1];
+  function roman(n) { var o = ''; for (var i = 0; i < R.length; i += 2) while (n >= R[i + 1]) { o += R[i]; n -= R[i + 1]; } return o; }
+  var lists = document.querySelectorAll('[data-arrived]');
+  for (var l = 0; l < lists.length; l++) {
+    var list = lists[l], max = +list.getAttribute('data-max') || 999, shown = 0;
+    var items = list.querySelectorAll('[data-idx]');
+    for (var i = 0; i < items.length; i++) {
+      var idx = +items[i].getAttribute('data-idx');
+      if (idx > today || shown >= max) { items[i].hidden = true; continue; }
+      shown++;
+      var d = items[i].querySelector('.day');
+      if (d) { var dt = new Date(Date.UTC(2026, 0, 1 + idx)); d.textContent = 'Day ' + (idx + 1) + ' · ' + roman(dt.getUTCDate()) + ' · ' + roman(dt.getUTCMonth() + 1) + ' · ' + roman(dt.getUTCFullYear()); }
+    }
+    var count = document.querySelector(list.getAttribute('data-count') || '#none');
+    if (count) count.textContent = shown + (shown === 1 ? ' line' : ' lines') + ' on the wall so far';
+    var sec = list.closest('[data-hide-empty]');
+    if (sec && !shown) sec.hidden = true;
+  }
+})();
+</script>
 </body>
 </html>

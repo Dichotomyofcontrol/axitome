@@ -19,21 +19,23 @@
 <meta name="twitter:description" content="1 quote by Albert Bartlett, kept by Axitome.">
 <meta name="twitter:image" content="https://www.axitome.com/og/a/albert-bartlett.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
 <link rel="stylesheet" href="/page.css">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Quotes by Albert Bartlett | Axitome","url":"https://www.axitome.com/a/albert-bartlett","mainEntity":{"@type":"ItemList","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.axitome.com/q/albert-bartlett-the-greatest-shortcoming-of-the-human-race-is-ou","name":"The greatest shortcoming of the human race is our inability to understand exponential growth."}]}}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
-  <p class="kicker">1 quote</p>
-  <h1 class="quote">Albert Bartlett</h1>
-  <ul class="author-list"><li><a href="/q/albert-bartlett-the-greatest-shortcoming-of-the-human-race-is-ou"><p>The greatest shortcoming of the human race is our inability to understand exponential growth.</p></a></li></ul>
+  <p class="kicker" id="arrivedCount">1 quote</p>
+  <h1 class="quote name">Albert Bartlett</h1>
+  <div class="cut" aria-hidden="true"></div>
+  <ul class="author-list" data-arrived data-count="#arrivedCount"><li data-idx="143"><a href="/q/albert-bartlett-the-greatest-shortcoming-of-the-human-race-is-ou"><span class="day">Day 144</span><p>The greatest shortcoming of the human race is our inability to understand exponential growth.</p></a></li></ul>
+</main>
+<div class="dark">
   <section class="signup">
-  <h2>Get one quote a day by email</h2>
-  <p>A single line, each morning.</p>
+  <h2>One line, each morning.</h2>
+  <p>Get one quote a day by email.</p>
   <form id="subscribeForm" method="post" action="/api/subscribe">
     <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
     <input type="hidden" name="next" value="/a/albert-bartlett">
@@ -63,6 +65,34 @@ document.getElementById('subscribeForm').addEventListener('submit', function (e)
   });
 });
 </script>
-</main>
+</div>
+<script>
+(function () {
+  var p = {};
+  try {
+    new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric' })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+  } catch (e) { var d = new Date(); p = { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() }; }
+  var today = Math.round((Date.UTC(+p.year, +p.month - 1, +p.day) - Date.UTC(2026, 0, 1)) / 864e5);
+  var R = ['M',1000,'CM',900,'D',500,'CD',400,'C',100,'XC',90,'L',50,'XL',40,'X',10,'IX',9,'V',5,'IV',4,'I',1];
+  function roman(n) { var o = ''; for (var i = 0; i < R.length; i += 2) while (n >= R[i + 1]) { o += R[i]; n -= R[i + 1]; } return o; }
+  var lists = document.querySelectorAll('[data-arrived]');
+  for (var l = 0; l < lists.length; l++) {
+    var list = lists[l], max = +list.getAttribute('data-max') || 999, shown = 0;
+    var items = list.querySelectorAll('[data-idx]');
+    for (var i = 0; i < items.length; i++) {
+      var idx = +items[i].getAttribute('data-idx');
+      if (idx > today || shown >= max) { items[i].hidden = true; continue; }
+      shown++;
+      var d = items[i].querySelector('.day');
+      if (d) { var dt = new Date(Date.UTC(2026, 0, 1 + idx)); d.textContent = 'Day ' + (idx + 1) + ' · ' + roman(dt.getUTCDate()) + ' · ' + roman(dt.getUTCMonth() + 1) + ' · ' + roman(dt.getUTCFullYear()); }
+    }
+    var count = document.querySelector(list.getAttribute('data-count') || '#none');
+    if (count) count.textContent = shown + (shown === 1 ? ' line' : ' lines') + ' on the wall so far';
+    var sec = list.closest('[data-hide-empty]');
+    if (sec && !shown) sec.hidden = true;
+  }
+})();
+</script>
 </body>
 </html>
