@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>See the line carved on your day | Axitome</title>
+<meta name="description" content="Pick your birthday and read the line Axitome carved on that day this year.">
+<link rel="canonical" href="https://www.axitome.com/born/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="See the line carved on your day">
+<meta property="og:description" content="Pick your birthday and read the line Axitome carved on that day this year.">
+<meta property="og:url" content="https://www.axitome.com/born/">
+<meta property="og:image" content="https://www.axitome.com/og/born.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="See the line carved on your day">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="See the line carved on your day">
+<meta name="twitter:description" content="Pick your birthday and read the line Axitome carved on that day this year.">
+<meta name="twitter:image" content="https://www.axitome.com/og/born.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="/page.css">
+<style>
+.pick{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.pick select{min-height:52px;padding:0 18px;border:1.5px solid var(--chisel);border-radius:999px;background:transparent;color:var(--chisel);font-family:var(--sc);font-size:17px;letter-spacing:.1em}
+.pick button,.btn{min-height:52px;padding:0 26px;border-radius:999px;border:1px solid var(--chisel);background:var(--chisel);color:var(--bone);font-family:var(--sc);font-size:15px;letter-spacing:.14em;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.btn.ghost{background:transparent;color:var(--chisel);border-color:var(--shadow)}
+.result{margin-top:70px}
+.result .quote{font-size:clamp(28px,4.4vw,64px)}
+.result .quote.long{text-transform:none;font-family:var(--tx);font-weight:500;letter-spacing:0;font-size:clamp(24px,2.6vw,38px);line-height:1.25;max-width:34ch}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.wait{font-size:clamp(24px,2.6vw,36px);line-height:1.3;max-width:28ch}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--chisel);color:var(--bone);padding:12px 22px;border-radius:999px;font-family:var(--sc);font-size:14px;letter-spacing:.14em;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <p class="kicker">Your day</p>
+  <h1 class="quote name">See the line carved on your day.</h1>
+  <form class="pick" id="pick">
+    <label class="hp" for="m">Month</label><select id="m" aria-label="Month"></select>
+    <label class="hp" for="d">Day</label><select id="d" aria-label="Day"></select>
+    <button type="submit">Find my line</button>
+  </form>
+  <section class="result" id="result" hidden aria-live="polite"></section>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+(function () {
+  var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var R = ['M',1000,'CM',900,'D',500,'CD',400,'C',100,'XC',90,'L',50,'XL',40,'X',10,'IX',9,'V',5,'IV',4,'I',1];
+  function roman(n) { var o = ''; for (var i = 0; i < R.length; i += 2) while (n >= R[i + 1]) { o += R[i]; n -= R[i + 1]; } return o; }
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  var p = {};
+  try { new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', year: 'numeric', month: 'numeric', day: 'numeric' }).formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; }); }
+  catch (e) { var t = new Date(); p = { year: t.getFullYear(), month: t.getMonth() + 1, day: t.getDate() }; }
+  var today = Math.round((Date.UTC(+p.year, +p.month - 1, +p.day) - Date.UTC(2026, 0, 1)) / 864e5);
+  var m = document.getElementById('m'), d = document.getElementById('d'), out = document.getElementById('result');
+  MONTHS.forEach(function (name, i) { m.add(new Option(name, i + 1)); });
+  function fillDays() {
+    var keep = +d.value || 1, n = new Date(Date.UTC(2026, +m.value, 0)).getUTCDate();
+    d.innerHTML = '';
+    for (var i = 1; i <= n; i++) d.add(new Option(i, i));
+    d.value = Math.min(keep, n);
+  }
+  m.addEventListener('change', fillDays);
+  var Q = [], S = [];
+  function toast(t) { var el = document.getElementById('toast'); el.textContent = t; el.classList.add('show'); setTimeout(function () { el.classList.remove('show'); }, 1800); }
+  function copy(t, msg) { (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { toast(msg); }, function () { prompt('Copy this', t); }); }
+  function render(mo, da, push) {
+    var idx = Math.round((Date.UTC(2026, mo - 1, da) - Date.UTC(2026, 0, 1)) / 864e5);
+    var label = MONTHS[mo - 1] + ' ' + da;
+    var key = String(mo).padStart(2, '0') + '-' + String(da).padStart(2, '0');
+    if (push) history.replaceState(null, '', '/born/?d=' + key);
+    out.hidden = false;
+    if (idx > today) {
+      out.innerHTML = '<p class="kicker">' + esc(label) + '</p><p class="wait">Your day has not come yet this year. Its line will be carved on ' + esc(label) + '. Come back that morning and it will be waiting for you.</p>';
+      return;
+    }
+    var q = Q[Math.min(idx, Q.length - 1)], slug = S[idx] && S[idx].slug;
+    var url = slug ? 'https://www.axitome.com/q/' + slug : 'https://www.axitome.com/#day/' + (idx + 1);
+    var line = 'Axitome \u00b7 Line ' + roman(idx + 1) + ' \u00b7 carved on my day';
+    var long = q.q.length > 140;
+    out.innerHTML = '<p class="kicker">' + esc(label) + ' \u00b7 Line ' + roman(idx + 1) + '</p>' +
+      '<h2 class="quote' + (long ? ' long' : '') + '">' + esc(q.q) + '</h2><div class="cut" aria-hidden="true"></div>' +
+      '<p class="by">' + (slug ? '<a href="/q/' + esc(slug) + '">' + esc(q.a) + '</a>' : esc(q.a)) + '</p>' +
+      '<div class="acts"><button class="btn" id="cp">Copy carved line</button>' +
+      (navigator.share ? '<button class="btn ghost" id="sh">Share</button>' : '') +
+      '<button class="btn ghost" id="lk">Copy link to this page</button></div>';
+    document.getElementById('cp').onclick = function () { copy(line + '\n' + url, 'Carved line copied'); };
+    document.getElementById('lk').onclick = function () { copy('https://www.axitome.com/born/?d=' + key, 'Link copied'); };
+    var sh = document.getElementById('sh');
+    if (sh) sh.onclick = function () { navigator.share({ text: line, url: url }).catch(function () {}); };
+  }
+  document.getElementById('pick').addEventListener('submit', function (e) { e.preventDefault(); render(+m.value, +d.value, true); });
+  Promise.all([fetch('/quotes.json').then(function (r) { return r.json(); }), fetch('/slugs.json').then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; })])
+    .then(function (pair) {
+      Q = pair[0]; S = pair[1] || [];
+      var q = (location.search.match(/[?&]d=(\d{2})-(\d{2})/) || []);
+      if (q[1]) { m.value = +q[1]; fillDays(); d.value = +q[2]; render(+q[1], +q[2], false); }
+      else { var t = new Date(Date.UTC(2026, 0, 1 + today)); m.value = t.getUTCMonth() + 1; fillDays(); d.value = t.getUTCDate(); }
+    });
+  fillDays();
+})();
+</script>
+</body>
+</html>
