@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "date": "2026-10-18",
+      "idx": 289,
+      "theme": "legacy",
+      "author": "Jeremy Bentham"
+    },
+    {
+      "date": "2026-10-19",
+      "idx": 290,
+      "theme": "legacy",
+      "author": "Jean-Paul Sartre"
+    },
+    {
+      "date": "2026-10-20",
+      "idx": 291,
+      "theme": "legacy",
+      "author": "Augustine of Hippo"
+    },
+    {
+      "date": "2026-10-21",
+      "idx": 292,
+      "theme": "legacy",
+      "author": "Ludwig Wittgenstein"
+    },
+    {
+      "date": "2026-10-22",
+      "idx": 293,
+      "theme": "legacy",
+      "author": "After Goethe"
+    },
+    {
+      "date": "2026-10-23",
+      "idx": 294,
+      "theme": "legacy",
+      "author": "James Baldwin"
+    },
+    {
+      "date": "2026-10-24",
+      "idx": 295,
+      "theme": "legacy",
+      "author": "Lao Tzu",
+      "tweetId": "2114012863543366104"
+    }
+  ]
+}

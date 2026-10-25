@@ -31,9 +31,12 @@ function writeState(date, entry) {
   const posts = readHistory().filter((post) => post.date !== date);
   posts.push(entry);
   posts.sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  const body = `${JSON.stringify({ posts }, null, 2)}\n`;
   fs.mkdirSync(stateDir, { recursive: true });
-  fs.writeFileSync(historyPath, `${JSON.stringify({ posts }, null, 2)}\n`);
+  fs.writeFileSync(historyPath, body);
   fs.writeFileSync(lastPostedPath, `${date}\n`);
+  // The homepage reads this copy so the site and the post stay on the same quote.
+  fs.writeFileSync(path.join(root, 'public', 'history.json'), body);
 }
 
 function resolveNow() {

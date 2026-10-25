@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { loadQuotes, catalog, buildTweetText, buildReplyText, isDryRun, shouldPostToday, losAngelesHour } = require('./lib/quotes');
-const { pick, themeForDate, daysBetween, isUnknown } = require('./lib/select');
+const { pick, themeForDate, daysBetween, isUnknown, isDisputed } = require('./lib/select');
 const { roman, renderLedgerCard } = require('./lib/card');
 
 const root = path.join(__dirname, '..');
@@ -15,7 +15,7 @@ function check(name, ok, detail) {
 }
 
 const quotes = loadQuotes();
-check('quote count', quotes.length === 744, String(quotes.length));
+check('quote count', quotes.length === 740, String(quotes.length));
 
 const expected = [
   ['look in the hearts and minds of others for your happiness', 'Hunter S. Thompson', 'The Proud Highway'],
@@ -27,6 +27,7 @@ const expected = [
   ['Know thyself; nothing in excess.', 'Delphic maxim', 'Temple of Apollo at Delphi'],
   ['we all stumble, everyone of us', 'Emily Kimbrough', null],
   ['Let the man not be corrupted by external things', 'Seneca', 'On the Happy Life'],
+  ['stop the waves, but you can learn to surf', 'Swami Satchidananda', 'poster caption, quoted in Wherever You Go, There You Are (1994)'],
 ];
 for (const [snippet, author, source] of expected) {
   const hits = quotes.filter((quote) => quote.q.includes(snippet));
@@ -37,7 +38,6 @@ const stillUnknown = [
   'Be grateful for what you have.',
   'exceeding trifling witling',
   'Interviews: all about spinning',
-  'stop the waves',
   'fight through some bad days',
   'emotional reaction to everything',
   'There are 3 types of people',
@@ -81,6 +81,24 @@ const unknownPick = pick([
 ], '2026-10-26', []);
 check('skips unknown', unknownPick.a === 'Seneca');
 check('skips unclear', isUnknown('Unknown, The Moviegoer') && isUnknown('Williamson (context unclear)') && !isUnknown('Seneca'));
+const disputedPick = pick([
+  { q: 'no', a: 'Seneca', t: ['discipline'], idx: 1, slug: 'd', attribution: 'disputed' },
+  { q: 'yes', a: 'Epictetus', t: ['discipline'], idx: 2, slug: 'e' },
+], '2026-10-26', []);
+check('skips disputed', disputedPick.a === 'Epictetus' && !isDisputed(disputedPick));
+for (const snippet of [
+  'Engage, inspire and empower.',
+  'Learning and helping.',
+  'unfair to themself',
+  'self-sufficiency which rattles your humility',
+]) {
+  check(`removed ${snippet.slice(0, 28)}`, !quotes.some((quote) => quote.q.includes(snippet)));
+}
+const posted = JSON.parse(fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
+check('today cleared', !posted.posts.some((post) => post.date === '2026-10-25'));
+check('history copy', fs.readFileSync(path.join(root, 'public', 'history.json'), 'utf8') === fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
+const sunday = pick(items, '2026-10-25', posted.posts);
+check('sunday eligible', sunday.theme === 'mortality' && !isDisputed(sunday) && !isUnknown(sunday.a) && !/discipline is choosing/i.test(sunday.q));
 const authorPick = pick([
   { q: 'seneca line', a: 'Seneca', t: ['discipline'], idx: 2, slug: 's' },
   { q: 'other line', a: 'Epictetus', t: ['discipline'], idx: 3, slug: 'e' },
@@ -100,7 +118,7 @@ for (let i = 0; i < 40; i += 1) {
   const once = pick(items, date, sim);
   const theme = themeForDate(date);
   if (again.idx !== once.idx) selectionFails += 1;
-  if (isUnknown(again.a)) selectionFails += 1;
+  if (isUnknown(again.a) || isDisputed(again)) selectionFails += 1;
   if (!again.t.some((tag) => theme.tags.includes(tag))) selectionFails += 1;
   for (const post of sim) {
     const days = daysBetween(post.date, date);

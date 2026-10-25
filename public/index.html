@@ -285,9 +285,10 @@ body{min-height:100%;background:var(--bg);color:var(--cream);font-family:'DM San
   </div>
 </div>
 <canvas id="shareCanvas" width="1080" height="1080"></canvas>
+<script src="/select.js"></script>
 <script>
-var Q=[],SLUGS=[],currentIdx=0,busy=false,liked=new Set(),viewMode='single',likeCounts={};
-var EPOCH=new Date(2026,0,1);
+var Q=[],SLUGS=[],HISTORY=[],currentIdx=0,currentDate='',busy=false,liked=new Set(),viewMode='single',likeCounts={};
+var MIN_DATE='2026-01-01';
 try{var _lk=JSON.parse(localStorage.getItem('axitome-likes')||'[]');_lk.forEach(function(i){liked.add(i)})}catch(e){}
 function saveLikes(){try{localStorage.setItem('axitome-likes',JSON.stringify(Array.from(liked)))}catch(e){}}
 function fetchLikes(){fetch('/api/likes').then(function(r){return r.json()}).then(function(d){likeCounts=d;updateHeartUI()}).catch(function(){})}
@@ -296,20 +297,65 @@ function updateHeartUI(){var c=likeCounts[String(currentIdx)]||0;var lbl=documen
 var TAG_LABELS={action:'Action',character:'Character',courage:'Courage',creativity:'Creativity',death:'Death & Mortality',discipline:'Discipline',freedom:'Freedom',growth:'Growth',happiness:'Happiness',leadership:'Leadership',loss:'Loss',love:'Love',mind:'Mind & Thought',nature:'Nature',perseverance:'Perseverance',purpose:'Purpose',simplicity:'Simplicity',solitude:'Solitude',time:'Time',wisdom:'Wisdom'};
 var TAGS_SORTED=Object.keys(TAG_LABELS).sort();
 
-function daysBetween(a,b){return Math.floor((b-a)/864e5)}
-function todayDate(){var d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
-function maxIdx(){return Math.min(daysBetween(EPOCH,todayDate()),Q.length-1)}
-function idxToDate(i){var d=new Date(EPOCH);d.setDate(d.getDate()+i);return d}
-function dateToIdx(d){var i=daysBetween(EPOCH,d);if(i<0||i>maxIdx())return-1;return i}
-function fmtD(d){return d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}
-function isToday(i){return i===maxIdx()}
-function idxToDateStr(i){var d=idxToDate(i);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
-function dateStrToIdx(s){var p=s.split('-');if(p.length!==3)return-1;var d=new Date(parseInt(p[0]),parseInt(p[1])-1,parseInt(p[2]));return dateToIdx(d)}
-function parseHash(){var h=location.hash;var dm=h.match(/#(\d{4}-\d{2}-\d{2})/);if(dm)return dateStrToIdx(dm[1]);var om=h.match(/#day\/(\d+)/);if(om)return Math.max(0,Math.min(parseInt(om[1])-1,maxIdx()));return-1}
+function pacificToday(){
+  var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  var map={};parts.forEach(function(p){map[p.type]=p.value});
+  return map.year+'-'+map.month+'-'+map.day;
+}
+function addDays(dateStr,n){
+  var p=dateStr.split('-');
+  var d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]+n));
+  return d.getUTCFullYear()+'-'+String(d.getUTCMonth()+1).padStart(2,'0')+'-'+String(d.getUTCDate()).padStart(2,'0');
+}
+function clampDate(dateStr){
+  var today=pacificToday();
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(dateStr))return today;
+  if(dateStr<MIN_DATE)return MIN_DATE;
+  if(dateStr>today)return today;
+  return dateStr;
+}
+function fmtD(dateStr){
+  var p=dateStr.split('-');
+  var d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2],12));
+  return d.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric',timeZone:'UTC'});
+}
+function catalogItems(){
+  return Q.map(function(q,i){
+    var meta=SLUGS[i]||{};
+    var item={};for(var k in q)if(Object.prototype.hasOwnProperty.call(q,k))item[k]=q[k];
+    item.idx=i;item.slug=meta.slug||'';item.authorSlug=meta.authorSlug||'';
+    return item;
+  });
+}
+function historyPosts(){
+  if(Array.isArray(HISTORY))return HISTORY;
+  return (HISTORY&&HISTORY.posts)||[];
+}
+function selectionFor(dateStr){
+  var items=catalogItems();
+  var posts=historyPosts();
+  for(var i=0;i<posts.length;i++){
+    if(posts[i].date===dateStr&&items[posts[i].idx])return items[posts[i].idx];
+  }
+  return AxitomeSelect.pick(items,dateStr,posts);
+}
+function parseHash(){
+  var h=location.hash;
+  var dm=h.match(/#(\d{4}-\d{2}-\d{2})/);
+  if(dm)return{date:clampDate(dm[1])};
+  var qm=h.match(/#quote-(\d+)/);
+  if(qm)return{idx:parseInt(qm[1],10)};
+  return null;
+}
 function escH(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
 function updateCD(){
-  var now=new Date(),tmrw=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1),d=tmrw-now;
+  var now=new Date();
+  var fmt=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',hourCycle:'h23',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  var map={};fmt.formatToParts(now).forEach(function(p){map[p.type]=p.value});
+  var hour=+map.hour;if(hour===24)hour=0;
+  var elapsed=((hour*60+(+map.minute))*60)+(+map.second);
+  var d=(86400-elapsed)*1000;
   var el=document.getElementById('countdown');
   if(el)el.textContent=
     String(Math.floor(d/36e5)).padStart(2,'0')+' : '+
@@ -335,11 +381,7 @@ function showListView(title,subtitle,items){
   if(!items.length){container.innerHTML='<div class="list-empty">No quotes found</div>';return}
   var html='';
   items.forEach(function(r){
-    var d=idxToDate(r.idx);
-    var mon=d.toLocaleDateString('en-US',{month:'short'}).toUpperCase();
-    var day=d.getDate();
     html+='<div class="list-item" data-idx="'+r.idx+'">';
-    html+='<div class="list-date-badge"><span class="list-date-month">'+mon+'</span><span class="list-date-day">'+day+'</span></div>';
     html+='<div class="list-item-body">';
     html+='<div class="list-item-quote">'+escH(r.q.q)+'</div>';
     html+='<div class="list-item-author">'+escH(r.q.a)+'</div>';
@@ -350,20 +392,22 @@ function showListView(title,subtitle,items){
   container.querySelectorAll('.list-item').forEach(function(el){
     el.addEventListener('click',function(ev){
       if(ev.target.closest && ev.target.closest('a')) return;
-      showSingleView();show(parseInt(this.getAttribute('data-idx')),false);
+      showSingleView();show(parseInt(this.getAttribute('data-idx'),10),false);
     });
   });
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function show(idx,anim){
+function show(idx,anim,dateStr){
   if(busy||!Q.length)return;busy=true;
-  idx=Math.max(0,Math.min(idx,maxIdx()));
+  idx=Math.max(0,Math.min(idx,Q.length-1));
   var card=document.getElementById('card');
   function doShow(){
-    currentIdx=idx;var q=Q[idx];var d=idxToDate(idx);var td=isToday(idx);
-    history.replaceState(null,'','#'+idxToDateStr(idx));
-    document.getElementById('dateLabel').innerHTML=(td?'<span class="today-dot"></span>today &mdash; ':'')+fmtD(d);
+    currentIdx=idx;var q=Q[idx];
+    var td=!!(dateStr&&dateStr===pacificToday());
+    if(dateStr){currentDate=dateStr;history.replaceState(null,'','#'+dateStr)}
+    else history.replaceState(null,'','#quote-'+idx);
+    document.getElementById('dateLabel').innerHTML=dateStr?((td?'<span class="today-dot"></span>today &mdash; ':'')+fmtD(dateStr)):'Collection';
     (function(el,t){el.textContent='';el.setAttribute('aria-label',t);var ws=t.split(/(\s+)/),n=0,step=Math.min(70,1400/Math.max(1,ws.length/2));ws.forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){el.appendChild(document.createTextNode(' '));return}var sp=document.createElement('span');sp.className='w';sp.setAttribute('aria-hidden','true');sp.textContent=w;sp.style.animationDelay=(350+n*step)+'ms';n++;el.appendChild(sp)})})(document.getElementById('quoteText'),q.q);
     var meta=SLUGS[idx]||null;
     var authorEl=document.getElementById('authorName');
@@ -379,8 +423,8 @@ function show(idx,anim){
       sp.addEventListener('click',function(){filterByTag(t)});
       tagsEl.appendChild(sp);
     })}
-    document.getElementById('nextBtn').disabled=td;
-    document.getElementById('prevBtn').disabled=(idx===0);
+    document.getElementById('nextBtn').disabled=!!(dateStr&&td);
+    document.getElementById('prevBtn').disabled=!!(dateStr&&dateStr===MIN_DATE);
     var hb=document.getElementById('heartBtn');
     hb.classList.toggle('liked',liked.has(idx));
     updateHeartUI();
@@ -405,9 +449,15 @@ document.getElementById('menuBtn').addEventListener('click',function(){
 document.getElementById('panelOverlay').addEventListener('click',closePanel);
 
 /* Themes */
+function showDate(dateStr,anim){
+  dateStr=clampDate(dateStr);
+  var chosen=selectionFor(dateStr);
+  show(chosen.idx,anim,dateStr);
+}
+
 function buildThemes(){
-  var mx=maxIdx(),container=document.getElementById('themeList'),counts={};
-  for(var i=0;i<=mx&&i<Q.length;i++){
+  var container=document.getElementById('themeList'),counts={};
+  for(var i=0;i<Q.length;i++){
     if(Q[i].t)Q[i].t.forEach(function(t){counts[t]=(counts[t]||0)+1});
   }
   TAGS_SORTED.forEach(function(tag){
@@ -421,8 +471,8 @@ function buildThemes(){
 
 function filterByTag(tag){
   closePanel();
-  var mx=maxIdx(),items=[];
-  for(var i=0;i<=mx&&i<Q.length;i++){
+  var items=[];
+  for(var i=0;i<Q.length;i++){
     if(Q[i].t&&Q[i].t.indexOf(tag)!==-1)items.push({idx:i,q:Q[i]});
   }
   showListView('Quotes on <span class="list-title-tag">'+(TAG_LABELS[tag]||tag)+'</span>',items.length+' quote'+(items.length===1?'':'s'),items);
@@ -433,8 +483,8 @@ function doSearch(){
   var query=document.getElementById('searchInput').value.trim().toLowerCase();
   if(!query)return;
   closePanel();
-  var mx=maxIdx(),items=[];
-  for(var i=0;i<=mx&&i<Q.length;i++){
+  var items=[];
+  for(var i=0;i<Q.length;i++){
     var q=Q[i];
     var hay=(q.q+' '+q.a+' '+(q.s||'')+' '+(q.t?q.t.join(' '):'')).toLowerCase();
     if(hay.indexOf(query)!==-1)items.push({idx:i,q:q});
@@ -447,17 +497,14 @@ document.getElementById('searchInput').addEventListener('keydown',function(e){if
 document.getElementById('dateGoBtn').addEventListener('click',function(){
   var val=document.getElementById('dateInput').value;
   if(!val)return;
-  var parts=val.split('-');
-  var d=new Date(parseInt(parts[0]),parseInt(parts[1])-1,parseInt(parts[2]));
-  var idx=dateToIdx(d);
-  if(idx<0){toast('That date is outside the available range');return}
-  closePanel();showSingleView();show(idx,true);
+  if(val<MIN_DATE||val>pacificToday()){toast('That date is outside the available range');return}
+  closePanel();showSingleView();showDate(val,true);
 });
 
 /* Back / Brand */
-document.getElementById('listBack').addEventListener('click',function(){showSingleView();show(maxIdx(),true)});
+document.getElementById('listBack').addEventListener('click',function(){showSingleView();showDate(pacificToday(),true)});
 document.getElementById('brandHome').addEventListener('click',function(){
-  if(viewMode==='list'){showSingleView();show(maxIdx(),true)}else{show(maxIdx(),true)}
+  showSingleView();showDate(pacificToday(),true);
 });
 
 /* Like */
@@ -518,10 +565,10 @@ function genCard(){
   return c.toDataURL('image/png');
 }
 document.getElementById('shareBtn').addEventListener('click',function(){document.getElementById('modalPreview').src=genCard();document.getElementById('modalOverlay').classList.add('open')});
-document.getElementById('downloadCard').addEventListener('click',function(){var a=document.createElement('a');a.download='axitome-'+idxToDateStr(currentIdx)+'.png';a.href=genCard();a.click();toast('Image saved')});
+document.getElementById('downloadCard').addEventListener('click',function(){var a=document.createElement('a');a.download='axitome-'+(currentDate||('quote-'+currentIdx))+'.png';a.href=genCard();a.click();toast('Image saved')});
 document.getElementById('copyLink').addEventListener('click',function(){
   var meta=SLUGS[currentIdx];
-  var url=meta?(location.origin+'/q/'+meta.slug):(location.origin+location.pathname+'#'+idxToDateStr(currentIdx));
+  var url=meta?(location.origin+'/q/'+meta.slug):(location.origin+location.pathname+'#'+(currentDate||('quote-'+currentIdx)));
   navigator.clipboard.writeText(url).then(function(){toast('Link copied')});
 });
 document.getElementById('subscribeForm').addEventListener('submit',function(e){
@@ -538,13 +585,18 @@ document.getElementById('modalClose').addEventListener('click',function(){docume
 document.getElementById('modalOverlay').addEventListener('click',function(e){if(e.target===e.currentTarget)e.currentTarget.classList.remove('open')});
 
 /* Nav */
-document.getElementById('prevBtn').addEventListener('click',function(){if(currentIdx>0)show(currentIdx-1,true)});
-document.getElementById('nextBtn').addEventListener('click',function(){if(currentIdx<maxIdx())show(currentIdx+1,true)});
+function stepDate(delta){
+  var base=currentDate||pacificToday();
+  var next=clampDate(addDays(base,delta));
+  if(next!==base)showDate(next,true);
+}
+document.getElementById('prevBtn').addEventListener('click',function(){stepDate(-1)});
+document.getElementById('nextBtn').addEventListener('click',function(){stepDate(1)});
 document.addEventListener('keydown',function(e){
   if(e.target.tagName==='INPUT')return;
   if(viewMode!=='single')return;
-  if(e.key==='ArrowLeft'&&currentIdx>0)show(currentIdx-1,true);
-  if(e.key==='ArrowRight'&&currentIdx<maxIdx())show(currentIdx+1,true);
+  if(e.key==='ArrowLeft')stepDate(-1);
+  if(e.key==='ArrowRight')stepDate(1);
   if(e.key==='Escape'){document.getElementById('modalOverlay').classList.remove('open');closePanel()}
 });
 var tx=0;
@@ -553,31 +605,38 @@ document.addEventListener('touchend',function(e){
   if(document.getElementById('panel').classList.contains('open'))return;
   if(viewMode!=='single')return;
   var d=e.changedTouches[0].screenX-tx;
-  if(Math.abs(d)>60){if(d>0&&currentIdx>0)show(currentIdx-1,true);else if(d<0&&currentIdx<maxIdx())show(currentIdx+1,true)}
+  if(Math.abs(d)>60){if(d>0)stepDate(-1);else stepDate(1)}
 });
 
 /* Init - fetch quotes from external JSON */
 Promise.all([
   fetch('quotes.json').then(function(r){return r.json()}),
-  fetch('slugs.json').then(function(r){return r.ok?r.json():[]}).catch(function(){return []})
+  fetch('slugs.json').then(function(r){return r.ok?r.json():[]}).catch(function(){return []}),
+  fetch('history.json').then(function(r){return r.ok?r.json():{posts:[]}}).catch(function(){return {posts:[]}})
 ])
   .then(function(pair){
     Q=pair[0];
     SLUGS=pair[1]||[];
+    var hist=pair[2]||{};
+    HISTORY=Array.isArray(hist)?hist:(hist.posts||[]);
+    var today=pacificToday();
     var di=document.getElementById('dateInput');
-    di.min=EPOCH.toISOString().split('T')[0];
-    di.max=todayDate().toISOString().split('T')[0];
-    di.value=di.max;
+    di.min=MIN_DATE;
+    di.max=today;
+    di.value=today;
     document.getElementById('dateHint').textContent='Jan 1, 2026 \u2013 Today';
     buildThemes();
     updateCD();setInterval(updateCD,1000);
-    var startIdx=parseHash();
-    var start=startIdx>=0?Math.max(0,Math.min(startIdx,maxIdx())):maxIdx();
-    show(start,false);
+    var start=parseHash();
+    if(start&&start.idx!=null&&Q[start.idx])show(start.idx,false);
+    else showDate(start&&start.date?start.date:today,false);
     fetchLikes();
     window.addEventListener('hashchange',function(){
       var hi=parseHash();
-      if(hi>=0){showSingleView();show(Math.max(0,Math.min(hi,maxIdx())),true)}
+      if(!hi)return;
+      showSingleView();
+      if(hi.idx!=null&&Q[hi.idx])show(hi.idx,true);
+      else if(hi.date)showDate(hi.date,true);
     });
   })
   .catch(function(e){
