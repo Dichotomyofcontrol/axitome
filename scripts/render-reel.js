@@ -15,7 +15,7 @@ function run(cmd, args) {
 
 async function main() {
   if (!shouldPostToday()) {
-    console.log('Outside 6-11 AM America/Los_Angeles. Skipping the reel.');
+    console.log('Outside 6-9 AM America/Los_Angeles. Skipping the reel.');
     return;
   }
 
