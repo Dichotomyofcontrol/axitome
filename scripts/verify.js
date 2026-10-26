@@ -95,7 +95,9 @@ for (const snippet of [
   check(`removed ${snippet.slice(0, 28)}`, !quotes.some((quote) => quote.q.includes(snippet)));
 }
 const posted = JSON.parse(fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
-check('today cleared', !posted.posts.some((post) => post.date === '2026-10-25'));
+const sundayPost = posted.posts.find((post) => post.date === '2026-10-25');
+check('sunday recorded', sundayPost && sundayPost.author === 'Dale Carnegie' && sundayPost.idx === 407);
+check('monday unposted', !posted.posts.some((post) => post.date === '2026-10-26'));
 check('history copy', fs.readFileSync(path.join(root, 'public', 'history.json'), 'utf8') === fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
 const sunday = pick(items, '2026-10-25', posted.posts);
 check('sunday eligible', sunday.theme === 'mortality' && !isDisputed(sunday) && !isUnknown(sunday.a) && !/discipline is choosing/i.test(sunday.q));
@@ -135,12 +137,15 @@ function atUtc(iso) {
 check('posting window',
   shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T13:00:00Z'))
   && losAngelesHour(atUtc('2026-10-26T13:00:00Z')) === 6
-  && shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T18:30:00Z'))
+  && shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T16:30:00Z'))
+  && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T17:00:00Z'))
   && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T12:30:00Z'))
-  && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T19:30:00Z'))
-  && shouldPostToday({ GITHUB_EVENT_NAME: 'workflow_dispatch' }, atUtc('2026-10-26T20:00:00Z'))
+  && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-10-26T18:30:00Z'))
+  && shouldPostToday({ GITHUB_EVENT_NAME: 'workflow_dispatch' }, atUtc('2026-10-26T17:00:00Z'))
   && shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-11-03T14:00:00Z'))
-  && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-11-03T13:30:00Z')));
+  && shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-11-03T17:30:00Z'))
+  && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-11-03T13:30:00Z'))
+  && !shouldPostToday({ GITHUB_EVENT_NAME: 'schedule' }, atUtc('2026-11-03T18:00:00Z')));
 
 const sitemap = fs.readFileSync(path.join(root, 'public', 'sitemap.xml'), 'utf8');
 const locs = sitemap.match(/<loc>/g) || [];

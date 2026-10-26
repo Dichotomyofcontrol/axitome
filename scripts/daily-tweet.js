@@ -49,7 +49,7 @@ function resolveNow() {
 
 async function main() {
   if (!shouldPostToday()) {
-    console.log('Outside 6-11 AM America/Los_Angeles. Leaving the post unsent.');
+    console.log('Outside 6-9 AM America/Los_Angeles. Leaving the post unsent.');
     return;
   }
 

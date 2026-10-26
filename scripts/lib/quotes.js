@@ -149,7 +149,7 @@ function isDryRun(env = process.env) {
 function shouldPostToday(env = process.env, now = new Date()) {
   // The once-per-day check lives in la-hour.js; here only enforce the window.
   const hour = losAngelesHour(now);
-  if (env.GITHUB_EVENT_NAME === 'schedule' && (hour < 6 || hour > 11)) return false;
+  if (env.GITHUB_EVENT_NAME === 'schedule' && (hour < 6 || hour > 9)) return false;
   return true;
 }
 

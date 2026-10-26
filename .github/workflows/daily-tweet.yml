@@ -2,11 +2,13 @@ name: Daily Quote Tweet
 
 on:
   schedule:
-    # Hourly 13:17-19:17 UTC covers 6-11 AM Pacific in both PDT and PST.
-    # :17 avoids the top-of-hour queue that delays GitHub cron starts.
-    # scripts/la-hour.js continues only inside 6-11 AM PT and only if
-    # state/last-posted.txt is not already today's Pacific date.
-    - cron: '17 13-19 * * *'
+    # 6:17, 7:17, 8:17, and 9:17 America/Los_Angeles, in both PST and PDT.
+    # :17 stays off the top of the hour, when GitHub is most likely to drop
+    # a queued cron. scripts/la-hour.js posts only from 6:00 through 9:59
+    # and only if state/last-posted.txt is not already today's Pacific date.
+    # workflow_dispatch ignores the clock and still refuses a second post.
+    - cron: '17 6-9 * * *'
+      timezone: America/Los_Angeles
   workflow_dispatch:
     inputs:
       dry_run:
