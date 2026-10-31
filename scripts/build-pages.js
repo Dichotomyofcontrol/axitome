@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { SITE, loadQuotes, catalog } = require('./lib/quotes');
 const { quotePage, authorPage, relatedQuotes } = require('./lib/html');
-const { renderQuoteCard, renderAuthorCard } = require('./lib/card');
+const { renderLedgerQuoteCard, renderLedgerAuthorCard, renderLedgerHomeCard } = require('./lib/ledger-card');
 
 const root = path.join(__dirname, '..');
 const publicDir = path.join(root, 'public');
@@ -42,6 +42,7 @@ function main() {
   const today = new Date().toISOString().slice(0, 10);
   const urls = [
     `${SITE}/`,
+    `${SITE}/born/`,
     ...items.map((item) => `${SITE}/q/${item.slug}`),
     ...[...byAuthor.keys()].map((authorSlug) => `${SITE}/a/${authorSlug}`),
   ];
@@ -73,15 +74,19 @@ function main() {
   fs.mkdirSync(ogQuoteDir, { recursive: true });
   fs.mkdirSync(ogAuthorDir, { recursive: true });
   for (const item of items) {
-    fs.writeFileSync(path.join(ogQuoteDir, `${item.slug}.png`), renderQuoteCard(item, 'square'));
+    fs.writeFileSync(path.join(ogQuoteDir, `${item.slug}.png`), renderLedgerQuoteCard(item));
   }
   for (const [authorSlug, entries] of byAuthor) {
     fs.writeFileSync(
       path.join(ogAuthorDir, `${authorSlug}.png`),
-      renderAuthorCard(entries[0].a, entries.length)
+      renderLedgerAuthorCard(entries[0].a, entries.length)
     );
   }
+  fs.writeFileSync(path.join(publicDir, 'og', 'home.png'), renderLedgerHomeCard());
+  fs.writeFileSync(path.join(publicDir, 'og', 'born.png'), renderLedgerHomeCard('SEE THE LINE CARVED ON YOUR DAY.', 'Pick a month and day.'));
   compressPngs([
+    path.join(publicDir, 'og', 'home.png'),
+    path.join(publicDir, 'og', 'born.png'),
     ...items.map((item) => path.join(ogQuoteDir, `${item.slug}.png`)),
     ...[...byAuthor.keys()].map((authorSlug) => path.join(ogAuthorDir, `${authorSlug}.png`)),
   ]);
@@ -95,7 +100,7 @@ function compressPngs(files) {
     console.log('pngquant not installed; share cards left uncompressed.');
     return;
   }
-  const result = spawnSync('xargs', ['-P', '4', '-n', '1', 'pngquant', '--quality=70-95', '--skip-if-larger', '--force', '--ext', '.png'], {
+  const result = spawnSync('xargs', ['-P', '4', '-n', '1', 'pngquant', '--quality=60-90', '--nofs', '--skip-if-larger', '--force', '--ext', '.png'], {
     input: `${files.join('\n')}\n`,
   });
   if (result.status !== 0) {

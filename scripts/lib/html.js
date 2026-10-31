@@ -55,22 +55,23 @@ function head({ title, description, url, image }) {
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(url)}">
 <meta property="og:image" content="${esc(image)}">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1080">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${esc(image)}">
+<meta property="og:image:alt" content="${esc(title)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
 <link rel="stylesheet" href="/page.css">
 `;
 }
 
 function subscribeForm(nextPath) {
   return `<section class="signup">
-  <h2>Get one quote a day by email</h2>
-  <p>A single line, each morning.</p>
+  <h2>One line, each morning.</h2>
+  <p>Get one quote a day by email.</p>
   <form id="subscribeForm" method="post" action="/api/subscribe">
     <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
     <input type="hidden" name="next" value="${esc(nextPath)}">
@@ -136,23 +137,28 @@ function quotePage(entry, related) {
 <script type="application/ld+json">${jsonLd(crumbs)}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
   <article>
     <h1 class="quote">${esc(entry.q)}</h1>
+    <div class="cut" aria-hidden="true"></div>
     <p class="by"><a href="/a/${esc(entry.authorSlug)}">${esc(entry.a)}</a></p>
     ${entry.s ? `<p class="work">${esc(entry.s)}</p>` : ''}
     ${themes ? `<p class="themes">${esc(themes)}</p>` : ''}
   </article>
   ${relatedHtml}
-  ${subscribeForm(`/q/${entry.slug}`)}
 </main>
+<div class="dark">
+  ${subscribeForm(`/q/${entry.slug}`)}
+</div>
 </body>
 </html>
 `;
 }
 
+// Author and quote pages list the catalog. The daily line is not "quote N on
+// day N" anymore: the homepage and the X post share public/select.js. Hiding
+// rows whose catalog index is still in the future would drop lines already posted.
 function authorPage(name, authorSlug, entries) {
   const url = `${SITE}/a/${authorSlug}`;
   const image = `${SITE}/og/a/${authorSlug}.png`;
@@ -179,14 +185,16 @@ function authorPage(name, authorSlug, entries) {
 <script type="application/ld+json">${jsonLd(list)}</script>
 </head>
 <body>
-<div class="glow"></div>
-<header class="top"><a class="brand" href="/">Axitome</a><a class="top-link" href="/">Today</a></header>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
   <p class="kicker">${entries.length} quote${entries.length === 1 ? '' : 's'}</p>
-  <h1 class="quote">${esc(name)}</h1>
+  <h1 class="quote name">${esc(name)}</h1>
+  <div class="cut" aria-hidden="true"></div>
   <ul class="author-list">${items}</ul>
-  ${subscribeForm(`/a/${authorSlug}`)}
 </main>
+<div class="dark">
+  ${subscribeForm(`/a/${authorSlug}`)}
+</div>
 </body>
 </html>
 `;
