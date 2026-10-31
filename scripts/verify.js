@@ -97,7 +97,8 @@ for (const snippet of [
 const posted = JSON.parse(fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
 const sundayPost = posted.posts.find((post) => post.date === '2026-10-25');
 check('sunday recorded', sundayPost && sundayPost.author === 'Dale Carnegie' && sundayPost.idx === 407);
-check('monday unposted', !posted.posts.some((post) => post.date === '2026-10-26'));
+const mondayPost = posted.posts.find((post) => post.date === '2026-10-26');
+check('monday recorded', mondayPost && mondayPost.author === 'Desiderius Erasmus' && mondayPost.idx === 528);
 check('history copy', fs.readFileSync(path.join(root, 'public', 'history.json'), 'utf8') === fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
 const sunday = pick(items, '2026-10-25', posted.posts);
 check('sunday eligible', sunday.theme === 'mortality' && !isDisputed(sunday) && !isUnknown(sunday.a) && !/discipline is choosing/i.test(sunday.q));
@@ -149,7 +150,7 @@ check('posting window',
 
 const sitemap = fs.readFileSync(path.join(root, 'public', 'sitemap.xml'), 'utf8');
 const locs = sitemap.match(/<loc>/g) || [];
-check('sitemap count', locs.length === 1 + items.length + authorSlugs.size, `${locs.length} vs ${1 + items.length + authorSlugs.size}`);
+check('sitemap count', locs.length === 2 + items.length + authorSlugs.size, `${locs.length} vs ${2 + items.length + authorSlugs.size}`);
 
 const robots = fs.readFileSync(path.join(root, 'public', 'robots.txt'), 'utf8');
 check('robots sitemap', robots.includes('Sitemap: https://www.axitome.com/sitemap.xml') && robots.includes('Allow: /'));
@@ -161,7 +162,7 @@ check('sample canonical', sampleHtml.includes(`<link rel="canonical" href="https
 check('sample schema', sampleHtml.includes('"@type":"Quotation"') && sampleHtml.includes('On Tranquility of Mind, 10.4b'));
 check('sample og', sampleHtml.includes(`https://www.axitome.com/og/q/${sample.slug}.png`));
 const sampleCard = fs.readFileSync(path.join(root, 'public', 'og', 'q', `${sample.slug}.png`));
-check('sample og file', sampleCard.subarray(0, 4).toString('hex') === '89504e47');
+check('sample og file', sampleCard.subarray(0, 4).toString('hex') === '89504e47' && sampleCard.readUInt32BE(16) === 1200 && sampleCard.readUInt32BE(20) === 630, `${sampleCard.readUInt32BE(16)}x${sampleCard.readUInt32BE(20)}`);
 const authorCard = fs.readFileSync(path.join(root, 'public', 'og', 'a', `${sample.authorSlug}.png`));
 check('author og file', authorCard.subarray(0, 4).toString('hex') === '89504e47');
 check('sample twitter', sampleHtml.includes('summary_large_image'));
@@ -173,6 +174,9 @@ check('author page', authorHtml.includes('Quotes by Seneca') && authorHtml.inclu
 const home = fs.readFileSync(path.join(root, 'public', 'index.html'), 'utf8');
 check('home signup', home.includes('Get one quote a day by email') && home.includes('/api/subscribe'));
 check('home quote link', home.includes('quotePageLink') && home.includes('slugs.json'));
+check('home shared selection', home.includes('/select.js') && home.includes('history.json') && home.includes('AxitomeSelect.pick'));
+const born = fs.readFileSync(path.join(root, 'public', 'born', 'index.html'), 'utf8');
+check('born shared selection', born.includes('/select.js') && born.includes('history.json') && born.includes('AxitomeSelect.pick'));
 
 (async () => {
   const sampleCard = await renderLedgerCard(sample, { date: '2026-10-26', dark: false });

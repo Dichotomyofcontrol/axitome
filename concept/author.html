@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Quotes by Albert Camus | Axitome</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="frame"><div class="top"><a class="mark" href="index.html"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="code" href="index.html" style="text-decoration:none">Back to today</a></div>
+<div class="bot"><span>A / Albert Camus</span><span id="cnt"></span></div></div>
+<main><section class="ahero"><h1>Albert<span class="l2">Camus</span></h1><div class="meta"><span><b id="n"></b> quotes kept</span><span id="th"></span></div></section>
+<section class="stack" id="stack"></section></main>
+<footer><span>Axitome</span><span>Concept mockup, not live</span></footer>
+<script>
+fetch('../public/quotes.json').then(r=>r.json()).then(Q=>{const E=new Date(2026,0,1);const m=Q.map((x,i)=>[x,i]).filter(([x])=>x.a==='Albert Camus');
+n.textContent=m.length;cnt.textContent=m.length+' slips';const t=new Set();m.forEach(([x])=>x.t.forEach(g=>t.add(g)));th.textContent=[...t].join(' / ');
+stack.innerHTML=m.map(([x,i],k)=>{const d=new Date(E);d.setDate(d.getDate()+i);return '<article class="slip"><div class="n"><span>'+String(k+1).padStart(2,'0')+' / '+String(m.length).padStart(2,'0')+'</span><span>Day '+(i+1)+', '+d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+'</span></div><blockquote>'+x.q+'</blockquote><a class="more" href="#">Read this quote</a></article>'}).join('')});
+</script></body></html>

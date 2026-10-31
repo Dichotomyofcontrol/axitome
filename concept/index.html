@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Axitome</title><meta name="description" content="One quote. Every day. Let it sit with you."><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="prog" id="prog"></div>
+<div class="frame"><div class="top"><a class="mark" href="index.html"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><span class="code" id="code">I / Today</span></div>
+<div class="bot"><span id="dayc">Day ...</span><span class="hide-m">One line. Nothing to buy.</span><span id="pct">000%</span></div></div>
+<main>
+<section class="hero" data-code="I / Today">
+ <div class="kicker"><span class="dot"></span><span id="dateL"></span><b id="dayL"></b></div>
+ <h1 class="q" id="q"></h1>
+ <div class="cut" id="cut"></div>
+ <div class="by" id="by"></div>
+ <div class="acts"><button class="btn solid">Like</button><button class="btn">Copy quote</button><button class="btn">Share</button></div>
+</section>
+<section class="band" data-code="II / The count"><div class="pin">
+ <div class="big" id="big">000<span>.</span></div>
+ <p class="cap">Lines carved so far. <i>One a day, since January 1, 2026. 744 lines on the wall.</i></p>
+</div></section>
+<section class="themes" data-code="III / Themes">
+ <div class="lbl"><span>Twenty themes</span><span>Tap one to read its wall</span></div>
+ <div class="row" id="r1"></div><div class="row" id="r2" style="margin-top:.1em"></div>
+</section>
+<section class="ledger" data-code="IV / The ledger">
+ <div class="sec-lbl" style="padding:0;margin-bottom:28px"><span>The last seven days</span><span>Use the arrows to go back</span></div>
+ <ol id="led"></ol>
+</section>
+<section class="morning" id="morning" data-code="V / Tomorrow">
+ <h2>One line,<br>each morning.</h2>
+ <p>Get one quote a day by email.</p>
+ <form onsubmit="return false"><input type="email" placeholder="Email address" aria-label="Email address"><button>Subscribe</button></form>
+ <div class="cd">Next quote in <span id="cd">--:--:--</span></div>
+</section>
+</main>
+<footer><span>Axitome</span><a href="author.html">Mockup inner page: Albert Camus</a><span>Concept mockup, not live</span></footer>
+<script>
+const R=n=>{let o='';[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']].forEach(([v,s])=>{while(n>=v){o+=s;n-=v}});return o||'0'};
+const EPOCH=new Date(2026,0,1);const day=d=>Math.floor((d-EPOCH)/864e5);
+const TL={action:'Action',character:'Character',courage:'Courage',creativity:'Creativity',death:'Death',discipline:'Discipline',freedom:'Freedom',growth:'Growth',happiness:'Happiness',leadership:'Leadership',loss:'Loss',love:'Love',mind:'Mind',nature:'Nature',perseverance:'Perseverance',purpose:'Purpose',simplicity:'Simplicity',solitude:'Solitude',time:'Time',wisdom:'Wisdom'};
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+fetch('../public/quotes.json').then(r=>r.json()).then(Q=>{
+ const t=new Date(),td=new Date(t.getFullYear(),t.getMonth(),t.getDate());const i=Math.min(day(td),Q.length-1);const x=Q[i];
+ document.getElementById('dateL').textContent=R(td.getDate())+' · '+R(td.getMonth()+1)+' · '+R(td.getFullYear());
+ document.getElementById('dayL').textContent='Day '+(i+1);document.getElementById('dayc').textContent='Line '+R(i+1)+' of the wall';
+ const ws=x.q.split(' ');const q=document.getElementById('q');
+ q.innerHTML=ws.map((w,k)=>'<span class="w"'+(k==ws.length-1?'':'')+'>'+w+'</span> ').join('');
+ const last=q.querySelectorAll('.w');last[last.length-1].innerHTML='<em>'+ws[ws.length-1]+'</em>';
+ last.forEach((s,k)=>setTimeout(()=>s.classList.add('on'),rm?0:300+k*140));setTimeout(()=>cut.classList.add('on'),rm?0:300+last.length*140+200);
+ document.getElementById('by').textContent=x.a;
+ // themes
+ const c={};Q.forEach(z=>z.t.forEach(g=>c[g]=(c[g]||0)+1));const ks=Object.keys(TL);
+ const mk=a=>a.map((k,n)=>'<a href="#" class="'+(n%2?'o':'')+'">'+TL[k]+'<sup>'+c[k]+'</sup></a>').join(' ');
+ const h=ks.slice(0,10),h2=ks.slice(10);
+ r1.innerHTML=mk(h)+' '+mk(h);r2.innerHTML=mk(h2)+' '+mk(h2);
+ // ledger
+ let L='';for(let k=i;k>Math.max(i-7,-1);k--){const d=new Date(EPOCH);d.setDate(d.getDate()+k);L+='<li><span class="d">Day '+(k+1)+'<br>'+d.toLocaleDateString('en-US',{month:'short',day:'numeric'})+'</span><span class="t">'+Q[k].q+'</span><span class="a">'+Q[k].a+'</span></li>'}
+ led.innerHTML=L;
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on')}}),{threshold:.15});
+ document.querySelectorAll('.ledger li').forEach(n=>io.observe(n));
+ window.__N=i+1;onS();
+});
+const big=document.getElementById('big'),band=document.querySelector('.band');
+function onS(){const mg=document.getElementById('morning');if(mg.getBoundingClientRect().top<innerHeight*.8)mg.classList.add('on');const s=scrollY,H=document.documentElement.scrollHeight-innerHeight;prog.style.width=(s/H*100)+'%';pct.textContent=String(Math.round(s/H*100)).padStart(3,'0')+'%';
+ const b=band.getBoundingClientRect();const p=Math.min(1,Math.max(0,-b.top/(b.height-innerHeight)));const n=Math.round((window.__N||0)*(rm?1:p));big.innerHTML=R(n)+'<span>.</span>';
+ if(!rm){r1.style.transform='translateX('+(-s*.35)+'px)';r2.style.transform='translateX('+(s*.35-600)+'px)'}
+ document.querySelectorAll('[data-code]').forEach(e=>{const r=e.getBoundingClientRect();if(r.top<innerHeight*.5&&r.bottom>innerHeight*.5)code.textContent=e.dataset.code})}
+addEventListener('scroll',onS,{passive:true});
+setInterval(()=>{const n=new Date(),m=new Date(n.getFullYear(),n.getMonth(),n.getDate()+1);let d=(m-n)/1e3|0;cd.textContent=[d/3600|0,(d%3600)/60|0,d%60].map(v=>String(v).padStart(2,'0')).join(':')},1000);
+</script></body></html>
