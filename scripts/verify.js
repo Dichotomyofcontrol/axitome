@@ -3,6 +3,7 @@ const path = require('path');
 const { loadQuotes, catalog, buildTweetText, buildReplyText, isDryRun, shouldPostToday, losAngelesHour } = require('./lib/quotes');
 const { pick, themeForDate, daysBetween, isUnknown, isDisputed } = require('./lib/select');
 const { roman, renderLedgerCard } = require('./lib/card');
+const { quoteCardMarks, shareDates } = require('./lib/ledger-card');
 
 const root = path.join(__dirname, '..');
 let failed = 0;
@@ -177,6 +178,21 @@ check('home quote link', home.includes('quotePageLink') && home.includes('slugs.
 check('home shared selection', home.includes('/select.js') && home.includes('history.json') && home.includes('AxitomeSelect.pick'));
 const born = fs.readFileSync(path.join(root, 'public', 'born', 'index.html'), 'utf8');
 check('born shared selection', born.includes('/select.js') && born.includes('history.json') && born.includes('AxitomeSelect.pick'));
+const oct30 = quoteCardMarks('2026-10-30');
+const oct29 = quoteCardMarks('2026-10-29');
+check('oct 30 card marks', oct30 && oct30.day === 'DAY 303' && oct30.date === 'XXX \u00b7 X \u00b7 MMXXVI', JSON.stringify(oct30));
+check('oct 29 card marks', oct29 && oct29.day === 'DAY 302' && oct29.date === 'XXIX \u00b7 X \u00b7 MMXXVI', JSON.stringify(oct29));
+check('unposted card marks', quoteCardMarks(null) === null && quoteCardMarks('nope') === null);
+const goethe = items.find((item) => item.slug === 'johann-wolfgang-von-goethe-instruction-does-much-but-encouragement-everythi');
+const senecaDay = items.find((item) => item.slug === 'seneca-lack-of-confidence-is-not-the-result-of-difficul');
+const dated = shareDates(items, posted.posts, []);
+check('posted card dates', dated.get(goethe.idx) === '2026-10-29' && dated.get(senecaDay.idx) === '2026-10-27');
+const ghost = { idx: 99999, slug: 'never-posted', a: 'Nobody' };
+const shifted = shareDates(
+  [{ idx: 3, slug: 'other', a: 'Epictetus' }, ghost],
+  [{ date: '2026-10-01', idx: 3, author: 'Seneca' }],
+);
+check('unposted stays undated', shifted.size === 0);
 
 (async () => {
   const sampleCard = await renderLedgerCard(sample, { date: '2026-10-26', dark: false });

@@ -1,9 +1,10 @@
 const { spawnSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { SITE, loadQuotes, catalog } = require('./lib/quotes');
+const { SITE, loadQuotes, catalog, losAngelesParts } = require('./lib/quotes');
 const { quotePage, authorPage, relatedQuotes } = require('./lib/html');
-const { renderLedgerQuoteCard, renderLedgerAuthorCard, renderLedgerHomeCard } = require('./lib/ledger-card');
+const { renderLedgerQuoteCard, renderLedgerAuthorCard, renderLedgerHomeCard, shareDates } = require('./lib/ledger-card');
+const { pick } = require('./lib/select');
 
 const root = path.join(__dirname, '..');
 const publicDir = path.join(root, 'public');
@@ -73,8 +74,17 @@ function main() {
   resetDir(path.join(publicDir, 'og'));
   fs.mkdirSync(ogQuoteDir, { recursive: true });
   fs.mkdirSync(ogAuthorDir, { recursive: true });
+  const posts = readHistory();
+  const la = losAngelesParts();
+  const extras = [];
+  if (!posts.some((post) => post.date === la.date)) {
+    try {
+      extras.push({ item: pick(items, la.date, posts), date: la.date });
+    } catch (_) { /* no eligible line for today */ }
+  }
+  const dates = shareDates(items, posts, extras);
   for (const item of items) {
-    fs.writeFileSync(path.join(ogQuoteDir, `${item.slug}.png`), renderLedgerQuoteCard(item));
+    fs.writeFileSync(path.join(ogQuoteDir, `${item.slug}.png`), renderLedgerQuoteCard(item, dates.get(item.idx) || null));
   }
   for (const [authorSlug, entries] of byAuthor) {
     fs.writeFileSync(
@@ -92,6 +102,15 @@ function main() {
   ]);
 
   console.log(`Built ${items.length} quote pages, ${byAuthor.size} author pages, ${urls.length} sitemap URLs, ${items.length + byAuthor.size} share cards.`);
+}
+
+function readHistory() {
+  try {
+    const data = JSON.parse(fs.readFileSync(path.join(root, 'state', 'history.json'), 'utf8'));
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.posts)) return data.posts;
+  } catch (_) { /* no history yet */ }
+  return [];
 }
 
 function compressPngs(files) {
