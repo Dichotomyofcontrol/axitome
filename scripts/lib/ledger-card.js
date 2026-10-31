@@ -26,13 +26,38 @@ function roman(n) {
   return o;
 }
 
-function dayDate(idx) {
-  return new Date(Date.UTC(2026, 0, 1 + idx));
+// Homepage day count: Pacific calendar days since 2026-01-01, plus one.
+// A missing or unposted date returns null so the card does not invent a day.
+function quoteCardMarks(date) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date || ''))) return null;
+  const [year, month, day] = date.split('-').map(Number);
+  const n = Math.round((Date.UTC(year, month - 1, day) - Date.UTC(2026, 0, 1)) / 86400000);
+  if (!Number.isFinite(n) || n < 0) return null;
+  return {
+    day: `DAY ${n + 1}`,
+    date: `${roman(day)} \u00b7 ${roman(month)} \u00b7 ${roman(year)}`,
+  };
 }
 
-function romanDate(idx) {
-  const d = dayDate(idx);
-  return `${roman(d.getUTCDate())} \u00b7 ${roman(d.getUTCMonth() + 1)} \u00b7 ${roman(d.getUTCFullYear())}`;
+// History posts win by slug, then by catalog index when the author still matches.
+// extras cover a day the homepage shows before it is written into history.
+function shareDates(items, posts, extras = []) {
+  const dates = new Map();
+  function assign(item, date) {
+    if (!item || !quoteCardMarks(date)) return;
+    const prev = dates.get(item.idx);
+    if (!prev || prev < date) dates.set(item.idx, date);
+  }
+  for (const post of posts || []) {
+    let item = null;
+    if (post.slug) item = items.find((entry) => entry.slug === post.slug);
+    if (!item && Number.isInteger(post.idx) && items[post.idx] && (!post.author || items[post.idx].a === post.author)) {
+      item = items[post.idx];
+    }
+    assign(item, post.date);
+  }
+  for (const extra of extras) assign(extra.item, extra.date);
+  return dates;
 }
 
 // Deterministic stone texture, painted once and reused.
@@ -147,11 +172,12 @@ function fit(ctx, text, family, sizes, max, maxLines, weight) {
   return { size, lines };
 }
 
-function renderLedgerQuoteCard(entry) {
+function renderLedgerQuoteCard(entry, date) {
   fonts();
+  const marks = quoteCardMarks(date);
   const canvas = createCanvas(W, H);
   const ctx = canvas.getContext('2d');
-  frame(ctx, `LINE ${roman(entry.idx + 1)}`);
+  frame(ctx, marks ? marks.day : '');
   const X = 64; const MAX = W - 128;
   const short = entry.q.length <= 70;
   let block;
@@ -176,7 +202,7 @@ function renderLedgerQuoteCard(entry) {
   spaced(ctx, entry.a.toUpperCase(), X, cutY + 50, 5);
   ctx.fillStyle = C.dim;
   ctx.font = '22px "Ledger SC"';
-  spaced(ctx, romanDate(entry.idx), W - 64, H - 46, 3, 'right');
+  if (marks) spaced(ctx, marks.date, W - 64, H - 46, 3, 'right');
   spaced(ctx, 'One line. Nothing to buy.', X, H - 46, 2);
   return canvas.toBuffer('image/png');
 }
@@ -213,4 +239,4 @@ function renderLedgerHomeCard(headline = 'ONE LINE, EACH MORNING.', sub = 'One l
   return canvas.toBuffer('image/png');
 }
 
-module.exports = { renderLedgerQuoteCard, renderLedgerAuthorCard, renderLedgerHomeCard, roman, romanDate, W, H };
+module.exports = { renderLedgerQuoteCard, renderLedgerAuthorCard, renderLedgerHomeCard, roman, quoteCardMarks, shareDates, W, H };
