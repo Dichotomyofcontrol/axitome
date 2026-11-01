@@ -1,12 +1,12 @@
 import { kv } from '@vercel/kv';
+import { isAdmin, hasKeyInUrl, noStore } from './_session.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
 
-  const key = req.query.key;
-  if (!key || key !== process.env.ADMIN_KEY) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
+  noStore(res);
+  if (hasKeyInUrl(req)) return res.status(400).json({ error: 'Do not put the admin key in the URL' });
+  if (!isAdmin(req)) return res.status(401).json({ error: 'Unauthorized' });
 
   try {
     const all = await kv.hgetall('likes') || {};
