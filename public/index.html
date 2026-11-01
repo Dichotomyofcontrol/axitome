@@ -208,6 +208,9 @@ button{font:inherit}
 .panel-search:focus-visible,.date-input:focus-visible{outline:2px solid var(--ox);outline-offset:2px;border-color:var(--ox)}
 /* Top-anchored so the card cannot move when its text or fonts arrive (CLS). */
 .hero{justify-content:flex-start;padding-top:clamp(110px,16vh,190px)}
+/* Keep the action row out of view until the quote is in, so it does not jump (CLS). */
+#card:not(.ready) .actions,#card:not(.ready) .quote-tags{visibility:hidden}
+.quote:empty{min-height:2.12em}
 </style>
 </head>
 <body>
@@ -471,7 +474,7 @@ function show(idx,anim,dateStr){
   idx=Math.max(0,Math.min(idx,Q.length-1));
   var card=document.getElementById('card');
   function doShow(){
-    currentIdx=idx;var q=Q[idx];
+    currentIdx=idx;var q=Q[idx];card.classList.add('ready');
     var td=!!(dateStr&&dateStr===pacificToday());
     if(dateStr){currentDate=dateStr;history.replaceState(null,'','#'+dateStr)}
     else{currentDate='';history.replaceState(null,'','#quote-'+idx)}
