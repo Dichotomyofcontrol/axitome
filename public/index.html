@@ -203,7 +203,8 @@ button{font:inherit}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 :focus-visible{outline:2px solid var(--ox);outline-offset:3px}
 .panel-search:focus-visible,.date-input:focus-visible{outline:2px solid var(--ox);outline-offset:2px;border-color:var(--ox)}
-#card{min-height:min(36rem,78svh)}
+/* Top-anchored so the card cannot move when its text or fonts arrive (CLS). */
+.hero{justify-content:flex-start;padding-top:clamp(110px,16vh,190px)}
 </style>
 </head>
 <body>
