@@ -3,6 +3,8 @@ import { checkPassword, issueCookie, clearCookie, hasKeyInUrl, noStore } from '.
 
 const LIMIT = 5;          // attempts
 const WINDOW = 15 * 60;   // seconds
+const GLOBAL_FAILS = 30;  // failed attempts from all IPs combined per window
+const GLOBAL_KEY = 'admin-login:fail:all';
 
 function ip(req) {
   return String(req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || 'unknown').split(',')[0].trim();
@@ -22,7 +24,9 @@ export default async function handler(req, res) {
   } catch (e) {
     console.error('Rate limit store unavailable');
   }
-  if (count > LIMIT) {
+  let globalFails = 0;
+  try { globalFails = Number(await kv.get(GLOBAL_KEY)) || 0; } catch (e) {}
+  if (count > LIMIT || globalFails >= GLOBAL_FAILS) {
     res.setHeader('Retry-After', String(WINDOW));
     return res.status(429).json({ error: 'Too many attempts. Try again later.' });
   }
@@ -30,6 +34,10 @@ export default async function handler(req, res) {
   const body = req.body && typeof req.body === 'object' ? req.body : {};
   const pw = String(body.password || '');
   if (!checkPassword(pw)) {
+    try {
+      const n = await kv.incr(GLOBAL_KEY);
+      if (n === 1) await kv.expire(GLOBAL_KEY, WINDOW);
+    } catch (e) {}
     await new Promise(r => setTimeout(r, 400));
     return res.status(401).json({ error: 'Invalid password' });
   }
