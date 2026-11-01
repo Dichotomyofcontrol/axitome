@@ -107,7 +107,30 @@
     return { theme: theme, pool: [] };
   }
 
+  // A quote with pin: 'YYYY-MM-DD' is the quote for that Pacific date, and is
+  // held out of the rotation before then. Used for hand-verified lines.
+  function pinnedFor(items, date) {
+    for (var i = 0; i < items.length; i += 1) {
+      if (items[i] && items[i].pin === date && eligible(items[i])) return items[i];
+    }
+    return null;
+  }
+
+  function heldForLater(quote, date) {
+    return !!(quote && quote.pin && quote.pin > date);
+  }
+
   function pick(items, date, history) {
+    var pinned = pinnedFor(items, date);
+    if (pinned) {
+      var out = {};
+      for (var k in pinned) {
+        if (Object.prototype.hasOwnProperty.call(pinned, k)) out[k] = pinned[k];
+      }
+      out.theme = themeForDate(date).id;
+      return out;
+    }
+    items = items.filter(function (quote) { return !heldForLater(quote, date); });
     var found = candidatePool(items, date, history);
     if (!found.pool.length) {
       throw new Error('No eligible quote for ' + date + ' (' + found.theme.id + ')');
@@ -136,6 +159,7 @@
     isDisputed: isDisputed,
     eligible: eligible,
     candidatePool: candidatePool,
+    pinnedFor: pinnedFor,
     pick: pick,
   };
 });

@@ -1582,8 +1582,12 @@
     "q": "Disaster is Virtue’s opportunity.",
     "a": "Seneca",
     "t": [
-      "character"
-    ]
+      "character",
+      "perseverance"
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-10",
+    "s": "On Providence 4.6 (calamitas virtutis occasio est), trans. J. W. Basore (1928)"
   },
   {
     "q": "The history of failure in war can be summed up in two words: Too late. Too late in comprehending the deadly purpose of the enemy; too late in realizing the mortal danger; too late in preparedness; too late in uniting all possible forces for resistance; too late in standing with one's friends.",
@@ -2253,11 +2257,14 @@
     "attributionNote": "No Muhammad Ali source. Viral caption."
   },
   {
-    "q": "It is not enough to be busy. So are the ants. The question is: What are we busy about?",
+    "q": "It is not enough to be industrious; so are the ants. What are you industrious about?",
     "a": "Henry David Thoreau",
     "t": [
       "simplicity"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-14",
+    "s": "Letter to H. G. O. Blake, 16 November 1857"
   },
   {
     "q": "Look for people who have lots of great questions.",
@@ -2670,7 +2677,10 @@
     "t": [
       "courage",
       "character"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-05",
+    "s": "Quoted by expedition member L. D. A. Hussey, South with Shackleton (1949)"
   },
   {
     "q": "You have comfort. You don’t have luxury. And don’t tell me that money plays a part. The luxury I advocate has nothing to do with money.",
@@ -3062,8 +3072,12 @@
     "q": "Be at war with your vices, at peace with your neighbors, and let every new year find you a better man.",
     "a": "Benjamin Franklin",
     "t": [
-      "growth"
-    ]
+      "growth",
+      "discipline"
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-09",
+    "s": "Poor Richard's Almanack, 1755"
   },
   {
     "q": "We cannot make ourselves understand; the most we can do is to foster a state of mind, in which understanding may come to us.",
@@ -3815,12 +3829,16 @@
     ]
   },
   {
-    "q": "Worry not that no one knows you; seek to be worth knowing.",
+    "q": "I am not concerned that I am not known; I seek to be worthy to be known.",
     "a": "Confucius",
     "t": [
       "wisdom",
-      "time"
-    ]
+      "time",
+      "action"
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-13",
+    "s": "Analects 4.14, trans. James Legge (1861)"
   },
   {
     "q": "People look for retreats for themselves, in the country, by the coast, or in the hills. There is nowhere that a person can find a more peaceful and trouble-free retreat than in his own mind.",
@@ -3860,11 +3878,15 @@
     ]
   },
   {
-    "q": "That man is richest whose pleasures are the cheapest.",
+    "q": "That man is the richest whose pleasures are the cheapest.",
     "a": "Henry David Thoreau",
     "t": [
-      "happiness"
-    ]
+      "happiness",
+      "simplicity"
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-07",
+    "s": "Journal, 11 March 1856"
   },
   {
     "q": "Apply yourself to thinking through difficulties—hard times can be softened, tight squeezes widened, and heavy loads made lighter for those who can apply the right pressure.",
@@ -3944,7 +3966,10 @@
       "creativity",
       "action",
       "mind"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-12",
+    "s": "“Is Life Worth Living?” (1895), in The Will to Believe (1897)"
   },
   {
     "q": "One swallow does not make a summer, nor does one day; and so too one day, or a short time, does not make a man blessed and happy.",
@@ -3953,7 +3978,10 @@
       "happiness",
       "time",
       "action"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-06",
+    "s": "Nicomachean Ethics 1.7 (1098a18), trans. W. D. Ross (1925)"
   },
   {
     "q": "It is amateurs who have one big bright beautiful idea that they can never abandon. Professionals know that they have to produce theory after theory before they are likely to hit the jackpot.",
@@ -4057,13 +4085,17 @@
     "s": "Emotion and Peace of Mind"
   },
   {
-    "q": "Most powerful is he who has himself in his own power.",
+    "q": "He is most powerful who has power over himself.",
     "a": "Seneca",
     "t": [
       "solitude",
-      "leadership"
+      "leadership",
+      "discipline"
     ],
-    "angle": "Before you manage the day, manage the one running it."
+    "angle": "Before you manage the day, manage the one running it.",
+    "attribution": "verified",
+    "pin": "2026-11-02",
+    "s": "Letters to Lucilius 90.34, trans. R. M. Gummere (1917–25)"
   },
   {
     "q": "Anxiety is the dizziness of freedom.",
@@ -4726,7 +4758,10 @@
     "a": "Horace",
     "t": [
       "death"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-08",
+    "s": "Satires 1.9.59–60: nil sine magno vita labore dedit mortalibus"
   },
   {
     "q": "Happy the man who can endure the highest and lowest fortune. He, who has endured such vicissitudes with equanimity, has deprived misfortune of its power.",
@@ -4895,13 +4930,16 @@
     ]
   },
   {
-    "q": "He who establishes his argument by noise and command shows that his reason is weak.",
+    "q": "He who establishes his argument by defiance and by command shows that his reasoning is weak.",
     "a": "Michel de Montaigne",
     "t": [
       "leadership",
       "purpose",
       "mind"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-11",
+    "s": "Essays 3.11, “Of Cripples,” trans. G. B. Ives (1925)"
   },
   {
     "q": "Only put off until tomorrow what you are willing to die having left undone.",
@@ -5006,12 +5044,15 @@
     ]
   },
   {
-    "q": "Time is what we want most, but what we spend worst.",
+    "q": "Time is what we want most, but what, alas! we use worst.",
     "a": "William Penn",
     "t": [
       "time",
       "death"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-15",
+    "s": "Some Fruits of Solitude (1693), preface"
   },
   {
     "q": "Keep cool - it will be all one a hundred years hence.",
@@ -5930,7 +5971,10 @@
       "perseverance",
       "growth",
       "action"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-03",
+    "s": "West India Emancipation speech, Canandaigua, N.Y., 3 August 1857"
   },
   {
     "q": "It is bad to irate people by stepping back from their customs and traditions, but it is even worse to deny the requirements of your conscience and intellect by following customs of the crowd.",
@@ -6020,11 +6064,14 @@
     ]
   },
   {
-    "q": "Your mind will take the shape of what you frequently hold in thought, for the human spirit is colored by such impressions.",
+    "q": "Such as are thy habitual thoughts, such also will be the character of thy mind; for the soul is dyed by the thoughts.",
     "a": "Marcus Aurelius",
     "t": [
       "mind"
-    ]
+    ],
+    "attribution": "verified",
+    "pin": "2026-11-04",
+    "s": "Meditations 5.16, trans. George Long (1862)"
   },
   {
     "q": "Let the refining and improving of your own life keep you so busy that you have little time to criticize others.",
