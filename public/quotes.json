@@ -15,7 +15,8 @@
       "wisdom",
       "freedom",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You have to decide who you are and force the world to deal with you, not with its idea of you.",
@@ -39,7 +40,8 @@
     "a": "Virgil",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Mostly it is loss which teaches us about the worth of things.",
@@ -47,14 +49,16 @@
     "t": [
       "creativity",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The strongest man in the world is he who stands most alone.",
     "a": "Henrik Ibsen",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer the negative elements in your life, don't sit at home and think about it. Go out and get busy!",
@@ -63,21 +67,24 @@
       "courage",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I would much rather have men ask why I have no statue, than why I have one.",
     "a": "Cato the Elder",
     "t": [
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Always laugh when you can. It is cheap medicine.",
     "a": "Lord Byron",
     "t": [
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Tomorrow is the most important thing in life. Comes into us at midnight very clean. It's perfect when it arrives and it puts itself in our hands. It hopes we've learned something from yesterday.",
@@ -125,7 +132,8 @@
     "a": "Seneca",
     "t": [
       "simplicity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Dogs are our link to paradise. They don't know evil or jealousy or discontent. To sit with a dog on a hillside on a glorious afternoon is to be back in Eden, where doing nothing was not boring-it was peace.",
@@ -149,7 +157,8 @@
     "a": "Sophocles",
     "t": [
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Most men pursue pleasure with such breathless haste that they hurry past it.",
@@ -157,7 +166,8 @@
     "t": [
       "happiness",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If I could sink my teeth into the whole earth and actually taste it, I’d be happier for a moment… But I don’t always want to be happy. To be unhappy now and then is part of being natural. Not all days are sunny, and when rain is scarce, we pray for it. And so I take unhappiness with happiness naturally, just as I don’t marvel that there are mountains and plains and that there are rocks and grass… What matters is to be natural and calm in happiness and in unhappiness, to feel as if feeling were seeing, to think as if thinking were walking, and to remember, when death comes, that each day dies, and the sunset is beautiful, and so is the night that remains… That’s how it is and how I want it to be…",
@@ -167,7 +177,8 @@
       "creativity",
       "time",
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Dogs are our link to paradise. They don’t know evil or jealousy or discontent. To sit with a dog on a hillside on a glorious afternoon is to be back in Eden, where doing nothing was not boring—it was peace.",
@@ -201,7 +212,8 @@
       "wisdom",
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I want to risk hitting my head on the ceiling of my talent. I want to really test it out and say, ‘Okay, you're not that good. You just reached the level here.’ I don't ever want to fail, but I want to risk failure every time out of the gate.",
@@ -244,7 +256,8 @@
     "t": [
       "courage",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "All greatness, after all, is rooted in risk.",
@@ -259,7 +272,8 @@
     "t": [
       "solitude",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We become builders by building and harpists by playing the harp. Similarly, it is by doing just acts that we become just, by doing temperate acts that we become temperate, by doing courageous acts that we become courageous.",
@@ -268,7 +282,8 @@
       "courage",
       "growth",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Happiness is simply the absence of desire... Happiness is not about the achievement of pleasure (which is joy or satisfaction), but about the lack of desire. It arrives when you have no urge to feel differently. Happiness is the state you enter when you no longer want to change your state.",
@@ -314,7 +329,8 @@
       "death",
       "freedom",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "What I feel fortunate about is that I’m still astonished, that things still amaze me. And I think that that’s the great benefit of being in the arts, where the possibility for learning never disappears, where you basically have to admit you never learn it.",
@@ -340,7 +356,8 @@
     "a": "G. K. Chesterton",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Nobody knows as much as everybody.",
@@ -408,14 +425,16 @@
     "a": "Marcus Tullius Cicero",
     "t": [
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is the greatest of all advantages to enjoy no advantage at all.",
     "a": "Henry David Thoreau",
     "t": [
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Man is the only creature who refuses to be what he is.",
@@ -432,7 +451,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "Not Voltaire. Wikiquote misattributed section: Maxim xviii of Maximes et réflexions (Paris, 1808). The English is a paraphrase of \"Il est encore plus facile de juger de l'esprit d'un homme par ses questions que par ses réponses.\"",
-    "s": "Maximes et réflexions, 1808"
+    "s": "Maximes et réflexions, 1808",
+    "checked": true
   },
   {
     "q": "We are all humiliated by the sudden discovery of a fact which has existed very comfortably and perhaps been staring at us in private while we have been making up our world entirely without it.",
@@ -441,7 +461,8 @@
       "nature",
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Happiness lies in the joy of achievement and the thrill of creative effort.",
@@ -459,14 +480,16 @@
       "wisdom",
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Those who are easily shocked should be shocked more often.",
     "a": "Mae West",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is good to come to a country you know practically nothing about. Your thoughts grow still, useless. … In a country you know nothing about, there is no reference point. You struggle to associate colors, smells, dim memories. You live a little like a child, or an animal.",
@@ -484,14 +507,16 @@
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If a republic is small, it is destroyed by a foreign force; if it is large, it is ruined by an internal imperfection.",
     "a": "Montesquieu",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Remind yourself what you've been through and what you've had the strength to endure.",
@@ -501,14 +526,16 @@
       "solitude",
       "death",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Remember: Matter. How tiny your share of it. Time. How brief and fleeting your allotment of it. Fate. How small a role you play in it.",
     "a": "Marcus Aurelius",
     "t": [
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A man without self discipline is like a boat without a rudder, he will drift wherever the waves of excuses takes him.",
@@ -542,7 +569,8 @@
     "a": "Friedrich Nietzsche",
     "t": [
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The chief prevention against getting old is to remain astonished.",
@@ -571,7 +599,8 @@
     "a": "Xenophon",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Vitality shows in not only the ability to persist but the ability to start over.",
@@ -607,7 +636,8 @@
     "t": [
       "solitude",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There will come a time when you believe everything is finished. That will be the beginning.",
@@ -629,7 +659,8 @@
     "a": "John Dewey",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
@@ -662,7 +693,8 @@
       "solitude",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You can be a product of the environment that you’re living in but you can also be a product of your imagination of what’s inside of you.",
@@ -679,7 +711,8 @@
       "time",
       "nature",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "One good question can give rise to several layers of answers, can inspire decades-long searches for solutions, can generate whole new fields of inquiry, and can prompt changes in entrenched thinking. Answers, on the other hand, often end the process.",
@@ -755,7 +788,8 @@
       "perseverance",
       "creativity",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "When you are inspired by some great purpose, some extraordinary project, all your thoughts break their bonds; your mind transcends limitations; your conscious expands in every direction; and you find yourself in a great, new and wonderful world.",
@@ -765,7 +799,8 @@
       "solitude",
       "death",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I can do nothing for you but work on myself...you can do nothing for me but work on yourself!",
@@ -781,7 +816,8 @@
     "t": [
       "happiness",
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Raise your ambitions. Lower your expectations. The higher your ambitions, the bolder your actions. The lower your expectations, the greater your satisfaction. Achieve more and be happy along the way.",
@@ -833,7 +869,8 @@
     "a": "Dale Carnegie",
     "t": [
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "All that happens to us, including our humiliations, our misfortunes, our embarrassments, all is given to us as raw material, as clay, so that we may shape our art.",
@@ -859,14 +896,16 @@
       "love",
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You are not your body and hair-style, but your capacity for choosing well. If your choices are beautiful, so too will you be.",
     "a": "Epictetus",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "An unproblematic state is a state without creative thought. Its other name is death.",
@@ -882,7 +921,8 @@
     "a": "Georgia O’Keefe",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The mind should be kept independent of any thoughts that arise within it. If the mind depends upon anything, it has no sure haven.",
@@ -892,7 +932,8 @@
       "death",
       "freedom",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I’ve been absolutely terrified every moment of my life – and I’ve never let it keep me from doing a single thing I wanted to do.",
@@ -900,21 +941,24 @@
     "t": [
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "At this very moment fate is preparing some device against me.",
     "a": "Seneca",
     "t": [
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We forfeit three-quarters of ourselves in order to be like other people.",
     "a": "Arthur Schopenhauer",
     "t": [
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I have never wished to cater to the crowd; for what I know they do not approve, and what they approve I do not know.",
@@ -923,7 +967,8 @@
       "wisdom",
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The whole problem with the world is that fools and fanatics are always so sure of themselves, but wiser people so full of doubts.",
@@ -940,7 +985,8 @@
       "wisdom",
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "When you feel like giving up is precisely the point everybody else gives up. So it’s at that point that you must put in extra effort.",
@@ -955,7 +1001,8 @@
     "t": [
       "loss",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "When you want to help people, you tell them the truth. When you want to help yourself, you tell them what they want to hear.",
@@ -980,7 +1027,8 @@
     "t": [
       "purpose",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Your childhood hunger is the one that never leaves you.",
@@ -1011,7 +1059,8 @@
     "t": [
       "solitude",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Between stimulus and response there is a space. In that space is our power to choose response. In our response lies our growth and our freedom.",
@@ -1037,7 +1086,8 @@
     "t": [
       "action",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Define yourself by your effort, not your suffering.",
@@ -1079,7 +1129,8 @@
     "t": [
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "An artist is not paid for labor but for vision.",
@@ -1087,7 +1138,8 @@
     "t": [
       "creativity",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for.",
@@ -1095,7 +1147,8 @@
     "t": [
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "What if, instead of spending our lives doing, doing, doing, performing, performing, performing, we spent more time exploring, asking, listening, experimenting, reflecting, striving and becoming?",
@@ -1114,7 +1167,8 @@
       "wisdom",
       "action",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A king is a man strong of character and conviction who leads by example and truly cares for the suffering of his people, not a brute who rules simply because he is the strongest.",
@@ -1124,7 +1178,8 @@
       "leadership",
       "action",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Conventional people are roused to fury by departures from convention, largely because they regard such departures as a criticism of themselves.",
@@ -1214,7 +1269,8 @@
     "a": "Johann Wolfgang von Goethe",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Masters are not perfect at what they do. Masters are really deep students of what they do.",
@@ -1230,7 +1286,8 @@
       "leadership",
       "growth"
     ],
-    "angle": "No finish line. Just today's small step, taken on purpose."
+    "angle": "No finish line. Just today's small step, taken on purpose.",
+    "checked": true
   },
   {
     "q": "You never ready, forever petty minds stay petty, mine’s thinking longevity until I’m 70.",
@@ -1287,7 +1344,8 @@
       "nature",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You can stand firm in a fight against everything except kindness.",
@@ -1295,7 +1353,8 @@
     "t": [
       "love",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Never confuse a single defeat with a final defeat.",
@@ -1346,7 +1405,8 @@
       "nature",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is a fault to wish to be understood before we have made ourselves clear to ourselves.",
@@ -1370,7 +1430,8 @@
       "death",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Reading after a certain age diverts the mind too much from its creative pursuits. Any man who reads too much and uses his own brain too little falls into lazy habits of thinking, just as the man who spends too much time in the theater is tempted to be content with living vicariously instead of living his own life.",
@@ -1390,7 +1451,8 @@
       "solitude",
       "time",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The science of mathematics presents the most brilliant example of how pure reason may successfully enlarge its domain without the aid of experience.",
@@ -1400,7 +1462,8 @@
       "action",
       "purpose",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The truth is like a lion; you don’t have to defend it. Let it loose; it will defend itself.",
@@ -1410,7 +1473,8 @@
       "solitude",
       "death",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Throw me to the wolves and I will return leading the pack.",
@@ -1438,14 +1502,16 @@
       "nature",
       "growth",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I prayed for twenty years but received no answer until I prayed with my legs.",
     "a": "Frederick Douglas",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The culture precedes positive results. It doesn’t get tacked on as an afterthought on your way to the victory stand. Champions behave like champions before they’re champions; they have a winning standard of performance before they are winners.",
@@ -1473,7 +1539,8 @@
       "nature",
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Nearly everything in life is unfavorable once it grows to a certain size. It is entirely possible to have too many clients, too much work, too much fame, too much free time, and so on. Pay attention to when the thing you're chasing exceeds its usefulness.",
@@ -1499,14 +1566,16 @@
     "a": "Sengcan",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "No one is useless in this world,’ retorted the Secretary, ‘who lightens the burden of it for anyone else.’",
     "a": "Charles Dickens, Our Mutual Friend",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Desire makes slaves out of kings, while patience makes kings out of slaves.",
@@ -1514,7 +1583,8 @@
     "t": [
       "time",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you are lonely when you're alone, you are in bad company.",
@@ -1555,14 +1625,16 @@
     "t": [
       "creativity",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Judgment can look the event in the eye and say, ‘This is what you are, regardless of what you may look like.’ While Adaptability adds, ‘You’re just what I was looking for.’",
     "a": "Marcus Aurelius",
     "t": [
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The trick is in what one emphasizes. We either make ourselves miserable, or we make ourselves happy. The amount of work is the same.",
@@ -1576,7 +1648,8 @@
     "a": "Zeno of Citium",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Disaster is Virtue’s opportunity.",
@@ -1587,7 +1660,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-10",
-    "s": "On Providence 4.6 (calamitas virtutis occasio est), trans. J. W. Basore (1928)"
+    "s": "On Providence 4.6 (calamitas virtutis occasio est), trans. J. W. Basore (1928)",
+    "checked": true
   },
   {
     "q": "The history of failure in war can be summed up in two words: Too late. Too late in comprehending the deadly purpose of the enemy; too late in realizing the mortal danger; too late in preparedness; too late in uniting all possible forces for resistance; too late in standing with one's friends.",
@@ -1597,7 +1671,8 @@
       "creativity",
       "death",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We don't rise to the level of our expectations; we fall to the level of our training.",
@@ -1605,7 +1680,8 @@
     "t": [
       "nature",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Normality is a paved road: It's comfortable to walk, but no flowers grow on it.",
@@ -1622,7 +1698,8 @@
     "a": "Confucius",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "When you come out of the storm you won't be the same person who walked in. That's what this storm is all about.",
@@ -1637,7 +1714,8 @@
     "t": [
       "solitude",
       "simplicity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Entrepreneur’s mind. Athlete’s body. Artist’s soul.",
@@ -1660,14 +1738,16 @@
     "t": [
       "leadership",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If they’ve made a mistake correct them gently and show them where they went wrong. If you can’t do that, then the blame lies with you. Or no one.",
     "a": "Marcus Aurelius",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Kingship: to earn a bad reputation by good deeds.",
@@ -1675,7 +1755,8 @@
     "t": [
       "leadership",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Leadership, like life, is often a matter of choosing the lesser of two evils. It’s about making the best of bad situations. It’s about being pragmatic and realistic. We don’t live in Plato’s Republic, Marcus Aurelius reminds us. We live here, in this world. Where there are only hard decisions. Where the easy, simple problems get greedily gobbled up by lesser men and women. Where leadership is a daily struggle.",
@@ -1704,7 +1785,8 @@
       "time",
       "nature",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To begin you must study the end.",
@@ -1727,7 +1809,8 @@
     "t": [
       "solitude",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The most important thing is to try and inspire people so that they can be great in whatever they want to do.",
@@ -1743,7 +1826,8 @@
     "t": [
       "growth",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Lessons are repeated until they are learned. A lesson will be presented to you in various forms until you have learned it. When you have learned it, you can go on to the next lesson. Learning lessons does not end. There's no part of life that doesn't contain its lessons. If you're alive, that means there are still lessons to be learned.",
@@ -1763,7 +1847,8 @@
       "wisdom",
       "perseverance",
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The things you take pride in are the same things you are likely to be biased about. How might the things you take pride in be misleading you? The tighter you cling to your current identity, the harder it becomes to grow beyond it.",
@@ -1779,7 +1864,8 @@
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I think of a hero as someone who understands the degree of responsibility that comes with his freedom.",
@@ -1808,7 +1894,8 @@
       "time",
       "growth",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A writer—and, I believe, generally all persons—must think that whatever happens to him or her is a resource. All things have been given to us for a purpose, and an artist must feel this more intensely. All that happens to us, including our humiliations, our misfortunes, our embarrassments, all is given to us as raw material, as clay, so that we may shape our art.",
@@ -1825,7 +1912,8 @@
     "t": [
       "wisdom",
       "love"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Think of your exposure to unfair criticism as the price you pay for the insight that, when acted upon, becomes wisdom.",
@@ -1853,7 +1941,8 @@
       "perseverance",
       "happiness",
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We have been fighting on this planet for ten thousand years; it would be idiotic and unethical to not take advantage of such accumulated experiences. If you haven’t read hundreds of books, you are functionally illiterate, and you will be incompetent, because your personal experiences alone aren’t broad enough to sustain you. Any commander who claims he is 'too busy to read' is going to fill body bags with his troops as he learns the hard way.",
@@ -1871,7 +1960,8 @@
     "t": [
       "nature",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "One person likes tending to his farm, another to his horse; I like to daily monitor my self-improvement.",
@@ -1880,7 +1970,8 @@
       "solitude",
       "death",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Suffering is a test. That's all it is. Suffering is the true test of life.",
@@ -1901,7 +1992,8 @@
     "a": "Zhuang Zhou",
     "t": [
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Be crumbled, so wildflowers will come up where you are. You have been stony for too many years. Try something different. Surrender.",
@@ -1918,7 +2010,8 @@
       "action"
     ],
     "attribution": "corrected",
-    "attributionNote": "Not Aristotle. Quote Investigator (2015-01-09): Hubbard wrote the saying in Little Journeys (1898) and the familiar form by 1909. No Aristotle source."
+    "attributionNote": "Not Aristotle. Quote Investigator (2015-01-09): Hubbard wrote the saying in Little Journeys (1898) and the familiar form by 1909. No Aristotle source.",
+    "checked": true
   },
   {
     "q": "Swing easy.",
@@ -1953,7 +2046,8 @@
     "a": "Yoko Ono",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The art of life is to know how to enjoy a little and to endure much.",
@@ -1963,7 +2057,8 @@
       "perseverance",
       "happiness",
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A parable from priest and therapist Anthony de Mello on the stories we tell ourselves: 'A man found an eagle's egg and put it in a nest of a barnyard hen. The eaglet hatched with the brood of chickens and grew up with them. All his life the eagle did what the barnyard chicks did, thinking he was a barnyard chicken. He scratched the earth for worms and insects. He clucked and cackled. And he would thrash his wings and fly a few feet into the air. Years passed and the eagle grew very old. One day he saw a magnificent bird above him in the cloudless sky. It glided in graceful majesty among the powerful wind currents, with scarcely a beat of its strong golden wings. The old eagle looked up in awe. \"Who's that?\" he asked. \"That's the eagle, the king of the birds,\" said his neighbor. \"He belongs to the sky. We belong to the earth—we're chickens.\" So the eagle lived and died a chicken, for that's what he thought he was.'",
@@ -1989,7 +2084,8 @@
       "growth",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "An ant on the move does more than a dozing ox.",
@@ -2005,14 +2101,16 @@
     "a": "Tallulah Bankhead",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The things you run from are inside you.",
     "a": "Seneca",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You don’t need a better computer to become a writer. You don’t need a better guitar to become a musician. You don’t need a better camera to become a photographer. What you need is to get to work.",
@@ -2040,7 +2138,8 @@
       "time",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Be grateful for what you have.",
@@ -2048,7 +2147,8 @@
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Thinking is difficult. That’s why most people judge.",
@@ -2076,21 +2176,24 @@
     "a": "Confucius",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Sweat more during peace: bleed less during war.",
     "a": "Sun Tzu",
     "t": [
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is a strong shadow where there is much light.",
     "a": "Johann Wolfgang von Goethe",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.",
@@ -2101,7 +2204,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "Not Hemingway. Quote Investigator (2017-03-11): W. L. Sheldon, \"What to Believe: An Ethical Creed,\" Ethical Addresses, April 1897. Hemingway was born in 1899; the 1963 Playboy \"A Man's Credo\" is not accepted by Hemingway specialists.",
-    "s": "Ethical Addresses, April 1897"
+    "s": "Ethical Addresses, April 1897",
+    "checked": true
   },
   {
     "q": "The graveyard is the richest place on earth, because it is here that you will find all the hopes and dreams that were never fulfilled...",
@@ -2127,7 +2231,8 @@
     "a": "Bible, 1 Corinthians 13:11",
     "t": [
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
@@ -2146,7 +2251,8 @@
     "a": "Miyamoto Musashi",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Forgiveness is not forgetting. Forgiveness is freedom from hate.",
@@ -2162,28 +2268,32 @@
     "t": [
       "creativity",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Man conquers the world by conquering himself.",
     "a": "Zeno",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You can't discuss the ocean with a well frog - he's limited by the space he lives in.",
     "a": "Zhuang Zhou",
     "t": [
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "No one can construct for you the bridge upon which precisely you must cross the stream of life, no one but you yourself alone.",
     "a": "Friedrich Nietzsche",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Adulthood is a wonderful thing, and brief. You must be sure to enjoy it while it lasts.",
@@ -2200,14 +2310,16 @@
       "time",
       "purpose",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Death, therefore, the most awful of evils, is nothing to us, seeing that, when we are, death is not come, and, when death is come, we are not.",
     "a": "Epicurus",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Just for the record, the weather today is calm and sunny, but the air is full of bullshit.",
@@ -2225,7 +2337,8 @@
       "creativity",
       "time",
       "freedom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You don't inspire people by revealing your super powers; you inspire people by helping them reveal their own super powers.",
@@ -2243,7 +2356,8 @@
       "solitude",
       "growth",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Looking at life from a different perspective makes you realize that it's not the deer that is crossing the road, rather it's the road that is crossing the forest.",
@@ -2264,7 +2378,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-14",
-    "s": "Letter to H. G. O. Blake, 16 November 1857"
+    "s": "Letter to H. G. O. Blake, 16 November 1857",
+    "checked": true
   },
   {
     "q": "Look for people who have lots of great questions.",
@@ -2280,7 +2395,8 @@
       "happiness",
       "growth",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Make your heart like a lake with a calm still surface and great depths of kindness.",
@@ -2298,14 +2414,16 @@
     "t": [
       "happiness",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Did you think the lion was sleeping because he didn't roar?",
     "a": "Friedrich Schiller",
     "t": [
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To find yourself, think for yourself.",
@@ -2322,7 +2440,8 @@
     "a": "Zeno of Citium",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "...anxiety is the dizziness of freedom...",
@@ -2330,14 +2449,16 @@
     "t": [
       "freedom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The only real mistake is the one from which we learn nothing.",
     "a": "Henry Ford",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The most desirable quality in a soldier is constancy in the support of fatigue; valor is only secondary.",
@@ -2345,7 +2466,8 @@
     "t": [
       "creativity",
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "This exceeding trifling witling, considering ranting criticizing concerning adopting fitting wording being exhibiting transcending learning, was displaying, notwithstanding ridiculing, surpassing boasting swelling reasoning, respecting correcting erring...",
@@ -2370,7 +2492,8 @@
     "t": [
       "freedom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "In your actions, don't procrastinate. In your conversations, don't confuse. In your thoughts, don't wander. In your soul, don't be passive or aggressive. In your life, don't be all about business.",
@@ -2378,14 +2501,16 @@
     "t": [
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Truthful words are not beautiful; beautiful words are not truthful. Good words are not persuasive; persuasive words are not good.",
     "a": "Lao Tzu",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Determine that today you will overcome yourself of the day before, tomorrow you will win over those of lesser skill, and later you will win over those of greater skill.",
@@ -2394,7 +2519,8 @@
       "perseverance",
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Discipline is choosing between what you want now and what you want most.",
@@ -2435,7 +2561,8 @@
     "a": "Jeremy Bentham",
     "t": [
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We are our choices.",
@@ -2450,7 +2577,8 @@
     "t": [
       "courage",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I don't know why we are here, but I'm pretty sure that it is not in order to enjoy ourselves.",
@@ -2470,7 +2598,8 @@
       "solitude",
       "nature",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You think your pain and your heartbreak are unprecedented in the history of the world, but then you read.",
@@ -2498,7 +2627,8 @@
     "a": "Nordic Proverb",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Reality is neutral. Our reactions reflect back and create our world.",
@@ -2524,7 +2654,8 @@
       "discipline",
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Suspect each moment, for it is a thief, tiptoeing away with more than it brings.",
@@ -2547,14 +2678,16 @@
     "t": [
       "death",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Every man has a property in his own person. This nobody has a right to, but himself.",
     "a": "John Locke",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is exercise alone that supports the spirits, and keeps the mind in vigor.",
@@ -2562,14 +2695,16 @@
     "t": [
       "solitude",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "He who cannot put his thoughts on ice should not enter into the heat of debate.",
     "a": "Friedrich Nietzsche",
     "t": [
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don’t be satisfied with stories, how things have gone with others. Unfold your own myth.",
@@ -2584,7 +2719,8 @@
     "a": "Cicero",
     "t": [
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "One regrets the loss even of one’s worst habits. Perhaps one regrets them the most. They are such an essential part of one’s personality.",
@@ -2594,7 +2730,8 @@
       "discipline",
       "nature",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Failure is not fatal, but failure to change might be.",
@@ -2616,7 +2753,8 @@
     "a": "Thomas Huxley",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "What is prayer but a wish for the events in your life to string together to form a story – something that makes some sense of events you know have meaning.",
@@ -2642,7 +2780,8 @@
     "t": [
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Be happy about your growth, in which of course you can’t take anyone with you, and be gentle to those you leave behind.",
@@ -2651,7 +2790,8 @@
       "happiness",
       "nature",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Perhaps the feelings that we experience when we are in love represent a normal state.",
@@ -2659,7 +2799,8 @@
     "t": [
       "love",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Ambition leads me not only farther than any other man has been before me, but as far as I think it possible for man to go.",
@@ -2669,7 +2810,8 @@
       "leadership",
       "purpose",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Optimism is true moral courage.",
@@ -2680,7 +2822,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-05",
-    "s": "Quoted by expedition member L. D. A. Hussey, South with Shackleton (1949)"
+    "s": "Quoted by expedition member L. D. A. Hussey, South with Shackleton (1949)",
+    "checked": true
   },
   {
     "q": "You have comfort. You don’t have luxury. And don’t tell me that money plays a part. The luxury I advocate has nothing to do with money.",
@@ -2688,7 +2831,8 @@
     "t": [
       "creativity",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Many continued hoping that the epidemic would soon die out and they and their families be spared.",
@@ -2705,7 +2849,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "Roosevelt credited Squire Bill Widener of Widener's Valley in his Autobiography, not himself.",
-    "s": "quoted by Theodore Roosevelt, Autobiography (1913)"
+    "s": "quoted by Theodore Roosevelt, Autobiography (1913)",
+    "checked": true
   },
   {
     "q": "When one cannot see the future, the best you can do is the next right thing.",
@@ -2721,7 +2866,8 @@
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "He who jumps into the void owes no explanation to those who stand and watch.",
@@ -2735,7 +2881,8 @@
     "a": "Epictetus",
     "t": [
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To venture causes anxiety…But not to venture is to lose one's self.",
@@ -2743,7 +2890,8 @@
     "t": [
       "solitude",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Anyone who isn't embarrassed by who they were last year probably isn't learning enough.",
@@ -2759,7 +2907,8 @@
     "t": [
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "As you proceed through life, following your own path, birds will shit on you. Don’t bother to brush it off.",
@@ -2775,14 +2924,16 @@
     "t": [
       "death",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The most spiritual men, as the strongest, find their happiness where others would find their destruction.",
     "a": "Friedrich Nietzsche",
     "t": [
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Failure is simply the opportunity to begin again, this time more intelligently.",
@@ -2791,7 +2942,8 @@
       "perseverance",
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Those who do not move, do not notice their chains.",
@@ -2799,7 +2951,8 @@
     "t": [
       "freedom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Once you hear the details of a victory it is hard to distinguish it from a defeat.",
@@ -2813,7 +2966,8 @@
     "a": "Friedrich Nietzsche",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Tiger got to hunt, bird got to fly; Man got to sit and wonder ‘why, why, why?’",
@@ -2844,7 +2998,8 @@
     "a": "Blaise Pascal",
     "t": [
       "freedom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Remember that there is nothing noble in being superior to some other man.",
@@ -2852,7 +3007,8 @@
     "t": [
       "action",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Every day of our lives, we are on the verge of making those slight changes that would make all the difference.",
@@ -2861,14 +3017,16 @@
       "happiness",
       "leadership",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is no greatness that is not at peace.",
     "a": "Seneca",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don't you find it odd that when you're a kid, everyone encourages you to follow your dreams. But when you're older, they act offended if you even try.",
@@ -2903,7 +3061,8 @@
       "creativity",
       "solitude",
       "freedom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don’t postpone joy until you have learned all of your lessons. Joy is your lesson.",
@@ -2912,7 +3071,8 @@
       "wisdom",
       "happiness",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Insecurity will always be a growth industry. The economy now depends on fear.",
@@ -2940,14 +3100,16 @@
       "happiness",
       "love",
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We forfeit three-fourths of ourselves in order to be like other people.",
     "a": "Arthur Schopenhauer",
     "t": [
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A leader should do anything but not everything.",
@@ -2955,7 +3117,8 @@
     "t": [
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Insomnia is the mind's revenge for all the tricky thoughts we rejected to address during the day.",
@@ -2980,7 +3143,8 @@
       "solitude",
       "time",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "For success, like happiness, cannot be pursued; it must ensue...",
@@ -3023,7 +3187,8 @@
       "solitude",
       "nature",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don’t sabotage yourself by unwittingly adopting negative, unproductive attitudes through your associations with others.",
@@ -3031,7 +3196,8 @@
     "t": [
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Go all in. if you’re going to try, go all the way. otherwise, don’t even start. this could mean losing girlfriends, wives, relatives, jobs and maybe your mind. go all the way. it could mean not eating for 3 or 4 days. it could mean freezing on a park bench. it could mean jail, it could mean derision, mockery, isolation. isolation is the gift, all the others are a test of your endurance, of how much you really want to do it. and you’ll do it despite rejection and the worst odds and it will be better than anything else you can imagine. if you’re going to try, go all the way. there is no other feeling like that. you will be alone with the gods and the nights will flame with fire. do it, do it, do it. do it. all the way all the way. you will ride life straight to perfect laughter, its the only good fight there is.",
@@ -3050,7 +3216,8 @@
       "love",
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "if you stop, you die.",
@@ -3077,7 +3244,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-09",
-    "s": "Poor Richard's Almanack, 1755"
+    "s": "Poor Richard's Almanack, 1755",
+    "checked": true
   },
   {
     "q": "We cannot make ourselves understand; the most we can do is to foster a state of mind, in which understanding may come to us.",
@@ -3093,7 +3261,8 @@
     "a": "Marcus Aurelius",
     "t": [
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is no past and no future; no one has ever entered those two imaginary kingdoms. There is only the present.",
@@ -3102,7 +3271,8 @@
       "time",
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The most exquisite paradox: as soon as you give it all up, you can have it all. … As long as you want power, you can’t have it. The minute you don’t want power, you’ll have more than you ever dreamed possible.",
@@ -3120,7 +3290,8 @@
       "perseverance",
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "don't see how you can respect yourself if you must look in the hearts and minds of others for your happiness.",
@@ -3140,7 +3311,8 @@
       "creativity",
       "leadership",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "When you are content to be simply yourself and don't compare or compete, everybody will respect you.",
@@ -3157,7 +3329,8 @@
     "t": [
       "happiness",
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is not the ferocity of the beast of prey that requires a moral disguise but the herd animal with its profound mediocrity, timidity and boredom with itself.",
@@ -3167,7 +3340,8 @@
       "nature",
       "action",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Presence - Forget everything else. Keep hold of this alone and remember it: Each of us lives only now, this brief instant. The rest has been lived already, or is impossible to see. The span we live is small - small as the corner of the earth in which we live it. Small as even the greatest renown, passed from mouth to mouth by short-lived stick figures, ignorant alike of themselves and those long dead.",
@@ -3177,7 +3351,8 @@
       "solitude",
       "time",
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Happy is the person who can improve others, not only when present, but even when in their thoughts!",
@@ -3187,14 +3362,16 @@
       "time",
       "growth",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I am large, I contain multitudes.",
     "a": "Walt Whitman",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you are ruled by mind you are a king; if by body, a slave.",
@@ -3202,7 +3379,8 @@
     "t": [
       "leadership",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "All rules for study are summed up in this one: learn only in order to create.",
@@ -3211,14 +3389,16 @@
       "wisdom",
       "creativity",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Progress is not achieved by luck or accident,",
     "a": "Epictetus",
     "t": [
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Unless you can state the arguments against your position better than the people who are in opposition, Your beliefs about that topic should remain under construction.",
@@ -3234,7 +3414,8 @@
     "t": [
       "action",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "For many, the acquisition of wealth does not end their troubles, it only changes them.",
@@ -3243,7 +3424,8 @@
       "death",
       "growth",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "No amount of anxiety makes any difference to anything that is going to happen.",
@@ -3258,7 +3440,8 @@
     "t": [
       "wisdom",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Narrow minds devoid of imagination. Intolerance, theories cut off from reality, empty terminology, usurped ideals, inflexible systems. Those are the things that really frighten me. What I absolutely fear and loathe.",
@@ -3274,7 +3457,8 @@
     "a": "John A. Shedd",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Believe me, there is no such thing as great suffering, great regret, great memory… everything is forgotten, even great love. That’s what’s sad about life, and also what’s wonderful about it.",
@@ -3292,7 +3476,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "The first sentence is Twain's notebook entry of 1904. The sentences about the mob were added later and are not his. Wording restored to the notebook.",
-    "s": "Notebook, 1904"
+    "s": "Notebook, 1904",
+    "checked": true
   },
   {
     "q": "If you are ever tempted to look for outside approval,” Epictetus said, “realize that you have compromised your integrity. If you need a witness, be your own.",
@@ -3300,7 +3485,8 @@
     "t": [
       "perseverance",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I urge you: don’t cut short these thought-trains of yours. Follow them through to their end. Your thoughts and your feelings. Follow them through and you will grow with them.",
@@ -3318,14 +3504,16 @@
     "t": [
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Those who want the fewest things are nearest to the gods.",
     "a": "Socrates",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If they can get you asking the wrong questions, they don’t have to worry about answers.",
@@ -3341,7 +3529,8 @@
     "t": [
       "wisdom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Character, like a photograph, develops in darkness.",
@@ -3365,7 +3554,8 @@
     "t": [
       "happiness",
       "simplicity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don’t expect to be motivated every day to get out there and make things happen. You won’t be. Don’t count on motivation. Count on Discipline.",
@@ -3410,7 +3600,8 @@
     "t": [
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Love is of all the passions the strongest, for it attacks simultaneously the head, the heart, and the body.",
@@ -3418,7 +3609,8 @@
     "t": [
       "love",
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you,",
@@ -3426,7 +3618,8 @@
     "t": [
       "death",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You sabotage your life when you become so used to your own familiar patterns that you fail to find the strength to endure the discomfort of breaking them.",
@@ -3470,7 +3663,8 @@
     "a": "Augustine",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "philosophybits “Those who are confident without knowledge are not courageous, but mad.",
@@ -3479,7 +3673,8 @@
       "courage",
       "wisdom",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To a disciple who was forever complaining about others, the Master said, ‘If it is peace you want, seek to change yourself, not other people. It is easier to protect your feet with slippers than to carpet the whole of the earth.'",
@@ -3496,14 +3691,16 @@
     "a": "Arthur Schopenhauer",
     "t": [
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "What, if I were running in the stadium, ought I to slacken my pace when approaching the goal?",
     "a": "Diogenes",
     "t": [
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A king is surrounded by people,” Pascal wrote, “whose only thought is to divert him and stop him thinking about himself, because, king though he is, he becomes unhappy as soon as he thinks about himself.",
@@ -3513,7 +3710,8 @@
       "solitude",
       "leadership",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "In the hour of adversity be not without hope, for crystal rain falls from black clouds.",
@@ -3521,7 +3719,8 @@
     "t": [
       "perseverance",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "After I'm dead I'd rather have people ask why I have no monument than why I have one.",
@@ -3529,7 +3728,8 @@
     "t": [
       "death",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The man with insight enough to admit his limitations comes nearest to perfection.",
@@ -3537,7 +3737,8 @@
     "t": [
       "wisdom",
       "simplicity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To be prepared against surprise is to be trained. To be prepared for surprise is to be educated.",
@@ -3553,7 +3754,8 @@
       "solitude",
       "leadership",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Being present - You must live in the present, launch yourself on every wave, find your eternity in each moment. Fools stand on their island of opportunities and look toward another land. There is no other land; there is no other life but this.",
@@ -3562,7 +3764,8 @@
       "wisdom",
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A long habit of not thinking a thing wrong, gives it a superficial appearance of being right, and raises at first a formidable outcry in defense of custom. But the tumult soon subsides. Time makes more converts than reason.",
@@ -3572,7 +3775,8 @@
       "time",
       "leadership",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The Feynman Learning Technique: Choose a concept you want to learn about; Pretend you are teaching it to a student in grade 6; Identify gaps in your explanation. Go back to the source material, to better understand it; Review and simplify.",
@@ -3600,7 +3804,8 @@
       "death",
       "growth",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you don’t understand, ask questions. If you’re uncomfortable about asking questions, say you are uncomfortable about asking questions and then ask anyway. It’s easy to tell when a question is coming from a good place. Then listen some more. Sometimes people just want to feel heard.",
@@ -3619,7 +3824,8 @@
       "love",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Every intellectual revolution which has ever stirred humanity into greatness has been a passionate protest against inert ideas.",
@@ -3627,7 +3833,8 @@
     "t": [
       "growth",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Focus on what you can control.",
@@ -3652,7 +3859,8 @@
     "a": "Friedrich Nietzsche",
     "t": [
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Discipline: Never under compulsion, out of selfishness, without forethought, with misgivings. Don’t gussy up your thoughts. No surplus words or unnecessary actions. Let the spirit in you represent a man, an adult, a citizen, a Roman, a ruler. Taking up his post like a soldier and patiently awaiting his recall from life. Needing no oath or witness. Cheerfulness. Without requiring other people’s help. Or serenity supplied by others. To stand up straight-not straightened.",
@@ -3662,14 +3870,16 @@
       "happiness",
       "discipline",
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets.",
     "a": "Voltaire",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you have to fight a dragon, you should go to its lair before it comes to your village.",
@@ -3705,7 +3915,8 @@
     "t": [
       "nature",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The good for man is activity of the soul in accordance with virtue.",
@@ -3713,7 +3924,8 @@
     "t": [
       "action",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.",
@@ -3728,7 +3940,8 @@
     "a": "David Hume",
     "t": [
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Nothing is so difficult as not deceiving oneself.",
@@ -3760,7 +3973,8 @@
     "t": [
       "action",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You can learn a lot about a man’s character by paying attention to the things he laughs at.",
@@ -3770,7 +3984,8 @@
       "happiness",
       "action",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A good book leaves you wanting to reread the book. A great book compels you to reread your own soul.",
@@ -3785,7 +4000,8 @@
     "t": [
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Without training, they lacked knowledge. Without knowledge, they lacked confidence. Without confidence, they lacked victory.",
@@ -3794,7 +4010,8 @@
       "wisdom",
       "time",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If a man is offered something which affords a reason for acting in accordance with his instincts, he will accept it even on the slenderest evidence.",
@@ -3826,7 +4043,8 @@
     "t": [
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I am not concerned that I am not known; I seek to be worthy to be known.",
@@ -3838,7 +4056,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-13",
-    "s": "Analects 4.14, trans. James Legge (1861)"
+    "s": "Analects 4.14, trans. James Legge (1861)",
+    "checked": true
   },
   {
     "q": "People look for retreats for themselves, in the country, by the coast, or in the hills. There is nowhere that a person can find a more peaceful and trouble-free retreat than in his own mind.",
@@ -3848,7 +4067,8 @@
       "time",
       "freedom",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The aim of life is self-development. To realize one’s nature perfectly — that is what each of us is here for.",
@@ -3858,14 +4078,16 @@
       "nature",
       "growth",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
     "a": "Blaise Pascal",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You've got to get up every morning with a smile in your face And show the world all the love in your heart then people gonna treat you better you're gonna find, yes you will that you're beautiful, as you feel.",
@@ -3886,7 +4108,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-07",
-    "s": "Journal, 11 March 1856"
+    "s": "Journal, 11 March 1856",
+    "checked": true
   },
   {
     "q": "Apply yourself to thinking through difficulties—hard times can be softened, tight squeezes widened, and heavy loads made lighter for those who can apply the right pressure.",
@@ -3897,7 +4120,8 @@
       "solitude",
       "time"
     ],
-    "s": "On Tranquility of Mind, 10.4b"
+    "s": "On Tranquility of Mind, 10.4b",
+    "checked": true
   },
   {
     "q": "If you wish to improve, be content to appear clueless or stupid in extraneous matters.",
@@ -3905,7 +4129,8 @@
     "t": [
       "happiness",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The deliberate aim at Peace very easily passes into its bastard substitute, Anesthesia.",
@@ -3913,7 +4138,8 @@
     "t": [
       "nature",
       "freedom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "He who influences the thought of his times, influences all the times that follow. He has made his impression on eternity.",
@@ -3922,7 +4148,8 @@
       "time",
       "leadership",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "People shrink the world to fit their minds and think they’ve stretched their minds to grasp the world.",
@@ -3945,7 +4172,8 @@
     "a": "Seneca",
     "t": [
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Learn to love solitude, to be more alone with yourselves. The tragedy of today’s young people is that they try to unite on the basis of carrying out noisy and aggressive actions so as not to feel lonely, and this is a sad thing. The individual must learn from childhood to be on his own, for this doesn’t mean to be lonely: it means to not get bored with oneself, because a person who finds himself bored when he is alone, it seems to me, is a person in danger.",
@@ -3969,7 +4197,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-12",
-    "s": "“Is Life Worth Living?” (1895), in The Will to Believe (1897)"
+    "s": "“Is Life Worth Living?” (1895), in The Will to Believe (1897)",
+    "checked": true
   },
   {
     "q": "One swallow does not make a summer, nor does one day; and so too one day, or a short time, does not make a man blessed and happy.",
@@ -3981,7 +4210,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-06",
-    "s": "Nicomachean Ethics 1.7 (1098a18), trans. W. D. Ross (1925)"
+    "s": "Nicomachean Ethics 1.7 (1098a18), trans. W. D. Ross (1925)",
+    "checked": true
   },
   {
     "q": "It is amateurs who have one big bright beautiful idea that they can never abandon. Professionals know that they have to produce theory after theory before they are likely to hit the jackpot.",
@@ -4001,7 +4231,8 @@
       "wisdom",
       "love",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "On Anger - Name your emotions. Matthew D. Lieberman, UCLA associate professor of psychology and a founder of social cognitive neuroscience, used an fMRI study to demonstrate that the simple act of naming an emotion calms the emotional center of the brain. When research subjects were shown images and asked to label a strong emotion, they showed decreased activity in the region of the brain that triggers emotional responses, and greater activity in the region of the brain associated with vigilance and cognitive control.",
@@ -4017,7 +4248,8 @@
     "a": "Rabindranath Tagore",
     "t": [
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We must always change, renew, rejuvenate ourselves; otherwise we harden.",
@@ -4025,7 +4257,8 @@
     "t": [
       "wisdom",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I've only been to jail once, and I didn't get my tattoos there.",
@@ -4053,7 +4286,8 @@
       "love",
       "discipline",
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "No abundance of material goods can compensate for the death of individuality and personal creativity.",
@@ -4071,7 +4305,8 @@
       "solitude",
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Stoicism is not a matter of gritting your teeth. It’s about seeing things differently so that you do not need to grit your teeth.",
@@ -4095,7 +4330,8 @@
     "angle": "Before you manage the day, manage the one running it.",
     "attribution": "verified",
     "pin": "2026-11-02",
-    "s": "Letters to Lucilius 90.34, trans. R. M. Gummere (1917–25)"
+    "s": "Letters to Lucilius 90.34, trans. R. M. Gummere (1917–25)",
+    "checked": true
   },
   {
     "q": "Anxiety is the dizziness of freedom.",
@@ -4103,7 +4339,8 @@
     "t": [
       "freedom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To have knowledge one must know the extent of one’s ignorance.",
@@ -4152,14 +4389,16 @@
     "t": [
       "nature",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The greatest weapon against stress is our ability to choose one thought over another.",
     "a": "William James",
     "t": [
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A great many people think they are thinking when they are merely rearranging their prejudices.",
@@ -4167,21 +4406,24 @@
     "t": [
       "leadership",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Education begins the gentleman, but reading, good company and reflection must finish him.",
     "a": "John Locke",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A well rounded man is three things: an artist, a warrior, a philosopher.",
     "a": "Benvenuto Cellini",
     "t": [
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Big doesn’t always beat small, but fast always beats small.",
@@ -4196,14 +4438,16 @@
     "t": [
       "wisdom",
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We should not believe the lack of silver and gold to be proof of the simple life.",
     "a": "Seneca",
     "t": [
       "simplicity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Action is the foundational key to all success.",
@@ -4220,7 +4464,8 @@
     "t": [
       "happiness",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Even the smallest thing should be done with reference to an end.",
@@ -4228,7 +4473,8 @@
     "t": [
       "death",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "What do you despise? By this are you truly known.",
@@ -4246,14 +4492,16 @@
       "wisdom",
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Philosophy is good advice, and no one can give advice at the top of his lungs.",
     "a": "Seneca",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth.",
@@ -4269,14 +4517,16 @@
       "action",
       "loss",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To doubt everything or to believe everything are two equally convenient solutions; both dispense with the necessity of reflection.",
     "a": "Henri Poincaré",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Against criticism a man can neither protest nor defend himself; he must act in spite of it, and then it will gradually yield to him.",
@@ -4285,7 +4535,8 @@
       "solitude",
       "death",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "What unites people? Armies? Gold? Flags? Stories. There's nothing in the world more powerful than a good story. Nothing can stop it. No enemy can defeat it.",
@@ -4314,7 +4565,8 @@
       "creativity",
       "death",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You can’t stop the waves, but you can learn to surf.",
@@ -4325,7 +4577,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "Not an anonymous line, and not Jon Kabat-Zinn's own sentence. In Wherever You Go, There You Are (1994) he says a poster of Swami Satchidananda carried this caption. The comma is in that caption.",
-    "s": "poster caption, quoted in Wherever You Go, There You Are (1994)"
+    "s": "poster caption, quoted in Wherever You Go, There You Are (1994)",
+    "checked": true
   },
   {
     "q": "The only person you are destined to become is the person you decide to be.",
@@ -4342,7 +4595,8 @@
     "a": "Publilius Syrus",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Every adversity, every failure, every heartache, carries with it the seed of an equal or greater benefit.",
@@ -4351,14 +4605,16 @@
       "perseverance",
       "love",
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Where talent is a dwarf, self-esteem is a giant.",
     "a": "Jean Antoine Petit-Senn",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is nothing among the things that I once believed to be true which it is not permissible to doubt.",
@@ -4367,7 +4623,8 @@
       "creativity",
       "action",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If we can forgive what's been done to us... If we can forgive what we've done to others... If we can leave our stories behind. Our being victims and villains. Only then can we maybe rescue the world.",
@@ -4382,14 +4639,16 @@
     "t": [
       "wisdom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The Way of the warrior is resolute acceptance of death.",
     "a": "Miyamoto Musashi",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Three passions have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind.",
@@ -4406,14 +4665,16 @@
     "a": "Leo Tolstoy",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "All men who have turned out worth anything have had the chief hand in their own education.",
     "a": "Walter Scott",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Comfort is a beautiful distraction.",
@@ -4454,7 +4715,8 @@
     "a": "Johann Wolfgang von Goethe",
     "t": [
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The reason people find it so hard to be happy is that they always see the past better than it was, the present worse than it is, and the future less resolved than it will be.",
@@ -4472,7 +4734,8 @@
     "t": [
       "perseverance",
       "discipline"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Simplicity is the highest goal, achievable when you have overcome all difficulties. After one has played a vast quantity of notes and more notes, it is simplicity that emerges as the crowning reward of art.",
@@ -4482,14 +4745,16 @@
       "creativity",
       "simplicity",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Life could be limitless joy, if we could only take it for what it is, in the way it is given to us.",
     "a": "Leo Tolstoy",
     "t": [
       "happiness"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The universe is change: Life is opinion.",
@@ -4497,7 +4762,8 @@
     "t": [
       "growth"
     ],
-    "angle": "Everything shifts. What you make of it stays yours."
+    "angle": "Everything shifts. What you make of it stays yours.",
+    "checked": true
   },
   {
     "q": "Look for the bare necessities. The simple bare necessities. Forget about your worries and your strife.",
@@ -4523,14 +4789,16 @@
       "time",
       "freedom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Grapes. Unripe… ripened… then raisins. Constant transitions. Not the ‘not’ but the ‘not yet.’",
     "a": "Marcus Aurelius",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Silence is worse: all truths that are kept silent become poisonous.",
@@ -4539,7 +4807,8 @@
       "wisdom",
       "solitude",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Life is like a storm, my young friend. You will bask in the sunlight one moment, be shattered on the rocks the next. What makes you a man is what you do when the storm comes.",
@@ -4549,7 +4818,8 @@
       "death",
       "nature",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "As my mom taught me, control the things I can control. I don't focus on the things I can't control. That's the world, man. I can't worry about,",
@@ -4584,7 +4854,8 @@
     "t": [
       "nature",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The secret to doing good research is always to be a little underemployed. You waste years by not being able to waste hours.",
@@ -4601,7 +4872,8 @@
       "wisdom",
       "death",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If cattle or lions had hands, so as to paint with their hands and produce works of art as men do, they would paint their gods and give them bodies in form like their own—horses like horses, cattle like cattle.",
@@ -4611,7 +4883,8 @@
       "death",
       "action",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is no chance, no destiny, no fate, that can circumvent or hinder or control the firm resolve of a determined soul.",
@@ -4619,7 +4892,8 @@
     "t": [
       "perseverance",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Whatever you think you can do or believe you can do, begin it. Action has magic, grace and power in it. Begin it now.",
@@ -4629,7 +4903,8 @@
       "leadership",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Suffering becomes beautiful when anyone bears great calamities with cheerfulness, not through insensibility, but through greatness of mind.",
@@ -4639,7 +4914,8 @@
       "growth",
       "loss",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The greatest minds, as they are capable of the highest excellences, are open also to the greatest errors.",
@@ -4647,7 +4923,8 @@
     "t": [
       "creativity",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Hay personas que van a sentarse a llorar y hay personas que van a vender pañuelos. De cuál grupo quieres ser tú?",
@@ -4673,7 +4950,8 @@
       "death",
       "character",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Know the true value of time; snatch, seize, and enjoy every moment of it. No idleness, no delay, no procrastination; never put off till tomorrow what you can do today.",
@@ -4683,7 +4961,8 @@
       "happiness",
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Looking back on what I have done with my life, instead of gazing at the sparkle of jewels or gold plating celebrating something I did a long time ago, I'd rather look into the delighted face of a child holding their first caterpillar and think about what I might be doing for their future.",
@@ -4701,7 +4980,8 @@
     "t": [
       "wisdom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Whoever establishes his argument by noise and command, proves that his reason is weak.",
@@ -4710,7 +4990,8 @@
       "leadership",
       "purpose",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don't judge a man by where he is, because you don't know how far he has come.",
@@ -4729,7 +5010,8 @@
       "solitude",
       "time",
       "loss"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There is more wisdom in your body than in your deepest philosophy.",
@@ -4737,14 +5019,16 @@
     "t": [
       "wisdom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you desire to be good, begin by believing that you are wicked.",
     "a": "Epictetus",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is a true miracle when a man finally sees himself as his only opposition.",
@@ -4761,7 +5045,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-08",
-    "s": "Satires 1.9.59–60: nil sine magno vita labore dedit mortalibus"
+    "s": "Satires 1.9.59–60: nil sine magno vita labore dedit mortalibus",
+    "checked": true
   },
   {
     "q": "Happy the man who can endure the highest and lowest fortune. He, who has endured such vicissitudes with equanimity, has deprived misfortune of its power.",
@@ -4771,7 +5056,8 @@
       "happiness",
       "death",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You never know what worse luck your bad luck has saved you from.",
@@ -4797,7 +5083,8 @@
       "discipline",
       "time",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "To myself I am only a child playing on the beach, while vast oceans of truth lie undiscovered before me.",
@@ -4806,14 +5093,16 @@
       "wisdom",
       "solitude",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The life of man is like a game of dice: if the throw doesn’t give you the number you most need, you have to use your skill to make the best of the number it does give you.",
     "a": "Roman Poet Terrence",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Remember, no human condition is ever permanent. Then you will not be overjoyed in good fortune, nor too sorrowful in misfortune.",
@@ -4829,7 +5118,8 @@
     "t": [
       "death",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We are all in the gutter, but some of us are looking at the stars.",
@@ -4837,14 +5127,16 @@
     "t": [
       "nature",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Lack of confidence is not the result of difficulty; the difficulty comes from a lack of confidence.",
     "a": "Seneca",
     "t": [
       "perseverance"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Sickness is an impediment to the body but not to the will unless the will wants to be impeded. Lameness is an impediment to the leg, but not to will. If you tell yourself this every time, you will find the impediment is to something else but not to yourself.",
@@ -4852,14 +5144,16 @@
     "t": [
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "All this hurrying from place to place won’t bring you any relief, for you’re traveling in the company of your own emotions, followed by your troubles all the way.",
     "a": "Seneca",
     "t": [
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is in the character of very few men to honor without envy a friend who has prospered.",
@@ -4868,7 +5162,8 @@
       "death",
       "action",
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Know thyself; nothing in excess.",
@@ -4878,7 +5173,8 @@
       "solitude",
       "time"
     ],
-    "s": "Temple of Apollo at Delphi"
+    "s": "Temple of Apollo at Delphi",
+    "checked": true
   },
   {
     "q": "In difficult situations, when hope seems feeble, the boldest plans are safest.",
@@ -4886,7 +5182,8 @@
     "t": [
       "courage",
       "perseverance"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours.",
@@ -4896,7 +5193,8 @@
       "time",
       "leadership",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I've never known any trouble than an hour's reading didn't assuage.",
@@ -4905,21 +5203,24 @@
       "wisdom",
       "creativity",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Talent hits a target no one else can hit; Genius hits a target no one else can see.",
     "a": "Arthur Schopenhauer",
     "t": [
       "creativity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you put up with the crimes of a friend, you make them your own.",
     "a": "Roman Proverb",
     "t": [
       "death"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Half of life is lost in charming others. The other half is lost in going through anxieties caused by others. Leave this play, you have played enough.",
@@ -4939,7 +5240,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-11",
-    "s": "Essays 3.11, “Of Cripples,” trans. G. B. Ives (1925)"
+    "s": "Essays 3.11, “Of Cripples,” trans. G. B. Ives (1925)",
+    "checked": true
   },
   {
     "q": "Only put off until tomorrow what you are willing to die having left undone.",
@@ -4967,7 +5269,8 @@
       "time",
       "death",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Remember, we all stumble, everyone of us. That’s why it’s a comfort to go hand in hand.",
@@ -4994,7 +5297,8 @@
       "time",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You’ve wandered all over and finally realized that you never found what you were after: how to live. Not in syllogisms, not in money, or fame, or self-indulgence. Nowhere. Then where is it to be found? In doing what human nature requires. How? Through first principles. Which should govern your intentions and your actions.",
@@ -5004,7 +5308,8 @@
       "time",
       "nature",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Do the little things - they’re what matter.",
@@ -5031,7 +5336,8 @@
       "discipline",
       "nature",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Never under compulsion, out of selfishness, without forethought, with misgivings. Don’t gussy up your thoughts. No surplus words or unnecessary actions. Let the spirit in you represent a man, an adult, a citizen, a Roman, a ruler. Taking up his post like a soldier and patiently awaiting his recall from life. Needing no oath or witness. Cheerfulness. Without requiring other people’s help. Or serenity supplied by others. To stand up straight—not straightened.",
@@ -5041,7 +5347,8 @@
       "happiness",
       "solitude",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Time is what we want most, but what, alas! we use worst.",
@@ -5052,7 +5359,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-15",
-    "s": "Some Fruits of Solitude (1693), preface"
+    "s": "Some Fruits of Solitude (1693), preface",
+    "checked": true
   },
   {
     "q": "Keep cool - it will be all one a hundred years hence.",
@@ -5068,7 +5376,8 @@
       "loss",
       "purpose",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you don’t like the way the world is, you change it. We have an obligation to change it. Just do it one step at a time.",
@@ -5127,7 +5436,8 @@
     "t": [
       "creativity",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Know the land, conquer all.",
@@ -5160,7 +5470,8 @@
       "solitude",
       "action",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It is easier to act yourself into a new way of thinking than it is to think yourself into a new way of acting.",
@@ -5178,7 +5489,8 @@
     "t": [
       "freedom",
       "simplicity"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You should be a lantern for yourself. Draw close to the light within you and seek no further shelter.",
@@ -5195,7 +5507,8 @@
     "a": "Seneca",
     "t": [
       "freedom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "No one saves us but ourselves. No one can and no one may.",
@@ -5205,7 +5518,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "These English words are Paul Carus's 1894 verse paraphrase of Dhammapada 165 (and 276), not a literal canonical line. Fake Buddha Quotes documents the passage in Karma: A Story of Buddhist Ethics.",
-    "s": "Karma, 1894"
+    "s": "Karma, 1894",
+    "checked": true
   },
   {
     "q": "Search others for their virtues, thyself for thy vices.",
@@ -5222,7 +5536,8 @@
     "t": [
       "wisdom",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Do good. Every time you wake up and ask yourself, 'what good things am I going to do today?' remember that when the sun goes down at sunset, it will take a part of your life with it.",
@@ -5232,7 +5547,8 @@
       "solitude",
       "time",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The point of reading isn't to memorize, and it's certainly not to critique. It's to absorb and filter with an open mind—to find the right thing at the right time so that you can improve and update your existing model of reality rather than mold whatever you're reading to fit into it as it is.",
@@ -5250,7 +5566,8 @@
       "leadership",
       "action",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You are your possibilities. If you know that you can do anything.",
@@ -5304,7 +5621,8 @@
       "happiness",
       "action",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Be strict to yourself, and forgive others, and you will have no enemies.",
@@ -5313,21 +5631,24 @@
       "wisdom",
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The more urgently you want to speak, the more likely it is that you will say something foolish.",
     "a": "Decimus Junius Juvenalis",
     "t": [
       "wisdom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You should always abstain from arguments. They are very illogical ways to convince people. Opinions are like nails: the stronger you hit them, the deeper inside they go.",
     "a": "Decimus Junius Juvenalis",
     "t": [
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you love alone, think about your own sins; if you are in society, forget about the sins of others.",
@@ -5337,7 +5658,8 @@
       "love",
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "I will never turn my back on myself again. I will value my relationship with myself above all other relationships. I will always be there for us no matter what, and when no one else is.",
@@ -5363,7 +5685,8 @@
     "t": [
       "creativity",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "No man is more unhappy than he who never faced adversity. For he is not permitted to prove himself.",
@@ -5372,7 +5695,8 @@
       "perseverance",
       "happiness",
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Kites rise highest against the wind.",
@@ -5381,7 +5705,8 @@
       "nature"
     ],
     "attribution": "corrected",
-    "attributionNote": "Not Churchill. Quote Investigator (2019-03-16): John Neal, \"Enterprise and Perseverance\" (1846), \"Kites rise against not with the wind.\" The word \"highest\" is a later compression. Churchill attributions start in 1963."
+    "attributionNote": "Not Churchill. Quote Investigator (2019-03-16): John Neal, \"Enterprise and Perseverance\" (1846), \"Kites rise against not with the wind.\" The word \"highest\" is a later compression. Churchill attributions start in 1963.",
+    "checked": true
   },
   {
     "q": "Our passions are the most terrible tyrants, and we can be the slaves of them. Only self-sacrifice can free us from this slavery.",
@@ -5389,7 +5714,8 @@
     "t": [
       "solitude",
       "freedom"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It's amazing that the amount of news that happens in the world every day always just exactly fits the newspaper.",
@@ -5477,7 +5803,8 @@
     "t": [
       "time",
       "nature"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you're not making someone else's life better, you're wasting your time.",
@@ -5496,7 +5823,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "Not Lennon's line. Quote Investigator: Allen Saunders, Reader's Digest, 1957 (\"Life is what happens to us while we are making other plans\"). Lennon quoted the saying in \"Beautiful Boy\" (1980).",
-    "s": "Reader's Digest, 1957"
+    "s": "Reader's Digest, 1957",
+    "checked": true
   },
   {
     "q": "The only way to do great work is to love what you do.",
@@ -5553,7 +5881,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "The credit to Twain stands. Quote Investigator (2021-09-05) prints the 2 December 1887 letter to Mrs. Foote. The collection had a later paraphrase; the letter wording is restored. The audit's \"Twain never said it\" note does not match that letter.",
-    "s": "Letter to Mrs. Foote, 2 December 1887"
+    "s": "Letter to Mrs. Foote, 2 December 1887",
+    "checked": true
   },
   {
     "q": "Life is really simple, but we insist on making it complicated.",
@@ -5591,7 +5920,8 @@
       "leadership",
       "loss",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Don't watch the clock; do what it does. Keep going.",
@@ -5792,7 +6122,8 @@
     "t": [
       "wisdom",
       "time"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Dealing with Pain",
@@ -5827,14 +6158,16 @@
     "t": [
       "solitude",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Got the moral, spiritual life, the importance of things is measured not by their material value, but by their level of goodness.",
     "a": "Leo Tolstoy",
     "t": [
       "character"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A contrary opinion is cause for interest, not outrage. Even fools can teach you something valuable about how fools think.",
@@ -5852,7 +6185,8 @@
       "solitude",
       "action",
       "purpose"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Virtue is a consistent character, choiceworthy for its own sake and not from fear or hope or anything external. Happiness consists in virtue since virtue is a soul which has been fashioned to achieve consistency in the whole of life.",
@@ -5862,7 +6196,8 @@
       "happiness",
       "discipline",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It all balances out, and I am lucky to have both when so many have neither.",
@@ -5887,7 +6222,8 @@
     "t": [
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Virtue is a service which a person should do for himself. If there were no heaven and no God who ruled this world, even then virtue would be the necessary law of life.",
@@ -5897,7 +6233,8 @@
       "solitude",
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "A valuable long-term mission can easily be derailed by emotionally-loaded (but ultimately meaningless) short-term drama. Focus on what matters.",
@@ -5932,7 +6269,8 @@
     "a": "Leo Tolstoy",
     "t": [
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "If you're going to try, go all the way. Otherwise, don't even start. This could mean losing girlfriends, wives, relatives, and maybe even your mind. It could mean not eating for three or four days. It could mean freezing on a park bench. It could mean jail. It could mean derision. It could mean mockery--isolation. Isolation is the gift. All the others are a test of your endurance, of how much you really want to do it. And, you'll do it, despite rejection and the worst odds. And it will be better than anything else you can imagine. If you're going to try, go all the way. There is no other feeling like that. You will be alone with the gods, and the nights will flame with fire. You will ride life straight to perfect laughter. It's the only good fight there is.",
@@ -5951,7 +6289,8 @@
       "wisdom",
       "leadership",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Similarly, at work there is a quote I consistently think about... teams of great leaders should look around and look back and think 'wow, we did this all by ourselves.' They should not think that it was because of the leader they achieved their greatness.",
@@ -5974,7 +6313,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-03",
-    "s": "West India Emancipation speech, Canandaigua, N.Y., 3 August 1857"
+    "s": "West India Emancipation speech, Canandaigua, N.Y., 3 August 1857",
+    "checked": true
   },
   {
     "q": "It is bad to irate people by stepping back from their customs and traditions, but it is even worse to deny the requirements of your conscience and intellect by following customs of the crowd.",
@@ -5982,7 +6322,8 @@
     "t": [
       "character",
       "mind"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "You should behave as you think is good, but not following the advice of the crowd.",
@@ -6007,7 +6348,8 @@
       "time",
       "death",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Being happy doesn't mean that everything is perfect. It means that you've decided to look beyond the imperfections.",
@@ -6042,7 +6384,8 @@
       "solitude",
       "death",
       "growth"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "There are 3 types of people. First, there are people who do not believe in anything; then, there are people who believe only in those teachings they were brought up to believe. Finally, there are people who believe in those things which they understand with their hearts, and this last group of people is the wisest and most resolute.",
@@ -6061,7 +6404,8 @@
       "wisdom",
       "death",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Such as are thy habitual thoughts, such also will be the character of thy mind; for the soul is dyed by the thoughts.",
@@ -6071,7 +6415,8 @@
     ],
     "attribution": "verified",
     "pin": "2026-11-04",
-    "s": "Meditations 5.16, trans. George Long (1862)"
+    "s": "Meditations 5.16, trans. George Long (1862)",
+    "checked": true
   },
   {
     "q": "Let the refining and improving of your own life keep you so busy that you have little time to criticize others.",
@@ -6093,7 +6438,8 @@
     "t": [
       "time",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "The duty of a man is to be useful to his fellow-men; if possible, to be useful to many of them; failing this, to be useful to a few; failing this, to be useful to his neighbors, and, failing them, to himself: for when he helps others, he advances the general interests of mankind.",
@@ -6102,7 +6448,8 @@
       "perseverance",
       "love",
       "solitude"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "We are in the habit of saying that it was not in our power to choose the parents who were allotted to us, that they were given to us by chance. But we can choose whose children we would like to be.",
@@ -6110,7 +6457,8 @@
     "t": [
       "discipline",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "It's not enough to do good things. You have to let people know what you're doing.",
@@ -6127,7 +6475,8 @@
     "a": "Epictetus",
     "t": [
       "perseverance"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Supply and Demand causes ulcers.",
@@ -6179,7 +6528,8 @@
       "solitude",
       "time"
     ],
-    "s": "On the Happy Life"
+    "s": "On the Happy Life",
+    "checked": true
   },
   {
     "q": "Is there anything more absurd than a person having a right to kill me because we live on two opposite banks of the river, and our kings quarrel with each other?",
@@ -6187,7 +6537,8 @@
     "t": [
       "nature",
       "leadership"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Stop your ego from making a fool of yourself.",
@@ -6209,7 +6560,8 @@
     ],
     "attribution": "corrected",
     "attributionNote": "Not Lincoln. Quote Investigator (2010-05-17): Maurice Switzer, Mrs. Goose, Her Book (copyright 1906, published 1907): \"It is better to remain silent at the risk of being thought a fool, than to talk and remove all doubt of it.\" The biblical Proverbs 17:28 is a different sentence. Lincoln attributions begin in 1931.",
-    "s": "Mrs. Goose, Her Book, 1907"
+    "s": "Mrs. Goose, Her Book, 1907",
+    "checked": true
   },
   {
     "q": "That's who I learned from, working hard, doing your job, paying attention to details, treating the players as fairly and honestly as you can treat them. If it's good, it's good, if it's bad, it's bad. Just being honest with them.",
@@ -6274,7 +6626,8 @@
       "love",
       "creativity",
       "action"
-    ]
+    ],
+    "checked": true
   },
   {
     "q": "Your own level of excitement and self-belief will convince people that you know where you are going and should be followed.",

@@ -26,7 +26,14 @@ function roman(n) {
   return o;
 }
 
-// Homepage day count: Pacific calendar days since 2026-01-01, plus one.
+const WEEKDAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+function plainDate(year, month, day) {
+  const wd = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
+  return `${WEEKDAY_NAMES[wd]}, ${MONTH_NAMES[month - 1]} ${day}`;
+}
+
+// Card marks (formerly a day count): Pacific calendar days since 2026-01-01, plus one.
 // A missing or unposted date returns null so the card does not invent a day.
 function quoteCardMarks(date) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(String(date || ''))) return null;
@@ -34,7 +41,7 @@ function quoteCardMarks(date) {
   const n = Math.round((Date.UTC(year, month - 1, day) - Date.UTC(2026, 0, 1)) / 86400000);
   if (!Number.isFinite(n) || n < 0) return null;
   return {
-    day: `DAY ${n + 1}`,
+    day: plainDate(year, month, day).toUpperCase(),
     date: `${roman(day)} \u00b7 ${roman(month)} \u00b7 ${roman(year)}`,
   };
 }

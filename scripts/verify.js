@@ -180,8 +180,8 @@ const born = fs.readFileSync(path.join(root, 'public', 'born', 'index.html'), 'u
 check('born shared selection', born.includes('/select.js') && born.includes('history.json') && born.includes('AxitomeSelect.pick'));
 const oct30 = quoteCardMarks('2026-10-30');
 const oct29 = quoteCardMarks('2026-10-29');
-check('oct 30 card marks', oct30 && oct30.day === 'DAY 303' && oct30.date === 'XXX \u00b7 X \u00b7 MMXXVI', JSON.stringify(oct30));
-check('oct 29 card marks', oct29 && oct29.day === 'DAY 302' && oct29.date === 'XXIX \u00b7 X \u00b7 MMXXVI', JSON.stringify(oct29));
+check('oct 30 card marks', oct30 && oct30.day === 'FRIDAY, OCTOBER 30' && oct30.date === 'XXX \u00b7 X \u00b7 MMXXVI', JSON.stringify(oct30));
+check('oct 29 card marks', oct29 && oct29.day === 'THURSDAY, OCTOBER 29' && oct29.date === 'XXIX \u00b7 X \u00b7 MMXXVI', JSON.stringify(oct29));
 check('unposted card marks', quoteCardMarks(null) === null && quoteCardMarks('nope') === null);
 const goethe = items.find((item) => item.slug === 'johann-wolfgang-von-goethe-instruction-does-much-but-encouragement-everythi');
 const senecaDay = items.find((item) => item.slug === 'seneca-lack-of-confidence-is-not-the-result-of-difficul');
