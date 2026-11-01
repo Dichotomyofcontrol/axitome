@@ -370,7 +370,7 @@ function dayNumber(dateStr){
   return Math.round((Date.UTC(+p[0],+p[1]-1,+p[2])-Date.UTC(2026,0,1))/86400000);
 }
 function roman(n){var o='';[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']].forEach(function(p){while(n>=p[0]){o+=p[1];n-=p[0]}});return o}
-function plainDateStr(dateStr){var p=dateStr.split('-'),d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getUTCDay()]+', '+['January','February','March','April','May','June','July','August','September','October','November','December'][+p[1]-1]+' '+(+p[2])}
+function plainDateStr(dateStr){var p=dateStr.split('-');return (+p[2])+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+p[1]-1]+' '+p[0]}
 function romanDateStr(dateStr){var p=dateStr.split('-');return roman(+p[2])+' \u00b7 '+roman(+p[1])+' \u00b7 '+roman(+p[0])}
 function catalogItems(){
   return Q.map(function(q,i){

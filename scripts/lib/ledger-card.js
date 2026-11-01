@@ -29,8 +29,7 @@ function roman(n) {
 const WEEKDAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 function plainDate(year, month, day) {
-  const wd = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
-  return `${WEEKDAY_NAMES[wd]}, ${MONTH_NAMES[month - 1]} ${day}`;
+  return `${day} ${MONTH_NAMES[month - 1].slice(0, 3)} ${year}`;
 }
 
 // Card marks (formerly a day count): Pacific calendar days since 2026-01-01, plus one.
