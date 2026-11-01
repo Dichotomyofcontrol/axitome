@@ -91,6 +91,14 @@
     return !!(quote && quote.q && !isUnknown(quote.a) && !isDisputed(quote));
   }
 
+  // After the hand-pinned run, only checked quotes (audit ok, corrected or
+  // verified) rotate. Copyrighted modern, disputed and unknown lines stay out.
+  var CHECKED_ONLY_AFTER = '2026-11-15';
+
+  function checkedOnly(date) {
+    return date > CHECKED_ONLY_AFTER;
+  }
+
   function candidatePool(items, date, history) {
     var theme = themeForDate(date);
     var blocked = blockedSets(history, date);
@@ -103,11 +111,45 @@
     var freshAuthor = fresh.filter(function (quote) { return !blocked.authors.has(quote.a); });
     if (freshAuthor.length) return { theme: theme, pool: preferShort(freshAuthor) };
     if (fresh.length) return { theme: theme, pool: preferShort(fresh) };
+    // Themed lines used up: take any fresh eligible line before repeating,
+    // then allow repeats rather than failing.
+    var any = items.filter(eligible);
+    var anyFresh = any.filter(function (quote) {
+      return !blocked.quotes.has(quote.idx) && !(quote.slug && blocked.slugs.has(quote.slug)) && !blocked.authors.has(quote.a);
+    });
+    if (anyFresh.length) return { theme: theme, pool: preferShort(anyFresh) };
     if (themed.length) return { theme: theme, pool: preferShort(themed) };
-    return { theme: theme, pool: [] };
+    return { theme: theme, pool: preferShort(any) };
+  }
+
+  // A quote with pin: 'YYYY-MM-DD' is the quote for that Pacific date, and is
+  // held out of the rotation before then. Used for hand-verified lines.
+  function pinnedFor(items, date) {
+    for (var i = 0; i < items.length; i += 1) {
+      if (items[i] && items[i].pin === date && eligible(items[i])) return items[i];
+    }
+    return null;
+  }
+
+  function heldForLater(quote, date) {
+    return !!(quote && quote.pin && quote.pin > date);
   }
 
   function pick(items, date, history) {
+    var pinned = pinnedFor(items, date);
+    if (pinned) {
+      var out = {};
+      for (var k in pinned) {
+        if (Object.prototype.hasOwnProperty.call(pinned, k)) out[k] = pinned[k];
+      }
+      out.theme = themeForDate(date).id;
+      return out;
+    }
+    items = items.filter(function (quote) { return !heldForLater(quote, date); });
+    if (checkedOnly(date)) {
+      var checked = items.filter(function (quote) { return quote.checked === true; });
+      if (checked.length) items = checked;
+    }
     var found = candidatePool(items, date, history);
     if (!found.pool.length) {
       throw new Error('No eligible quote for ' + date + ' (' + found.theme.id + ')');
@@ -136,6 +178,9 @@
     isDisputed: isDisputed,
     eligible: eligible,
     candidatePool: candidatePool,
+    pinnedFor: pinnedFor,
+    checkedOnly: checkedOnly,
+    CHECKED_ONLY_AFTER: CHECKED_ONLY_AFTER,
     pick: pick,
   };
 });

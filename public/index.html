@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <title>Axitome</title>
 <meta name="description" content="One quote. Every day. Let it sit with you.">
 <meta property="og:title" content="Axitome">
@@ -366,6 +370,7 @@ function dayNumber(dateStr){
   return Math.round((Date.UTC(+p[0],+p[1]-1,+p[2])-Date.UTC(2026,0,1))/86400000);
 }
 function roman(n){var o='';[[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']].forEach(function(p){while(n>=p[0]){o+=p[1];n-=p[0]}});return o}
+function plainDateStr(dateStr){var p=dateStr.split('-'),d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getUTCDay()]+', '+['January','February','March','April','May','June','July','August','September','October','November','December'][+p[1]-1]+' '+(+p[2])}
 function romanDateStr(dateStr){var p=dateStr.split('-');return roman(+p[2])+' \u00b7 '+roman(+p[1])+' \u00b7 '+roman(+p[0])}
 function catalogItems(){
   return Q.map(function(q,i){
@@ -459,7 +464,7 @@ function show(idx,anim,dateStr){
     var td=!!(dateStr&&dateStr===pacificToday());
     if(dateStr){currentDate=dateStr;history.replaceState(null,'','#'+dateStr)}
     else{currentDate='';history.replaceState(null,'','#quote-'+idx)}
-    document.getElementById('dateLabel').innerHTML=dateStr?((td?'<span class="today-dot"></span>Today':'')+'<span>'+romanDateStr(dateStr)+'</span><b>Day '+(dayNumber(dateStr)+1)+'</b>'):'Collection';
+    document.getElementById('dateLabel').innerHTML=dateStr?((td?'<span class="today-dot"></span>Today':'')+'<span>'+romanDateStr(dateStr)+'</span><b>'+plainDateStr(dateStr)+'</b>'):'Collection';
     document.getElementById('quoteText').classList.toggle('long',q.q.length>140);
     var cut=document.getElementById('cut');cut.classList.remove('on');cut.style.animationDelay='';
     (function(el,t){el.textContent='';el.setAttribute('aria-label',t);var ws=t.split(/(\s+)/),n=0,step=Math.min(140,2200/Math.max(1,ws.length/2));ws.forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){el.appendChild(document.createTextNode(' '));return}var sp=document.createElement('span');sp.className='w';sp.setAttribute('aria-hidden','true');sp.textContent=w;sp.style.animationDelay=(250+n*step)+'ms';n++;el.appendChild(sp)});var c=document.getElementById('cut');c.style.animationDelay=(450+n*step)+'ms';void c.offsetWidth;c.classList.add('on')})(document.getElementById('quoteText'),q.q);
@@ -679,7 +684,7 @@ function buildLedger(){
     if(date<MIN_DATE)break;
     var chosen;try{chosen=selectionFor(date)}catch(err){continue}
     var label=romanDateStr(date);
-    L+='<li><button data-date="'+date+'"><span class="d">Day '+(dayNumber(date)+1)+'<br>'+escH(label)+'</span><span class="t">'+escH(chosen.q)+'</span><span class="a">'+escH(chosen.a)+'</span></button></li>';
+    L+='<li><button data-date="'+date+'"><span class="d">'+plainDateStr(date)+'<br>'+escH(label)+'</span><span class="t">'+escH(chosen.q)+'</span><span class="a">'+escH(chosen.a)+'</span></button></li>';
   }
   var ol=document.getElementById('ledgerList');ol.innerHTML=L;
   ol.querySelectorAll('button').forEach(function(el){el.addEventListener('click',function(){goIdx(this.getAttribute('data-date'))})});
