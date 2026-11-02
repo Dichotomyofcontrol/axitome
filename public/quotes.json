@@ -277,7 +277,11 @@
       "action",
       "mind"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Conquest of Happiness ch. 5, \"Fatigue\"",
+    "work": "The Conquest of Happiness",
+    "url": "https://www.gutenberg.org/ebooks/77894",
+    "passage": "ch. 5, \"Fatigue\""
   },
   {
     "q": "Instruction does much, but encouragement, everything.",
@@ -398,7 +402,10 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Everlasting Man",
+    "work": "The Everlasting Man",
+    "url": "https://www.gutenberg.org/ebooks/65688"
   },
   {
     "q": "Nobody knows as much as everybody.",
@@ -640,7 +647,12 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Thus Spake Zarathustra Prologue 4, trans. Thomas Common",
+    "work": "Thus Spake Zarathustra",
+    "url": "https://www.gutenberg.org/ebooks/1998",
+    "passage": "Prologue 4",
+    "translator": "Thomas Common"
   },
   {
     "q": "The chief prevention against getting old is to remain astonished.",
@@ -1073,7 +1085,12 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Counsels and Maxims, trans. T. Bailey Saunders",
+    "work": "Counsels and Maxims",
+    "url": "https://www.gutenberg.org/ebooks/10715",
+    "translator": "T. Bailey Saunders",
+    "sourceNote": "Saunders: \"three-fourths of ourselves\"."
   },
   {
     "q": "I have never wished to cater to the crowd; for what I know they do not approve, and what they approve I do not know.",
@@ -1187,7 +1204,13 @@
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Thus Spake Zarathustra Prologue 5, trans. Thomas Common",
+    "work": "Thus Spake Zarathustra",
+    "url": "https://www.gutenberg.org/ebooks/1998",
+    "passage": "Prologue 5",
+    "translator": "Thomas Common",
+    "sourceNote": "Common: \"one must still have chaos in one, to give birth to a dancing star\"."
   },
   {
     "q": "Between stimulus and response there is a space. In that space is our power to choose response. In our response lies our growth and our freedom.",
@@ -1310,7 +1333,10 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Essays: First Series, \"Compensation\"",
+    "work": "Essays: First Series, \"Compensation\"",
+    "url": "https://www.gutenberg.org/ebooks/16643"
   },
   {
     "q": "A king is a man strong of character and conviction who leads by example and truly cares for the suffering of his people, not a brute who rules simply because he is the strongest.",
@@ -1331,7 +1357,10 @@
       "happiness",
       "creativity"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Conquest of Happiness",
+    "work": "The Conquest of Happiness",
+    "url": "https://www.gutenberg.org/ebooks/77894"
   },
   {
     "q": "When you focus on the past, that's your ego. When I focus on the future, that's my pride. I try to focus in the moment, in the present. That's humility, that's being humble.",
@@ -1641,7 +1670,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Critique of Pure Reason Discipline of Pure Reason, §I, trans. J. M. D. Meiklejohn",
+    "work": "Critique of Pure Reason",
+    "url": "https://www.gutenberg.org/ebooks/4280",
+    "passage": "Discipline of Pure Reason, §I",
+    "translator": "J. M. D. Meiklejohn"
   },
   {
     "q": "The truth is like a lion; you don’t have to defend it. Let it loose; it will defend itself.",
@@ -1727,7 +1761,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Art of War VIII.11, trans. Lionel Giles",
+    "work": "The Art of War",
+    "url": "https://www.gutenberg.org/ebooks/132",
+    "passage": "VIII.11",
+    "translator": "Lionel Giles"
   },
   {
     "q": "Nearly everything in life is unfavorable once it grows to a certain size. It is entirely possible to have too many clients, too much work, too much fame, too much free time, and so on. Pay attention to when the thing you're chasing exceeds its usefulness.",
@@ -1766,7 +1805,10 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Our Mutual Friend",
+    "work": "Our Mutual Friend",
+    "url": "https://www.gutenberg.org/ebooks/883"
   },
   {
     "q": "Desire makes slaves out of kings, while patience makes kings out of slaves.",
@@ -1908,7 +1950,13 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Analects XV.20, trans. James Legge",
+    "work": "Analects",
+    "url": "https://www.gutenberg.org/ebooks/3330",
+    "passage": "XV.20",
+    "translator": "James Legge",
+    "sourceNote": "Legge: \"What the superior man seeks, is in himself. What the mean man seeks, is in others.\""
   },
   {
     "q": "When you come out of the storm you won't be the same person who walked in. That's what this storm is all about.",
@@ -2005,7 +2053,12 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Moral Letters to Lucilius Letter 71.3, trans. Richard M. Gummere",
+    "work": "Moral Letters to Lucilius",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_71",
+    "passage": "Letter 71.3",
+    "translator": "Richard M. Gummere"
   },
   {
     "q": "To begin you must study the end.",
@@ -2051,7 +2104,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Of Peace of Mind (Minor Dialogues) 17.5, trans. Aubrey Stewart",
+    "work": "Of Peace of Mind (Minor Dialogues)",
+    "url": "https://www.gutenberg.org/ebooks/64576",
+    "passage": "17.5",
+    "translator": "Aubrey Stewart",
+    "sourceNote": "Stewart: \"men's minds ought to have relaxation; they rise up better and more vigorous after rest\"."
   },
   {
     "q": "Lessons are repeated until they are learned. A lesson will be presented to you in various forms until you have learned it. When you have learned it, you can go on to the next lesson. Learning lessons does not end. There's no part of life that doesn't contain its lessons. If you're alive, that means there are still lessons to be learned.",
@@ -2308,7 +2367,10 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "\"Common Places,\" No. 1, The Literary Examiner (1823)",
+    "work": "\"Common Places,\" No. 1, The Literary Examiner (1823)",
+    "url": "https://en.wikiquote.org/wiki/William_Hazlitt"
   },
   {
     "q": "A parable from priest and therapist Anthony de Mello on the stories we tell ourselves: 'A man found an eagle's egg and put it in a nest of a barnyard hen. The eaglet hatched with the brood of chickens and grew up with them. All his life the eagle did what the barnyard chicks did, thinking he was a barnyard chicken. He scratched the earth for worms and insects. He clucked and cackled. And he would thrash his wings and fly a few feet into the air. Years passed and the eagle grew very old. One day he saw a magnificent bird above him in the cloudless sky. It glided in graceful majesty among the powerful wind currents, with scarcely a beat of its strong golden wings. The old eagle looked up in awe. \"Who's that?\" he asked. \"That's the eagle, the king of the birds,\" said his neighbor. \"He belongs to the sky. We belong to the earth—we're chickens.\" So the eagle lived and died a chicken, for that's what he thought he was.'",
@@ -2506,7 +2568,11 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "1 Corinthians (King James Version) 13:11",
+    "work": "1 Corinthians (King James Version)",
+    "url": "https://www.gutenberg.org/ebooks/10",
+    "passage": "13:11"
   },
   {
     "q": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
@@ -2548,7 +2614,11 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Studies in Pessimism, trans. T. Bailey Saunders",
+    "work": "Studies in Pessimism",
+    "url": "https://www.gutenberg.org/ebooks/10732",
+    "translator": "T. Bailey Saunders"
   },
   {
     "q": "Man conquers the world by conquering himself.",
@@ -2595,7 +2665,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Agamemnon 130, trans. Frank Justus Miller",
+    "work": "Agamemnon",
+    "url": "https://www.gutenberg.org/ebooks/57999",
+    "passage": "130",
+    "translator": "Frank Justus Miller",
+    "sourceNote": "Miller: \"Time often cures what reason cannot heal\"."
   },
   {
     "q": "Death, therefore, the most awful of evils, is nothing to us, seeing that, when we are, death is not come, and, when death is come, we are not.",
@@ -2646,7 +2722,13 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Beyond Good and Evil §146, trans. Helen Zimmern",
+    "work": "Beyond Good and Evil",
+    "url": "https://www.gutenberg.org/ebooks/4363",
+    "passage": "§146",
+    "translator": "Helen Zimmern",
+    "sourceNote": "Zimmern: \"He who fights with monsters should be careful lest he thereby become a monster.\""
   },
   {
     "q": "Looking at life from a different perspective makes you realize that it's not the deer that is crossing the road, rather it's the road that is crossing the forest.",
@@ -2692,7 +2774,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Moral Letters to Lucilius Letter 11.9, trans. Richard M. Gummere",
+    "work": "Moral Letters to Lucilius",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_11",
+    "passage": "Letter 11.9",
+    "translator": "Richard M. Gummere"
   },
   {
     "q": "Make your heart like a lake with a calm still surface and great depths of kindness.",
@@ -2723,7 +2810,11 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Conspiracy of Fiesco Act I, sc. xviii",
+    "work": "The Conspiracy of Fiesco",
+    "url": "https://en.wikiquote.org/wiki/Friedrich_Schiller",
+    "passage": "Act I, sc. xviii"
   },
   {
     "q": "To find yourself, think for yourself.",
@@ -2754,7 +2845,11 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Concept of Anxiety p. 61 (English ed. cited by Wikiquote)",
+    "work": "The Concept of Anxiety",
+    "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
+    "passage": "p. 61 (English ed. cited by Wikiquote)"
   },
   {
     "q": "The only real mistake is the one from which we learn nothing.",
@@ -2802,7 +2897,10 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Twilight of the Idols",
+    "work": "Twilight of the Idols",
+    "url": "https://www.gutenberg.org/ebooks/52263"
   },
   {
     "q": "In your actions, don't procrastinate. In your conversations, don't confuse. In your thoughts, don't wander. In your soul, don't be passive or aggressive. In your life, don't be all about business.",
@@ -2984,7 +3082,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Discourses 1.18, trans. George Long",
+    "work": "Discourses",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "passage": "1.18",
+    "translator": "George Long"
   },
   {
     "q": "Suspect each moment, for it is a thief, tiptoeing away with more than it brings.",
@@ -3069,7 +3172,10 @@
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Picture of Dorian Gray",
+    "work": "The Picture of Dorian Gray",
+    "url": "https://www.gutenberg.org/ebooks/174"
   },
   {
     "q": "Failure is not fatal, but failure to change might be.",
@@ -3296,7 +3402,13 @@
       "happiness"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The Antichrist §57, trans. H. L. Mencken",
+    "work": "The Antichrist",
+    "url": "https://www.gutenberg.org/ebooks/19322",
+    "passage": "§57",
+    "translator": "H. L. Mencken",
+    "sourceNote": "Wording follows Kaufmann; Mencken renders \"the most intelligent men ... find their happiness where others would find only disaster\"."
   },
   {
     "q": "Failure is simply the opportunity to begin again, this time more intelligently.",
@@ -3307,7 +3419,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "My Life and Work Introduction",
+    "work": "My Life and Work",
+    "url": "https://www.gutenberg.org/ebooks/7213",
+    "passage": "Introduction",
+    "sourceNote": "Ford: \"Failure is only the opportunity more intelligently to begin again.\""
   },
   {
     "q": "Those who do not move, do not notice their chains.",
@@ -3334,7 +3451,12 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The Dawn of Day §573",
+    "work": "The Dawn of Day",
+    "url": "https://www.gutenberg.org/ebooks/39955",
+    "passage": "§573",
+    "sourceNote": "Original: \"The snake that cannot cast its skin perishes.\""
   },
   {
     "q": "Tiger got to hunt, bird got to fly; Man got to sit and wonder ‘why, why, why?’",
@@ -3440,7 +3562,11 @@
       "freedom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Counsels and Maxims, trans. T. Bailey Saunders",
+    "work": "Counsels and Maxims",
+    "url": "https://www.gutenberg.org/ebooks/10715",
+    "translator": "T. Bailey Saunders"
   },
   {
     "q": "Don’t postpone joy until you have learned all of your lessons. Joy is your lesson.",
@@ -3483,7 +3609,12 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Morals: Of a Happy Life, trans. Roger L'Estrange",
+    "work": "Morals: Of a Happy Life",
+    "url": "https://www.gutenberg.org/ebooks/56075",
+    "translator": "Roger L'Estrange",
+    "sourceNote": "Loosened from L'Estrange's paraphrase."
   },
   {
     "q": "We forfeit three-fourths of ourselves in order to be like other people.",
@@ -3492,7 +3623,11 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Counsels and Maxims, trans. T. Bailey Saunders",
+    "work": "Counsels and Maxims",
+    "url": "https://www.gutenberg.org/ebooks/10715",
+    "translator": "T. Bailey Saunders"
   },
   {
     "q": "A leader should do anything but not everything.",
@@ -3580,7 +3715,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Brothers Karamazov Book II, ch. 2, trans. Constance Garnett",
+    "work": "The Brothers Karamazov",
+    "url": "https://www.gutenberg.org/ebooks/28054",
+    "passage": "Book II, ch. 2",
+    "translator": "Constance Garnett"
   },
   {
     "q": "Don’t sabotage yourself by unwittingly adopting negative, unproductive attitudes through your associations with others.",
@@ -3916,7 +4056,12 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Enchiridion 23, trans. George Long",
+    "work": "Enchiridion",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "passage": "23",
+    "translator": "George Long"
   },
   {
     "q": "I urge you: don’t cut short these thought-trains of yours. Follow them through to their end. Your thoughts and your feelings. Follow them through and you will grow with them.",
@@ -3983,7 +4128,10 @@
     "t": [
       "death"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Conquest of Happiness",
+    "work": "The Conquest of Happiness",
+    "url": "https://www.gutenberg.org/ebooks/77894"
   },
   {
     "q": "A calm and modest life brings more happiness than the pursuit of success combined with constant restlessness.",
@@ -4126,7 +4274,12 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Protagoras 350b, trans. Benjamin Jowett",
+    "work": "Protagoras",
+    "url": "https://www.gutenberg.org/ebooks/1591",
+    "passage": "350b",
+    "translator": "Benjamin Jowett"
   },
   {
     "q": "To a disciple who was forever complaining about others, the Master said, ‘If it is peace you want, seek to change yourself, not other people. It is easier to protect your feet with slippers than to carpet the whole of the earth.'",
@@ -4239,7 +4392,11 @@
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Common Sense Introduction",
+    "work": "Common Sense",
+    "url": "https://www.gutenberg.org/ebooks/147",
+    "passage": "Introduction"
   },
   {
     "q": "The Feynman Learning Technique: Choose a concept you want to learn about; Pretend you are teaching it to a student in grade 6; Identify gaps in your explanation. Go back to the source material, to better understand it; Review and simplify.",
@@ -4332,7 +4489,13 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Beyond Good and Evil §227, trans. Helen Zimmern",
+    "work": "Beyond Good and Evil",
+    "url": "https://www.gutenberg.org/ebooks/4363",
+    "passage": "§227",
+    "translator": "Helen Zimmern",
+    "sourceNote": "Zimmern: \"a hundred times too short\"."
   },
   {
     "q": "Discipline: Never under compulsion, out of selfishness, without forethought, with misgivings. Don’t gussy up your thoughts. No surplus words or unnecessary actions. Let the spirit in you represent a man, an adult, a citizen, a Roman, a ruler. Taking up his post like a soldier and patiently awaiting his recall from life. Needing no oath or witness. Cheerfulness. Without requiring other people’s help. Or serenity supplied by others. To stand up straight-not straightened.",
@@ -4541,7 +4704,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Discourses 1.29, trans. George Long",
+    "work": "Discourses",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "passage": "1.29",
+    "translator": "George Long"
   },
   {
     "q": "I am not concerned that I am not known; I seek to be worthy to be known.",
@@ -4582,7 +4750,10 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Picture of Dorian Gray",
+    "work": "The Picture of Dorian Gray",
+    "url": "https://www.gutenberg.org/ebooks/174"
   },
   {
     "q": "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
@@ -4690,7 +4861,12 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Moral Letters to Lucilius Letter 29.11, trans. Richard M. Gummere",
+    "work": "Moral Letters to Lucilius",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_29",
+    "passage": "Letter 29.11",
+    "translator": "Richard M. Gummere"
   },
   {
     "q": "Learn to love solitude, to be more alone with yourselves. The tragedy of today’s young people is that they try to unite on the basis of carrying out noisy and aggressive actions so as not to feel lonely, and this is a sad thing. The individual must learn from childhood to be on his own, for this doesn’t mean to be lonely: it means to not get bored with oneself, because a person who finds himself bored when he is alone, it seems to me, is a person in danger.",
@@ -4884,7 +5060,11 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Concept of Anxiety p. 61 (English ed. cited by Wikiquote)",
+    "work": "The Concept of Anxiety",
+    "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
+    "passage": "p. 61 (English ed. cited by Wikiquote)"
   },
   {
     "q": "To have knowledge one must know the extent of one’s ignorance.",
@@ -4940,7 +5120,13 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The Brothers Karamazov Book V, ch. 5, trans. Constance Garnett",
+    "work": "The Brothers Karamazov",
+    "url": "https://en.wikiquote.org/wiki/Fyodor_Dostoyevsky",
+    "passage": "Book V, ch. 5",
+    "translator": "Constance Garnett",
+    "sourceNote": "Modernised wording; Garnett has \"the secret of man's being is not only to live but to have something to live for\"."
   },
   {
     "q": "The greatest weapon against stress is our ability to choose one thought over another.",
@@ -5004,7 +5190,12 @@
       "simplicity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Moral Letters to Lucilius Letter 5, trans. Richard M. Gummere",
+    "work": "Moral Letters to Lucilius",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_5",
+    "passage": "Letter 5",
+    "translator": "Richard M. Gummere"
   },
   {
     "q": "Action is the foundational key to all success.",
@@ -5035,7 +5226,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Meditations 2.16, trans. George Long",
+    "work": "Meditations",
+    "url": "https://www.gutenberg.org/ebooks/15877",
+    "passage": "2.16",
+    "translator": "George Long"
   },
   {
     "q": "What do you despise? By this are you truly known.",
@@ -5065,7 +5261,12 @@
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Moral Letters to Lucilius Letter 38, trans. Richard M. Gummere",
+    "work": "Moral Letters to Lucilius",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_38",
+    "passage": "Letter 38",
+    "translator": "Richard M. Gummere"
   },
   {
     "q": "A reliable way to make people believe in falsehoods is frequent repetition, because familiarity is not easily distinguished from truth.",
@@ -5104,7 +5305,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Maxims and Reflections 146, trans. T. Bailey Saunders",
+    "work": "Maxims and Reflections",
+    "url": "https://www.gutenberg.org/ebooks/33670",
+    "passage": "146",
+    "translator": "T. Bailey Saunders"
   },
   {
     "q": "What unites people? Armies? Gold? Flags? Stories. There's nothing in the world more powerful than a good story. Nothing can stop it. No enemy can defeat it.",
@@ -5358,8 +5564,14 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified",
-    "angle": "Everything shifts. What you make of it stays yours."
+    "status": "paraphrase",
+    "angle": "Everything shifts. What you make of it stays yours.",
+    "s": "Meditations 4.3, trans. George Long",
+    "work": "Meditations",
+    "url": "https://www.gutenberg.org/ebooks/15877",
+    "passage": "4.3",
+    "translator": "George Long",
+    "sourceNote": "Long reads \"transformation\"."
   },
   {
     "q": "Look for the bare necessities. The simple bare necessities. Forget about your worries and your strife.",
@@ -5504,7 +5716,10 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "\"Will,\" in Maurine and Other Poems",
+    "work": "\"Will,\" in Maurine and Other Poems",
+    "url": "https://www.gutenberg.org/ebooks/26333"
   },
   {
     "q": "Whatever you think you can do or believe you can do, begin it. Action has magic, grace and power in it. Begin it now.",
@@ -5538,7 +5753,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Discourse on Method Part I, trans. John Veitch",
+    "work": "Discourse on Method",
+    "url": "https://www.gutenberg.org/ebooks/59",
+    "passage": "Part I",
+    "translator": "John Veitch",
+    "sourceNote": "Veitch reads \"aberrations\"."
   },
   {
     "q": "Hay personas que van a sentarse a llorar y hay personas que van a vender pañuelos. De cuál grupo quieres ser tú?",
@@ -5568,7 +5789,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Pensées 347, trans. W. F. Trotter",
+    "work": "Pensées",
+    "url": "https://www.gutenberg.org/ebooks/18269",
+    "passage": "347",
+    "translator": "W. F. Trotter",
+    "sourceNote": "Trotter: \"All our dignity consists, then, in thought... Let us endeavour, then, to think well; this is the principle of morality.\""
   },
   {
     "q": "Know the true value of time; snatch, seize, and enjoy every moment of it. No idleness, no delay, no procrastination; never put off till tomorrow what you can do today.",
@@ -5766,7 +5993,11 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Lady Windermere's Fan Act III",
+    "work": "Lady Windermere's Fan",
+    "url": "https://www.gutenberg.org/ebooks/790",
+    "passage": "Act III"
   },
   {
     "q": "Lack of confidence is not the result of difficulty; the difficulty comes from a lack of confidence.",
@@ -5775,7 +6006,12 @@
       "perseverance"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Moral Letters to Lucilius Letter 104.26, trans. Richard M. Gummere",
+    "work": "Moral Letters to Lucilius",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_104",
+    "passage": "Letter 104.26",
+    "translator": "Richard M. Gummere"
   },
   {
     "q": "Sickness is an impediment to the body but not to the will unless the will wants to be impeded. Lameness is an impediment to the leg, but not to will. If you tell yourself this every time, you will find the impediment is to something else but not to yourself.",
@@ -5785,7 +6021,12 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Enchiridion 9, trans. George Long",
+    "work": "Enchiridion",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "passage": "9",
+    "translator": "George Long"
   },
   {
     "q": "All this hurrying from place to place won’t bring you any relief, for you’re traveling in the company of your own emotions, followed by your troubles all the way.",
@@ -5828,7 +6069,13 @@
       "perseverance"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "History of Rome 25.38, trans. D. Spillan",
+    "work": "History of Rome",
+    "url": "https://www.gutenberg.org/ebooks/10907",
+    "passage": "25.38",
+    "translator": "D. Spillan",
+    "sourceNote": "Spillan: \"the boldest counsels are always the safest\"."
   },
   {
     "q": "Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours.",
@@ -6229,7 +6476,10 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letters and Social Aims, \"Greatness\"",
+    "work": "Letters and Social Aims, \"Greatness\"",
+    "url": "https://www.gutenberg.org/ebooks/71393"
   },
   {
     "q": "Do good. Every time you wake up and ask yourself, 'what good things am I going to do today?' remember that when the sun goes down at sunset, it will take a part of your life with it.",
@@ -7260,7 +7510,11 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Of Peace of Mind (Minor Dialogues), trans. Aubrey Stewart",
+    "work": "Of Peace of Mind (Minor Dialogues)",
+    "url": "https://www.gutenberg.org/ebooks/64576",
+    "translator": "Aubrey Stewart"
   },
   {
     "q": "We are in the habit of saying that it was not in our power to choose the parents who were allotted to us, that they were given to us by chance. But we can choose whose children we would like to be.",
