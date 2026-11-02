@@ -141,14 +141,13 @@ function quotePage(entry, related) {
       { '@type': 'ListItem', position: 3, name: clip(entry.q, 80), item: url },
     ],
   };
-  const themes = (entry.t || []).map(themeLabel).join(' · ');
-  const tier = tierOf(entry.q);
+    const tier = tierOf(entry.q);
   const lines = linesOf(entry.q, tier).map((line) => `<span class="line">${esc(line)}</span>`).join('');
   const citeHtml = cite
     ? `<p class="work">${entry.sourceUrl ? `<a href="${esc(entry.sourceUrl)}">${esc(cite)}</a>` : esc(cite)}</p>`
     : '';
   const relatedHtml = related.length
-    ? `<section class="related"><h2>Related</h2><ul>${related.map((item) => `<li><a href="/q/${esc(item.slug)}"><p>${esc(item.q)}</p><span>${esc(item.a)}</span></a></li>`).join('')}</ul></section>`
+    ? `<section class="related"><h2>${esc(relatedHeading(entry, related))}</h2><ul>${related.map((item) => `<li><a href="/q/${esc(item.slug)}"><p>${esc(item.q)}</p><span>${esc(item.a)}</span></a></li>`).join('')}</ul></section>`
     : '';
   return `${head({ title, description, url, image })}
 <script type="application/ld+json">${jsonLd(quotation)}</script>
@@ -162,11 +161,10 @@ function quotePage(entry, related) {
     <div class="cut" aria-hidden="true"></div>
     <p class="by"><a href="/a/${esc(entry.authorSlug)}">${esc(entry.a)}</a>${word ? `<span class="mark">${esc(word)}</span>` : ''}</p>
     ${citeHtml}
-    ${themes ? `<p class="themes">${esc(themes)}</p>` : ''}
   </article>
   ${relatedHtml}
 </main>
-<div class="dark">
+<div class="quiet">
   ${subscribeForm(`/q/${entry.slug}`)}
 </div>
 </body>
@@ -218,21 +216,47 @@ function authorPage(name, authorSlug, entries) {
 `;
 }
 
+// Related by theme first: most shared tags, other authors preferred, a stable
+// per-quote shuffle so neighbours vary. Same author only fills what themes cannot.
 function relatedQuotes(items, entry, limit = 3) {
-  const tag = entry.t && entry.t[0];
-  const sameAuthor = items.filter((item) => item.idx !== entry.idx && item.a === entry.a);
-  const sameTheme = items.filter((item) => item.idx !== entry.idx && item.a !== entry.a && tag && item.t && item.t.includes(tag));
+  const tags = entry.t || [];
+  const seed = (item) => {
+    let h = 2166136261;
+    for (const ch of `${entry.slug}|${item.slug}`) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+    return h >>> 0;
+  };
+  const scored = [];
+  if (tags.length) {
+    for (const item of items) {
+      if (item.idx === entry.idx || !item.t) continue;
+      const shared = item.t.filter((t) => tags.includes(t)).length;
+      if (!shared) continue;
+      const lead = item.t.includes(tags[0]) ? 1 : 0;
+      scored.push({ item, score: shared * 2 + lead - (item.a === entry.a ? 3 : 0), h: seed(item) });
+    }
+    scored.sort((x, y) => y.score - x.score || x.h - y.h);
+  }
   const picked = [];
-  const seen = new Set();
-  for (const group of [sameAuthor, sameTheme]) {
-    for (const item of group) {
-      if (picked.length >= limit) return picked;
-      if (seen.has(item.idx)) continue;
-      seen.add(item.idx);
-      picked.push(item);
+  const authors = new Set();
+  for (const { item } of scored) {
+    if (picked.length >= limit) break;
+    if (authors.has(item.a)) continue;
+    authors.add(item.a);
+    picked.push(item);
+  }
+  if (picked.length < limit) {
+    for (const item of items) {
+      if (picked.length >= limit) break;
+      if (item.idx !== entry.idx && item.a === entry.a && !picked.includes(item)) picked.push(item);
     }
   }
   return picked;
+}
+
+function relatedHeading(entry, related) {
+  const tag = entry.t && entry.t[0];
+  if (tag && related.some((item) => item.t && item.t.includes(tag))) return `More on ${themeLabel(tag).toLowerCase()}`;
+  return `More from ${entry.a}`;
 }
 
 module.exports = {

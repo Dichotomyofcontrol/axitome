@@ -205,7 +205,7 @@ check('author page', authorHtml.includes('Quotes by Seneca') && authorHtml.inclu
 
 const home = fs.readFileSync(path.join(root, 'public', 'index.html'), 'utf8');
 check('home signup', home.includes('Get one quote a day by email') && home.includes('/api/subscribe'));
-check('home quote link', home.includes('quotePageLink') && home.includes('slugs.json'));
+check('home quote link', home.includes('id="quoteLink"') && home.includes('slugs.json'));
 check('home shared selection', home.includes('/select.js') && home.includes('history.json') && home.includes('AxitomeSelect.pick'));
 const born = fs.readFileSync(path.join(root, 'public', 'born', 'index.html'), 'utf8');
 check('born shared selection', born.includes('/select.js') && born.includes('history.json') && born.includes('AxitomeSelect.pick'));
