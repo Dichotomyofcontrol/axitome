@@ -187,7 +187,12 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Either/Or, Vol. I p. 28 (Swenson ed., 1959, per Wikiquote), trans. David F. Swenson",
+    "work": "Either/Or, Vol. I",
+    "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
+    "passage": "p. 28 (Swenson ed., 1959, per Wikiquote)",
+    "translator": "David F. Swenson"
   },
   {
     "q": "If I could sink my teeth into the whole earth and actually taste it, I’d be happier for a moment… But I don’t always want to be happy. To be unhappy now and then is part of being natural. Not all days are sunny, and when rain is scarce, we pray for it. And so I take unhappiness with happiness naturally, just as I don’t marvel that there are mountains and plains and that there are rocks and grass… What matters is to be natural and calm in happiness and in unhappiness, to feel as if feeling were seeing, to think as if thinking were walking, and to remember, when death comes, that each day dies, and the sunset is beautiful, and so is the night that remains… That’s how it is and how I want it to be…",
@@ -291,7 +296,10 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letter to A. F. Oeser, 9 November 1768",
+    "work": "Letter to A. F. Oeser, 9 November 1768",
+    "url": "https://en.wikiquote.org/wiki/Johann_Wolfgang_von_Goethe"
   },
   {
     "q": "All greatness, after all, is rooted in risk.",
@@ -320,7 +328,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Nicomachean Ethics Book II, ch. 1",
+    "work": "Nicomachean Ethics",
+    "url": "https://www.gutenberg.org/ebooks/8438",
+    "passage": "Book II, ch. 1",
+    "sourceNote": "Everyman text: \"men come to be builders by building, harp-players by playing on the harp: exactly so, by doing just actions we come to be just\"."
   },
   {
     "q": "Happiness is simply the absence of desire... Happiness is not about the achievement of pleasure (which is joy or satisfaction), but about the lack of desire. It arrives when you have no urge to feel differently. Happiness is the state you enter when you no longer want to change your state.",
@@ -1139,7 +1152,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Meditations 11.18, trans. George W. Chrystal",
+    "work": "Meditations",
+    "url": "https://www.gutenberg.org/ebooks/55317",
+    "passage": "11.18",
+    "translator": "George W. Chrystal",
+    "sourceNote": "Chrystal: \"the nearer a man attains to freedom from passion, the nearer he comes to strength\"."
   },
   {
     "q": "When you want to help people, you tell them the truth. When you want to help yourself, you tell them what they want to hear.",
@@ -2537,7 +2556,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Götz von Berlichingen Act I",
+    "work": "Götz von Berlichingen",
+    "url": "https://en.wikiquote.org/wiki/Johann_Wolfgang_von_Goethe",
+    "passage": "Act I",
+    "sourceNote": "German: \"Wo viel Licht ist, ist starker Schatten.\""
   },
   {
     "q": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.",
@@ -2816,7 +2840,13 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Discourses Book IV, trans. George Long",
+    "work": "Discourses",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "passage": "Book IV",
+    "translator": "George Long",
+    "sourceNote": "Long: \"There is only one way to happiness... the rule is not to look towards things which are out of the power of our will\"."
   },
   {
     "q": "Did you think the lion was sleeping because he didn't roar?",
@@ -3138,7 +3168,12 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Second Treatise of Government ch. V, §27",
+    "work": "Second Treatise of Government",
+    "url": "https://en.wikiquote.org/wiki/John_Locke",
+    "passage": "ch. V, §27",
+    "sourceNote": "Locke: \"every Man has a Property in his own Person. This no Body has any Right to but himself.\""
   },
   {
     "q": "It is exercise alone that supports the spirits, and keeps the mind in vigor.",
@@ -3507,7 +3542,13 @@
       "freedom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Pensées 379, trans. W. F. Trotter",
+    "work": "Pensées",
+    "url": "https://www.gutenberg.org/ebooks/18269",
+    "passage": "379",
+    "translator": "W. F. Trotter",
+    "sourceNote": "Trotter: \"It is not good to have too much liberty. It is not good to have all one wants.\""
   },
   {
     "q": "Remember that there is nothing noble in being superior to some other man.",
@@ -3767,7 +3808,10 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letter to Hans Peter Kierkegaard (1848)",
+    "work": "Letter to Hans Peter Kierkegaard (1848)",
+    "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard"
   },
   {
     "q": "If you stop, you die.",
@@ -3897,7 +3941,11 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letter to H. G. O. Blake, 6–7 December 1856 The Correspondence of Henry David Thoreau (1958), p. 444",
+    "work": "Letter to H. G. O. Blake, 6–7 December 1856",
+    "url": "https://en.wikiquote.org/wiki/Henry_David_Thoreau",
+    "passage": "The Correspondence of Henry David Thoreau (1958), p. 444"
   },
   {
     "q": "It is not the ferocity of the beast of prey that requires a moral disguise but the herd animal with its profound mediocrity, timidity and boredom with itself.",
@@ -4314,7 +4362,12 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The World as Will and Representation Vol. II, ch. 31, \"On Genius\"",
+    "work": "The World as Will and Representation",
+    "url": "https://en.wikiquote.org/wiki/Arthur_Schopenhauer",
+    "passage": "Vol. II, ch. 31, \"On Genius\"",
+    "sourceNote": "Free English rendering of: \"Das Talent gleicht dem Schützen, der ein Ziel trifft, welches die Uebrigen nicht erreichen können; das Genie dem, der eines trifft, bis zu welchem sie nicht ein Mal zu sehn vermögen.\""
   },
   {
     "q": "What, if I were running in the stadium, ought I to slacken my pace when approaching the goal?",
@@ -4335,7 +4388,13 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Pensées 139, trans. W. F. Trotter",
+    "work": "Pensées",
+    "url": "https://www.gutenberg.org/ebooks/18269",
+    "passage": "139",
+    "translator": "W. F. Trotter",
+    "sourceNote": "Trotter: \"men try incessantly to divert them and to procure for them all kinds of pleasures\"."
   },
   {
     "q": "In the hour of adversity be not without hope, for crystal rain falls from black clouds.",
@@ -4641,7 +4700,11 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Journal 8 November 1838",
+    "work": "Journal",
+    "url": "https://en.wikiquote.org/wiki/Ralph_Waldo_Emerson",
+    "passage": "8 November 1838"
   },
   {
     "q": "You can learn a lot about a man’s character by paying attention to the things he laughs at.",
@@ -5473,7 +5536,12 @@
       "time",
       "nature"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The Autobiography of Bertrand Russell Prologue",
+    "work": "The Autobiography of Bertrand Russell",
+    "url": "https://en.wikiquote.org/wiki/Bertrand_Russell",
+    "passage": "Prologue",
+    "sourceNote": "Russell: \"Three passions, simple but overwhelmingly strong, have governed my life...\""
   },
   {
     "q": "Wrong does not cease to be wrong because the majority share in it.",
@@ -5646,7 +5714,13 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Thus Spake Zarathustra Part II, ch. 34, \"Self-Surpassing\", trans. Thomas Common",
+    "work": "Thus Spake Zarathustra",
+    "url": "https://www.gutenberg.org/ebooks/1998",
+    "passage": "Part II, ch. 34, \"Self-Surpassing\"",
+    "translator": "Thomas Common",
+    "sourceNote": "Common: \"to be silent is worse; all suppressed truths become poisonous\"."
   },
   {
     "q": "Life is like a storm, my young friend. You will bask in the sunlight one moment, be shattered on the rocks the next. What makes you a man is what you do when the storm comes.",
@@ -5907,7 +5981,13 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Thus Spake Zarathustra Part I, ch. 4, \"The Despisers of the Body\", trans. Thomas Common",
+    "work": "Thus Spake Zarathustra",
+    "url": "https://www.gutenberg.org/ebooks/1998",
+    "passage": "Part I, ch. 4, \"The Despisers of the Body\"",
+    "translator": "Thomas Common",
+    "sourceNote": "Common: \"There is more sagacity in thy body than in thy best wisdom.\""
   },
   {
     "q": "If you desire to be good, begin by believing that you are wicked.",
@@ -6143,7 +6223,12 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The World as Will and Representation Vol. II, ch. 31, \"On Genius\"",
+    "work": "The World as Will and Representation",
+    "url": "https://en.wikiquote.org/wiki/Arthur_Schopenhauer",
+    "passage": "Vol. II, ch. 31, \"On Genius\"",
+    "sourceNote": "Free English rendering of: \"Das Talent gleicht dem Schützen, der ein Ziel trifft, welches die Uebrigen nicht erreichen können; das Genie dem, der eines trifft, bis zu welchem sie nicht ein Mal zu sehn vermögen.\""
   },
   {
     "q": "If you put up with the crimes of a friend, you make them your own.",
@@ -6320,7 +6405,10 @@
     "t": [
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Representative Men, \"Montaigne; or, The Skeptic\"",
+    "work": "Representative Men, \"Montaigne; or, The Skeptic\"",
+    "url": "https://en.wikiquote.org/wiki/Ralph_Waldo_Emerson"
   },
   {
     "q": "Euthymia- the belief that you’re on the right path and not led astray by the many tracks which cross your of people who are hopelessly lost.",
@@ -7566,7 +7654,13 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Of the Shortness of Life (Minor Dialogues) ch. 15, trans. Aubrey Stewart",
+    "work": "Of the Shortness of Life (Minor Dialogues)",
+    "url": "https://www.gutenberg.org/ebooks/64576",
+    "passage": "ch. 15",
+    "translator": "Aubrey Stewart",
+    "sourceNote": "Stewart: \"we are wont to say that we are not able to choose who our parents should be\"."
   },
   {
     "q": "It's not enough to do good things. You have to let people know what you're doing.",
@@ -7657,7 +7751,13 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Pensées 293, trans. W. F. Trotter",
+    "work": "Pensées",
+    "url": "https://www.gutenberg.org/ebooks/18269",
+    "passage": "293",
+    "translator": "W. F. Trotter",
+    "sourceNote": "Trotter: \"Can anything be more ridiculous than that a man should have the right to kill me because he lives on the other side of the water\"."
   },
   {
     "q": "Stop your ego from making a fool of yourself.",
