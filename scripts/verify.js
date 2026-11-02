@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const { loadQuotes, catalog, buildTweetText, buildReplyText, isDryRun, shouldPostToday, losAngelesHour } = require('./lib/quotes');
+const { linesOf } = require('../public/breaks');
+const { citationLine, statusWord } = require('../public/cite');
 const { pick, themeForDate, daysBetween, isUnknown, isDisputed } = require('./lib/select');
 const { roman, renderLedgerCard } = require('./lib/card');
 const { quoteCardMarks, shareDates } = require('./lib/ledger-card');
@@ -17,6 +19,15 @@ function check(name, ok, detail) {
 
 const quotes = loadQuotes();
 check('quote count', quotes.length === 740, String(quotes.length));
+check('status on every quote', quotes.every((quote) => ['verified', 'disputed', 'unverified'].includes(quote.status)));
+const senecaPower = quotes.find((quote) => quote.q === 'He is most powerful who has power over himself.');
+check('seneca citation', senecaPower && citationLine(senecaPower) === 'Letters to Lucilius 90.34 · tr. R. M. Gummere' && senecaPower.status === 'verified' && statusWord(senecaPower) === '' && senecaPower.work === 'Letters to Lucilius' && senecaPower.passage === '90.34' && senecaPower.translator === 'R. M. Gummere');
+check('seneca lines', senecaPower && linesOf(senecaPower.q).join('\n') === 'He is most\npowerful who\nhas power\nover himself.');
+const disputedQuotes = quotes.filter((quote) => quote.attribution === 'disputed');
+check('disputed stay disputed', disputedQuotes.length === 45 && disputedQuotes.every((quote) => quote.status === 'disputed' && statusWord(quote) === 'Attributed'));
+check('lines rejoin', quotes.every((quote) => linesOf(quote.q).join(' ') === quote.q.trim().replace(/\s+/g, ' ')));
+const grateful = quotes.find((quote) => quote.q.startsWith('Be grateful for what you have'));
+check('unknown stays unverified', grateful && grateful.a === 'Unknown' && grateful.status === 'unverified' && statusWord(grateful) === 'Unverified');
 
 const expected = [
   ['look in the hearts and minds of others for your happiness', 'Hunter S. Thompson', 'The Proud Highway'],
@@ -168,6 +179,13 @@ const authorCard = fs.readFileSync(path.join(root, 'public', 'og', 'a', `${sampl
 check('author og file', authorCard.subarray(0, 4).toString('hex') === '89504e47');
 check('sample twitter', sampleHtml.includes('summary_large_image'));
 check('no reflection filler', !/reflection|what this means/i.test(sampleHtml));
+check('unverified sample labeled', sampleHtml.includes('class="mark">Unverified</span>') && sampleHtml.includes('On Tranquility of Mind 10.4b') && sampleHtml.includes('creditText'));
+const power = items.find((item) => item.q === 'He is most powerful who has power over himself.');
+const powerHtml = fs.readFileSync(path.join(root, 'public', 'q', power.slug, 'index.html'), 'utf8');
+check('verified page', powerHtml.includes('class="line">He is most</span>') && powerHtml.includes('powerful who') && powerHtml.includes('Letters to Lucilius 90.34 · tr. R. M. Gummere') && powerHtml.includes('"creator"') && !powerHtml.includes('class="mark">'));
+const pig = items.find((item) => item.q.includes('Never wrestle with pigs'));
+const pigHtml = fs.readFileSync(path.join(root, 'public', 'q', pig.slug, 'index.html'), 'utf8');
+check('disputed page', pigHtml.includes('class="mark">Attributed</span>') && pigHtml.includes('Attributed: George Bernard Shaw') && !pigHtml.includes('"creator"'));
 
 const authorHtml = fs.readFileSync(path.join(root, 'public', 'a', sample.authorSlug, 'index.html'), 'utf8');
 check('author page', authorHtml.includes('Quotes by Seneca') && authorHtml.includes(`/q/${sample.slug}`) && authorHtml.includes(`https://www.axitome.com/og/a/${sample.authorSlug}.png`));
