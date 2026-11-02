@@ -199,10 +199,10 @@ function renderLedgerQuoteCard(entry, date) {
   ctx.textAlign = 'left';
   for (const line of block.lines) { carved(ctx, line, X, y); y += lh; }
   const cutY = Math.min(y - lh + block.size * 0.45 + 22, 500);
-  const grad = ctx.createLinearGradient(X, 0, X + 300, 0);
+  const grad = ctx.createLinearGradient(X, 0, X + 240, 0);
   grad.addColorStop(0, '#4d1414'); grad.addColorStop(0.5, C.ox); grad.addColorStop(1, '#8a2a24');
   ctx.fillStyle = grad;
-  ctx.fillRect(X, cutY, 300, 5);
+  ctx.fillRect(X, cutY, 240, 3);
   ctx.fillStyle = C.chisel;
   ctx.font = '26px "Ledger SC Bold"';
   spaced(ctx, entry.a.toUpperCase(), X, cutY + 50, 5);
@@ -223,7 +223,7 @@ function renderLedgerAuthorCard(name, count) {
   let y = 330 - ((block.lines.length - 1) * lh) / 2;
   for (const line of block.lines) { carved(ctx, line, 64, y); y += lh; }
   ctx.fillStyle = C.ox;
-  ctx.fillRect(64, y - lh + 40, 300, 5);
+  ctx.fillRect(64, y - lh + 40, 240, 3);
   ctx.fillStyle = C.dim;
   ctx.font = '26px "Ledger SC"';
   spaced(ctx, `${count} ${count === 1 ? 'LINE' : 'LINES'} ON THE WALL`, 64, y - lh + 92, 4);

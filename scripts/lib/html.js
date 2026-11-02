@@ -1,4 +1,6 @@
 const { SITE, TAG_LABELS } = require('./quotes');
+const { tierOf, linesOf } = require('../../public/breaks');
+const { citationLine, statusWord } = require('../../public/cite');
 
 function esc(value) {
   return String(value)
@@ -113,16 +115,23 @@ function quotePage(entry, related) {
   const title = quoteTitle(entry);
   const description = quoteDescription(entry);
   const who = creator(entry.a);
+  const cite = citationLine(entry);
+  const word = statusWord(entry);
   const quotation = {
     '@context': 'https://schema.org',
     '@type': 'Quotation',
     text: entry.q,
     url,
     inLanguage: 'en',
-    creator: who,
-    spokenByCharacter: who,
   };
+  if (entry.status === 'verified') {
+    quotation.creator = who;
+    quotation.spokenByCharacter = who;
+  } else if (word) {
+    quotation.creditText = `${word}: ${entry.a}`;
+  }
   if (entry.s) quotation.citation = entry.s;
+  else if (cite) quotation.citation = cite;
   const crumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -133,6 +142,11 @@ function quotePage(entry, related) {
     ],
   };
   const themes = (entry.t || []).map(themeLabel).join(' · ');
+  const tier = tierOf(entry.q);
+  const lines = linesOf(entry.q, tier).map((line) => `<span class="line">${esc(line)}</span>`).join('');
+  const citeHtml = cite
+    ? `<p class="work">${entry.sourceUrl ? `<a href="${esc(entry.sourceUrl)}">${esc(cite)}</a>` : esc(cite)}</p>`
+    : '';
   const relatedHtml = related.length
     ? `<section class="related"><h2>Related</h2><ul>${related.map((item) => `<li><a href="/q/${esc(item.slug)}"><p>${esc(item.q)}</p><span>${esc(item.a)}</span></a></li>`).join('')}</ul></section>`
     : '';
@@ -144,10 +158,10 @@ function quotePage(entry, related) {
 <header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
 <main class="wrap">
   <article>
-    <h1 class="quote">${esc(entry.q)}</h1>
+    <h1 class="quote ${tier}" aria-label="${esc(entry.q)}">${lines}</h1>
     <div class="cut" aria-hidden="true"></div>
-    <p class="by"><a href="/a/${esc(entry.authorSlug)}">${esc(entry.a)}</a></p>
-    ${entry.s ? `<p class="work">${esc(entry.s)}</p>` : ''}
+    <p class="by"><a href="/a/${esc(entry.authorSlug)}">${esc(entry.a)}</a>${word ? `<span class="mark">${esc(word)}</span>` : ''}</p>
+    ${citeHtml}
     ${themes ? `<p class="themes">${esc(themes)}</p>` : ''}
   </article>
   ${relatedHtml}

@@ -12,13 +12,22 @@ a{color:inherit}
 .wrap{width:min(1100px,calc(100% - 48px));margin:0 auto;padding:12vh 0 12vh}
 .kicker{font-family:var(--sc);font-size:0.9375rem;letter-spacing:.18em;color:var(--dim);margin:0 0 20px}
 .quote{font-family:var(--sc);font-weight:600;text-transform:uppercase;font-size:clamp(2rem,5vw,4.875rem);line-height:1.07;letter-spacing:.05em;margin:0;max-width:22ch;text-wrap:balance;text-shadow:0 1px 0 rgba(255,255,255,.55),0 -1px 0 rgba(0,0,0,.3)}
-.quote.name{font-size:clamp(3rem,9vw,8.75rem);line-height:.98;max-width:none}
-.cut{height:6px;width:100%;margin-top:30px;background:linear-gradient(90deg,#4d1414,var(--ox) 30%,#8a2a24 60%,#4d1414);border-radius:3px 1px 2px 4px;box-shadow:inset 0 2px 2px rgba(0,0,0,.5);transform-origin:left;animation:strike 1.1s cubic-bezier(.22,1,.36,1) .3s both}
+.quote .line{display:block;text-wrap:balance}
+.quote.short{font-size:clamp(2.15rem,5.4vw,5.5rem);line-height:1.04;max-width:18ch}
+.quote.medium{font-size:clamp(1.6rem,3.5vw,3.35rem);line-height:1.1;letter-spacing:.04em;max-width:30ch}
+.quote.long{font-family:var(--tx);font-weight:500;text-transform:none;letter-spacing:0;font-size:clamp(1.25rem,1.8vw,1.85rem);line-height:1.38;max-width:42ch}
+.quote.name{font-size:clamp(3rem,9vw,8.75rem);line-height:.98;max-width:none;text-transform:uppercase;font-family:var(--sc);letter-spacing:.05em}
+.cut{height:4px;width:min(18rem,46%);margin-top:30px;background:linear-gradient(90deg,#4d1414,var(--ox) 30%,#8a2a24 60%,#4d1414);border-radius:2px 1px 1px 2px;box-shadow:inset 0 1px 1px rgba(0,0,0,.45);transform-origin:left;animation:strike 1.1s cubic-bezier(.22,1,.36,1) .3s both}
+.quote.short+.cut{font-size:clamp(2.15rem,5.4vw,5.5rem);width:14ch}
+.quote.medium+.cut{font-size:clamp(1.6rem,3.5vw,3.35rem);width:20ch}
+.quote.long+.cut{font-size:clamp(1.25rem,1.8vw,1.85rem);width:28ch}
 @keyframes strike{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-.by{margin:26px 0 0;font-family:var(--sc);font-weight:700;font-size:1.0625rem;letter-spacing:.24em;text-transform:uppercase}
+.by{margin:26px 0 0;font-family:var(--sc);font-weight:700;font-size:1.0625rem;letter-spacing:.24em;text-transform:uppercase;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
 .by a{text-decoration:none;display:inline-flex;align-items:center;min-height:44px;border-bottom:1px solid var(--shadow)}
 .by a:hover{border-color:var(--chisel)}
-.work{margin:6px 0 0;font-style:italic;color:var(--dim)}
+.mark{font-weight:600;font-size:.8125rem;letter-spacing:.18em;color:var(--dim)}
+.work{margin:8px 0 0;font-family:var(--sc);font-style:normal;font-weight:600;font-size:.9375rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);line-height:1.4;max-width:36rem;text-wrap:balance}
+.work a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(58,46,38,.35)}
 .themes{margin:14px 0 0;font-family:var(--sc);font-size:0.875rem;letter-spacing:.16em;color:var(--dim)}
 .related{margin-top:90px}
 .related h2{font-family:var(--sc);font-weight:600;font-size:0.9375rem;letter-spacing:.2em;margin:0 0 14px;color:var(--dim)}

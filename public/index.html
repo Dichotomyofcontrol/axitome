@@ -82,20 +82,27 @@ button{font:inherit}
 .date-label{font-family:var(--sc);font-size:0.9375rem;letter-spacing:.18em;color:var(--chisel-dim);margin-bottom:26px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .date-label b{font-weight:600;color:var(--chisel)}
 .today-dot{display:inline-block;width:16px;height:3px;background:var(--chisel);transform:rotate(-24deg)}
-.quote{font-family:var(--sc);font-weight:600;text-transform:uppercase;font-size:clamp(2.25rem,6vw,6.25rem);line-height:1.06;letter-spacing:.06em;max-width:21ch;text-wrap:balance;color:var(--chisel);text-shadow:var(--carve)}
-.quote.long{font-size:clamp(1.75rem,4vw,4rem);max-width:28ch}
+.quote{font-family:var(--sc);font-weight:600;text-transform:uppercase;font-size:clamp(2.25rem,6vw,6.25rem);line-height:1.04;letter-spacing:.05em;max-width:22ch;text-wrap:balance;color:var(--chisel);text-shadow:var(--carve)}
+.quote .line{display:block;text-wrap:balance}
+.quote.medium{font-size:clamp(1.7rem,4.15vw,4.35rem);letter-spacing:.04em;line-height:1.08;max-width:32ch}
+.quote.long{font-family:var(--tx);font-weight:500;text-transform:none;letter-spacing:0;font-size:clamp(1.25rem,1.65vw,1.85rem);line-height:1.38;max-width:46ch}
 .quote .w{display:inline-block;white-space:pre;clip-path:inset(0 100% 0 0);animation:carve .26s var(--ease) both}
 @keyframes carve{to{clip-path:inset(-10% -5% -10% 0)}}
-.cut{height:6px;margin-top:34px;background:linear-gradient(90deg,#4d1414,var(--ox) 30%,#8a2a24 60%,#4d1414);border-radius:3px 1px 2px 4px;box-shadow:inset 0 2px 2px rgba(0,0,0,.5);transform-origin:left;transform:scaleX(0)}
+.cut{height:4px;width:16ch;margin-top:28px;font-size:clamp(2.25rem,6vw,6.25rem);background:linear-gradient(90deg,#4d1414,var(--ox) 30%,#8a2a24 60%,#4d1414);border-radius:2px 1px 1px 2px;box-shadow:inset 0 1px 1px rgba(0,0,0,.45);transform-origin:left;transform:scaleX(0)}
+.quote-wrap:has(.medium)+.cut{font-size:clamp(1.7rem,4.15vw,4.35rem);width:22ch}
+.quote-wrap:has(.long)+.cut{font-size:clamp(1.25rem,1.65vw,1.85rem);width:32ch}
 .cut.on{animation:strike .5s var(--ease) forwards}
 @keyframes strike{to{transform:scaleX(1)}}
-.attribution{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
-.rule{width:48px;height:1px;background:var(--chisel)}
+.attribution{margin-top:26px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:40rem}
+.byline{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px}
+.rule{width:36px;height:1px;background:var(--chisel);align-self:center}
 .author{font-family:var(--sc);font-weight:700;font-size:1.0625rem;letter-spacing:.24em;text-transform:uppercase}
 .author a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;border-bottom:1px solid transparent}
 .author a:hover{border-bottom-color:var(--chisel)}
-.source{font-style:italic;font-size:1.125rem;color:var(--chisel-dim)}
-.source[hidden],.quote-page-link[hidden]{display:none}
+.mark{font-family:var(--sc);font-weight:600;font-size:.8125rem;letter-spacing:.18em;text-transform:uppercase;color:var(--chisel-dim)}
+.cite{font-family:var(--sc);font-weight:600;font-size:.9375rem;letter-spacing:.12em;text-transform:uppercase;color:var(--chisel-dim);line-height:1.4;text-wrap:balance}
+.cite a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(58,46,38,.35)}
+.mark[hidden],.cite[hidden],.quote-page-link[hidden]{display:none}
 .quote-page-link{font-family:var(--sc);font-size:0.875rem;letter-spacing:.16em;color:var(--chisel-dim);min-height:44px;display:inline-flex;align-items:center}
 .actions{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .action-btn,.nav-arrow{min-height:46px;padding:0 22px;border-radius:999px;border:1px solid var(--shadow);background:transparent;color:var(--chisel);font-family:var(--sc);font-size:0.9375rem;letter-spacing:.14em;display:inline-flex;align-items:center;gap:8px;cursor:pointer;transition:background .3s,border-color .3s}
@@ -253,9 +260,12 @@ button{font:inherit}
     </div>
     <div class="cut" id="cut"></div>
     <div class="attribution">
-      <div class="rule"></div>
-      <div class="author" id="authorName"></div>
-      <div class="source" id="sourceName" hidden></div>
+      <div class="byline">
+        <div class="rule"></div>
+        <div class="author" id="authorName"></div>
+        <div class="mark" id="statusWord" hidden></div>
+      </div>
+      <div class="cite" id="sourceName" hidden></div>
       <a class="quote-page-link" id="quotePageLink" hidden>This quote</a>
     </div>
     <div class="quote-tags" id="quoteTags"></div>
@@ -351,6 +361,8 @@ button{font:inherit}
 </div>
 <canvas id="shareCanvas" width="1080" height="1080"></canvas>
 <script src="/select.js"></script>
+<script src="/breaks.js"></script>
+<script src="/cite.js"></script>
 <script>
 var Q=[],SLUGS=[],HISTORY=[],currentIdx=0,currentDate='',busy=false,liked=new Set(),viewMode='single',likeCounts={};
 var MIN_DATE='2026-01-01';
@@ -416,7 +428,35 @@ function parseHash(){
   if(qm)return{idx:parseInt(qm[1],10)};
   return null;
 }
-function escH(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function escH(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function citeLine(q){return window.AxitomeCite?AxitomeCite.citationLine(q):((q&&q.s)||'')}
+function statusWord(q){return window.AxitomeCite?AxitomeCite.statusWord(q):''}
+function renderQuote(el,text){
+  var tier=AxitomeBreaks.tierOf(text);
+  el.classList.remove('short','medium','long');
+  el.classList.add(tier);
+  var lines=AxitomeBreaks.linesOf(text);
+  el.textContent='';
+  el.setAttribute('aria-label',text);
+  var n=0,step=Math.min(24,110/Math.max(1,text.split(/\s+/).length));
+  lines.forEach(function(line){
+    var holder=document.createElement('span');
+    holder.className='line';
+    holder.setAttribute('aria-hidden','true');
+    line.split(/(\s+)/).forEach(function(w){
+      if(!w)return;
+      if(/^\s+$/.test(w)){holder.appendChild(document.createTextNode(' '));return}
+      var sp=document.createElement('span');
+      sp.className='w';sp.textContent=w;sp.style.animationDelay=(n*step)+'ms';n++;
+      holder.appendChild(sp);
+    });
+    el.appendChild(holder);
+  });
+  var c=document.getElementById('cut');
+  c.style.animationDelay=(120+n*step)+'ms';
+  void c.offsetWidth;
+  c.classList.add('on');
+}
 
 function updateCD(){
   var now=new Date();
@@ -455,7 +495,7 @@ function showListView(title,subtitle,items){document.querySelector('.header').cl
     html+='<div class="list-date-badge"><span class="list-date-month">'+escH(tag)+'</span></div>';
     html+='<div class="list-item-body">';
     html+='<div class="list-item-quote">'+escH(r.q.q)+'</div>';
-    html+='<div class="list-item-author">'+escH(r.q.a)+'</div>';
+    html+='<div class="list-item-author">'+escH(r.q.a)+(statusWord(r.q)?' · '+escH(statusWord(r.q)):'')+'</div>';
     if(SLUGS[r.idx]) html+='<a class="list-page" href="/q/'+SLUGS[r.idx].slug+'">This quote</a>';
     html+='</div></div>';
   });
@@ -479,15 +519,22 @@ function show(idx,anim,dateStr){
     if(dateStr){currentDate=dateStr;history.replaceState(null,'','#'+dateStr)}
     else{currentDate='';history.replaceState(null,'','#quote-'+idx)}
     document.getElementById('dateLabel').innerHTML=dateStr?((td?'<span class="today-dot"></span>Today':'')+'<span>'+romanDateStr(dateStr)+'</span><b>'+plainDateStr(dateStr)+'</b>'):'Collection';
-    document.getElementById('quoteText').classList.toggle('long',q.q.length>140);
     var cut=document.getElementById('cut');cut.classList.remove('on');cut.style.animationDelay='';
-    (function(el,t){el.textContent='';el.setAttribute('aria-label',t);var ws=t.split(/(\s+)/),n=0,step=Math.min(24,110/Math.max(1,ws.length/2));ws.forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){el.appendChild(document.createTextNode(' '));return}var sp=document.createElement('span');sp.className='w';sp.setAttribute('aria-hidden','true');sp.textContent=w;sp.style.animationDelay=(n*step)+'ms';n++;el.appendChild(sp)});var c=document.getElementById('cut');c.style.animationDelay=(120+n*step)+'ms';void c.offsetWidth;c.classList.add('on')})(document.getElementById('quoteText'),q.q);
+    renderQuote(document.getElementById('quoteText'),q.q);
     var meta=SLUGS[idx]||null;
     var authorEl=document.getElementById('authorName');
     if(meta) authorEl.innerHTML='<a href="/a/'+meta.authorSlug+'">'+escH(q.a)+'</a>';
     else authorEl.textContent=q.a;
+    var word=statusWord(q);
+    var markEl=document.getElementById('statusWord');
+    if(word){markEl.hidden=false;markEl.textContent=word}else{markEl.hidden=true;markEl.textContent=''}
     var sourceEl=document.getElementById('sourceName');
-    if(q.s){sourceEl.hidden=false;sourceEl.textContent=q.s}else{sourceEl.hidden=true;sourceEl.textContent=''}
+    var cite=citeLine(q);
+    if(cite){
+      sourceEl.hidden=false;
+      if(q.sourceUrl) sourceEl.innerHTML='<a href="'+escH(q.sourceUrl)+'">'+escH(cite)+'</a>';
+      else sourceEl.textContent=cite;
+    }else{sourceEl.hidden=true;sourceEl.textContent=''}
     var pageLink=document.getElementById('quotePageLink');
     if(meta){pageLink.hidden=false;pageLink.href='/q/'+meta.slug}else pageLink.hidden=true;
     var tagsEl=document.getElementById('quoteTags');tagsEl.innerHTML='';
@@ -605,7 +652,8 @@ function carvedShare(){return carvedLine()+'\n'+quoteUrl()}
 /* Copy Quote */
 document.getElementById('copyBtn').addEventListener('click',function(){
   var q=Q[currentIdx];
-  var credit=q.s?q.a+', '+q.s:q.a;
+  var word=statusWord(q),cite=citeLine(q);
+  var credit=(word?word+' \u2014 ':'')+q.a+(cite?', '+cite:'');
   navigator.clipboard.writeText('\u201C'+q.q+'\u201D\n'+credit+'\n\n'+carvedShare()).then(function(){toast('Quote copied')});
 });
 document.getElementById('copyCarved').addEventListener('click',function(){navigator.clipboard.writeText(carvedShare()).then(function(){toast('Carved line copied')})});
@@ -698,7 +746,7 @@ function buildLedger(){
     if(date<MIN_DATE)break;
     var chosen;try{chosen=selectionFor(date)}catch(err){continue}
     var label=romanDateStr(date);
-    L+='<li><button data-date="'+date+'"><span class="d">'+plainDateStr(date)+'<br>'+escH(label)+'</span><span class="t">'+escH(chosen.q)+'</span><span class="a">'+escH(chosen.a)+'</span></button></li>';
+    L+='<li><button data-date="'+date+'"><span class="d">'+plainDateStr(date)+'<br>'+escH(label)+'</span><span class="t">'+escH(chosen.q)+'</span><span class="a">'+escH(chosen.a)+(statusWord(chosen)?' · '+escH(statusWord(chosen)):'')+'</span></button></li>';
   }
   var ol=document.getElementById('ledgerList');ol.innerHTML=L;
   ol.querySelectorAll('button').forEach(function(el){el.addEventListener('click',function(){goIdx(this.getAttribute('data-date'))})});
