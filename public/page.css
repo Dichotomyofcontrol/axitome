@@ -7,8 +7,8 @@ a{color:inherit}
 .top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px 24px;background:var(--trav);border-bottom:1px solid rgba(167,158,140,.45)}
 .brand{display:flex;align-items:center;gap:10px;min-height:44px;font-family:var(--sc);font-weight:700;font-size:0.875rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none}
 .brand svg{width:26px;height:26px}
-.top-link{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--shadow);border-radius:999px;font-family:var(--sc);font-size:0.875rem;letter-spacing:.16em;text-decoration:none}
-.top-link:hover{border-color:var(--chisel)}
+.top-link{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;color:var(--dim);font-family:var(--sc);font-size:0.875rem;letter-spacing:.16em;text-decoration:none}
+.top-link:hover{color:var(--chisel)}
 .wrap{width:min(1100px,calc(100% - 48px));margin:0 auto;padding:12vh 0 12vh}
 .kicker{font-family:var(--sc);font-size:0.9375rem;letter-spacing:.18em;color:var(--dim);margin:0 0 20px}
 .quote{font-family:var(--sc);font-weight:600;text-transform:uppercase;font-size:clamp(2rem,5vw,4.875rem);line-height:1.07;letter-spacing:.05em;margin:0;max-width:22ch;text-wrap:balance;text-shadow:0 1px 0 rgba(255,255,255,.55),0 -1px 0 rgba(0,0,0,.3)}
@@ -55,3 +55,16 @@ a{color:inherit}
 @media (prefers-reduced-motion:reduce){.cut{animation:none}}
 
 :focus-visible{outline:2px solid var(--ox);outline-offset:3px}
+
+/* Quote pages end quietly: a hairline and one small signup line, no dark slab. */
+.quiet{width:min(1100px,calc(100% - 48px));margin:0 auto;padding:40px 0 calc(56px + env(safe-area-inset-bottom));border-top:1px solid rgba(167,158,140,.45)}
+.quiet .signup h2{font-size:.8125rem;letter-spacing:.2em;font-weight:600;text-transform:none;color:var(--dim)}
+.quiet .signup p{display:none}
+.quiet .row{margin-top:14px}
+.quiet .row input[type=email]{min-height:44px;border:1px solid var(--shadow);border-radius:2px;color:var(--chisel);font-size:1.0625rem;padding:0 14px}
+.quiet .row input::placeholder{color:var(--dim)}
+.quiet .row input[type=email]:focus{outline:2px solid var(--ox);outline-offset:2px}
+.quiet .row button{min-height:44px;padding:0 18px;background:none;color:var(--chisel);border:1px solid var(--chisel);border-radius:2px}
+.quiet .signup .note{color:var(--dim);font-size:1rem}
+.related{margin-top:72px;margin-bottom:64px}
+@media(max-width:700px){.quiet{width:calc(100% - 36px)}}

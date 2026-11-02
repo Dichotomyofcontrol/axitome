@@ -141,8 +141,7 @@ function quotePage(entry, related) {
       { '@type': 'ListItem', position: 3, name: clip(entry.q, 80), item: url },
     ],
   };
-  const themes = (entry.t || []).map(themeLabel).join(' · ');
-  const tier = tierOf(entry.q);
+    const tier = tierOf(entry.q);
   const lines = linesOf(entry.q, tier).map((line) => `<span class="line">${esc(line)}</span>`).join('');
   const citeHtml = cite
     ? `<p class="work">${entry.sourceUrl ? `<a href="${esc(entry.sourceUrl)}">${esc(cite)}</a>` : esc(cite)}</p>`
@@ -162,11 +161,10 @@ function quotePage(entry, related) {
     <div class="cut" aria-hidden="true"></div>
     <p class="by"><a href="/a/${esc(entry.authorSlug)}">${esc(entry.a)}</a>${word ? `<span class="mark">${esc(word)}</span>` : ''}</p>
     ${citeHtml}
-    ${themes ? `<p class="themes">${esc(themes)}</p>` : ''}
   </article>
   ${relatedHtml}
 </main>
-<div class="dark">
+<div class="quiet">
   ${subscribeForm(`/q/${entry.slug}`)}
 </div>
 </body>

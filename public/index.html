@@ -117,14 +117,14 @@ button{font:inherit}
 .heart-btn.liked svg{fill:currentColor}
 @media (hover:hover){.icon-btn[data-tip]:hover::after{content:attr(data-tip);position:absolute;top:calc(100% + 2px);left:50%;transform:translateX(-50%);white-space:nowrap;font-family:var(--sc);font-size:.75rem;letter-spacing:.14em;color:var(--chisel-dim);pointer-events:none}}
 .nav-arrow{min-height:46px;padding:0 22px;border-radius:999px;border:1px solid var(--shadow);background:transparent;color:var(--chisel);font-family:var(--sc);font-size:0.9375rem;letter-spacing:.14em;display:inline-flex;align-items:center;gap:8px;cursor:pointer;transition:background .3s,border-color .3s}
-.nav-arrow:hover:not(:disabled){border-color:var(--chisel)}
+.nav-arrow{min-height:44px;width:44px;border-radius:50%;border:1px solid rgba(167,158,140,.45);background:none;color:var(--chisel-dim);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-family:var(--tx);font-size:1.0625rem;transition:color .2s,border-color .2s}
+.nav-arrow:hover:not(:disabled){border-color:var(--shadow);color:var(--chisel)}
 .heart-pop{animation:hp .4s cubic-bezier(.17,.89,.32,1.49)}
 @keyframes hp{50%{transform:scale(1.12)}}
-.bottom-nav{margin-top:18px;display:flex;gap:10px;align-items:center}
+.bottom-nav{margin-top:14px;margin-left:-2px;display:flex;gap:6px;align-items:center}
 .bottom-nav.hidden{display:none}
-.nav-arrow{width:46px;padding:0;justify-content:center;font-family:var(--tx);font-size:1.25rem}
-.nav-arrow:disabled{opacity:.3;cursor:not-allowed}
-.nav-center{font-family:var(--sc);font-size:0.9375rem;letter-spacing:.14em;color:var(--chisel-dim)}
+.nav-arrow:disabled{opacity:.25;cursor:default}
+.nav-center{font-family:var(--sc);font-size:.75rem;letter-spacing:.18em;color:var(--chisel-dim);padding:0 6px}
 /* count band */
 .band{position:relative;height:200vh}
 .band .pin{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;padding:0 28px;overflow:hidden}
@@ -165,7 +165,6 @@ button{font:inherit}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .countdown{margin-top:40px;font-family:var(--sc);font-size:0.9375rem;letter-spacing:.16em;display:flex;gap:12px;flex-wrap:wrap}
 .countdown-time{font-variant-numeric:tabular-nums}
-.witness{margin-top:22px;font-family:var(--sc);font-size:1rem;letter-spacing:.16em;color:var(--chisel-dim)}
 .bday-link{display:inline-flex;align-items:center;min-height:44px;margin-top:6px;font-family:var(--sc);font-size:0.9375rem;letter-spacing:.14em;color:var(--chisel);text-decoration:none;border-bottom:1px solid var(--chisel)}
 .carved-box{margin-top:18px;padding-top:16px;border-top:1px solid var(--shadow)}
 .carved-text{font-family:var(--tx);font-size:1rem;letter-spacing:0;white-space:pre-wrap;word-break:break-all;margin-bottom:12px;color:var(--chisel)}
@@ -244,16 +243,16 @@ button{font:inherit}
     </div>
   </div>
   <div class="panel-body">
-    <div class="section-label">Themes</div>
-    <ul class="theme-list" id="themeList"></ul>
     <div class="section-label">Your day</div>
-    <a class="bday-link" href="/born/">See the line carved on your day</a>
+    <a class="bday-link" href="/born/">Find the line for your birthday</a>
     <div class="section-label">Go to Date</div>
     <div class="date-section">
       <label class="sr-only" for="dateInput">Pick a date</label><input type="date" class="date-input" id="dateInput" aria-describedby="dateHint">
       <button class="date-go-btn" id="dateGoBtn">Go to this date</button>
       <div class="date-range-hint" id="dateHint"></div>
     </div>
+    <div class="section-label">Themes</div>
+    <ul class="theme-list" id="themeList"></ul>
   </div>
 </div>
 <main class="scene" id="singleView">
@@ -294,8 +293,6 @@ button{font:inherit}
       <button class="nav-arrow" id="nextBtn" aria-label="Next day">&#8594;</button>
     </nav>
     
-    <p class="witness" id="witness" hidden></p>
-    <a class="bday-link" href="/born/">See the line carved on your day</a>
   </div>
 </section>
 <section class="band" data-code="II / The count"><div class="pin">
@@ -646,16 +643,6 @@ document.getElementById('shareBtn').addEventListener('click',function(){
   if(navigator.share){navigator.share(data).catch(function(){});return}
   copyText(data.text+'\n'+data.url).then(function(){toast('Link copied \u00b7 paste to share')},function(){toast('Could not copy')});
 });
-/* Witness count: distinct Pacific days this browser opened the wall. No account. */
-function witness(){
-  try{
-    var k='axitome.witnessed',d=pacificToday(),a=JSON.parse(localStorage.getItem(k)||'[]');
-    if(!Array.isArray(a))a=[];
-    if(a.indexOf(d)<0){a.push(d);localStorage.setItem(k,JSON.stringify(a.slice(-2000)))}
-    var n=a.length,el=document.getElementById('witness');
-    el.textContent='You\u2019ve witnessed '+roman(n)+(n===1?' line':' lines');el.hidden=false;
-  }catch(e){}
-}
 document.getElementById('subscribeForm').addEventListener('submit',function(e){
   if(!window.fetch)return;
   e.preventDefault();
@@ -747,7 +734,7 @@ Promise.all([
     di.max=today;
     di.value=today;
     document.getElementById('dateHint').textContent='Jan 1, 2026 \u2013 Today';
-    buildThemes();buildLedger();witness();
+    buildThemes();buildLedger();
     updateCD();setInterval(updateCD,1000);
     var start=parseHash();
     if(start&&start.idx!=null&&Q[start.idx])show(start.idx,false);
