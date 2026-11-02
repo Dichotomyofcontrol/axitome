@@ -21,7 +21,10 @@
   }
 
   function statusWord(quote) {
+    var author = String((quote && quote.a) || '').trim();
     var status = String((quote && quote.status) || 'unverified');
+    if (/^anonymous\b/i.test(author)) return status === 'verified' ? '' : 'Unverified';
+    if (status === 'paraphrase') return 'Paraphrase';
     if (status === 'disputed') return 'Attributed';
     if (status === 'unverified') return 'Unverified';
     return '';

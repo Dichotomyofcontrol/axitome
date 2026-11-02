@@ -19,12 +19,25 @@ function check(name, ok, detail) {
 
 const quotes = loadQuotes();
 check('quote count', quotes.length === 740, String(quotes.length));
-check('status on every quote', quotes.every((quote) => ['verified', 'disputed', 'unverified'].includes(quote.status)));
+check('status on every quote', quotes.every((quote) => ['verified', 'paraphrase', 'disputed', 'unverified'].includes(quote.status)));
 const senecaPower = quotes.find((quote) => quote.q === 'He is most powerful who has power over himself.');
 check('seneca citation', senecaPower && citationLine(senecaPower) === 'Letters to Lucilius 90.34 · tr. R. M. Gummere' && senecaPower.status === 'verified' && statusWord(senecaPower) === '' && senecaPower.work === 'Letters to Lucilius' && senecaPower.passage === '90.34' && senecaPower.translator === 'R. M. Gummere');
 check('seneca lines', senecaPower && linesOf(senecaPower.q).join('\n') === 'He is most\npowerful who\nhas power\nover himself.');
-const disputedQuotes = quotes.filter((quote) => quote.attribution === 'disputed');
-check('disputed stay disputed', disputedQuotes.length === 45 && disputedQuotes.every((quote) => quote.status === 'disputed' && statusWord(quote) === 'Attributed'));
+const disputedQuotes = quotes.filter((quote) => quote.attribution === 'disputed' || quote.status === 'disputed');
+check('no disputed left', disputedQuotes.length === 0, String(disputedQuotes.length));
+const szasz = quotes.find((quote) => quote.a === 'Thomas Szasz');
+check('szasz recredit', szasz && /one creates/.test(szasz.q) && szasz.s === 'The Second Sin, 1973' && szasz.status === 'verified');
+const cummings = quotes.find((quote) => quote.a === 'E. E. Cummings');
+check('cummings recredit', cummings && /nobody-but-yourself/.test(cummings.q) && /A Poet's Advice/.test(cummings.s || '') && cummings.status === 'verified');
+const twain1906 = quotes.find((quote) => /31 May 1906/.test(quote.s || ''));
+check('twain 1906', twain1906 && /Annihilation has no terrors/.test(twain1906.q) && twain1906.a === 'Mark Twain' && twain1906.status === 'verified');
+const imagination = quotes.find((quote) => quote.q.startsWith('Imagination is more important than knowledge'));
+check('einstein imagination', imagination && imagination.a === 'Albert Einstein' && /Viereck/.test(imagination.s || '') && imagination.status === 'verified');
+check('goldwyn gone', !quotes.some((quote) => /goldwyn/i.test(quote.a) || /the luckier I get/i.test(quote.q)));
+const anonLines = quotes.filter((quote) => /^anonymous\b/i.test(quote.a));
+check('anonymous unverified', anonLines.length > 30 && anonLines.every((quote) => quote.status === 'unverified' && statusWord(quote) === 'Unverified'));
+const epi = quotes.find((quote) => quote.a === 'Epictetus (paraphrase)');
+check('epictetus paraphrase', epi && epi.status === 'paraphrase' && statusWord(epi) === 'Paraphrase' && epi.s === 'Enchiridion 1');
 check('lines rejoin', quotes.every((quote) => linesOf(quote.q).join(' ') === quote.q.trim().replace(/\s+/g, ' ')));
 const grateful = quotes.find((quote) => quote.q.startsWith('Be grateful for what you have'));
 check('unknown stays unverified', grateful && grateful.a === 'Unknown' && grateful.status === 'unverified' && statusWord(grateful) === 'Unverified');
@@ -185,7 +198,7 @@ const powerHtml = fs.readFileSync(path.join(root, 'public', 'q', power.slug, 'in
 check('verified page', powerHtml.includes('class="line">He is most</span>') && powerHtml.includes('powerful who') && powerHtml.includes('Letters to Lucilius 90.34 · tr. R. M. Gummere') && powerHtml.includes('"creator"') && !powerHtml.includes('class="mark">'));
 const pig = items.find((item) => item.q.includes('Never wrestle with pigs'));
 const pigHtml = fs.readFileSync(path.join(root, 'public', 'q', pig.slug, 'index.html'), 'utf8');
-check('disputed page', pigHtml.includes('class="mark">Attributed</span>') && pigHtml.includes('Attributed: George Bernard Shaw') && !pigHtml.includes('"creator"'));
+check('anonymous page', pigHtml.includes('Anonymous') && pigHtml.includes('class="mark">Unverified</span>') && !pigHtml.includes('Attributed') && !pigHtml.includes('"creator"'));
 
 const authorHtml = fs.readFileSync(path.join(root, 'public', 'a', sample.authorSlug, 'index.html'), 'utf8');
 check('author page', authorHtml.includes('Quotes by Seneca') && authorHtml.includes(`/q/${sample.slug}`) && authorHtml.includes(`https://www.axitome.com/og/a/${sample.authorSlug}.png`));
