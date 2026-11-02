@@ -167,14 +167,19 @@
   },
   {
     "q": "Dogs are our link to paradise. They don't know evil or jealousy or discontent. To sit with a dog on a hillside on a glorious afternoon is to be back in Eden, where doing nothing was not boring-it was peace.",
-    "a": "Milan Kundera",
+    "a": "Anne Raver",
     "t": [
       "wisdom",
       "happiness",
       "time",
       "action"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Anne Raver, after Milan Kundera, The Unbearable Lightness of Being (1984)",
+    "url": "https://quoteinvestigator.com/2020/10/02/dogs/",
+    "attributionNote": "Not a direct Kundera quotation: crafted by Anne Raver, inspired by passages in The Unbearable Lightness of Being (Quote Investigator).",
+    "sourceNote": "Raver's summary of Kundera's passages on dogs and paradise in The Unbearable Lightness of Being (1984).",
+    "attribution": "corrected"
   },
   {
     "q": "You can’t steal second base and keep your foot on first base.",
@@ -222,14 +227,19 @@
   },
   {
     "q": "Dogs are our link to paradise. They don’t know evil or jealousy or discontent. To sit with a dog on a hillside on a glorious afternoon is to be back in Eden, where doing nothing was not boring—it was peace.",
-    "a": "Milan Kundera",
+    "a": "Anne Raver",
     "t": [
       "wisdom",
       "happiness",
       "time",
       "action"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Anne Raver, after Milan Kundera, The Unbearable Lightness of Being (1984)",
+    "url": "https://quoteinvestigator.com/2020/10/02/dogs/",
+    "attributionNote": "Not a direct Kundera quotation: crafted by Anne Raver, inspired by passages in The Unbearable Lightness of Being (Quote Investigator).",
+    "sourceNote": "Raver's summary of Kundera's passages on dogs and paradise in The Unbearable Lightness of Being (1984).",
+    "attribution": "corrected"
   },
   {
     "q": "Don’t worry about people stealing your ideas. If your ideas are any good, you’ll have to ram them down people’s throats.",
@@ -238,7 +248,9 @@
       "action",
       "mind"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "url": "https://quoteinvestigator.com/2026/03/06/idea-original/",
+    "sourceNote": "Earliest version (1985, via Kenneth Iverson): \"If your idea is original, you will have to ram it down people's throats.\""
   },
   {
     "q": "If the path before you is clear, you're probably on someone else's.",
@@ -513,7 +525,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Shaw. Quote Investigator traces the modern joke to Cyrus Ching and to earlier anonymous sayings, with no single author for this wording.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2017/07/08/pig/",
+    "sourceNote": "Anonymous adage; popularised by Cyrus Ching; Shaw/Twain/Lincoln ascriptions unsupported."
   },
   {
     "q": "More is lost by indecision than wrong decision.",
@@ -1036,7 +1050,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "No Feynman source. Quote Investigator finds no evidence he said it.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2024/10/22/question-answer/",
+    "sourceNote": "Evolved from a 1995 saying by J. J. Hahn; Feynman attribution unsupported."
   },
   {
     "q": "Success is getting what you want. Happiness is wanting what you get.",
@@ -1521,7 +1537,10 @@
       "creativity",
       "growth"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Albert A. Bartlett, 1976",
+    "url": "https://quoteinvestigator.com/2021/02/01/understand-exponential/",
+    "sourceNote": "Original (1976): \"The greatest shortcoming of the human race is man's inability to understand the exponential function.\""
   },
   {
     "q": "Investigate what is, and not what pleases.",
@@ -1812,12 +1831,17 @@
   },
   {
     "q": "I prayed for twenty years but received no answer until I prayed with my legs.",
-    "a": "Frederick Douglas",
+    "a": "Frederick Douglass",
     "t": [
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Frederick Douglass, as reported 1859 and 1876",
+    "url": "https://quoteinvestigator.com/2021/11/23/pray-legs/",
+    "attributionNote": "Spelling corrected (Douglas to Douglass).",
+    "sourceNote": "1876 version: \"I prayed that God would emancipate me, but it was not till I prayed with my legs that I was emancipated.\"",
+    "attribution": "corrected"
   },
   {
     "q": "The culture precedes positive results. It doesn’t get tacked on as an afterthought on your way to the victory stand. Champions behave like champions before they’re champions; they have a winning standard of performance before they are winners.",
@@ -2038,7 +2062,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not in Van Gogh's letters (vangoghletters.org). No other author found.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2023/03/10/normality/",
+    "sourceNote": "Earliest known 2009; Van Gogh attribution unsupported."
   },
   {
     "q": "What the superior man seeks is in himself; what the small man seeks is in others.",
@@ -2668,14 +2694,19 @@
   },
   {
     "q": "One day, in retrospect, the years of struggle will strike you as the most beautiful.",
-    "a": "Anonymous",
+    "a": "Sigmund Freud",
     "t": [
       "perseverance"
     ],
     "checked": true,
     "attribution": "corrected",
-    "attributionNote": "No Freud source. Internet attribution only.",
-    "status": "unverified"
+    "attributionNote": "Previously Anonymous; Freud wrote it in a 1907 letter to Jung (Quote Investigator).",
+    "status": "verified",
+    "s": "Sigmund Freud, letter to C. G. Jung, 1907",
+    "work": "The Freud/Jung Letters",
+    "passage": "Letter to C. G. Jung, 1907",
+    "translator": "Tania and James Stern",
+    "url": "https://quoteinvestigator.com/2023/09/24/struggle-beautiful/"
   },
   {
     "q": "When I was a child, I spoke as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things.",
@@ -3157,7 +3188,10 @@
       "loss",
       "mind"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "James Baldwin, LIFE magazine, 1963",
+    "work": "LIFE magazine interview (1963)",
+    "url": "https://quoteinvestigator.com/2022/01/20/pain/"
   },
   {
     "q": "Care about what other people think and you will always be their prisoner.",
@@ -3234,7 +3268,10 @@
       "time",
       "growth"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Eden Phillpotts, A Shadow Passes (1918)",
+    "work": "A Shadow Passes (1918)",
+    "url": "https://quoteinvestigator.com/2012/07/07/magical-things-waiting/"
   },
   {
     "q": "To a mind that is still, the entire universe surrenders.",
@@ -3572,13 +3609,18 @@
   },
   {
     "q": "Those who do not move, do not notice their chains.",
-    "a": "Rosa Luxemburg",
+    "a": "Anonymous",
     "t": [
       "freedom",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://en.wikiquote.org/wiki/Rosa_Luxemburg",
+    "attributionNote": "Misattributed to Rosa Luxemburg; no source found (Wikiquote, Misattributed).",
+    "sourceNote": "Commonly attributed to Rosa Luxemburg; searches for a source have been unsuccessful.",
+    "attribution": "corrected"
   },
   {
     "q": "Once you hear the details of a victory it is hard to distinguish it from a defeat.",
@@ -5598,15 +5640,17 @@
   },
   {
     "q": "The only person you are destined to become is the person you decide to be.",
-    "a": "Anonymous",
+    "a": "Janet Champ and Charlotte Moore (Nike ad)",
     "t": [
       "growth",
       "action"
     ],
     "checked": true,
     "attribution": "corrected",
-    "attributionNote": "Not Emerson. Modern line with no earlier author.",
-    "status": "unverified"
+    "attributionNote": "Nike ad copy (1991) by Janet Champ and Charlotte Moore; the Emerson attribution is unsupported (Quote Investigator).",
+    "status": "unverified",
+    "s": "Nike advertising campaign, Wieden & Kennedy, 1991",
+    "url": "https://quoteinvestigator.com/2020/12/08/destined/"
   },
   {
     "q": "Do not despise the bottom rungs in the ascent to greatness. If you wish to reach the highest, begin at the lowest.",
@@ -5922,7 +5966,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Einstein. Quote Investigator (2024-05-04): the earliest note is Gilbert Fowler White's 1942 journal, with no primary source. QI leaves the creator anonymous. Wikiquote lists it as disputed.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2024/05/04/everything-miracle/",
+    "sourceNote": "Einstein attribution unsupported (Quote Investigator)."
   },
   {
     "q": "Take the course opposite to custom and you will do well.",
@@ -6701,14 +6747,19 @@
   },
   {
     "q": "It is easier to act yourself into a new way of thinking than it is to think yourself into a new way of acting.",
-    "a": "Millard Fuller",
+    "a": "Anonymous",
     "t": [
       "solitude",
       "leadership",
       "action",
       "mind"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://quoteinvestigator.com/2021/10/12/acting/",
+    "attributionNote": "Misattributed to Millard Fuller; an anonymous saying circulating by 1930, popularised by E. Stanley Jones (Quote Investigator).",
+    "sourceNote": "Misattributed to Millard Fuller; an anonymous saying circulating by 1930, popularised by E. Stanley Jones (Quote Investigator).",
+    "attribution": "corrected"
   },
   {
     "q": "The more humble a person is, the freer and stronger he (or she) is.",
@@ -6931,7 +6982,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not a verified Twain sentence. Wikiquote leaves it unsourced. Quote Investigator traces related \"troubles that never happened\" sayings to earlier writers, without one author for this wording.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2013/10/04/never-happened/",
+    "sourceNote": "Evolved saying; Mark Twain attribution unsupported."
   },
   {
     "q": "Disrespect for traditions has not caused even one thousandth part of the great evil which was caused by the old prejudices, traditions, customs, and institutions which should not exist at present.",
@@ -7074,13 +7127,18 @@
   },
   {
     "q": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "a": "Chinese Proverb",
+    "a": "Anonymous",
     "t": [
       "time",
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://quoteinvestigator.com/2021/12/29/plant-tree/",
+    "attributionNote": "Not a documented Chinese proverb; anonymous, circulating by 1967 and labelled Chinese only from 1985 (Quote Investigator).",
+    "sourceNote": "Not a documented Chinese proverb; anonymous, circulating by 1967 and labelled Chinese only from 1985 (Quote Investigator).",
+    "attribution": "corrected"
   },
   {
     "q": "If you're not making someone else's life better, you're wasting your time.",
@@ -7188,12 +7246,17 @@
   },
   {
     "q": "The best way to predict the future is to create it.",
-    "a": "Peter Drucker",
+    "a": "Anonymous",
     "t": [
       "creativity",
       "time"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://quoteinvestigator.com/2012/09/27/invent-the-future/",
+    "attributionNote": "Misattributed to Peter Drucker; a variant of Alan Kay's \"The best way to predict the future is to invent it\" (Quote Investigator).",
+    "sourceNote": "Misattributed to Peter Drucker; a variant of Alan Kay's \"The best way to predict the future is to invent it\" (Quote Investigator).",
+    "attribution": "corrected"
   },
   {
     "q": "The secret to getting ahead is getting started.",
@@ -7314,7 +7377,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not a sourced Einstein sentence. Wikiquote: John Archibald Wheeler, Cosmic Search (1979), described Einstein's work with \"In the middle of difficulty lies opportunity\" and did not present it as Einstein's words. The \"every\" wording has no author.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2021/10/07/difficulty/",
+    "sourceNote": "QI tentatively credits this phrasing to John Archibald Wheeler; Einstein attribution a misreading."
   },
   {
     "q": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
@@ -7399,7 +7464,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "No Eleanor Roosevelt source. Circulating since the 1970s with no earlier author.",
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://quoteinvestigator.com/2018/02/10/beauty-dreams/",
+    "sourceNote": "Eleanor Roosevelt attribution unsupported; earliest instances anonymous."
   },
   {
     "q": "You don't have to be great to start, but you have to start to be great.",
