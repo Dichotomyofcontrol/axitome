@@ -85,7 +85,12 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Plutarch, Life of Cato the Elder, 19.4",
+    "work": "Plutarch, Life of Cato the Elder",
+    "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0013%3Achapter%3D19",
+    "passage": "19.4",
+    "sourceNote": "Reported by Plutarch."
   },
   {
     "q": "Always laugh when you can. It is cheap medicine.",
@@ -104,7 +109,11 @@
       "solitude",
       "time"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Playboy interview, May 1971",
+    "work": "Playboy interview",
+    "url": "https://en.wikiquote.org/wiki/John_Wayne",
+    "passage": "May 1971"
   },
   {
     "q": "Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions.",
@@ -113,7 +122,12 @@
       "discipline",
       "freedom"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Oxford Union address, 2018",
+    "work": "Oxford Union address",
+    "url": "https://en.wikiquote.org/wiki/Eliud_Kipchoge",
+    "passage": "2018",
+    "sourceNote": "Kipchoge: \"Only the disciplined ones are free in life.\""
   },
   {
     "q": "I recently found a box filled with notes I wrote to myself years ago. I like this one: 1. Know what you want. 2. Go after it relentlessly.",
@@ -273,7 +287,11 @@
       "nature",
       "simplicity"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "One Minute Wisdom (1989), \"Transformation\"",
+    "work": "One Minute Wisdom (1989)",
+    "url": "https://en.wikiquote.org/wiki/Anthony_de_Mello",
+    "passage": "\"Transformation\""
   },
   {
     "q": "One of the symptoms of an approaching nervous breakdown is the belief that one’s work is terribly important.",
@@ -373,7 +391,11 @@
       "action",
       "mind"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Interview, Eurogamer, 31 March 2010",
+    "work": "Interview, Eurogamer",
+    "url": "https://en.wikiquote.org/wiki/Shigeru_Miyamoto",
+    "passage": "31 March 2010"
   },
   {
     "q": "True creation eventually becomes independent of its creator. Evolution takes the original product far from its origin, with an uncertain outcome.",
@@ -406,7 +428,11 @@
       "nature",
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Courage to Create (1975), ch. 4, p. 93",
+    "work": "The Courage to Create (1975)",
+    "url": "https://en.wikiquote.org/wiki/Rollo_May",
+    "passage": "ch. 4, p. 93"
   },
   {
     "q": "A dead thing can go with the stream, but only a living thing can go against it.",
@@ -513,7 +539,11 @@
     "t": [
       "creativity"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Rebel (1951), Introduction",
+    "work": "The Rebel (1951)",
+    "url": "https://en.wikiquote.org/wiki/Albert_Camus",
+    "passage": "Introduction"
   },
   {
     "q": "Judge a man by his questions rather than by his answers.",
@@ -588,7 +618,11 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Man and Superman (1903), p. 37",
+    "work": "Man and Superman (1903)",
+    "url": "https://en.wikiquote.org/wiki/George_Bernard_Shaw",
+    "passage": "p. 37"
   },
   {
     "q": "If a republic is small, it is destroyed by a foreign force; if it is large, it is ruined by an internal imperfection.",
@@ -740,7 +774,11 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Letter to Isaac McPherson, 13 August 1813",
+    "work": "Letter to Isaac McPherson",
+    "url": "https://en.wikiquote.org/wiki/Thomas_Jefferson",
+    "passage": "13 August 1813"
   },
   {
     "q": "There will come a time when you believe everything is finished. That will be the beginning.",
@@ -749,7 +787,10 @@
       "time",
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Lonely on the Mountain (1980)",
+    "work": "Lonely on the Mountain (1980)",
+    "url": "https://en.wikiquote.org/wiki/Louis_L'Amour"
   },
   {
     "q": "To measure the quality of your life, simply do nothing, and see how it feels.",
@@ -766,7 +807,11 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "My Pedagogic Creed (1897); Democracy and Education (1916)",
+    "work": "My Pedagogic Creed (1897); Democracy and Education (1916)",
+    "url": "https://en.wikiquote.org/wiki/John_Dewey",
+    "sourceNote": "Wikiquote: a paraphrase of an idea Dewey expressed in other words."
   },
   {
     "q": "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
@@ -1008,7 +1053,10 @@
     "t": [
       "creativity"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Twenty-four Conversations with Borges (1984)",
+    "work": "Twenty-four Conversations with Borges (1984)",
+    "url": "https://en.wikiquote.org/wiki/Jorge_Luis_Borges"
   },
   {
     "q": "These are times in which a genius would wish to live. It is not in the still calm of life, or in the repose of a pacific station, that great characters are formed. The habits of a vigorous mind are formed in contending with difficulties. Great necessities call out great virtues.",
@@ -1233,14 +1281,19 @@
   },
   {
     "q": "Between stimulus and response there is a space. In that space is our power to choose response. In our response lies our growth and our freedom.",
-    "a": "Viktor Frankl",
+    "a": "Stephen Covey",
     "t": [
       "freedom",
       "leadership",
       "growth",
       "action"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Stephen Covey, summarising a thought he attributed to Viktor Frankl",
+    "url": "https://en.wikiquote.org/wiki/Viktor_Frankl",
+    "attribution": "corrected",
+    "attributionNote": "Not Frankl's words: Stephen Covey's summary, widely misattributed to Frankl (Viktor Frankl Institute).",
+    "sourceNote": "Covey: \"Between stimulus and response lies a space. In that space lie our freedom and power to choose our response.\""
   },
   {
     "q": "My father always used to say, 'Don't raise your voice. Improve your argument.'",
@@ -1393,12 +1446,17 @@
   },
   {
     "q": "The darker the night, the brighter the stars.",
-    "a": "Fyodor Dostoevsky",
+    "a": "Apollon Maykov",
     "t": [
       "nature",
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Apollon Maykov, untitled poem (1878)",
+    "url": "https://en.wikiquote.org/wiki/Fyodor_Dostoevsky",
+    "attribution": "corrected",
+    "attributionNote": "Not Dostoevsky: often credited to Crime and Punishment, but it is from an 1878 poem by Apollon Maykov (Wikiquote, Misattributed).",
+    "work": "Untitled poem (1878)"
   },
   {
     "q": "If you feel safe in the area you’re working in, you’re not working in the right area. Always go a little further into the water than you feel you’re capable of being in. Go a little bit out of your depth. And when you don’t feel that your feet are quite touching the bottom, you’re just about in the right place to do something exciting.",
@@ -1534,7 +1592,10 @@
       "action",
       "character"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Chesapeake (1978)",
+    "work": "Chesapeake (1978)",
+    "url": "https://en.wikiquote.org/wiki/James_Michener"
   },
   {
     "q": "Nostalgia is possibly the greatest of the lies that we tell ourselves. It is the glossing of the past to fit the sensibilities of the present. For some, it brings a measure of comfort, a sense of self and source, but others, I fear, take these altered memories too far, and because of that, paralyze themselves to the realities about them. How many people long for that ‘past, simpler, and better world,’ I wonder, without ever recognizing the truth that perhaps it was they who were simpler and better, and not the world about them?",
@@ -1585,7 +1646,10 @@
     "t": [
       "solitude"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Interview, Writers at Work, Second Series (1963)",
+    "work": "Interview, Writers at Work, Second Series (1963)",
+    "url": "https://en.wikiquote.org/wiki/Marianne_Moore"
   },
   {
     "q": "Prosperity tries the fortunate, adversity the great.",
@@ -1906,7 +1970,10 @@
     "t": [
       "happiness"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Wheel of Time (1998)",
+    "work": "The Wheel of Time (1998)",
+    "url": "https://en.wikiquote.org/wiki/Carlos_Castaneda"
   },
   {
     "q": "Well-being is realized by small steps but it is no small thing.",
@@ -2193,7 +2260,10 @@
       "action",
       "mind"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Interview, Biograph liner notes (1985)",
+    "work": "Interview, Biograph liner notes (1985)",
+    "url": "https://en.wikiquote.org/wiki/Bob_Dylan"
   },
   {
     "q": "To make life a little better for people less fortunate than you, that's what I think a meaningful life is. One lives not just for oneself but for one's community.",
@@ -2225,7 +2295,10 @@
       "purpose",
       "mind"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Twenty-four Conversations with Borges (1984)",
+    "work": "Twenty-four Conversations with Borges (1984)",
+    "url": "https://en.wikiquote.org/wiki/Jorge_Luis_Borges"
   },
   {
     "q": "Be careful not to rashly refuse to learn from others.",
@@ -2315,7 +2388,11 @@
     "t": [
       "wisdom"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Bed of Procrustes (2010), p. 84",
+    "work": "The Bed of Procrustes (2010)",
+    "url": "https://en.wikiquote.org/wiki/Nassim_Nicholas_Taleb",
+    "passage": "p. 84"
   },
   {
     "q": "You can't discuss the ocean with a well frog - he's limited by the space he lives in. You can't discuss ice with a summer insect - he's bound to a single season.",
@@ -3035,13 +3112,18 @@
   },
   {
     "q": "Hope has two beautiful daughters; their names are Anger and Courage. Anger at the way things are, and Courage to see that they do not remain as they are.",
-    "a": "Augustine of Hippo",
+    "a": "Anonymous",
     "t": [
       "courage",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://en.wikiquote.org/wiki/Augustine_of_Hippo",
+    "attribution": "corrected",
+    "attributionNote": "Misattributed to Augustine; earliest source found is Robert McAfee Brown (1988).",
+    "sourceNote": "Misattributed to Augustine of Hippo; earliest known: Robert McAfee Brown, Spirituality and Liberation (1988)."
   },
   {
     "q": "I don't know why we are here, but I'm pretty sure that it is not in order to enjoy ourselves.",
@@ -3140,7 +3222,10 @@
     "t": [
       "time"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "A Month of Sundays (1975)",
+    "work": "A Month of Sundays (1975)",
+    "url": "https://en.wikiquote.org/wiki/John_Updike"
   },
   {
     "q": "The universe is full of magical things patiently waiting for our wits to grow sharper.",
@@ -3242,7 +3327,11 @@
     "t": [
       "wisdom"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "You Shall Know Our Velocity! (2002), ch. 10, p. 110",
+    "work": "You Shall Know Our Velocity! (2002)",
+    "url": "https://en.wikiquote.org/wiki/Dave_Eggers",
+    "passage": "ch. 10, p. 110"
   },
   {
     "q": "Try to learn something about everything and everything about something.",
@@ -3314,7 +3403,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Cook's journal, 30 January 1774",
+    "work": "Cook's journal",
+    "url": "https://en.wikiquote.org/wiki/James_Cook",
+    "passage": "30 January 1774",
+    "sourceNote": "Original: \"I whose ambition leads me not only farther than any other man has been before me...\""
   },
   {
     "q": "Optimism is true moral courage.",
@@ -3522,7 +3616,11 @@
     "t": [
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letter to Hume Logan, 22 April 1958 (The Proud Highway), p. 119",
+    "work": "Letter to Hume Logan, 22 April 1958 (The Proud Highway)",
+    "url": "https://en.wikiquote.org/wiki/Hunter_S._Thompson",
+    "passage": "p. 119"
   },
   {
     "q": "There have been so many times I have seen a man wanting to weep but instead beat his heart until it was unconscious.",
@@ -3569,7 +3667,10 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "The Complete Neurotic's Notebook (1981)",
+    "work": "The Complete Neurotic's Notebook (1981)",
+    "url": "https://en.wikiquote.org/wiki/Mignon_McLaughlin"
   },
   {
     "q": "There is no greatness that is not at peace.",
@@ -3780,13 +3881,20 @@
   },
   {
     "q": "Don’t sabotage yourself by unwittingly adopting negative, unproductive attitudes through your associations with others.",
-    "a": "Epictetus",
+    "a": "Sharon Lebell",
     "t": [
       "solitude",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "After Epictetus, Sharon Lebell, The Art of Living (1995), p. 23",
+    "url": "https://en.wikiquote.org/wiki/Epictetus",
+    "attribution": "corrected",
+    "attributionNote": "Not Epictetus's words: from Sharon Lebell's 1995 interpretive version, The Art of Living.",
+    "work": "The Art of Living (1995)",
+    "passage": "p. 23",
+    "sourceNote": "Lebell's modern interpretation after Epictetus."
   },
   {
     "q": "Go all in. if you’re going to try, go all the way. otherwise, don’t even start. this could mean losing girlfriends, wives, relatives, jobs and maybe your mind. go all the way. it could mean not eating for 3 or 4 days. it could mean freezing on a park bench. it could mean jail, it could mean derision, mockery, isolation. isolation is the gift, all the others are a test of your endurance, of how much you really want to do it. and you’ll do it despite rejection and the worst odds and it will be better than anything else you can imagine. if you’re going to try, go all the way. there is no other feeling like that. you will be alone with the gods and the nights will flame with fire. do it, do it, do it. do it. all the way all the way. you will ride life straight to perfect laughter, its the only good fight there is.",
@@ -4353,7 +4461,11 @@
       "nature",
       "simplicity"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "One Minute Wisdom (1989), \"Transformation\"",
+    "work": "One Minute Wisdom (1989)",
+    "url": "https://en.wikiquote.org/wiki/Anthony_de_Mello",
+    "passage": "\"Transformation\""
   },
   {
     "q": "Talent hits a target no one else can hit; genius hits a target no one else can see.",
@@ -4534,7 +4646,10 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Science and the Modern World (1925)",
+    "work": "Science and the Modern World (1925)",
+    "url": "https://en.wikiquote.org/wiki/Alfred_North_Whitehead"
   },
   {
     "q": "Focus on what you can control.",
@@ -4654,7 +4769,11 @@
       "love",
       "solitude"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "A Course in Miracles, ch. 16",
+    "work": "A Course in Miracles",
+    "url": "https://en.wikiquote.org/wiki/Helen_Schucman",
+    "passage": "ch. 16"
   },
   {
     "q": "He is happy whose circumstances suit his temper, but he is more excellent who can suit his temper to his circumstance.",
@@ -4663,7 +4782,12 @@
       "happiness"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "An Enquiry Concerning the Principles of Morals (1751), §6.9",
+    "work": "An Enquiry Concerning the Principles of Morals (1751)",
+    "url": "https://en.wikiquote.org/wiki/David_Hume",
+    "passage": "§6.9",
+    "sourceNote": "Hume: \"He is happy, whose circumstances suit his temper; but he is more excellent, who can suit his temper to any circumstances.\""
   },
   {
     "q": "Nothing is so difficult as not deceiving oneself.",
@@ -4672,7 +4796,11 @@
       "perseverance",
       "solitude"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Culture and Value (1980), p. 34e",
+    "work": "Culture and Value (1980)",
+    "url": "https://en.wikiquote.org/wiki/Ludwig_Wittgenstein",
+    "passage": "p. 34e"
   },
   {
     "q": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
@@ -4851,7 +4979,10 @@
       "creativity",
       "leadership"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "\"Beautiful\" (song, Tapestry, 1971)",
+    "work": "\"Beautiful\" (song, Tapestry, 1971)",
+    "url": "https://en.wikiquote.org/wiki/Carole_King"
   },
   {
     "q": "That man is the richest whose pleasures are the cheapest.",
@@ -4901,7 +5032,11 @@
       "freedom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Adventures of Ideas (1933), p. 284",
+    "work": "Adventures of Ideas (1933)",
+    "url": "https://en.wikiquote.org/wiki/Alfred_North_Whitehead",
+    "passage": "p. 284"
   },
   {
     "q": "He who influences the thought of his times, influences all the times that follow. He has made his impression on eternity.",
@@ -5217,13 +5352,17 @@
   },
   {
     "q": "A great many people think they are thinking when they are merely rearranging their prejudices.",
-    "a": "William James",
+    "a": "W. F. Oldham",
     "t": [
       "leadership",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Attributed; earliest similar cite Bishop W. F. Oldham (1906) per Quote Investigator",
+    "url": "https://quoteinvestigator.com/2017/05/10/merely/",
+    "attribution": "corrected",
+    "attributionNote": "Not William James: not in his writings; Quote Investigator traces the earliest similar remark to W. F. Oldham, 1906."
   },
   {
     "q": "Education begins the gentleman, but reading, good company and reflection must finish him.",
@@ -5333,14 +5472,19 @@
   },
   {
     "q": "As soon as you trust yourself, you will know how to live.",
-    "a": "Johann Wolfgang von Goethe",
+    "a": "Anonymous",
     "t": [
       "wisdom",
       "solitude",
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://en.wikiquote.org/wiki/Johann_Wolfgang_von_Goethe",
+    "attribution": "corrected",
+    "attributionNote": "Commonly attributed to Goethe with no source (Wikiquote: Disputed).",
+    "sourceNote": "Commonly attributed to Goethe; no source found."
   },
   {
     "q": "Philosophy is good advice, and no one can give advice at the top of his lungs.",
@@ -5362,7 +5506,11 @@
     "t": [
       "wisdom"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Thinking, Fast and Slow (2011), ch. 5, p. 62",
+    "work": "Thinking, Fast and Slow (2011)",
+    "url": "https://en.wikiquote.org/wiki/Daniel_Kahneman",
+    "passage": "ch. 5, p. 62"
   },
   {
     "q": "Peace is not mere absence of war, but it is a virtue that springs from force of character.",
@@ -5506,7 +5654,11 @@
     "t": [
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Haunted (2005), ch. 21",
+    "work": "Haunted (2005)",
+    "url": "https://en.wikiquote.org/wiki/Chuck_Palahniuk",
+    "passage": "ch. 21"
   },
   {
     "q": "Wisdom too often never comes, and so one ought not to reject it merely because it comes late.",
@@ -5559,7 +5711,10 @@
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letter to J. G. Lockhart, c. 16 June 1830",
+    "work": "Letter to J. G. Lockhart, c. 16 June 1830",
+    "url": "https://en.wikiquote.org/wiki/Walter_Scott"
   },
   {
     "q": "Comfort is a beautiful distraction.",
@@ -5682,7 +5837,11 @@
       "creativity",
       "character"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Culture and Value (1980), p. 41e",
+    "work": "Culture and Value (1980)",
+    "url": "https://en.wikiquote.org/wiki/Ludwig_Wittgenstein",
+    "passage": "p. 41e"
   },
   {
     "q": "Listen, as the saying goes, it's crisis time: make a last desperate effort to gain freedom and tranquility - to be Stoic.",
@@ -5917,7 +6076,11 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Letters to His Son, 26 December 1749",
+    "work": "Letters to His Son",
+    "url": "https://en.wikiquote.org/wiki/Philip_Dormer_Stanhope,_4th_Earl_of_Chesterfield",
+    "passage": "26 December 1749"
   },
   {
     "q": "Looking back on what I have done with my life, instead of gazing at the sparkle of jewels or gold plating celebrating something I did a long time ago, I'd rather look into the delighted face of a child holding their first caterpillar and think about what I might be doing for their future.",
@@ -5949,7 +6112,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Essays, Book III, ch. 13",
+    "work": "Essays",
+    "url": "https://en.wikiquote.org/wiki/Michel_de_Montaigne",
+    "passage": "Book III, ch. 13",
+    "sourceNote": "Wikiquote lists it under \"Attributed\"; variant: \"He who establishes his argument by noise and command shows that his reason is weak.\""
   },
   {
     "q": "Don't judge a man by where he is, because you don't know how far he has come.",
@@ -6284,7 +6452,10 @@
     "t": [
       "time"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "\"Poem for South African Women,\" Passion (1980)",
+    "work": "\"Poem for South African Women,\" Passion (1980)",
+    "url": "https://en.wikiquote.org/wiki/June_Jordan"
   },
   {
     "q": "I will keep constant watch over myself and — most usefully — will put each day up for review. For this is what makes us evil — that none of us looks back upon our own lives. We reflect upon only that which we are about to do. And yet our plans for the future descend from the past.",
@@ -7064,7 +7235,11 @@
       "time",
       "action"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Commencement address, Stanford University, 12 June 2005",
+    "work": "Commencement address, Stanford University",
+    "url": "https://en.wikiquote.org/wiki/Steve_Jobs",
+    "passage": "12 June 2005"
   },
   {
     "q": "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
@@ -7106,11 +7281,16 @@
   },
   {
     "q": "You are never too old to set another goal or to dream a new dream.",
-    "a": "C.S. Lewis",
+    "a": "Anonymous",
     "t": [
       "purpose"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://en.wikiquote.org/wiki/C._S._Lewis",
+    "attribution": "corrected",
+    "attributionNote": "Misattributed to C. S. Lewis; no primary source (also credited to Les Brown).",
+    "sourceNote": "Commonly misattributed to C. S. Lewis; also credited to Les Brown."
   },
   {
     "q": "Success is walking from failure to failure with no loss of enthusiasm.",
@@ -7566,7 +7746,11 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Man and Superman (1903), \"Maxims for Revolutionists\", #124",
+    "work": "Man and Superman (1903), \"Maxims for Revolutionists\"",
+    "url": "https://en.wikiquote.org/wiki/George_Bernard_Shaw",
+    "passage": "#124"
   },
   {
     "q": "There are 3 types of people. First, there are people who do not believe in anything; then, there are people who believe only in those teachings they were brought up to believe. Finally, there are people who believe in those things which they understand with their hearts, and this last group of people is the wisest and most resolute.",
@@ -7814,7 +7998,11 @@
       "time",
       "death"
     ],
-    "status": "unverified"
+    "status": "verified",
+    "s": "Dune (1965), Litany Against Fear",
+    "work": "Dune (1965)",
+    "url": "https://en.wikiquote.org/wiki/Dune",
+    "passage": "Litany Against Fear"
   },
   {
     "q": "Success is peace of mind attained only through self-satisfaction in knowing you made the effort to do the best of which you're capable.",
@@ -7825,7 +8013,10 @@
       "solitude",
       "time"
     ],
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Wooden: A Lifetime of Observations and Reflections (1997)",
+    "work": "Wooden: A Lifetime of Observations and Reflections (1997)",
+    "url": "https://en.wikiquote.org/wiki/John_Wooden"
   },
   {
     "q": "Learning never exhausts the mind.",
