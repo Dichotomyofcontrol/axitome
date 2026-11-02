@@ -2,6 +2,7 @@
 // Kept separate from card.js so the daily post image is not changed here.
 const path = require('path');
 const { createCanvas, GlobalFonts } = require('@napi-rs/canvas');
+const { citationLine, statusWord } = require('../../public/cite');
 
 const W = 1200;
 const H = 630;
@@ -16,6 +17,7 @@ function fonts() {
   GlobalFonts.registerFromPath(path.join(dir, 'CormorantSC-Bold.ttf'), 'Ledger SC Bold');
   // Same variable font the daily card registers as CormorantGaramond[wght].ttf.
   GlobalFonts.registerFromPath(path.join(dir, 'CormorantGaramond[wght].ttf'), 'Ledger Text');
+  GlobalFonts.registerFromPath(path.join(dir, 'CormorantGaramond-Italic[wght].ttf'), 'Ledger Italic');
   ready = true;
 }
 
@@ -194,18 +196,33 @@ function renderLedgerQuoteCard(entry, date) {
   }
   const lh = Math.round(block.size * (short ? 1.08 : 1.18));
   const total = block.lines.length * lh;
-  const top = 130; const bottom = 470;
+  const cite = citationLine(entry);
+  const word = statusWord(entry);
+  const top = 130; const bottom = cite ? 430 : 470;
   let y = top + Math.max(0, (bottom - top - total) / 2) + block.size * 0.8;
   ctx.textAlign = 'left';
   for (const line of block.lines) { carved(ctx, line, X, y); y += lh; }
-  const cutY = Math.min(y - lh + block.size * 0.45 + 22, 500);
+  const cutY = Math.min(y - lh + block.size * 0.45 + 22, cite ? 462 : 500);
   const grad = ctx.createLinearGradient(X, 0, X + 240, 0);
   grad.addColorStop(0, '#4d1414'); grad.addColorStop(0.5, C.ox); grad.addColorStop(1, '#8a2a24');
   ctx.fillStyle = grad;
   ctx.fillRect(X, cutY, 240, 3);
   ctx.fillStyle = C.chisel;
   ctx.font = '26px "Ledger SC Bold"';
-  spaced(ctx, entry.a.toUpperCase(), X, cutY + 50, 5);
+  const nameW = spaced(ctx, entry.a.toUpperCase(), X, cutY + 50, 5);
+  if (word) {
+    ctx.fillStyle = C.dim;
+    ctx.font = '18px "Ledger SC"';
+    spaced(ctx, word.toLowerCase(), X + nameW + 18, cutY + 50, 3);
+  }
+  if (cite) {
+    ctx.fillStyle = C.dim;
+    ctx.font = 'italic 500 26px "Ledger Italic"';
+    let line = cite;
+    while (ctx.measureText(line).width > MAX && line.length > 8) line = line.slice(0, -2);
+    if (line !== cite) line = line.replace(/\s+\S*$/, '') + '\u2026';
+    ctx.fillText(line, X, cutY + 88);
+  }
   ctx.fillStyle = C.dim;
   ctx.font = '22px "Ledger SC"';
   if (marks) spaced(ctx, marks.date, W - 64, H - 46, 3, 'right');
