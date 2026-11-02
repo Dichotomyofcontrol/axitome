@@ -1679,7 +1679,7 @@
   },
   {
     "q": "The truth is like a lion; you don’t have to defend it. Let it loose; it will defend itself.",
-    "a": "Augustine of Hippo",
+    "a": "Anonymous",
     "t": [
       "wisdom",
       "solitude",
@@ -1687,7 +1687,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous",
+    "url": "https://en.wikiquote.org/wiki/Augustine_of_Hippo",
+    "attribution": "corrected",
+    "attributionNote": "Misattributed to Augustine; Wikiquote: not found in his works.",
+    "sourceNote": "Misattributed to Augustine of Hippo."
   },
   {
     "q": "Throw me to the wolves and I will return leading the pack.",
@@ -1923,13 +1928,19 @@
   },
   {
     "q": "We don't rise to the level of our expectations; we fall to the level of our training.",
-    "a": "Archilochus",
+    "a": "Barrett Tillman",
     "t": [
       "nature",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Barrett Tillman's motto, \"You won't rise to the occasion—you will default to your level of training\" (c. 1990s)",
+    "url": "http://barretttillman.blogspot.com/2019/02/you-wont-rise-to-occasion.html",
+    "attribution": "corrected",
+    "attributionNote": "Not Archilochus: no surviving fragment matches. Tillman documents it as his own motto.",
+    "work": "Barrett Tillman, motto (c. 1990s)",
+    "sourceNote": "Tillman: \"You won't rise to the occasion—you will default to your level of training.\""
   },
   {
     "q": "Normality is a paved road: It's comfortable to walk, but no flowers grow on it.",
@@ -2393,14 +2404,18 @@
   },
   {
     "q": "When the facts change, I change my mind. What do you do, sir?",
-    "a": "John Maynard Keynes",
+    "a": "Paul Samuelson",
     "t": [
       "growth",
       "action",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Attributed; earliest strong match Samuelson (1970) per Quote Investigator",
+    "url": "https://quoteinvestigator.com/2011/07/22/keynes-change-mind/",
+    "attribution": "corrected",
+    "attributionNote": "Not Keynes. Quote Investigator: no evidence Keynes said it; first strong match is Paul Samuelson, 1970."
   },
   {
     "q": "An ant on the move does more than a dozing ox.",
@@ -5175,13 +5190,19 @@
   },
   {
     "q": "Indulgence gets us friends but truth gets us hatred.",
-    "a": "Cicero",
+    "a": "Terence",
     "t": [
       "wisdom",
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Andria, quoted in Cicero, De Amicitia 89",
+    "url": "https://www.gutenberg.org/ebooks/2808",
+    "attribution": "corrected",
+    "attributionNote": "Not Cicero's own line: Cicero quotes Terence's Andria.",
+    "work": "Andria (quoted in Cicero, De Amicitia)",
+    "passage": "De Amicitia 89"
   },
   {
     "q": "We should not believe the lack of silver and gold to be proof of the simple life.",
@@ -5210,13 +5231,17 @@
   },
   {
     "q": "Action may not always bring happiness, but there is no happiness without action.",
-    "a": "William James",
+    "a": "Benjamin Disraeli",
     "t": [
       "happiness",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Attributed to Benjamin Disraeli (Wikiquote)",
+    "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
+    "attribution": "corrected",
+    "attributionNote": "Not William James. Wikiquote lists it under Disraeli."
   },
   {
     "q": "Even the smallest thing should be done with reference to an end.",
@@ -5723,7 +5748,7 @@
   },
   {
     "q": "Whatever you think you can do or believe you can do, begin it. Action has magic, grace and power in it. Begin it now.",
-    "a": "Johann Wolfgang von Goethe",
+    "a": "John Anster",
     "t": [
       "time",
       "leadership",
@@ -5731,11 +5756,17 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "After Goethe, Faust, free trans. John Anster (1835)",
+    "url": "https://quoteinvestigator.com/2016/02/09/boldness/",
+    "attribution": "corrected",
+    "attributionNote": "Not in Goethe's German: Quote Investigator traces it to John Anster's loose 1835 rendering of Faust, popularised by W. H. Murray (1951).",
+    "work": "Faustus: A Dramatic Mystery (free translation of Goethe's Faust)",
+    "sourceNote": "Anster's wording loosely follows Goethe's Faust prelude."
   },
   {
     "q": "Suffering becomes beautiful when anyone bears great calamities with cheerfulness, not through insensibility, but through greatness of mind.",
-    "a": "Aristotle",
+    "a": "Anonymous",
     "t": [
       "happiness",
       "growth",
@@ -5743,7 +5774,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Anonymous; 19th-century gloss on Aristotle, Nicomachean Ethics 1.11 (1100b)",
+    "url": "https://en.wikiquote.org/wiki/Aristotle",
+    "attribution": "corrected",
+    "attributionNote": "Misattributed to Aristotle; derives from a 19th-century gloss on Nicomachean Ethics 1.11.",
+    "sourceNote": "19th-century gloss on Aristotle, Nicomachean Ethics 1.11 (1100b)."
   },
   {
     "q": "The greatest minds, as they are capable of the highest excellences, are open also to the greatest errors.",
@@ -6650,14 +6686,20 @@
   },
   {
     "q": "No man is more unhappy than he who never faced adversity. For he is not permitted to prove himself.",
-    "a": "Seneca",
+    "a": "Demetrius",
     "t": [
       "perseverance",
       "happiness",
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "s": "Quoted in Seneca, On Providence 3.3, trans. Aubrey Stewart",
+    "url": "https://www.gutenberg.org/ebooks/64576",
+    "attribution": "corrected",
+    "attributionNote": "Not Seneca's own line: Seneca quotes Demetrius the Cynic.",
+    "work": "On Providence (Minor Dialogues)",
+    "passage": "3.3"
   },
   {
     "q": "Kites rise highest against the wind.",

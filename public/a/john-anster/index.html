@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<title>Quotes by John Anster | Axitome</title>
+<meta name="description" content="1 quote by John Anster, kept by Axitome.">
+<link rel="canonical" href="https://www.axitome.com/a/john-anster">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Axitome">
+<meta property="og:title" content="Quotes by John Anster | Axitome">
+<meta property="og:description" content="1 quote by John Anster, kept by Axitome.">
+<meta property="og:url" content="https://www.axitome.com/a/john-anster">
+<meta property="og:image" content="https://www.axitome.com/og/a/john-anster.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quotes by John Anster | Axitome">
+<meta name="twitter:description" content="1 quote by John Anster, kept by Axitome.">
+<meta name="twitter:image" content="https://www.axitome.com/og/a/john-anster.png">
+<meta property="og:image:alt" content="Quotes by John Anster | Axitome">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="/page.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Quotes by John Anster | Axitome","url":"https://www.axitome.com/a/john-anster","mainEntity":{"@type":"ItemList","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.axitome.com/q/john-anster-whatever-you-think-you-can-do-or-believe-you-can","name":"Whatever you think you can do or believe you can do, begin it. Action has magic, grace and power in it. Begin it now."}]}}</script>
+</head>
+<body>
+<header class="top"><a class="brand" href="/"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 L86 92 H72 L50 36 L28 92 H14 Z" fill="#3A2E26"/><path d="M27 70 L75 50 L78 58 L30 78 Z" fill="#6B1E1E"/></svg>Axitome</a><a class="top-link" href="/">Today</a></header>
+<main class="wrap">
+  <p class="kicker">1 quote</p>
+  <h1 class="quote name">John Anster</h1>
+  <div class="cut" aria-hidden="true"></div>
+  <ul class="author-list"><li><a href="/q/john-anster-whatever-you-think-you-can-do-or-believe-you-can"><p>Whatever you think you can do or believe you can do, begin it. Action has magic, grace and power in it. Begin it now.</p></a></li></ul>
+</main>
+<div class="dark">
+  <section class="signup">
+  <h2>One line, each morning.</h2>
+  <p>Get one quote a day by email.</p>
+  <form id="subscribeForm" method="post" action="/api/subscribe">
+    <input class="hp" tabindex="-1" autocomplete="off" type="text" name="company" aria-hidden="true">
+    <input type="hidden" name="next" value="/a/john-anster">
+    <div class="row">
+      <input type="email" name="email" required maxlength="320" placeholder="Email address" autocomplete="email" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </div>
+    <p class="note" id="subscribeNote" role="status"></p>
+  </form>
+</section>
+<script>
+document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+  if (!window.fetch) return;
+  e.preventDefault();
+  var note = document.getElementById('subscribeNote');
+  note.textContent = 'One moment.';
+  fetch('/api/subscribe', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ email: this.email.value, company: this.company.value, next: this.next.value })
+  }).then(function (r) {
+    return r.json().then(function (d) { return { ok: r.ok, d: d }; });
+  }).then(function (res) {
+    note.textContent = res.ok ? 'Saved. One quote, each morning.' : (res.d && res.d.error ? res.d.error : 'Signup is not open yet.');
+  }).catch(function () {
+    note.textContent = 'Signup is not open yet.';
+  });
+});
+</script>
+</div>
+</body>
+</html>
