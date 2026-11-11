@@ -127,7 +127,7 @@
     var lines = AxitomeBreaks.linesOf(q.q).map(function (line) { return '<span class="line">' + esc(line) + '</span>'; }).join('');
     var word = AxitomeCite.statusWord(q);
     var cite = AxitomeCite.citationLine(q);
-    var citeHtml = cite ? ('<p class="work">' + (q.sourceUrl ? '<a href="' + esc(q.sourceUrl) + '">' + esc(cite) + '</a>' : esc(cite)) + '</p>') : '';
+    var citeHtml = cite ? ('<p class="work">' + (q.sourceUrl||q.url ? '<a href="' + esc(q.sourceUrl||q.url) + '">' + esc(cite) + '</a>' : esc(cite)) + '</p>') : '';
     out.innerHTML = '<p class="kicker">' + esc(label) + ' \u00b7 Line ' + roman(lineNo) + '</p>' +
       '<h2 class="quote ' + tier + '" aria-label="' + esc(q.q) + '">' + lines + '</h2><div class="cut" aria-hidden="true"></div>' +
       '<p class="by">' + (slug ? '<a href="/q/' + esc(slug) + '">' + esc(q.a) + '</a>' : esc(q.a)) + (word ? ' <span class="mark">' + esc(word) + '</span>' : '') + '</p>' +

@@ -2901,6 +2901,7 @@
     "s": "Letter to H. G. O. Blake, 16 November 1857",
     "work": "Letter to H. G. O. Blake",
     "passage": "16 November 1857",
+    "url": "https://en.wikisource.org/wiki/Page:Familiar_letters_of_Henry_David_Thoreau.djvu/397",
     "status": "verified",
     "pin": "2026-11-14"
   },
@@ -4973,6 +4974,8 @@
     "work": "Analects",
     "passage": "4.14",
     "translator": "James Legge",
+    "url": "https://www.gutenberg.org/ebooks/3330",
+    "sourceNote": "Second sentence of Analects 4.14 in Legge (1861).",
     "status": "verified",
     "pin": "2026-11-13"
   },
@@ -5150,6 +5153,7 @@
     "attribution": "verified",
     "s": "“Is Life Worth Living?” (1895), in The Will to Believe (1897)",
     "work": "“Is Life Worth Living?” (1895), in The Will to Believe (1897)",
+    "url": "https://www.gutenberg.org/ebooks/26659",
     "status": "verified",
     "pin": "2026-11-12"
   },
@@ -6476,6 +6480,7 @@
     "work": "Essays",
     "passage": "3.11, “Of Cripples”",
     "translator": "G. B. Ives",
+    "url": "https://archive.org/details/essaysofmontaign0004mich/page/246/mode/2up",
     "status": "verified",
     "pin": "2026-11-11"
   },
@@ -6613,6 +6618,7 @@
     "s": "Some Fruits of Solitude (1693), preface",
     "work": "Some Fruits of Solitude (1693)",
     "passage": "preface",
+    "url": "https://en.wikisource.org/wiki/Page:The_Harvard_Classics_Vol._01.djvu/341",
     "status": "verified",
     "pin": "2026-11-15"
   },

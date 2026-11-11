@@ -142,7 +142,7 @@ function enrichQuote(quote) {
   if (parsed.work) next.work = parsed.work;
   if (parsed.passage) next.passage = parsed.passage;
   if (parsed.translator) next.translator = parsed.translator;
-  const url = String(quote.sourceUrl || '').trim();
+  const url = String(quote.sourceUrl || quote.url || '').trim();
   if (/^https?:\/\//i.test(url)) next.sourceUrl = url;
   next.status = statusOf(quote);
   return next;
