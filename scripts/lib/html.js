@@ -144,7 +144,7 @@ function quotePage(entry, related) {
     const tier = tierOf(entry.q);
   const lines = linesOf(entry.q, tier).map((line) => `<span class="line">${esc(line)}</span>`).join('');
   const citeHtml = cite
-    ? `<p class="work">${entry.sourceUrl ? `<a href="${esc(entry.sourceUrl)}">${esc(cite)}</a>` : esc(cite)}</p>`
+    ? `<p class="work">${(entry.sourceUrl || entry.url) ? `<a href="${esc(entry.sourceUrl || entry.url)}">${esc(cite)}</a>` : esc(cite)}</p>`
     : '';
   const relatedHtml = related.length
     ? `<section class="related"><h2>${esc(relatedHeading(entry, related))}</h2><ul>${related.map((item) => `<li><a href="/q/${esc(item.slug)}"><p>${esc(item.q)}</p><span>${esc(item.a)}</span></a></li>`).join('')}</ul></section>`

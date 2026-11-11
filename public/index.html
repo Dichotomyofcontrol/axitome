@@ -509,7 +509,7 @@ function show(idx,anim,dateStr){
     var cite=citeLine(q);
     if(cite){
       sourceEl.hidden=false;
-      if(q.sourceUrl) sourceEl.innerHTML='<a href="'+escH(q.sourceUrl)+'">'+escH(cite)+'</a>';
+      if(q.sourceUrl||q.url) sourceEl.innerHTML='<a href="'+escH(q.sourceUrl||q.url)+'">'+escH(cite)+'</a>';
       else sourceEl.textContent=cite;
     }else{sourceEl.hidden=true;sourceEl.textContent=''}
     var qLink=document.getElementById('quoteLink');
