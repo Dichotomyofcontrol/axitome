@@ -2525,7 +2525,7 @@
     "status": "unverified"
   },
   {
-    "q": "When the facts change, I change my mind. What do you do, sir?",
+    "q": "Well when events change, I change my mind. What do you do?",
     "a": "Paul Samuelson",
     "t": [
       "growth",
@@ -2533,12 +2533,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Meet the Press, 20 December 1970",
     "work": "Meet the Press, 20 December 1970",
     "url": "https://quoteinvestigator.com/2011/07/22/keynes-change-mind/",
     "attribution": "corrected",
-    "attributionNote": "Not Keynes. The English is a paraphrase: Samuelson's recorded words were 'Well when events change, I change my mind. What do you do?' The 'facts… sir' form is a later variant; Samuelson credited Keynes in 1978/1983, and Keynes scholars find no evidence (Quote Investigator)."
+    "attributionNote": "Not Keynes. These are Samuelson's recorded words on Meet the Press, 20 December 1970. The popular 'When the facts change… what do you do, sir?' form is a later variant; Samuelson credited Keynes in 1978/1983, and Keynes scholars find no evidence (Quote Investigator)."
   },
   {
     "q": "An ant on the move does more than a dozing ox.",
@@ -4271,7 +4271,7 @@
       "perseverance",
       "character"
     ],
-    "checked": true,
+    "checked": false,
     "status": "paraphrase",
     "s": "Paraphrase of Enchiridion 23",
     "work": "Enchiridion",
@@ -5562,7 +5562,7 @@
     "passage": "ch. 5, p. 62"
   },
   {
-    "q": "Peace is not mere absence of war, but it is a virtue that springs from force of character.",
+    "q": "Peace is not mere absence of war, but is a virtue that springs from force of character.",
     "a": "Baruch Spinoza",
     "t": [
       "action",
@@ -5570,14 +5570,14 @@
       "character"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "A Political Treatise, ch. 5 §4, trans. R. H. M. Elwes",
     "work": "A Political Treatise",
     "url": "https://archive.org/details/chiefworksbened00elwegoog",
     "passage": "ch. 5 §4",
     "translator": "R. H. M. Elwes",
     "attribution": "corrected",
-    "attributionNote": "The English is a paraphrase by one word: Elwes (1883) reads 'but is a virtue'; this line adds 'it'."
+    "attributionNote": "Text matches Elwes (1883), A Political Treatise ch. 5 §4."
   },
   {
     "q": "To doubt everything or to believe everything are two equally convenient solutions; both dispense with the necessity of reflection.",
