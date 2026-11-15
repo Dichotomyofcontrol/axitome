@@ -2533,11 +2533,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified",
-    "s": "Attributed; earliest strong match Samuelson (1970) per Quote Investigator",
+    "status": "paraphrase",
+    "s": "Meet the Press, 20 December 1970",
+    "work": "Meet the Press, 20 December 1970",
     "url": "https://quoteinvestigator.com/2011/07/22/keynes-change-mind/",
     "attribution": "corrected",
-    "attributionNote": "Not Keynes. Quote Investigator: no evidence Keynes said it; first strong match is Paul Samuelson, 1970."
+    "attributionNote": "Not Keynes. The English is a paraphrase: Samuelson's recorded words were 'Well when events change, I change my mind. What do you do?' The 'facts… sir' form is a later variant; Samuelson credited Keynes in 1978/1983, and Keynes scholars find no evidence (Quote Investigator)."
   },
   {
     "q": "An ant on the move does more than a dozing ox.",
@@ -3459,6 +3460,7 @@
     "attribution": "verified",
     "s": "Quoted by expedition member L. D. A. Hussey, South with Shackleton (1949)",
     "work": "Quoted by expedition member L. D. A. Hussey, South with Shackleton (1949)",
+    "url": "https://en.wikiquote.org/wiki/Ernest_Shackleton",
     "status": "verified",
     "pin": "2026-11-05"
   },
@@ -4271,11 +4273,12 @@
     ],
     "checked": true,
     "status": "paraphrase",
-    "s": "Enchiridion 23, trans. George Long",
+    "s": "Paraphrase of Enchiridion 23",
     "work": "Enchiridion",
     "url": "https://www.gutenberg.org/ebooks/10661",
     "passage": "23",
-    "translator": "George Long"
+    "attributionNote": "The English is a paraphrase, a modern rendering (popularized by Daily Stoic), not George Long's translation.",
+    "sourceNote": "Long, Ench. 23: 'If it should ever happen to you to be turned to externals in order to please some person, you must know that you have lost your purpose in life.'"
   },
   {
     "q": "I urge you: don’t cut short these thought-trains of yours. Follow them through to their end. Your thoughts and your feelings. Follow them through and you will grow with them.",
@@ -5567,7 +5570,14 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "A Political Treatise, ch. 5 §4, trans. R. H. M. Elwes",
+    "work": "A Political Treatise",
+    "url": "https://archive.org/details/chiefworksbened00elwegoog",
+    "passage": "ch. 5 §4",
+    "translator": "R. H. M. Elwes",
+    "attribution": "corrected",
+    "attributionNote": "The English is a paraphrase by one word: Elwes (1883) reads 'but is a virtue'; this line adds 'it'."
   },
   {
     "q": "To doubt everything or to believe everything are two equally convenient solutions; both dispense with the necessity of reflection.",
@@ -6391,9 +6401,13 @@
       "time"
     ],
     "checked": true,
-    "s": "Temple of Apollo at Delphi",
-    "work": "Temple of Apollo at Delphi",
-    "status": "unverified"
+    "attribution": "verified",
+    "s": "Temple of Apollo at Delphi (Pausanias 10.24.1)",
+    "work": "Pausanias, Description of Greece",
+    "passage": "10.24.1",
+    "translator": "W. H. S. Jones",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0160%3Abook%3D10%3Achapter%3D24%3Asection%3D1",
+    "status": "verified"
   },
   {
     "q": "In difficult situations, when hope seems feeble, the boldest plans are safest.",
@@ -7140,7 +7154,6 @@
     ],
     "checked": true,
     "status": "unverified",
-    "s": "Anonymous",
     "url": "https://quoteinvestigator.com/2021/12/29/plant-tree/",
     "attributionNote": "Not a documented Chinese proverb; anonymous, circulating by 1967 and labelled Chinese only from 1985 (Quote Investigator).",
     "sourceNote": "Not a documented Chinese proverb; anonymous, circulating by 1967 and labelled Chinese only from 1985 (Quote Investigator).",
@@ -7556,6 +7569,8 @@
     "attributionNote": "Not Epictetus's words. A modern summary of Enchiridion 1 (\"Some things are in our control and others not\"). No author for the slogan.",
     "s": "Enchiridion 1",
     "work": "Enchiridion 1",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "sourceNote": "Long's translation of Enchiridion 1 begins: 'Of things some are in our power, and others are not.'",
     "status": "paraphrase"
   },
   {
