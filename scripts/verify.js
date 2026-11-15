@@ -49,7 +49,7 @@ const expected = [
   ['Learn to love solitude, to be more alone with yourselves', 'Andrei Tarkovsky', 'A Poet in the Cinema (1984)'],
   ['Stoicism is not a matter of gritting your teeth', 'Richard Sorabji', 'Emotion and Peace of Mind'],
   ['Consider why an idea might work, before you consider why it might not', 'Anthony Tjan', 'What the Best Mentors Do'],
-  ['Know thyself; nothing in excess.', 'Delphic maxim', 'Temple of Apollo at Delphi'],
+  ['Know thyself; nothing in excess.', 'Delphic maxim', 'Temple of Apollo at Delphi (Pausanias 10.24.1)'],
   ['we all stumble, everyone of us', 'Emily Kimbrough', null],
   ['Let the man not be corrupted by external things', 'Seneca', 'On the Happy Life'],
   ['stop the waves, but you can learn to surf', 'Swami Satchidananda', 'poster caption, quoted in Wherever You Go, There You Are (1994)'],
