@@ -788,11 +788,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Letter to Isaac McPherson, 13 August 1813",
     "work": "Letter to Isaac McPherson",
-    "url": "https://en.wikiquote.org/wiki/Thomas_Jefferson",
-    "passage": "13 August 1813"
+    "url": "https://founders.archives.gov/documents/Jefferson/03-06-02-0322",
+    "passage": "13 August 1813",
+    "attribution": "verified",
+    "sourceNote": "Jefferson's own words, the sentence after 'its peculiar character too is that no one possesses the less'. Spelling follows the printed editions; the letterpress copy (Founders Online, Papers, Retirement Series 6) reads 'recieves' and 'lights his taper'."
   },
   {
     "q": "There will come a time when you believe everything is finished. That will be the beginning.",
@@ -1790,11 +1792,10 @@
     ],
     "checked": true,
     "status": "unverified",
-    "s": "Anonymous",
     "url": "https://en.wikiquote.org/wiki/Augustine_of_Hippo",
     "attribution": "corrected",
-    "attributionNote": "Misattributed to Augustine; Wikiquote: not found in his works.",
-    "sourceNote": "Misattributed to Augustine of Hippo."
+    "attributionNote": "Not Augustine: not found in his works, English or Latin (Wikiquote; Fauxtations, 2015; Trent Horn, Catholic Answers, 2020). Not Spurgeon's wording either, so no named author.",
+    "sourceNote": "Modern saying, seen online from about 2013. It echoes C. H. Spurgeon's image of the Bible as a caged lion that needs no defenders ('Open the door and let the lion out; he will take care of himself', British and Foreign Bible Society, 1875; sermon no. 2004, 22 January 1888), but not his words or subject."
   },
   {
     "q": "Throw me to the wolves and I will return leading the pack.",
@@ -2599,7 +2600,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "The Knowledge Project, ep. 26 (13 December 2017)",
+    "work": "The Knowledge Project (Farnam Street podcast), ep. 26",
+    "passage": "13 December 2017",
+    "url": "https://fs.blog/knowledge-project-podcast/warren-berger/",
+    "sourceNote": "Said in conversation with Shane Parrish; the line appears in a third-party transcript of the episode (podcastsdistilled.com). The official transcript is members-only, so the wording is not confirmed against the recording."
   },
   {
     "q": "Be grateful for what you have.",
@@ -4562,7 +4568,10 @@
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "url": "https://www.gutenberg.org/files/21130/21130-h/21130-h.htm",
+    "sourceNote": "Earliest English printing found: W. A. Clouston, Book of Wise Sayings (1893), no. 8, credited 'Nizāmī'.",
+    "attributionNote": "Credited to Nizami in Clouston's 1893 anthology, with no work or passage given. The Persian original has not been identified (often said to be Layla and Majnun, without a citation), so the wording stays unverified."
   },
   {
     "q": "After I'm dead I'd rather have people ask why I have no monument than why I have one.",
@@ -6299,7 +6308,13 @@
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "attribution": "corrected",
+    "s": "Paraphrase of a remark recorded in Spence's Anecdotes (1820)",
+    "work": "Spence, Anecdotes (1820)",
+    "url": "https://en.wikiquote.org/wiki/Isaac_Newton",
+    "sourceNote": "As recorded (Joseph Spence, Observations, Anecdotes, and Characters of Books and Men, 1820; repeated in Brewster, Memoirs of Newton, 1855, vol. 2 ch. 27): 'I don't know what I may seem to the world, but, as to myself, I seem to have been only like a boy playing on the sea shore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.'",
+    "attributionNote": "Newton's image, but this English is a modern condensed paraphrase ('child... beach... vast oceans'), not the recorded words. Reported late in his life, second-hand."
   },
   {
     "q": "The life of man is like a game of dice: if the throw doesn’t give you the number you most need, you have to use your skill to make the best of the number it does give you.",
