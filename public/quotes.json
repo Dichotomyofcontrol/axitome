@@ -10,7 +10,7 @@
   },
   {
     "q": "Freethinkers are those who are willing to use their minds without prejudice and without fearing to understand things that clash with their own customs, privileges, or beliefs.",
-    "a": "Leo N. Tolstoy",
+    "a": "Leo Tolstoy",
     "t": [
       "courage",
       "wisdom",
@@ -18,7 +18,8 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-02-18"
   },
   {
     "q": "You have to decide who you are and force the world to deal with you, not with its idea of you.",
@@ -46,7 +47,12 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Copa (Appendix Vergiliana), line 38",
+    "work": "Copa (Appendix Vergiliana)",
+    "passage": "line 38",
+    "sourceNote": "Latin: 'Mors aurem vellens “vivite” ait, “venio”.' The Copa is traditionally credited to Virgil, but most scholars doubt it is his.",
+    "pin": "2027-04-25"
   },
   {
     "q": "Mostly it is loss which teaches us about the worth of things.",
@@ -65,7 +71,13 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "An Enemy of the People, Act V, trans. R. Farquharson Sharp",
+    "work": "An Enemy of the People",
+    "passage": "Act V",
+    "translator": "R. Farquharson Sharp",
+    "url": "https://www.gutenberg.org/ebooks/2446"
   },
   {
     "q": "Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer the negative elements in your life, don't sit at home and think about it. Go out and get busy!",
@@ -76,7 +88,11 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "As quoted in How to Enjoy Your Life and Your Job (1970)",
+    "work": "How to Enjoy Your Life and Your Job (1970 compilation)",
+    "attributionNote": "Printed under Carnegie’s name in a posthumous 1970 compilation of his writing; not found in his books published in his lifetime.",
+    "pin": "2027-01-21"
   },
   {
     "q": "I would much rather have men ask why I have no statue, than why I have one.",
@@ -90,7 +106,8 @@
     "work": "Plutarch, Life of Cato the Elder",
     "url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0013%3Achapter%3D19",
     "passage": "19.4",
-    "sourceNote": "Reported by Plutarch."
+    "sourceNote": "Reported by Plutarch.",
+    "pin": "2027-05-20"
   },
   {
     "q": "Always laugh when you can. It is cheap medicine.",
@@ -158,12 +175,20 @@
   },
   {
     "q": "If what you have seems insufficient to you, then though you possess the world, you will yet be miserable.",
-    "a": "Seneca",
+    "a": "Epicurus",
     "t": [
       "simplicity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "attribution": "corrected",
+    "s": "Quoted in Seneca, Moral Letters 9.20",
+    "work": "Quoted in Seneca, Moral Letters to Lucilius",
+    "passage": "Letter 9.20",
+    "translator": "Richard M. Gummere",
+    "attributionNote": "Seneca is quoting Epicurus here.",
+    "sourceNote": "Gummere: 'Whoever does not regard what he has as most ample wealth, is unhappy, though he be master of the whole world.' The common English line is a looser rendering.",
+    "pin": "2027-01-23"
   },
   {
     "q": "Dogs are our link to paradise. They don't know evil or jealousy or discontent. To sit with a dog on a hillside on a glorious afternoon is to be back in Eden, where doing nothing was not boring-it was peace.",
@@ -191,12 +216,14 @@
   },
   {
     "q": "I have no desire to suffer twice, in reality and then in retrospect.",
-    "a": "Sophocles",
+    "a": "Anonymous",
     "t": [
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Sophocles, but it is not in Oedipus the King or his other surviving plays."
   },
   {
     "q": "Most men pursue pleasure with such breathless haste that they hurry past it.",
@@ -207,11 +234,12 @@
     ],
     "checked": true,
     "status": "verified",
-    "s": "Either/Or, Vol. I p. 28 (Swenson ed., 1959, per Wikiquote), trans. David F. Swenson",
+    "s": "Either/Or, Vol. I, \"Diapsalmata\", trans. David F. Swenson",
     "work": "Either/Or, Vol. I",
     "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
-    "passage": "p. 28 (Swenson ed., 1959, per Wikiquote)",
-    "translator": "David F. Swenson"
+    "passage": "\"Diapsalmata\"",
+    "translator": "David F. Swenson",
+    "pin": "2027-04-18"
   },
   {
     "q": "If I could sink my teeth into the whole earth and actually taste it, I’d be happier for a moment… But I don’t always want to be happy. To be unhappy now and then is part of being natural. Not all days are sunny, and when rain is scarce, we pray for it. And so I take unhappiness with happiness naturally, just as I don’t marvel that there are mountains and plains and that there are rocks and grass… What matters is to be natural and calm in happiness and in unhappiness, to feel as if feeling were seeing, to think as if thinking were walking, and to remember, when death comes, that each day dies, and the sunset is beautiful, and so is the night that remains… That’s how it is and how I want it to be…",
@@ -262,14 +290,16 @@
   },
   {
     "q": "The average man, who does not know what to do with his life, wants another which will last forever.",
-    "a": "Antole France",
+    "a": "Anatole France",
     "t": [
       "wisdom",
       "time",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to Anatole France in quotation books; the passage in his works was not located.",
+    "pin": "2027-03-12"
   },
   {
     "q": "I want to risk hitting my head on the ceiling of my talent. I want to really test it out and say, ‘Okay, you're not that good. You just reached the level here.’ I don't ever want to fail, but I want to risk failure every time out of the gate.",
@@ -346,8 +376,9 @@
       "solitude",
       "leadership"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of the same Publilius Syrus line kept elsewhere."
   },
   {
     "q": "We become builders by building and harpists by playing the harp. Similarly, it is by doing just acts that we become just, by doing temperate acts that we become temperate, by doing courageous acts that we become courageous.",
@@ -363,7 +394,8 @@
     "work": "Nicomachean Ethics",
     "url": "https://www.gutenberg.org/ebooks/8438",
     "passage": "Book II, ch. 1",
-    "sourceNote": "Everyman text: \"men come to be builders by building, harp-players by playing on the harp: exactly so, by doing just actions we come to be just\"."
+    "sourceNote": "Everyman text: \"men come to be builders by building, harp-players by playing on the harp: exactly so, by doing just actions we come to be just\".",
+    "pin": "2027-02-04"
   },
   {
     "q": "Happiness is simply the absence of desire... Happiness is not about the achievement of pleasure (which is joy or satisfaction), but about the lack of desire. It arrives when you have no urge to feel differently. Happiness is the state you enter when you no longer want to change your state.",
@@ -418,8 +450,9 @@
       "freedom",
       "growth"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: epigraph from a modern novel (Dune: The Machine Crusade, 2003) that could not be checked word for word."
   },
   {
     "q": "What I feel fortunate about is that I’m still astonished, that things still amaze me. And I think that that’s the great benefit of being in the arts, where the possibility for learning never disappears, where you basically have to admit you never learn it.",
@@ -456,7 +489,8 @@
     "status": "verified",
     "s": "The Everlasting Man",
     "work": "The Everlasting Man",
-    "url": "https://www.gutenberg.org/ebooks/65688"
+    "url": "https://www.gutenberg.org/ebooks/65688",
+    "pin": "2027-02-14"
   },
   {
     "q": "Nobody knows as much as everybody.",
@@ -581,7 +615,13 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Middlemarch, ch. 41",
+    "work": "Middlemarch",
+    "passage": "ch. 41",
+    "url": "https://www.gutenberg.org/ebooks/145",
+    "pin": "2027-05-22"
   },
   {
     "q": "Happiness lies in the joy of achievement and the thrill of creative effort.",
@@ -595,23 +635,28 @@
   },
   {
     "q": "The only normal people are the ones you don't know very well.",
-    "a": "Alfred Adler",
+    "a": "Anonymous",
     "t": [
       "wisdom",
       "time",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Alfred Adler, but it is not in his writings; the line appears only in modern quote lists.",
+    "pin": "2026-12-06"
   },
   {
     "q": "Those who are easily shocked should be shocked more often.",
-    "a": "Mae West",
+    "a": "Anonymous",
     "t": [
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Mae West, but no film, play or interview of hers containing it has been found."
   },
   {
     "q": "It is good to come to a country you know practically nothing about. Your thoughts grow still, useless. … In a country you know nothing about, there is no reference point. You struggle to associate colors, smells, dim memories. You live a little like a child, or an animal.",
@@ -639,17 +684,23 @@
     "passage": "p. 37"
   },
   {
-    "q": "If a republic is small, it is destroyed by a foreign force; if it is large, it is ruined by an internal imperfection.",
+    "q": "If a republic be small, it is destroyed by a foreign force; if it be large, it is ruined by an internal imperfection.",
     "a": "Montesquieu",
     "t": [
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "The Spirit of Laws, Book IX, ch. 1, trans. Thomas Nugent",
+    "work": "The Spirit of Laws",
+    "passage": "Book IX, ch. 1",
+    "translator": "Thomas Nugent",
+    "url": "https://constitution.org/2-Authors/cm/sol_09.htm"
   },
   {
     "q": "Remind yourself what you've been through and what you've had the strength to endure.",
-    "a": "Marcus Aurelius",
+    "a": "Anonymous",
     "t": [
       "perseverance",
       "solitude",
@@ -657,7 +708,10 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Widely shared as Marcus Aurelius, but there is no matching passage in the Meditations (checked against George Long and Gregory Hays). Modern line; no author found.",
+    "pin": "2027-04-06"
   },
   {
     "q": "Remember: Matter. How tiny your share of it. Time. How brief and fleeting your allotment of it. Fate. How small a role you play in it.",
@@ -666,7 +720,12 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 5.24, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "5.24",
+    "translator": "Gregory Hays"
   },
   {
     "q": "A man without self discipline is like a boat without a rudder, he will drift wherever the waves of excuses takes him.",
@@ -747,7 +806,11 @@
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "On Horsemanship 11.6",
+    "work": "On Horsemanship",
+    "passage": "11.6",
+    "sourceNote": "Xenophon on training horses: what is forced and not understood is never beautiful."
   },
   {
     "q": "Vitality shows in not only the ability to persist but the ability to start over.",
@@ -794,7 +857,8 @@
     "url": "https://founders.archives.gov/documents/Jefferson/03-06-02-0322",
     "passage": "13 August 1813",
     "attribution": "verified",
-    "sourceNote": "Jefferson's own words, the sentence after 'its peculiar character too is that no one possesses the less'. 'lights' follows the letterpress copy (Founders Online, Papers, Retirement Series 6); some printed editions read 'lites'. Spelling is otherwise modernized (the manuscript has 'recieves')."
+    "sourceNote": "Jefferson's own words, the sentence after 'its peculiar character too is that no one possesses the less'. 'lights' follows the letterpress copy (Founders Online, Papers, Retirement Series 6); some printed editions read 'lites'. Spelling is otherwise modernized (the manuscript has 'recieves').",
+    "pin": "2027-04-07"
   },
   {
     "q": "There will come a time when you believe everything is finished. That will be the beginning.",
@@ -865,7 +929,11 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "You Learn by Living (1960)",
+    "work": "You Learn by Living (1960)",
+    "sourceNote": "Book source known; wording not checked against the page.",
+    "pin": "2027-03-04"
   },
   {
     "q": "You can be a product of the environment that you’re living in but you can also be a product of your imagination of what’s inside of you.",
@@ -885,7 +953,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Letter to Theo, June 1880 (letter 155)",
+    "work": "Letters to Theo",
+    "passage": "June 1880 (letter 155; 133 in the Van Gogh Museum edition)",
+    "pin": "2027-03-02"
   },
   {
     "q": "One good question can give rise to several layers of answers, can inspire decades-long searches for solutions, can generate whole new fields of inquiry, and can prompt changes in entrenched thinking. Answers, on the other hand, often end the process.",
@@ -970,7 +1043,8 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-01-14"
   },
   {
     "q": "When you are inspired by some great purpose, some extraordinary project, all your thoughts break their bonds; your mind transcends limitations; your conscious expands in every direction; and you find yourself in a great, new and wonderful world.",
@@ -1089,14 +1163,16 @@
   },
   {
     "q": "Pay bad people with your goodness; fight their hatred with your kindness. Even if you do not achieve a victory over other people, you will conquer yourself.",
-    "a": "Henri Frederic",
+    "a": "Anonymous",
     "t": [
       "love",
       "solitude",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to \"Henri Frederic\" (Amiel), but no passage in Amiel’s Journal has been found."
   },
   {
     "q": "You are not your body and hair-style, but your capacity for choosing well. If your choices are beautiful, so too will you be.",
@@ -1105,7 +1181,12 @@
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Discourses 3.1.39–40, trans. Robert Dobbin",
+    "work": "Discourses",
+    "passage": "3.1.39–40",
+    "translator": "Robert Dobbin"
   },
   {
     "q": "An unproblematic state is a state without creative thought. Its other name is death.",
@@ -1127,7 +1208,7 @@
     "status": "unverified"
   },
   {
-    "q": "The mind should be kept independent of any thoughts that arise within it. If the mind depends upon anything, it has no sure haven.",
+    "q": "The mind should be kept independent of any thoughts which arise within it. If the mind depends upon anything it has no sure haven.",
     "a": "The Diamond Sutra",
     "t": [
       "solitude",
@@ -1136,17 +1217,25 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Diamond Sutra, section XIV, trans. A. F. Price and Wong Mou-lam",
+    "work": "Diamond Sutra",
+    "passage": "section XIV",
+    "translator": "A. F. Price and Wong Mou-lam",
+    "url": "https://huntingtonarchive.org/resources/downloads/sutras/02Prajnaparamita/Vajracheddika/Vajracheddika%2002.pdf",
+    "pin": "2027-01-31"
   },
   {
     "q": "I’ve been absolutely terrified every moment of my life – and I’ve never let it keep me from doing a single thing I wanted to do.",
-    "a": "Georgie O’Keefe",
+    "a": "Georgia O’Keeffe",
     "t": [
       "time",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-01-08"
   },
   {
     "q": "At this very moment fate is preparing some device against me.",
@@ -1155,24 +1244,31 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Oedipus, lines 19–36 (tragedy)",
+    "work": "Oedipus (tragedy)",
+    "passage": "lines 19–36",
+    "sourceNote": "Spoken by Oedipus in Seneca’s tragedy; modern translation.",
+    "pin": "2027-01-25"
   },
   {
-    "q": "We forfeit three-quarters of ourselves in order to be like other people.",
+    "q": "We have to forfeit three-fourths of ourselves in order to become like other people.",
     "a": "Arthur Schopenhauer",
     "t": [
       "creativity"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Counsels and Maxims, trans. T. Bailey Saunders",
     "work": "Counsels and Maxims",
     "url": "https://www.gutenberg.org/ebooks/10715",
     "translator": "T. Bailey Saunders",
-    "sourceNote": "Saunders: \"three-fourths of ourselves\"."
+    "attribution": "verified",
+    "pin": "2027-04-15"
   },
   {
-    "q": "I have never wished to cater to the crowd; for what I know they do not approve, and what they approve I do not know.",
+    "q": "I have never wished to cater to the crowd; for what I know, they do not approve, and what they approve, I do not know.",
     "a": "Epicurus",
     "t": [
       "wisdom",
@@ -1180,7 +1276,14 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Quoted in Seneca, Moral Letters 29.10, trans. Richard M. Gummere",
+    "work": "Quoted in Seneca, Moral Letters to Lucilius",
+    "passage": "Letter 29.10",
+    "translator": "Richard M. Gummere",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_29",
+    "pin": "2026-12-27"
   },
   {
     "q": "The whole problem with the world is that fools and fanatics are always so sure of themselves, but wiser people so full of doubts.",
@@ -1193,14 +1296,17 @@
   },
   {
     "q": "If you don't know, ask. You will be a fool for the moment, but a wise man for the rest of your life.",
-    "a": "Seneca",
+    "a": "Anonymous",
     "t": [
       "wisdom",
       "time",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Not in Seneca's works. It is a version of the proverb usually given as Chinese: 'He who asks a question is a fool for a minute; he who does not ask is a fool forever.' No named author.",
+    "pin": "2027-05-24"
   },
   {
     "q": "When you feel like giving up is precisely the point everybody else gives up. So it’s at that point that you must put in extra effort.",
@@ -1211,20 +1317,21 @@
     "status": "unverified"
   },
   {
-    "q": "The nearer a man comes to a calm mind, the closer he is to strength.",
+    "q": "The nearer a man attains to freedom from passion, the nearer he comes to strength.",
     "a": "Marcus Aurelius",
     "t": [
       "loss",
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Meditations 11.18, trans. George W. Chrystal",
     "work": "Meditations",
     "url": "https://www.gutenberg.org/ebooks/55317",
     "passage": "11.18",
     "translator": "George W. Chrystal",
-    "sourceNote": "Chrystal: \"the nearer a man attains to freedom from passion, the nearer he comes to strength\"."
+    "attribution": "verified",
+    "pin": "2027-03-17"
   },
   {
     "q": "When you want to help people, you tell them the truth. When you want to help yourself, you tell them what they want to hear.",
@@ -1253,7 +1360,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Discourses 1.18.21",
+    "work": "Discourses",
+    "passage": "1.18.21",
+    "sourceNote": "A modern translation of Discourses 1.18.21; wording differs between translators.",
+    "pin": "2027-03-24"
   },
   {
     "q": "Your childhood hunger is the one that never leaves you.",
@@ -1282,20 +1394,21 @@
     "status": "unverified"
   },
   {
-    "q": "I tell you: one must have chaos in oneself to give birth to a dancing star.",
+    "q": "I tell you: one must still have chaos in one, to give birth to a dancing star.",
     "a": "Friedrich Nietzsche",
     "t": [
       "solitude",
       "nature"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Thus Spake Zarathustra Prologue 5, trans. Thomas Common",
     "work": "Thus Spake Zarathustra",
     "url": "https://www.gutenberg.org/ebooks/1998",
     "passage": "Prologue 5",
     "translator": "Thomas Common",
-    "sourceNote": "Common: \"one must still have chaos in one, to give birth to a dancing star\"."
+    "attribution": "verified",
+    "pin": "2027-04-10"
   },
   {
     "q": "Between stimulus and response there is a space. In that space is our power to choose response. In our response lies our growth and our freedom.",
@@ -1323,14 +1436,21 @@
     "status": "unverified"
   },
   {
-    "q": "If things far away don't concern you, you'll soon mourn things close at hand.",
+    "q": "If a man take no thought about what is distant, he will find sorrow near at hand.",
     "a": "Confucius",
     "t": [
       "action",
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Analects 15.11, trans. James Legge",
+    "work": "Analects",
+    "passage": "15.11",
+    "translator": "James Legge",
+    "url": "https://www.gutenberg.org/ebooks/3330",
+    "pin": "2027-03-26"
   },
   {
     "q": "Define yourself by your effort, not your suffering.",
@@ -1381,7 +1501,8 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-02-03"
   },
   {
     "q": "An artist is not paid for labor but for vision.",
@@ -1391,17 +1512,24 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-04-26"
   },
   {
-    "q": "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for.",
+    "q": "Do not spoil what you have by desiring what you have not; but remember that what you now have was once among the things only hoped for.",
     "a": "Epicurus",
     "t": [
       "time",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Vatican Sayings 35, trans. Cyril Bailey",
+    "work": "Vatican Sayings",
+    "passage": "35",
+    "translator": "Cyril Bailey",
+    "pin": "2026-12-18"
   },
   {
     "q": "What if, instead of spending our lives doing, doing, doing, performing, performing, performing, we spent more time exploring, asking, listening, experimenting, reflecting, striving and becoming?",
@@ -1569,8 +1697,13 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified",
-    "angle": "No finish line. Just today's small step, taken on purpose."
+    "status": "paraphrase",
+    "angle": "No finish line. Just today's small step, taken on purpose.",
+    "s": "Enchiridion 51",
+    "work": "Enchiridion",
+    "passage": "51",
+    "sourceNote": "A modern compression of Enchiridion 51 (Long: \"resolve to live as a man who is mature and making progress\").",
+    "pin": "2027-05-18"
   },
   {
     "q": "You never ready, forever petty minds stay petty, mine’s thinking longevity until I’m 70.",
@@ -1637,18 +1770,24 @@
       "action",
       "mind"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of another entry with the same line."
   },
   {
     "q": "You can stand firm in a fight against everything except kindness.",
-    "a": "Jean Jacques Rousseau",
+    "a": "Jean-Jacques Rousseau",
     "t": [
       "love",
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "As quoted in Tolstoy, A Calendar of Wisdom (12 December)",
+    "work": "Tolstoy, A Calendar of Wisdom",
+    "passage": "12 December",
+    "attributionNote": "Credited to Rousseau in Tolstoy's A Calendar of Wisdom (Peter Sekirin's English, 1997). No matching passage found in Rousseau's own works, so the wording is Tolstoy's (or his translator's) rendering at best.",
+    "pin": "2026-12-26"
   },
   {
     "q": "Never confuse a single defeat with a final defeat.",
@@ -1704,14 +1843,17 @@
   },
   {
     "q": "If you don’t get everything you want, think of the things you don’t get that you don’t want.",
-    "a": "Oscar Wilde",
+    "a": "Anonymous",
     "t": [
       "nature",
       "action",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Not found in Oscar Wilde’s works or letters; an anonymous saying credited to him online.",
+    "pin": "2027-04-14"
   },
   {
     "q": "It is a fault to wish to be understood before we have made ourselves clear to ourselves.",
@@ -1732,14 +1874,17 @@
   },
   {
     "q": "To the most trivial actions, attach the devotion and mindfulness of a hundred monks. To matters of life and death, attach a sense of humor.",
-    "a": "Zhuangzi",
+    "a": "Anonymous",
     "t": [
       "death",
       "action",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Zhuangzi, but there is no such passage in the Zhuangzi; a modern saying.",
+    "pin": "2026-12-30"
   },
   {
     "q": "Reading after a certain age diverts the mind too much from its creative pursuits. Any man who reads too much and uses his own brain too little falls into lazy habits of thinking, just as the man who spends too much time in the theater is tempted to be content with living vicariously instead of living his own life.",
@@ -1762,11 +1907,16 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Anabasis 3.1.24",
+    "work": "Anabasis",
+    "passage": "3.1.24",
+    "sourceNote": "Xenophon to his officers; a modern translation, wording differs between translators.",
+    "pin": "2027-02-25"
   },
   {
-    "q": "The science of mathematics presents the most brilliant example of how pure reason may successfully enlarge its domain without the aid of experience.",
-    "a": "Immanuel Kant, Critique of Pure Reason",
+    "q": "The science of mathematics presents the most brilliant example of the extension of the sphere of pure reason without the aid of experience.",
+    "a": "Immanuel Kant",
     "t": [
       "time",
       "action",
@@ -1774,12 +1924,14 @@
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
-    "s": "Critique of Pure Reason Discipline of Pure Reason, §I, trans. J. M. D. Meiklejohn",
+    "status": "verified",
+    "s": "Critique of Pure Reason, \"The Discipline of Pure Reason\", §I, trans. J. M. D. Meiklejohn",
     "work": "Critique of Pure Reason",
     "url": "https://www.gutenberg.org/ebooks/4280",
-    "passage": "Discipline of Pure Reason, §I",
-    "translator": "J. M. D. Meiklejohn"
+    "passage": "\"The Discipline of Pure Reason\", §I",
+    "translator": "J. M. D. Meiklejohn",
+    "attribution": "verified",
+    "pin": "2027-02-28"
   },
   {
     "q": "The truth is like a lion; you don’t have to defend it. Let it loose; it will defend itself.",
@@ -1827,8 +1979,9 @@
       "growth",
       "mind"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled from rotation in the Nov 2026 audit: no source found for this remark."
   },
   {
     "q": "I prayed for twenty years but received no answer until I prayed with my legs.",
@@ -1842,7 +1995,8 @@
     "url": "https://quoteinvestigator.com/2021/11/23/pray-legs/",
     "attributionNote": "Spelling corrected (Douglas to Douglass).",
     "sourceNote": "1876 version: \"I prayed that God would emancipate me, but it was not till I prayed with my legs that I was emancipated.\"",
-    "attribution": "corrected"
+    "attribution": "corrected",
+    "pin": "2026-12-04"
   },
   {
     "q": "The culture precedes positive results. It doesn’t get tacked on as an afterthought on your way to the victory stand. Champions behave like champions before they’re champions; they have a winning standard of performance before they are winners.",
@@ -1912,26 +2066,30 @@
     "status": "unverified"
   },
   {
-    "q": "No one is useless in this world,’ retorted the Secretary, ‘who lightens the burden of it for anyone else.’",
-    "a": "Charles Dickens, Our Mutual Friend",
+    "q": "‘No one is useless in this world,’ retorted the Secretary, ‘who lightens the burden of it for any one else.’",
+    "a": "Charles Dickens",
     "t": [
       "death"
     ],
     "checked": true,
     "status": "verified",
-    "s": "Our Mutual Friend",
+    "s": "Our Mutual Friend, Book III, ch. 9",
     "work": "Our Mutual Friend",
-    "url": "https://www.gutenberg.org/ebooks/883"
+    "url": "https://www.gutenberg.org/ebooks/883",
+    "passage": "Book III, ch. 9",
+    "pin": "2027-01-03"
   },
   {
     "q": "Desire makes slaves out of kings, while patience makes kings out of slaves.",
-    "a": "Imam Al-Ghazali",
+    "a": "Anonymous",
     "t": [
       "time",
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to al-Ghazali, but no work or passage has been identified."
   },
   {
     "q": "If you are lonely when you're alone, you are in bad company.",
@@ -2006,8 +2164,9 @@
     "t": [
       "wisdom"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of the Hicks version of the same Zeno saying (Diogenes Laertius 7.26)."
   },
   {
     "q": "Disaster is Virtue’s opportunity.",
@@ -2027,7 +2186,7 @@
   },
   {
     "q": "The history of failure in war can be summed up in two words: Too late. Too late in comprehending the deadly purpose of the enemy; too late in realizing the mortal danger; too late in preparedness; too late in uniting all possible forces for resistance; too late in standing with one's friends.",
-    "a": "General Douglas MacArthur",
+    "a": "Douglas MacArthur",
     "t": [
       "perseverance",
       "creativity",
@@ -2035,7 +2194,9 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "sourceNote": "Attributed to a 1940 statement; primary text not located.",
+    "pin": "2027-04-20"
   },
   {
     "q": "We don't rise to the level of our expectations; we fall to the level of our training.",
@@ -2051,7 +2212,8 @@
     "attribution": "corrected",
     "attributionNote": "Not Archilochus: no surviving fragment matches. Tillman documents it as his own motto.",
     "work": "Barrett Tillman, motto (c. 1990s)",
-    "sourceNote": "Tillman: \"You won't rise to the occasion—you will default to your level of training.\""
+    "sourceNote": "Tillman: \"You won't rise to the occasion—you will default to your level of training.\"",
+    "pin": "2027-05-15"
   },
   {
     "q": "Normality is a paved road: It's comfortable to walk, but no flowers grow on it.",
@@ -2065,7 +2227,8 @@
     "attributionNote": "Not in Van Gogh's letters (vangoghletters.org). No other author found.",
     "status": "unverified",
     "url": "https://quoteinvestigator.com/2023/03/10/normality/",
-    "sourceNote": "Earliest known 2009; Van Gogh attribution unsupported."
+    "sourceNote": "Earliest known 2009; Van Gogh attribution unsupported.",
+    "pin": "2027-02-27"
   },
   {
     "q": "What the superior man seeks is in himself; what the small man seeks is in others.",
@@ -2091,14 +2254,21 @@
     "status": "unverified"
   },
   {
-    "q": "Wellbeing is attained by little and little, and nevertheless is no little thing itself.",
+    "q": "Well-being is attained by little and little, and nevertheless it is no little thing itself.",
     "a": "Zeno of Citium",
     "t": [
       "solitude",
       "simplicity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Diogenes Laertius, Lives 7.26, trans. R. D. Hicks",
+    "work": "Diogenes Laertius, Lives of Eminent Philosophers",
+    "passage": "7.26",
+    "translator": "R. D. Hicks",
+    "url": "http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diogenes_Laertius/Lives_of_the_Eminent_Philosophers/7/Zeno*.html",
+    "pin": "2027-02-20"
   },
   {
     "q": "Entrepreneur’s mind. Athlete’s body. Artist’s soul.",
@@ -2128,13 +2298,19 @@
     "status": "unverified"
   },
   {
-    "q": "If they’ve made a mistake correct them gently and show them where they went wrong. If you can’t do that, then the blame lies with you. Or no one.",
+    "q": "If they’ve made a mistake, correct them gently and show them where they went wrong. If you can’t do that, then the blame lies with you. Or no one.",
     "a": "Marcus Aurelius",
     "t": [
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 10.4, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "10.4",
+    "translator": "Gregory Hays",
+    "pin": "2027-01-29"
   },
   {
     "q": "Kingship: to earn a bad reputation by good deeds.",
@@ -2144,7 +2320,11 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "As quoted in Marcus Aurelius, Meditations 7.36",
+    "work": "Quoted in Marcus Aurelius, Meditations",
+    "passage": "7.36",
+    "sourceNote": "Long: \"It is royal to do good and to be abused.\" Marcus credits the saying to Antisthenes."
   },
   {
     "q": "Leadership, like life, is often a matter of choosing the lesser of two evils. It’s about making the best of bad situations. It’s about being pragmatic and realistic. We don’t live in Plato’s Republic, Marcus Aurelius reminds us. We live here, in this world. Where there are only hard decisions. Where the easy, simple problems get greedily gobbled up by lesser men and women. Where leadership is a daily struggle.",
@@ -2168,7 +2348,7 @@
     "status": "unverified"
   },
   {
-    "q": "Our plans miscarry because they have no aim when a man does not know what harbor he is making for, no wind is the right wind.",
+    "q": "Our plans miscarry because they have no aim. When a man does not know what harbour he is making for, no wind is the right wind.",
     "a": "Seneca",
     "t": [
       "wisdom",
@@ -2203,13 +2383,15 @@
   },
   {
     "q": "Nothing is a greater impediment to being on good terms with others than being ill at ease with yourself.",
-    "a": "Honoré de Balzac",
+    "a": "Anonymous",
     "t": [
       "solitude",
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Balzac, but no work or passage has been identified."
   },
   {
     "q": "The most important thing is to try and inspire people so that they can be great in whatever they want to do.",
@@ -2221,20 +2403,21 @@
     "status": "unverified"
   },
   {
-    "q": "Our minds must relax: they will rise better and keener after a rest.",
+    "q": "Men’s minds ought to have relaxation: they rise up better and more vigorous after rest.",
     "a": "Seneca",
     "t": [
       "growth",
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Of Peace of Mind (Minor Dialogues) 17.5, trans. Aubrey Stewart",
     "work": "Of Peace of Mind (Minor Dialogues)",
     "url": "https://www.gutenberg.org/ebooks/64576",
     "passage": "17.5",
     "translator": "Aubrey Stewart",
-    "sourceNote": "Stewart: \"men's minds ought to have relaxation; they rise up better and more vigorous after rest\"."
+    "attribution": "verified",
+    "pin": "2027-03-18"
   },
   {
     "q": "Lessons are repeated until they are learned. A lesson will be presented to you in various forms until you have learned it. When you have learned it, you can go on to the next lesson. Learning lessons does not end. There's no part of life that doesn't contain its lessons. If you're alive, that means there are still lessons to be learned.",
@@ -2249,7 +2432,7 @@
   },
   {
     "q": "The main thing is the YOU beneath the clothes and skin—the ability to do, the will to conquer, the determination to understand and know this great, wonderful, curious world. Don’t shrink from new experiences and custom. Take the cold bath bravely. Enter into the spirit of your big bedroom. Enjoy what is and not pine for what is not. Read some good, heavy, serious books just for discipline: Take yourself in hand and master yourself. Make yourself do unpleasant things, so as to gain the upper hand of your soul.",
-    "a": "W.E.B. Du Bois",
+    "a": "W. E. B. Du Bois",
     "t": [
       "courage",
       "wisdom",
@@ -2257,7 +2440,12 @@
       "happiness"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Letter to Yolande Du Bois, 29 October 1914",
+    "work": "Letter to Yolande Du Bois",
+    "passage": "29 October 1914",
+    "sourceNote": "Letter to his daughter at school in England; wording not checked against a scan.",
+    "pin": "2027-02-16"
   },
   {
     "q": "The things you take pride in are the same things you are likely to be biased about. How might the things you take pride in be misleading you? The tighter you cling to your current identity, the harder it becomes to grow beyond it.",
@@ -2276,7 +2464,12 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Antigone, lines 1023–1027",
+    "work": "Antigone",
+    "passage": "lines 1023–1027",
+    "sourceNote": "Teiresias to Creon; wording follows one modern translation.",
+    "pin": "2027-05-03"
   },
   {
     "q": "I think of a hero as someone who understands the degree of responsibility that comes with his freedom.",
@@ -2304,8 +2497,8 @@
     "status": "unverified"
   },
   {
-    "q": "A good plan, violently executed now, is better than a perfect plan next week.",
-    "a": "General George S. Patton",
+    "q": "A good plan violently executed now is better than a perfect plan next week.",
+    "a": "George S. Patton",
     "t": [
       "time",
       "growth",
@@ -2317,7 +2510,8 @@
     "s": "War As I Knew It (1947)",
     "work": "War As I Knew It (1947)",
     "url": "https://www.quotationspage.com/quote/38297.html",
-    "sourceNote": "From the advice section, under 'Don't Delay': 'The best is the enemy of the good. By this I mean that a good plan violently executed now is better than a perfect plan next week.' The book prints it without the two commas this line adds."
+    "sourceNote": "War As I Knew It (1947), advice section, under 'Don't Delay': 'The best is the enemy of the good. By this I mean that a good plan violently executed now is better than a perfect plan next week.'",
+    "pin": "2026-11-29"
   },
   {
     "q": "A writer—and, I believe, generally all persons—must think that whatever happens to him or her is a resource. All things have been given to us for a purpose, and an artist must feel this more intensely. All that happens to us, including our humiliations, our misfortunes, our embarrassments, all is given to us as raw material, as clay, so that we may shape our art.",
@@ -2363,7 +2557,7 @@
     "status": "unverified"
   },
   {
-    "q": "If anyone can refute me, show me I’m making a mistake or looking at things from the wrong perspective—I’ll gladly change. It’s the truth I’m after, and the truth never harmed anyone. What harms us is to persist in self-deceit and ignorance.",
+    "q": "If anyone can refute me—show me I’m making a mistake or looking at things from the wrong perspective—I’ll gladly change. It’s the truth I’m after, and the truth never harmed anyone. What harms us is to persist in self-deceit and ignorance.",
     "a": "Marcus Aurelius",
     "t": [
       "wisdom",
@@ -2372,7 +2566,13 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 6.21, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "6.21",
+    "translator": "Gregory Hays",
+    "pin": "2027-03-30"
   },
   {
     "q": "We have been fighting on this planet for ten thousand years; it would be idiotic and unethical to not take advantage of such accumulated experiences. If you haven’t read hundreds of books, you are functionally illiterate, and you will be incompetent, because your personal experiences alone aren’t broad enough to sustain you. Any commander who claims he is 'too busy to read' is going to fill body bags with his troops as he learns the hard way.",
@@ -2404,7 +2604,12 @@
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Discourses 3.5.14",
+    "work": "Discourses",
+    "passage": "3.5.14",
+    "sourceNote": "A modern translation; wording differs between translators.",
+    "pin": "2027-03-14"
   },
   {
     "q": "Suffering is a test. That's all it is. Suffering is the true test of life.",
@@ -2453,7 +2658,11 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Aristotle. Quote Investigator (2015-01-09): Hubbard wrote the saying in Little Journeys (1898) and the familiar form by 1909. No Aristotle source.",
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "After Little Journeys to the Homes of American Statesmen (1898)",
+    "work": "Little Journeys to the Homes of American Statesmen (1898)",
+    "sourceNote": "Hubbard's 1898 wording: 'If you would escape moral and physical assassination, do nothing, say nothing, be nothing—court obscurity, for only in oblivion does safety lie.' The popular line is a later compression; not Aristotle.",
+    "pin": "2027-04-30"
   },
   {
     "q": "Swing easy.",
@@ -2509,7 +2718,8 @@
     "status": "verified",
     "s": "\"Common Places,\" No. 1, The Literary Examiner (1823)",
     "work": "\"Common Places,\" No. 1, The Literary Examiner (1823)",
-    "url": "https://en.wikiquote.org/wiki/William_Hazlitt"
+    "url": "https://en.wikiquote.org/wiki/William_Hazlitt",
+    "pin": "2027-02-01"
   },
   {
     "q": "A parable from priest and therapist Anthony de Mello on the stories we tell ourselves: 'A man found an eagle's egg and put it in a nest of a barnyard hen. The eaglet hatched with the brood of chickens and grew up with them. All his life the eagle did what the barnyard chicks did, thinking he was a barnyard chicken. He scratched the earth for worms and insects. He clucked and cackled. And he would thrash his wings and fly a few feet into the air. Years passed and the eagle grew very old. One day he saw a magnificent bird above him in the cloudless sky. It glided in graceful majesty among the powerful wind currents, with scarcely a beat of its strong golden wings. The old eagle looked up in awe. \"Who's that?\" he asked. \"That's the eagle, the king of the birds,\" said his neighbor. \"He belongs to the sky. We belong to the earth—we're chickens.\" So the eagle lived and died a chicken, for that's what he thought he was.'",
@@ -2544,7 +2754,8 @@
     "work": "Meet the Press, 20 December 1970",
     "url": "https://quoteinvestigator.com/2011/07/22/keynes-change-mind/",
     "attribution": "corrected",
-    "attributionNote": "Not Keynes. These are Samuelson's recorded words on Meet the Press, 20 December 1970. The popular 'When the facts change… what do you do, sir?' form is a later variant; Samuelson credited Keynes in 1978/1983, and Keynes scholars find no evidence (Quote Investigator)."
+    "attributionNote": "Not Keynes. These are Samuelson's recorded words on Meet the Press, 20 December 1970. The popular 'When the facts change… what do you do, sir?' form is a later variant; Samuelson credited Keynes in 1978/1983, and Keynes scholars find no evidence (Quote Investigator).",
+    "pin": "2027-05-14"
   },
   {
     "q": "An ant on the move does more than a dozing ox.",
@@ -2610,7 +2821,8 @@
     "work": "The Knowledge Project (Farnam Street podcast), ep. 26",
     "passage": "13 December 2017",
     "url": "https://fs.blog/knowledge-project-podcast/warren-berger/",
-    "sourceNote": "Said in conversation with Shane Parrish; the line appears in a third-party transcript of the episode (podcastsdistilled.com). The official transcript is members-only, so the wording is not confirmed against the recording."
+    "sourceNote": "Said in conversation with Shane Parrish; the line appears in a third-party transcript of the episode (podcastsdistilled.com). The official transcript is members-only, so the wording is not confirmed against the recording.",
+    "pin": "2026-12-23"
   },
   {
     "q": "Be grateful for what you have.",
@@ -2634,7 +2846,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not this sentence. Jung wrote \"Thinking is difficult, therefore let the herd pronounce judgment!\" (Collected Works 10, para 652). No author for the \"that's why most people judge\" wording.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2026-12-22"
   },
   {
     "q": "Freedom is nothing else but a chance to be better.",
@@ -2657,12 +2870,15 @@
   },
   {
     "q": "Sweat more during peace: bleed less during war.",
-    "a": "Sun Tzu",
+    "a": "Anonymous",
     "t": [
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Not in The Art of War. A modern military saying ('The more you sweat in peace, the less you bleed in war'), also credited to Rickover and Patton without sources.",
+    "pin": "2026-11-21"
   },
   {
     "q": "There is a strong shadow where there is much light.",
@@ -2676,7 +2892,8 @@
     "work": "Götz von Berlichingen",
     "url": "https://en.wikiquote.org/wiki/Johann_Wolfgang_von_Goethe",
     "passage": "Act I",
-    "sourceNote": "German: \"Wo viel Licht ist, ist starker Schatten.\""
+    "sourceNote": "German: \"Wo viel Licht ist, ist starker Schatten.\"",
+    "pin": "2027-04-09"
   },
   {
     "q": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.",
@@ -2685,9 +2902,9 @@
       "solitude",
       "character"
     ],
-    "checked": true,
+    "checked": false,
     "attribution": "corrected",
-    "attributionNote": "Not Hemingway. Quote Investigator (2017-03-11): W. L. Sheldon, \"What to Believe: An Ethical Creed,\" Ethical Addresses, April 1897. Hemingway was born in 1899; the 1963 Playboy \"A Man's Credo\" is not accepted by Hemingway specialists.",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of the W. L. Sheldon line, kept elsewhere in his exact 1897 wording.",
     "s": "Ethical Addresses, April 1897",
     "work": "Ethical Addresses",
     "passage": "April 1897",
@@ -2718,10 +2935,11 @@
     "work": "The Freud/Jung Letters",
     "passage": "Letter to C. G. Jung, 1907",
     "translator": "Tania and James Stern",
-    "url": "https://quoteinvestigator.com/2023/09/24/struggle-beautiful/"
+    "url": "https://quoteinvestigator.com/2023/09/24/struggle-beautiful/",
+    "pin": "2026-12-15"
   },
   {
-    "q": "When I was a child, I spoke as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things.",
+    "q": "When I was a child, I spake as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things.",
     "a": "Bible, 1 Corinthians 13:11",
     "t": [
       "mind"
@@ -2731,7 +2949,8 @@
     "s": "1 Corinthians (King James Version) 13:11",
     "work": "1 Corinthians (King James Version)",
     "url": "https://www.gutenberg.org/ebooks/10",
-    "passage": "13:11"
+    "passage": "13:11",
+    "pin": "2027-04-21"
   },
   {
     "q": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
@@ -2754,7 +2973,14 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "The Book of Five Rings, Ground Book, trans. Victor Harris",
+    "work": "The Book of Five Rings",
+    "passage": "Ground Book, ninth principle",
+    "translator": "Victor Harris",
+    "sourceNote": "Last of the nine principles closing the Ground Book (Harris, 1974).",
+    "pin": "2027-05-28"
   },
   {
     "q": "Forgiveness is not forgetting. Forgiveness is freedom from hate.",
@@ -2781,21 +3007,29 @@
   },
   {
     "q": "Man conquers the world by conquering himself.",
-    "a": "Zeno",
+    "a": "Anonymous",
     "t": [
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Zeno, but no ancient source (Diogenes Laertius or the fragments) has it."
   },
   {
-    "q": "You can't discuss the ocean with a well frog - he's limited by the space he lives in.",
+    "q": "You can’t discuss the ocean with a well frog—he’s limited by the space he lives in.",
     "a": "Zhuang Zhou",
     "t": [
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Zhuangzi, ch. 17 (\"Autumn Floods\"), trans. Burton Watson",
+    "work": "Zhuangzi",
+    "passage": "ch. 17, \"Autumn Floods\"",
+    "translator": "Burton Watson",
+    "pin": "2026-12-19"
   },
   {
     "q": "No one can construct for you the bridge upon which precisely you must cross the stream of life, no one but you yourself alone.",
@@ -2816,7 +3050,7 @@
     "status": "unverified"
   },
   {
-    "q": "Time heals what reason cannot.",
+    "q": "Time often cures what reason cannot heal.",
     "a": "Seneca",
     "t": [
       "time",
@@ -2824,13 +3058,14 @@
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Agamemnon 130, trans. Frank Justus Miller",
     "work": "Agamemnon",
     "url": "https://www.gutenberg.org/ebooks/57999",
     "passage": "130",
     "translator": "Frank Justus Miller",
-    "sourceNote": "Miller: \"Time often cures what reason cannot heal\"."
+    "attribution": "verified",
+    "pin": "2026-12-09"
   },
   {
     "q": "Death, therefore, the most awful of evils, is nothing to us, seeing that, when we are, death is not come, and, when death is come, we are not.",
@@ -2839,7 +3074,13 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Letter to Menoeceus, trans. R. D. Hicks",
+    "work": "Letter to Menoeceus (Diogenes Laertius 10.125)",
+    "passage": "10.125",
+    "translator": "R. D. Hicks",
+    "pin": "2027-05-16"
   },
   {
     "q": "Just for the record, the weather today is calm and sunny, but the air is full of bullshit.",
@@ -2859,8 +3100,9 @@
       "time",
       "freedom"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: fragmentary remark with no traceable source."
   },
   {
     "q": "You don't inspire people by revealing your super powers; you inspire people by helping them reveal their own super powers.",
@@ -2873,7 +3115,7 @@
     "status": "unverified"
   },
   {
-    "q": "Beware that, when fighting monsters, you yourself do not become a monster...",
+    "q": "He who fights with monsters should be careful lest he thereby become a monster.",
     "a": "Friedrich Nietzsche",
     "t": [
       "solitude",
@@ -2881,13 +3123,13 @@
       "action"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Beyond Good and Evil §146, trans. Helen Zimmern",
     "work": "Beyond Good and Evil",
     "url": "https://www.gutenberg.org/ebooks/4363",
     "passage": "§146",
     "translator": "Helen Zimmern",
-    "sourceNote": "Zimmern: \"He who fights with monsters should be careful lest he thereby become a monster.\""
+    "attribution": "verified"
   },
   {
     "q": "Looking at life from a different perspective makes you realize that it's not the deer that is crossing the road, rather it's the road that is crossing the forest.",
@@ -2926,7 +3168,7 @@
     "status": "unverified"
   },
   {
-    "q": "Happy the man who improves other people not merely when he is in their presence but even he is in their thoughts!",
+    "q": "Happy is the man who can make others better, not merely when he is in their company, but even when he is in their thoughts!",
     "a": "Seneca",
     "t": [
       "happiness",
@@ -2934,12 +3176,14 @@
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
-    "s": "Moral Letters to Lucilius Letter 11.9, trans. Richard M. Gummere",
+    "status": "verified",
+    "s": "Moral Letters to Lucilius 11.9, trans. Richard M. Gummere",
     "work": "Moral Letters to Lucilius",
     "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_11",
     "passage": "Letter 11.9",
-    "translator": "Richard M. Gummere"
+    "translator": "Richard M. Gummere",
+    "attribution": "verified",
+    "pin": "2027-05-19"
   },
   {
     "q": "Make your heart like a lake with a calm still surface and great depths of kindness.",
@@ -2967,7 +3211,8 @@
     "url": "https://www.gutenberg.org/ebooks/10661",
     "passage": "Book IV",
     "translator": "George Long",
-    "sourceNote": "Long: \"There is only one way to happiness... the rule is not to look towards things which are out of the power of our will\"."
+    "sourceNote": "Long: \"There is only one way to happiness... the rule is not to look towards things which are out of the power of our will\".",
+    "pin": "2027-05-25"
   },
   {
     "q": "Did you think the lion was sleeping because he didn't roar?",
@@ -2980,7 +3225,8 @@
     "s": "The Conspiracy of Fiesco Act I, sc. xviii",
     "work": "The Conspiracy of Fiesco",
     "url": "https://en.wikiquote.org/wiki/Friedrich_Schiller",
-    "passage": "Act I, sc. xviii"
+    "passage": "Act I, sc. xviii",
+    "pin": "2026-12-02"
   },
   {
     "q": "To find yourself, think for yourself.",
@@ -3000,8 +3246,9 @@
     "t": [
       "wisdom"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of Zeno’s “well-being is attained little by little” (Hicks), kept elsewhere."
   },
   {
     "q": "...anxiety is the dizziness of freedom...",
@@ -3015,7 +3262,8 @@
     "s": "The Concept of Anxiety p. 61 (English ed. cited by Wikiquote)",
     "work": "The Concept of Anxiety",
     "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
-    "passage": "p. 61 (English ed. cited by Wikiquote)"
+    "passage": "p. 61 (English ed. cited by Wikiquote)",
+    "pin": "2027-03-01"
   },
   {
     "q": "The only real mistake is the one from which we learn nothing.",
@@ -3027,14 +3275,20 @@
     "status": "unverified"
   },
   {
-    "q": "The most desirable quality in a soldier is constancy in the support of fatigue; valor is only secondary.",
+    "q": "The first qualification of a soldier is fortitude under fatigue and privation. Courage is only the second.",
     "a": "Napoleon Bonaparte",
     "t": [
       "creativity",
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Military Maxims, no. 58, trans. G. C. D’Aguilar",
+    "work": "Military Maxims of Napoleon",
+    "passage": "no. 58",
+    "translator": "G. C. D’Aguilar",
+    "pin": "2027-04-11"
   },
   {
     "q": "This exceeding trifling witling, considering ranting criticizing concerning adopting fitting wording being exhibiting transcending learning, was displaying, notwithstanding ridiculing, surpassing boasting swelling reasoning, respecting correcting erring...",
@@ -3064,9 +3318,13 @@
     ],
     "checked": true,
     "status": "verified",
-    "s": "Twilight of the Idols",
+    "s": "Twilight of the Idols, \"Skirmishes of an Untimely Man\" §38, trans. Anthony M. Ludovici",
     "work": "Twilight of the Idols",
-    "url": "https://www.gutenberg.org/ebooks/52263"
+    "url": "https://www.gutenberg.org/ebooks/52263",
+    "passage": "\"Skirmishes of an Untimely Man\" §38",
+    "translator": "Anthony M. Ludovici",
+    "sourceNote": "Ludovici (1911): 'What in sooth is freedom? Freedom is the will to be responsible for ourselves.'",
+    "pin": "2027-05-07"
   },
   {
     "q": "In your actions, don't procrastinate. In your conversations, don't confuse. In your thoughts, don't wander. In your soul, don't be passive or aggressive. In your life, don't be all about business.",
@@ -3085,7 +3343,11 @@
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Tao Te Ching, ch. 81",
+    "work": "Tao Te Ching",
+    "passage": "ch. 81",
+    "sourceNote": "Common English rendering of ch. 81; wording varies by translator."
   },
   {
     "q": "Determine that today you will overcome yourself of the day before, tomorrow you will win over those of lesser skill, and later you will win over those of greater skill.",
@@ -3096,7 +3358,12 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The Book of Five Rings, Water Book",
+    "work": "The Book of Five Rings",
+    "passage": "Water Book",
+    "sourceNote": "Harris: \"Today is victory over yourself of yesterday; tomorrow is your victory over lesser men.\" The rest is a modern expansion.",
+    "pin": "2027-03-16"
   },
   {
     "q": "Discipline is choosing between what you want now and what you want most.",
@@ -3108,7 +3375,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Lincoln. Barry Popik: the Lincoln credit starts on Facebook on 17 June 2013. Augusta Kantra's 10 April 2010 essay says she had just read the line; her later authorship claim contradicts that. The closest earlier sentence is Ann Vertel, 24 May 2006, \"Discipline is the difference between what you want now and what you want most,\" which is not this wording. No reliable author for the \"choosing\" sentence.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2026-12-14"
   },
   {
     "q": "The richest man ain't the one with his first dollar, dog-- it's the one that still got his first friend.",
@@ -3248,7 +3516,7 @@
     "status": "unverified"
   },
   {
-    "q": "Practice yourself in little things; and from there proceed to greater things.",
+    "q": "We ought to exercise ourselves in small things, and beginning with them to proceed to the greater.",
     "a": "Epictetus",
     "t": [
       "discipline",
@@ -3256,12 +3524,15 @@
       "action"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Discourses 1.18, trans. George Long",
     "work": "Discourses",
     "url": "https://www.gutenberg.org/ebooks/10661",
     "passage": "1.18",
-    "translator": "George Long"
+    "translator": "George Long",
+    "attribution": "verified",
+    "sourceNote": "Long: 'Therefore we ought to exercise ourselves in small things, and beginning with them to proceed to the greater.' The old text ('Practice yourself in little things') was a modern rendering of the same line.",
+    "pin": "2026-12-07"
   },
   {
     "q": "Suspect each moment, for it is a thief, tiptoeing away with more than it brings.",
@@ -3287,14 +3558,21 @@
     "url": "https://quoteinvestigator.com/2012/07/07/magical-things-waiting/"
   },
   {
-    "q": "To a mind that is still, the entire universe surrenders.",
+    "q": "To a mind that is “still” the whole universe surrenders.",
     "a": "Zhuang Zhou",
     "t": [
       "death",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "Zhuangzi, ch. 13, as rendered by Arthur Waley (1934)",
+    "work": "Zhuangzi (in Arthur Waley, The Way and Its Power, 1934, p. 58)",
+    "passage": "ch. 13",
+    "translator": "Arthur Waley",
+    "attributionNote": "Often credited to Lao Tzu. Waley gave it as Chuang Tzu (Zhuangzi) in the introduction to The Way and Its Power, with 'still' in quotation marks. Legge (1891): 'The still mind of the sage is the mirror of heaven and earth.'",
+    "pin": "2027-03-10"
   },
   {
     "q": "Every man has a property in his own person. This nobody has a right to, but himself.",
@@ -3318,7 +3596,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Cato Major, or A Treatise on Old Age, ch. 11",
+    "work": "Cato Major, or A Treatise on Old Age (De Senectute)",
+    "passage": "ch. 11 (§36)",
+    "sourceNote": "Wording from the 18th-century English translation (Cato Major, 1744 and later editions).",
+    "pin": "2027-05-26"
   },
   {
     "q": "He who cannot put his thoughts on ice should not enter into the heat of debate.",
@@ -3327,7 +3611,9 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to Nietzsche (Human, All Too Human, vol. II); the aphorism was not located in the English translations checked.",
+    "pin": "2027-02-24"
   },
   {
     "q": "Don’t be satisfied with stories, how things have gone with others. Unfold your own myth.",
@@ -3360,7 +3646,8 @@
     "status": "verified",
     "s": "The Picture of Dorian Gray",
     "work": "The Picture of Dorian Gray",
-    "url": "https://www.gutenberg.org/ebooks/174"
+    "url": "https://www.gutenberg.org/ebooks/174",
+    "pin": "2026-12-21"
   },
   {
     "q": "Failure is not fatal, but failure to change might be.",
@@ -3413,25 +3700,39 @@
     "status": "unverified"
   },
   {
-    "q": "Circumstance does not make the man, it reveals him to himself.",
-    "a": "Epictetus",
+    "q": "Circumstance does not make the man; it reveals him to himself.",
+    "a": "James Allen",
     "t": [
       "solitude",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "As a Man Thinketh (1903), ch. 2",
+    "work": "As a Man Thinketh (1903)",
+    "passage": "ch. 2, \"Effect of Thought on Circumstances\"",
+    "url": "https://en.wikisource.org/wiki/As_a_Man_Thinketh/Chapter_2",
+    "attributionNote": "Not Epictetus: James Allen, As a Man Thinketh (1903).",
+    "pin": "2027-01-15"
   },
   {
-    "q": "Be happy about your growth, in which of course you can’t take anyone with you, and be gentle to those you leave behind.",
-    "a": "Rainer Maria Rilke, Letters to a Young Poet",
+    "q": "Be happy about your growth, in which of course you can’t take anyone with you, and be gentle with those who stay behind.",
+    "a": "Rainer Maria Rilke",
     "t": [
       "happiness",
       "nature",
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Letters to a Young Poet, trans. Stephen Mitchell",
+    "work": "Letters to a Young Poet",
+    "passage": "Letter 4 (16 July 1903)",
+    "translator": "Stephen Mitchell",
+    "sourceNote": "Mitchell's translation continues: '...be confident and calm in front of them and don't torment them with your doubts.' The old text read 'be gentle to those you leave behind'.",
+    "pin": "2027-01-02"
   },
   {
     "q": "Perhaps the feelings that we experience when we are in love represent a normal state.",
@@ -3441,11 +3742,13 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to Chekhov (cited in Finke, Seeing Chekhov, 2005); original source not checked.",
+    "pin": "2027-05-09"
   },
   {
     "q": "Ambition leads me not only farther than any other man has been before me, but as far as I think it possible for man to go.",
-    "a": "James Cook, The Journals",
+    "a": "James Cook",
     "t": [
       "creativity",
       "leadership",
@@ -3458,7 +3761,8 @@
     "work": "Cook's journal",
     "url": "https://en.wikiquote.org/wiki/James_Cook",
     "passage": "30 January 1774",
-    "sourceNote": "Original: \"I whose ambition leads me not only farther than any other man has been before me...\""
+    "sourceNote": "Original: \"I whose ambition leads me not only farther than any other man has been before me...\"",
+    "pin": "2026-11-25"
   },
   {
     "q": "Optimism is true moral courage.",
@@ -3473,7 +3777,7 @@
     "work": "Quoted by expedition member L. D. A. Hussey, South with Shackleton (1949)",
     "url": "https://en.wikiquote.org/wiki/Ernest_Shackleton",
     "status": "verified",
-    "pin": "2026-11-05"
+    "pin": "2026-11-19"
   },
   {
     "q": "You have comfort. You don’t have luxury. And don’t tell me that money plays a part. The luxury I advocate has nothing to do with money.",
@@ -3523,7 +3827,13 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Letter to Cardinal de Bernis, 23 April 1764",
+    "work": "Letter to Cardinal de Bernis",
+    "passage": "23 April 1764",
+    "sourceNote": "French: 'Il y a des vérités qui ne sont pas pour tous les hommes et pour tous les temps.'",
+    "pin": "2027-01-10"
   },
   {
     "q": "He who jumps into the void owes no explanation to those who stand and watch.",
@@ -3534,13 +3844,19 @@
     "status": "unverified"
   },
   {
-    "q": "No truly great thing is created suddenly.",
+    "q": "Nothing great is produced suddenly, since not even the grape or the fig is.",
     "a": "Epictetus",
     "t": [
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Discourses 1.15, trans. George Long",
+    "work": "Discourses",
+    "passage": "1.15",
+    "translator": "George Long",
+    "url": "https://www.gutenberg.org/ebooks/10661"
   },
   {
     "q": "To venture causes anxiety…But not to venture is to lose one's self.",
@@ -3569,7 +3885,8 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-03-21"
   },
   {
     "q": "As you proceed through life, following your own path, birds will shit on you. Don’t bother to brush it off.",
@@ -3588,7 +3905,12 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "As reported in Cicero, De Officiis 2.43",
+    "work": "Cicero, De Officiis",
+    "passage": "2.43",
+    "sourceNote": "Cicero credits Socrates with saying the shortest road to glory is to be what you wish to be thought.",
+    "pin": "2027-02-21"
   },
   {
     "q": "The most spiritual men, as the strongest, find their happiness where others would find their destruction.",
@@ -3606,7 +3928,7 @@
     "sourceNote": "Wording follows Kaufmann; Mencken renders \"the most intelligent men ... find their happiness where others would find only disaster\"."
   },
   {
-    "q": "Failure is simply the opportunity to begin again, this time more intelligently.",
+    "q": "Failure is only the opportunity more intelligently to begin again.",
     "a": "Henry Ford",
     "t": [
       "perseverance",
@@ -3614,12 +3936,13 @@
       "action"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "My Life and Work Introduction",
     "work": "My Life and Work",
     "url": "https://www.gutenberg.org/ebooks/7213",
     "passage": "Introduction",
-    "sourceNote": "Ford: \"Failure is only the opportunity more intelligently to begin again.\""
+    "attribution": "verified",
+    "pin": "2027-01-19"
   },
   {
     "q": "Those who do not move, do not notice their chains.",
@@ -3645,18 +3968,20 @@
     "status": "unverified"
   },
   {
-    "q": "The snake which cannot cast its skin has to die.",
+    "q": "The snake that cannot cast its skin perishes. So too with those minds which are prevented from changing their views: they cease to be minds.",
     "a": "Friedrich Nietzsche",
     "t": [
       "death"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "The Dawn of Day §573",
     "work": "The Dawn of Day",
     "url": "https://www.gutenberg.org/ebooks/39955",
     "passage": "§573",
-    "sourceNote": "Original: \"The snake that cannot cast its skin perishes.\""
+    "attribution": "verified",
+    "translator": "J. M. Kennedy",
+    "pin": "2027-03-07"
   },
   {
     "q": "Tiger got to hunt, bird got to fly; Man got to sit and wonder ‘why, why, why?’",
@@ -3690,29 +4015,37 @@
     "status": "unverified"
   },
   {
-    "q": "It is not good to be too free. It is not good to have everything one wants.",
+    "q": "It is not good to have too much liberty. It is not good to have all one wants.",
     "a": "Blaise Pascal",
     "t": [
       "freedom"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Pensées 379, trans. W. F. Trotter",
     "work": "Pensées",
     "url": "https://www.gutenberg.org/ebooks/18269",
     "passage": "379",
     "translator": "W. F. Trotter",
-    "sourceNote": "Trotter: \"It is not good to have too much liberty. It is not good to have all one wants.\""
+    "attribution": "verified",
+    "pin": "2027-02-15"
   },
   {
-    "q": "Remember that there is nothing noble in being superior to some other man.",
-    "a": "W.L. Sheldon, Ethical Addresses",
+    "q": "Remember that there is nothing noble in being superior to some other man. The true nobility is in being superior to your previous self.",
+    "a": "W. L. Sheldon",
     "t": [
       "action",
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "\"What to Believe: An Ethical Creed,\" Ethical Addresses (April 1897)",
+    "work": "\"What to Believe: An Ethical Creed,\" Ethical Addresses",
+    "passage": "April 1897, p. 61",
+    "url": "https://quoteinvestigator.com/2017/03/11/superior/",
+    "attributionNote": "Often credited to Hemingway via a doubtful 1963 Playboy piece; Quote Investigator traces it to Sheldon, 1897.",
+    "pin": "2026-12-25"
   },
   {
     "q": "Every day of our lives, we are on the verge of making those slight changes that would make all the difference.",
@@ -3726,16 +4059,20 @@
     "status": "verified",
     "s": "The Complete Neurotic's Notebook (1981)",
     "work": "The Complete Neurotic's Notebook (1981)",
-    "url": "https://en.wikiquote.org/wiki/Mignon_McLaughlin"
+    "url": "https://en.wikiquote.org/wiki/Mignon_McLaughlin",
+    "pin": "2027-05-11"
   },
   {
     "q": "There is no greatness that is not at peace.",
-    "a": "Seneca",
+    "a": "Anonymous",
     "t": [
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Seneca, but no passage in his works has been found; the line circulates through modern Stoic writing.",
+    "pin": "2027-03-22"
   },
   {
     "q": "Don't you find it odd that when you're a kid, everyone encourages you to follow your dreams. But when you're older, they act offended if you even try.",
@@ -3790,7 +4127,8 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-01-11"
   },
   {
     "q": "Insecurity will always be a growth industry. The economy now depends on fear.",
@@ -3827,7 +4165,8 @@
     "work": "Morals: Of a Happy Life",
     "url": "https://www.gutenberg.org/ebooks/56075",
     "translator": "Roger L'Estrange",
-    "sourceNote": "Loosened from L'Estrange's paraphrase."
+    "sourceNote": "Loosened from L'Estrange's paraphrase.",
+    "pin": "2027-01-07"
   },
   {
     "q": "We forfeit three-fourths of ourselves in order to be like other people.",
@@ -3844,13 +4183,15 @@
   },
   {
     "q": "A leader should do anything but not everything.",
-    "a": "Plutarch",
+    "a": "Anonymous",
     "t": [
       "leadership",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Plutarch, but no passage in the Lives or Moralia matches."
   },
   {
     "q": "Insomnia is the mind's revenge for all the tricky thoughts we rejected to address during the day.",
@@ -3919,7 +4260,7 @@
     "status": "unverified"
   },
   {
-    "q": "Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him...",
+    "q": "Above all, don’t lie to yourself. The man who lies to himself and listens to his own lie comes to such a pass that he cannot distinguish the truth within him…",
     "a": "Fyodor Dostoyevsky",
     "t": [
       "wisdom",
@@ -3933,7 +4274,9 @@
     "work": "The Brothers Karamazov",
     "url": "https://www.gutenberg.org/ebooks/28054",
     "passage": "Book II, ch. 2",
-    "translator": "Constance Garnett"
+    "translator": "Constance Garnett",
+    "sourceNote": "Father Zossima to Fyodor Pavlovitch. Garnett continues: '...or around him, and so loses all respect for himself and for others.'",
+    "pin": "2027-01-09"
   },
   {
     "q": "Don’t sabotage yourself by unwittingly adopting negative, unproductive attitudes through your associations with others.",
@@ -3950,7 +4293,8 @@
     "attributionNote": "Not Epictetus's words: from Sharon Lebell's 1995 interpretive version, The Art of Living.",
     "work": "The Art of Living (1995)",
     "passage": "p. 23",
-    "sourceNote": "Lebell's modern interpretation after Epictetus."
+    "sourceNote": "Lebell's modern interpretation after Epictetus.",
+    "pin": "2027-05-13"
   },
   {
     "q": "Go all in. if you’re going to try, go all the way. otherwise, don’t even start. this could mean losing girlfriends, wives, relatives, jobs and maybe your mind. go all the way. it could mean not eating for 3 or 4 days. it could mean freezing on a park bench. it could mean jail, it could mean derision, mockery, isolation. isolation is the gift, all the others are a test of your endurance, of how much you really want to do it. and you’ll do it despite rejection and the worst odds and it will be better than anything else you can imagine. if you’re going to try, go all the way. there is no other feeling like that. you will be alone with the gods and the nights will flame with fire. do it, do it, do it. do it. all the way all the way. you will ride life straight to perfect laughter, its the only good fight there is.",
@@ -3975,7 +4319,8 @@
     "status": "verified",
     "s": "Letter to Hans Peter Kierkegaard (1848)",
     "work": "Letter to Hans Peter Kierkegaard (1848)",
-    "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard"
+    "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
+    "pin": "2027-02-12"
   },
   {
     "q": "If you stop, you die.",
@@ -3988,7 +4333,8 @@
     "attributionNote": "Spoken by Leonhard Seppala (Willem Dafoe) to his dog in the film Togo (2019).",
     "s": "Togo (2019 film)",
     "work": "Togo (2019 film)",
-    "status": "verified"
+    "status": "verified",
+    "pin": "2027-05-02"
   },
   {
     "q": "Life happens so hard and fast I sometimes wonder who is me…",
@@ -4028,12 +4374,13 @@
     "t": [
       "purpose"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: garbled; no matching passage in the Meditations."
   },
   {
     "q": "There is no past and no future; no one has ever entered those two imaginary kingdoms. There is only the present.",
-    "a": "Tolstoy",
+    "a": "Leo Tolstoy",
     "t": [
       "time",
       "leadership",
@@ -4061,7 +4408,13 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 8.32, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "8.32",
+    "translator": "Gregory Hays",
+    "pin": "2027-01-05"
   },
   {
     "q": "don't see how you can respect yourself if you must look in the hearts and minds of others for your happiness.",
@@ -4078,14 +4431,17 @@
   },
   {
     "q": "Paths should be laid where people walk, instead of walking where paths are laid.",
-    "a": "John Barth",
+    "a": "Anonymous",
     "t": [
       "creativity",
       "leadership",
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to John Barth, but no work of his containing it has been found.",
+    "pin": "2027-05-17"
   },
   {
     "q": "When you are content to be simply yourself and don't compare or compete, everybody will respect you.",
@@ -4109,10 +4465,11 @@
     "s": "Letter to H. G. O. Blake, 6–7 December 1856 The Correspondence of Henry David Thoreau (1958), p. 444",
     "work": "Letter to H. G. O. Blake, 6–7 December 1856",
     "url": "https://en.wikiquote.org/wiki/Henry_David_Thoreau",
-    "passage": "The Correspondence of Henry David Thoreau (1958), p. 444"
+    "passage": "The Correspondence of Henry David Thoreau (1958), p. 444",
+    "pin": "2026-12-13"
   },
   {
-    "q": "It is not the ferocity of the beast of prey that requires a moral disguise but the herd animal with its profound mediocrity, timidity and boredom with itself.",
+    "q": "It is not the fierceness of the beast of prey that finds moral disguise necessary, but the gregarious animal, with its profound mediocrity, anxiety and ennui.",
     "a": "Friedrich Nietzsche",
     "t": [
       "solitude",
@@ -4121,7 +4478,15 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "The Joyful Wisdom §352, trans. Thomas Common",
+    "work": "The Joyful Wisdom (The Gay Science)",
+    "passage": "§352",
+    "translator": "Thomas Common",
+    "url": "https://www.gutenberg.org/ebooks/52881",
+    "sourceNote": "Replaces Walter Kaufmann's copyrighted wording ('It is not the ferocity of the beast of prey that requires a moral disguise...') with Common's public-domain translation of the same sentence.",
+    "pin": "2026-12-12"
   },
   {
     "q": "Presence - Forget everything else. Keep hold of this alone and remember it: Each of us lives only now, this brief instant. The rest has been lived already, or is impossible to see. The span we live is small - small as the corner of the earth in which we live it. Small as even the greatest renown, passed from mouth to mouth by short-lived stick figures, ignorant alike of themselves and those long dead.",
@@ -4144,8 +4509,9 @@
       "growth",
       "mind"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of Moral Letters 11.9, kept in Gummere’s wording elsewhere."
   },
   {
     "q": "I am large, I contain multitudes.",
@@ -4158,13 +4524,16 @@
   },
   {
     "q": "If you are ruled by mind you are a king; if by body, a slave.",
-    "a": "Dionysius Cato",
+    "a": "Anonymous",
     "t": [
       "leadership",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Dionysius Cato, but the line is not in the Distichs of Cato; no source found.",
+    "pin": "2027-02-17"
   },
   {
     "q": "All rules for study are summed up in this one: learn only in order to create.",
@@ -4175,7 +4544,13 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "On University Studies (1803), Lecture 3",
+    "work": "On University Studies (1803)",
+    "passage": "Lecture 3",
+    "sourceNote": "German: 'Alle Regeln, die man dem Studieren vorschreiben könnte, fassen sich in der einen zusammen: Lerne nur, um selbst zu schaffen.'",
+    "pin": "2027-04-29"
   },
   {
     "q": "Progress is not achieved by luck or accident,",
@@ -4183,8 +4558,9 @@
     "t": [
       "growth"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: fragment cut off mid-sentence."
   },
   {
     "q": "Unless you can state the arguments against your position better than the people who are in opposition, Your beliefs about that topic should remain under construction.",
@@ -4203,18 +4579,28 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to Anatole France (often to his 1896 Académie française address); the French text was not checked.",
+    "pin": "2027-02-19"
   },
   {
-    "q": "For many, the acquisition of wealth does not end their troubles, it only changes them.",
-    "a": "Seneca",
+    "q": "The acquisition of riches has been for many men, not an end, but a change, of troubles.",
+    "a": "Epicurus",
     "t": [
       "death",
       "growth",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "Quoted in Seneca, Moral Letters 17.11, trans. Richard M. Gummere",
+    "work": "Quoted in Seneca, Moral Letters to Lucilius",
+    "passage": "Letter 17.11",
+    "translator": "Richard M. Gummere",
+    "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_17",
+    "attributionNote": "Seneca introduces it with 'I shall borrow from Epicurus', so the line is Epicurus's.",
+    "pin": "2027-03-28"
   },
   {
     "q": "No amount of anxiety makes any difference to anything that is going to happen.",
@@ -4232,7 +4618,11 @@
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Nicomachean Ethics 1.6",
+    "work": "Nicomachean Ethics",
+    "passage": "1.6 (1096a)",
+    "sourceNote": "Ross: \"it would seem better, indeed to be our duty, for the sake of maintaining the truth even to destroy what touches us closely\"."
   },
   {
     "q": "Narrow minds devoid of imagination. Intolerance, theories cut off from reality, empty terminology, usurped ideals, inflexible systems. Those are the things that really frighten me. What I absolutely fear and loathe.",
@@ -4245,13 +4635,19 @@
     "status": "unverified"
   },
   {
-    "q": "A ship is safest when it is in port, but that’s not what ships were built for.",
+    "q": "A ship in harbor is safe, but that is not what ships are built for.",
     "a": "John A. Shedd",
     "t": [
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Salt from My Attic (1928)",
+    "work": "Salt from My Attic (1928)",
+    "url": "https://quoteinvestigator.com/2013/12/09/safe-harbor/",
+    "sourceNote": "Shedd’s 1928 wording; the “safest in port” version is a later variant.",
+    "pin": "2027-04-05"
   },
   {
     "q": "Believe me, there is no such thing as great suffering, great regret, great memory… everything is forgotten, even great love. That’s what’s sad about life, and also what’s wonderful about it.",
@@ -4273,7 +4669,8 @@
     "attributionNote": "The first sentence is Twain's notebook entry of 1904. The sentences about the mob were added later and are not his. Wording restored to the notebook.",
     "s": "Notebook, 1904",
     "work": "Notebook, 1904",
-    "status": "verified"
+    "status": "verified",
+    "pin": "2027-03-29"
   },
   {
     "q": "If you are ever tempted to look for outside approval, realize that you have compromised your integrity. If you need a witness, be your own.",
@@ -4310,7 +4707,8 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-02-07"
   },
   {
     "q": "Those who want the fewest things are nearest to the gods.",
@@ -4338,7 +4736,13 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "The Art of Worldly Wisdom, maxim 195, trans. Joseph Jacobs",
+    "work": "The Art of Worldly Wisdom",
+    "passage": "maxim 195 (\"Know how to Appreciate\")",
+    "translator": "Joseph Jacobs",
+    "sourceNote": "A modern rewording of maxim 195; Jacobs’s exact text was not available to check.",
+    "pin": "2027-05-10"
   },
   {
     "q": "Character, like a photograph, develops in darkness.",
@@ -4430,7 +4834,8 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "sourceNote": "French: 'L'amour est de toutes les passions la plus forte, parce qu'elle attaque à la fois la tête, le cœur et le corps.' Printed in a posthumous 1862 collection; not traced to a dated work."
   },
   {
     "q": "You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you,",
@@ -4494,7 +4899,7 @@
     "status": "unverified"
   },
   {
-    "q": "philosophybits “Those who are confident without knowledge are not courageous, but mad.",
+    "q": "Those who are thus confident without knowledge are really not courageous, but mad.",
     "a": "Plato",
     "t": [
       "courage",
@@ -4507,7 +4912,9 @@
     "work": "Protagoras",
     "url": "https://www.gutenberg.org/ebooks/1591",
     "passage": "350b",
-    "translator": "Benjamin Jowett"
+    "translator": "Benjamin Jowett",
+    "sourceNote": "Socrates in Jowett's translation: 'And those, I said, who are thus confident without knowledge are really not courageous, but mad.' The old text had a stray 'philosophybits' prefix.",
+    "pin": "2026-11-26"
   },
   {
     "q": "To a disciple who was forever complaining about others, the Master said, ‘If it is peace you want, seek to change yourself, not other people. It is easier to protect your feet with slippers than to carpet the whole of the earth.'",
@@ -4576,7 +4983,8 @@
     "status": "unverified",
     "url": "https://www.gutenberg.org/files/21130/21130-h/21130-h.htm",
     "sourceNote": "Earliest English printing found: W. A. Clouston, Book of Wise Sayings (1893), no. 8, credited 'Nizāmī'.",
-    "attributionNote": "Credited to Nizami in Clouston's 1893 anthology, with no work or passage given. The Persian original has not been identified (often said to be Layla and Majnun, without a citation), so the wording stays unverified."
+    "attributionNote": "Credited to Nizami in Clouston's 1893 anthology, with no work or passage given. The Persian original has not been identified (often said to be Layla and Majnun, without a citation), so the wording stays unverified.",
+    "pin": "2026-11-17"
   },
   {
     "q": "After I'm dead I'd rather have people ask why I have no monument than why I have one.",
@@ -4585,8 +4993,9 @@
       "death",
       "purpose"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of the Cato the Elder statue saying kept elsewhere."
   },
   {
     "q": "The man with insight enough to admit his limitations comes nearest to perfection.",
@@ -4596,7 +5005,12 @@
       "simplicity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Maxims and Reflections (Hecker no. 1020)",
+    "work": "Maxims and Reflections",
+    "passage": "no. 1020",
+    "sourceNote": "German: 'Derjenige, der sich mit Einsicht für beschränkt erklärt, ist der Vollkommenheit am nächsten.' The English is a free rendering.",
+    "pin": "2027-05-29"
   },
   {
     "q": "To be prepared against surprise is to be trained. To be prepared for surprise is to be educated.",
@@ -4630,7 +5044,7 @@
   },
   {
     "q": "A long habit of not thinking a thing wrong, gives it a superficial appearance of being right, and raises at first a formidable outcry in defense of custom. But the tumult soon subsides. Time makes more converts than reason.",
-    "a": "Thomas Paine, Common Sense",
+    "a": "Thomas Paine",
     "t": [
       "discipline",
       "time",
@@ -4642,7 +5056,8 @@
     "s": "Common Sense Introduction",
     "work": "Common Sense",
     "url": "https://www.gutenberg.org/ebooks/147",
-    "passage": "Introduction"
+    "passage": "Introduction",
+    "pin": "2026-12-28"
   },
   {
     "q": "The Feynman Learning Technique: Choose a concept you want to learn about; Pretend you are teaching it to a student in grade 6; Identify gaps in your explanation. Go back to the source material, to better understand it; Review and simplify.",
@@ -4673,8 +5088,9 @@
       "growth",
       "mind"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of Dawn §573, kept elsewhere in Kennedy’s wording."
   },
   {
     "q": "If you don’t understand, ask questions. If you’re uncomfortable about asking questions, say you are uncomfortable about asking questions and then ask anyway. It’s easy to tell when a question is coming from a good place. Then listen some more. Sometimes people just want to feel heard.",
@@ -4688,7 +5104,7 @@
     "status": "unverified"
   },
   {
-    "q": "The tranquility that comes when you stop caring what they say. Or think, or do. Only what you do.",
+    "q": "The tranquillity that comes when you stop caring what they say. Or think, or do. Only what you do.",
     "a": "Marcus Aurelius",
     "t": [
       "love",
@@ -4696,7 +5112,12 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 4.18, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "4.18",
+    "translator": "Gregory Hays"
   },
   {
     "q": "Every intellectual revolution which has ever stirred humanity into greatness has been a passionate protest against inert ideas.",
@@ -4707,9 +5128,12 @@
     ],
     "checked": true,
     "status": "verified",
-    "s": "Science and the Modern World (1925)",
-    "work": "Science and the Modern World (1925)",
-    "url": "https://en.wikiquote.org/wiki/Alfred_North_Whitehead"
+    "s": "The Aims of Education (1929), ch. 1",
+    "work": "The Aims of Education (1929)",
+    "url": "https://www.ditext.com/whitehead/aims.html",
+    "passage": "ch. 1",
+    "sourceNote": "From the 1916 address \"The Aims of Education\", reprinted as chapter 1 of the 1929 book. Earlier credited to Science and the Modern World in error.",
+    "pin": "2026-11-18"
   },
   {
     "q": "Focus on what you can control.",
@@ -4732,19 +5156,20 @@
     "status": "unverified"
   },
   {
-    "q": "Is life not a thousand times too short for us to bore ourselves?",
+    "q": "Is not life a hundred times too short for us—to bore ourselves?",
     "a": "Friedrich Nietzsche",
     "t": [
       "time"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Beyond Good and Evil §227, trans. Helen Zimmern",
     "work": "Beyond Good and Evil",
     "url": "https://www.gutenberg.org/ebooks/4363",
     "passage": "§227",
     "translator": "Helen Zimmern",
-    "sourceNote": "Zimmern: \"a hundred times too short\"."
+    "attribution": "verified",
+    "pin": "2027-05-30"
   },
   {
     "q": "Discipline: Never under compulsion, out of selfishness, without forethought, with misgivings. Don’t gussy up your thoughts. No surplus words or unnecessary actions. Let the spirit in you represent a man, an adult, a citizen, a Roman, a ruler. Taking up his post like a soldier and patiently awaiting his recall from life. Needing no oath or witness. Cheerfulness. Without requiring other people’s help. Or serenity supplied by others. To stand up straight-not straightened.",
@@ -4755,8 +5180,9 @@
       "discipline",
       "solitude"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: duplicate of the Hays 3.5 passage kept elsewhere."
   },
   {
     "q": "It is forbidden to kill; therefore all murderers are punished unless they kill in large numbers and to the sound of trumpets.",
@@ -4765,7 +5191,13 @@
       "wisdom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Questions sur l’Encyclopédie, “Droit” (1771)",
+    "work": "Questions sur l’Encyclopédie",
+    "passage": "“Droit”",
+    "sourceNote": "French: 'Il est défendu de tuer; tout meurtrier est puni, à moins qu'il n'ait tué en grande compagnie, et au son des trompettes.'",
+    "pin": "2027-03-08"
   },
   {
     "q": "If you have to fight a dragon, you should go to its lair before it comes to your village.",
@@ -4790,7 +5222,8 @@
     "s": "Autobiographical dictation, 31 May 1906",
     "work": "Autobiographical dictation",
     "passage": "31 May 1906",
-    "status": "verified"
+    "status": "verified",
+    "pin": "2027-02-11"
   },
   {
     "q": "Do not despise your inner world.",
@@ -4804,13 +5237,19 @@
   },
   {
     "q": "If you think in terms of one year, plant rice; if in terms of ten years, plant trees; if in terms of one hundred years, teach the people.",
-    "a": "Guan Zhong, Guanzi",
+    "a": "Guan Zhong",
     "t": [
       "nature",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Guanzi, ch. 3 (\"Quan xiu\")",
+    "work": "Guanzi",
+    "passage": "ch. 3, \"Quan xiu\"",
+    "attributionNote": "The Guanzi is traditionally credited to Guan Zhong (7th c. BC) but was compiled centuries later. This English is a common modern rendering, not a fixed translation.",
+    "sourceNote": "The passage says: plan for one year, plant grain; for ten years, plant trees; for a lifetime, cultivate people.",
+    "pin": "2027-03-31"
   },
   {
     "q": "The good for man is activity of the soul in accordance with virtue.",
@@ -4820,7 +5259,12 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Nicomachean Ethics 1.7",
+    "work": "Nicomachean Ethics",
+    "passage": "1.7 (1098a)",
+    "sourceNote": "Ross: \"human good turns out to be activity of soul in accordance with virtue\".",
+    "pin": "2027-03-15"
   },
   {
     "q": "Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it.",
@@ -4896,7 +5340,7 @@
   },
   {
     "q": "You can learn a lot about a man’s character by paying attention to the things he laughs at.",
-    "a": "Johann Wolfgang",
+    "a": "Johann Wolfgang von Goethe",
     "t": [
       "wisdom",
       "happiness",
@@ -4904,7 +5348,13 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "attribution": "corrected",
+    "s": "Elective Affinities, Part II, ch. 4 (Ottilie’s journal)",
+    "work": "Elective Affinities",
+    "passage": "Part II, ch. 4",
+    "sourceNote": "German: 'Durch nichts bezeichnen die Menschen mehr ihren Charakter als durch das, was sie lächerlich finden.' Usual English: 'Nothing shows a man's character more than what he laughs at.'",
+    "pin": "2027-04-23"
   },
   {
     "q": "A good book leaves you wanting to reread the book. A great book compels you to reread your own soul.",
@@ -4926,14 +5376,17 @@
   },
   {
     "q": "Without training, they lacked knowledge. Without knowledge, they lacked confidence. Without confidence, they lacked victory.",
-    "a": "Julius Caesar",
+    "a": "Anonymous",
     "t": [
       "wisdom",
       "time",
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Not in Caesar’s writings or the ancient biographies; first seen in 1990s management writing.",
+    "pin": "2027-04-24"
   },
   {
     "q": "If a man is offered something which affords a reason for acting in accordance with his instincts, he will accept it even on the slenderest evidence.",
@@ -5009,8 +5462,8 @@
     "status": "unverified"
   },
   {
-    "q": "The aim of life is self-development. To realize one’s nature perfectly — that is what each of us is here for.",
-    "a": "Oscar Wilde, The Picture of Dorian Gray",
+    "q": "The aim of life is self-development. To realize one’s nature perfectly—that is what each of us is here for.",
+    "a": "Oscar Wilde",
     "t": [
       "solitude",
       "nature",
@@ -5019,9 +5472,11 @@
     ],
     "checked": true,
     "status": "verified",
-    "s": "The Picture of Dorian Gray",
+    "s": "The Picture of Dorian Gray, ch. 2",
     "work": "The Picture of Dorian Gray",
-    "url": "https://www.gutenberg.org/ebooks/174"
+    "url": "https://www.gutenberg.org/ebooks/174",
+    "passage": "ch. 2",
+    "pin": "2027-03-06"
   },
   {
     "q": "All of humanity's problems stem from man's inability to sit quietly in a room alone.",
@@ -5074,17 +5529,24 @@
     "s": "On Tranquility of Mind, 10.4b",
     "work": "On Tranquility of Mind",
     "passage": "10.4b",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-03-09"
   },
   {
-    "q": "If you wish to improve, be content to appear clueless or stupid in extraneous matters.",
+    "q": "If you would improve, submit to be considered without sense and foolish with respect to externals.",
     "a": "Epictetus",
     "t": [
       "happiness",
       "growth"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Enchiridion 13, trans. George Long",
+    "work": "Enchiridion",
+    "passage": "13",
+    "translator": "George Long",
+    "url": "https://www.gutenberg.org/ebooks/10661"
   },
   {
     "q": "The deliberate aim at Peace very easily passes into its bastard substitute, Anesthesia.",
@@ -5098,18 +5560,25 @@
     "s": "Adventures of Ideas (1933), p. 284",
     "work": "Adventures of Ideas (1933)",
     "url": "https://en.wikiquote.org/wiki/Alfred_North_Whitehead",
-    "passage": "p. 284"
+    "passage": "p. 284",
+    "pin": "2027-03-27"
   },
   {
-    "q": "He who influences the thought of his times, influences all the times that follow. He has made his impression on eternity.",
-    "a": "Hypatia of Alexandria",
+    "q": "He who influences the thought of his times influences all the times that follow. He has made his impress on eternity.",
+    "a": "Elbert Hubbard",
     "t": [
       "time",
       "leadership",
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "Little Journeys to the Homes of Famous Women (1897), \"Harriet Martineau\"",
+    "work": "Little Journeys to the Homes of Famous Women (1897)",
+    "passage": "\"Harriet Martineau\"",
+    "attributionNote": "Not Hypatia. Elbert Hubbard wrote it about Harriet Martineau: 'And he who influences the thought of his times influences all the times that follow. He has made his impress on eternity.' The old text had 'impression'.",
+    "pin": "2027-03-03"
   },
   {
     "q": "People shrink the world to fit their minds and think they’ve stretched their minds to grasp the world.",
@@ -5130,7 +5599,7 @@
     "status": "unverified"
   },
   {
-    "q": "The favor of ignoble men can be won only by ignoble means.",
+    "q": "The favour of ignoble men can be won only by ignoble means.",
     "a": "Seneca",
     "t": [
       "character"
@@ -5189,7 +5658,7 @@
     "passage": "1.7 (1098a18)",
     "translator": "W. D. Ross",
     "status": "verified",
-    "pin": "2026-11-06"
+    "pin": "2027-04-22"
   },
   {
     "q": "It is amateurs who have one big bright beautiful idea that they can never abandon. Professionals know that they have to produce theory after theory before they are likely to hit the jackpot.",
@@ -5212,7 +5681,12 @@
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Paraphrase of On First Philosophy, ch. 1",
+    "work": "On First Philosophy",
+    "translator": "Alfred L. Ivry",
+    "sourceNote": "Al-Kindi argues that we should not be ashamed to acknowledge and acquire truth from wherever it comes, even from distant peoples (On First Philosophy, trans. Ivry, 1974). The popular two-sentence form is a modern paraphrase.",
+    "pin": "2026-12-03"
   },
   {
     "q": "On Anger - Name your emotions. Matthew D. Lieberman, UCLA associate professor of psychology and a founder of social cognitive neuroscience, used an fMRI study to demonstrate that the simple act of naming an emotion calms the emotional center of the brain. When research subjects were shown images and asked to label a strong emotion, they showed decreased activity in the region of the brain that triggers emotional responses, and greater activity in the region of the brain associated with vigilance and cognitive control.",
@@ -5226,12 +5700,15 @@
   },
   {
     "q": "The winds of grace are always blowing but it is you that must raise your sails.",
-    "a": "Rabindranath Tagore",
+    "a": "Ramakrishna",
     "t": [
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "attribution": "corrected",
+    "attributionNote": "Usually credited to Tagore, but no source in his works. The image is Sri Ramakrishna's: the breeze of God's grace is always blowing, and one must unfurl one's sail (The Gospel of Sri Ramakrishna). This English line is a modern compression of that saying.",
+    "pin": "2027-01-16"
   },
   {
     "q": "We must always change, renew, rejuvenate ourselves; otherwise we harden.",
@@ -5262,7 +5739,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not in Plato. Modern line with no earlier author.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-05-01"
   },
   {
     "q": "Anger by Seneca - 'I wish that the same principle applied to humankind as to bees, so that anger’s force would be broken along with its weapon and it would not be possible to inflict pain more than once, or to rely on another to enforce our hatred! For rage would be more easily exhausted if it sought datification only through its own efforts and risked death in spending its strength.'",
@@ -5273,8 +5751,9 @@
       "discipline",
       "death"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: garbled excerpt (title prefix, typo) from a modern copyrighted translation of On Anger."
   },
   {
     "q": "No abundance of material goods can compensate for the death of individuality and personal creativity.",
@@ -5287,7 +5766,7 @@
     "status": "unverified"
   },
   {
-    "q": "If you are to have a great kingdom, rule over yourself!",
+    "q": "Would you have a great empire? Rule over yourself.",
     "a": "Publilius Syrus",
     "t": [
       "solitude",
@@ -5295,7 +5774,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Sentences",
+    "work": "Sentences (Sententiae)",
+    "sourceNote": "Latin: 'Imperium habere vis magnum? Impera tibi.' This is the standard English rendering; the old text ('If you are to have a great kingdom, rule over yourself!') was a looser version.",
+    "pin": "2027-04-01"
   },
   {
     "q": "Stoicism is not a matter of gritting your teeth. It’s about seeing things differently so that you do not need to grit your teeth.",
@@ -5342,7 +5826,8 @@
     "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
     "passage": "ch. II §2 (Princeton 1980, p. 61)",
     "translator": "Reidar Thomte",
-    "sourceNote": "Opening clause of: 'Hence anxiety is the dizziness of freedom, which emerges when the spirit wants to posit the synthesis and freedom looks down into its own possibility, laying hold of finiteness to support itself.' (Thomte with Albert B. Anderson, Princeton, 1980, p. 61; section 'Subjective Anxiety')."
+    "sourceNote": "Opening clause of: 'Hence anxiety is the dizziness of freedom, which emerges when the spirit wants to posit the synthesis and freedom looks down into its own possibility, laying hold of finiteness to support itself.' (Thomte with Albert B. Anderson, Princeton, 1980, p. 61; section 'Subjective Anxiety').",
+    "pin": "2027-05-27"
   },
   {
     "q": "To have knowledge one must know the extent of one’s ignorance.",
@@ -5391,29 +5876,33 @@
     "status": "unverified"
   },
   {
-    "q": "The mystery of human existence lies not in just staying alive, but in finding something to live for.",
+    "q": "The secret of man’s being is not only to live but to have something to live for.",
     "a": "Fyodor Dostoyevsky",
     "t": [
       "nature",
       "action"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "The Brothers Karamazov Book V, ch. 5, trans. Constance Garnett",
     "work": "The Brothers Karamazov",
-    "url": "https://en.wikiquote.org/wiki/Fyodor_Dostoyevsky",
+    "url": "https://www.gutenberg.org/ebooks/28054",
     "passage": "Book V, ch. 5",
     "translator": "Constance Garnett",
-    "sourceNote": "Modernised wording; Garnett has \"the secret of man's being is not only to live but to have something to live for\"."
+    "sourceNote": "The Grand Inquisitor. Garnett: 'For the secret of man's being is not only to live but to have something to live for.' The old text was a modern paraphrase.",
+    "attribution": "verified",
+    "pin": "2027-03-20"
   },
   {
     "q": "The greatest weapon against stress is our ability to choose one thought over another.",
-    "a": "William James",
+    "a": "Anonymous",
     "t": [
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Not in William James’s books, essays or letters; a modern paraphrase of his ideas about attention and will."
   },
   {
     "q": "A great many people think they are thinking when they are merely rearranging their prejudices.",
@@ -5427,7 +5916,8 @@
     "s": "Attributed; earliest similar cite Bishop W. F. Oldham (1906) per Quote Investigator",
     "url": "https://quoteinvestigator.com/2017/05/10/merely/",
     "attribution": "corrected",
-    "attributionNote": "Not William James: not in his writings; Quote Investigator traces the earliest similar remark to W. F. Oldham, 1906."
+    "attributionNote": "Not William James: not in his writings; Quote Investigator traces the earliest similar remark to W. F. Oldham, 1906.",
+    "pin": "2027-04-08"
   },
   {
     "q": "Education begins the gentleman, but reading, good company and reflection must finish him.",
@@ -5436,16 +5926,20 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "sourceNote": "Not in Some Thoughts Concerning Education; earliest print found is Ireland, The Book-Lover’s Enchiridion (1884).",
+    "pin": "2027-05-31"
   },
   {
     "q": "A well rounded man is three things: an artist, a warrior, a philosopher.",
-    "a": "Benvenuto Cellini",
+    "a": "Anonymous",
     "t": [
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Benvenuto Cellini, but it is not in his autobiography or treatises."
   },
   {
     "q": "Big doesn’t always beat small, but fast always beats small.",
@@ -5456,7 +5950,7 @@
     "status": "unverified"
   },
   {
-    "q": "Indulgence gets us friends but truth gets us hatred.",
+    "q": "Compliance gets us friends, plain speaking hate.",
     "a": "Terence",
     "t": [
       "wisdom",
@@ -5469,7 +5963,9 @@
     "attribution": "corrected",
     "attributionNote": "Not Cicero's own line: Cicero quotes Terence's Andria.",
     "work": "Andria (quoted in Cicero, De Amicitia)",
-    "passage": "De Amicitia 89"
+    "passage": "De Amicitia 89",
+    "translator": "E. S. Shuckburgh",
+    "pin": "2027-04-04"
   },
   {
     "q": "We should not believe the lack of silver and gold to be proof of the simple life.",
@@ -5483,7 +5979,8 @@
     "work": "Moral Letters to Lucilius",
     "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_5",
     "passage": "Letter 5",
-    "translator": "Richard M. Gummere"
+    "translator": "Richard M. Gummere",
+    "pin": "2027-02-13"
   },
   {
     "q": "Action is the foundational key to all success.",
@@ -5508,7 +6005,8 @@
     "s": "Attributed to Benjamin Disraeli (Wikiquote)",
     "url": "https://en.wikiquote.org/wiki/Benjamin_Disraeli",
     "attribution": "corrected",
-    "attributionNote": "Not William James. Wikiquote lists it under Disraeli."
+    "attributionNote": "Not William James. Wikiquote lists it under Disraeli.",
+    "pin": "2027-03-05"
   },
   {
     "q": "Even the smallest thing should be done with reference to an end.",
@@ -5518,12 +6016,14 @@
       "action"
     ],
     "checked": true,
-    "status": "verified",
+    "status": "paraphrase",
     "s": "Meditations 2.16, trans. George Long",
     "work": "Meditations",
     "url": "https://www.gutenberg.org/ebooks/15877",
     "passage": "2.16",
-    "translator": "George Long"
+    "translator": "George Long",
+    "sourceNote": "Long (2.16): '...it being right that even the smallest things be done with reference to an end; and the end of rational animals is to follow the reason and the law.' The quote smooths Long's syntax.",
+    "pin": "2026-11-20"
   },
   {
     "q": "What do you despise? By this are you truly known.",
@@ -5593,7 +6093,8 @@
     "passage": "ch. 5 §4",
     "translator": "R. H. M. Elwes",
     "attribution": "corrected",
-    "attributionNote": "Text matches Elwes (1883), A Political Treatise ch. 5 §4."
+    "attributionNote": "Text matches Elwes (1883), A Political Treatise ch. 5 §4.",
+    "pin": "2027-03-19"
   },
   {
     "q": "To doubt everything or to believe everything are two equally convenient solutions; both dispense with the necessity of reflection.",
@@ -5602,7 +6103,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "s": "Science and Hypothesis (1902), Preface",
+    "work": "Science and Hypothesis",
+    "passage": "Preface",
+    "sourceNote": "Usual English (Greenstreet translation); not checked against the page.",
+    "pin": "2026-12-11"
   },
   {
     "q": "Against criticism a man can neither protest nor defend himself; he must act in spite of it, and then it will gradually yield to him.",
@@ -5618,7 +6124,8 @@
     "work": "Maxims and Reflections",
     "url": "https://www.gutenberg.org/ebooks/33670",
     "passage": "146",
-    "translator": "T. Bailey Saunders"
+    "translator": "T. Bailey Saunders",
+    "pin": "2027-02-26"
   },
   {
     "q": "What unites people? Armies? Gold? Flags? Stories. There's nothing in the world more powerful than a good story. Nothing can stop it. No enemy can defeat it.",
@@ -5666,7 +6173,8 @@
     "attributionNote": "Not an anonymous line, and not Jon Kabat-Zinn's own sentence. In Wherever You Go, There You Are (1994) he says a poster of Swami Satchidananda carried this caption. The comma is in that caption.",
     "s": "poster caption, quoted in Wherever You Go, There You Are (1994)",
     "work": "poster caption, quoted in Wherever You Go, There You Are (1994)",
-    "status": "verified"
+    "status": "verified",
+    "pin": "2027-01-24"
   },
   {
     "q": "The only person you are destined to become is the person you decide to be.",
@@ -5680,19 +6188,22 @@
     "attributionNote": "Nike ad copy (1991) by Janet Champ and Charlotte Moore; the Emerson attribution is unsupported (Quote Investigator).",
     "status": "unverified",
     "s": "Nike advertising campaign, Wieden & Kennedy, 1991",
-    "url": "https://quoteinvestigator.com/2020/12/08/destined/"
+    "url": "https://quoteinvestigator.com/2020/12/08/destined/",
+    "pin": "2027-04-02"
   },
   {
     "q": "Do not despise the bottom rungs in the ascent to greatness. If you wish to reach the highest, begin at the lowest.",
-    "a": "Publilius Syrus",
+    "a": "Anonymous",
     "t": [
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Publilius Syrus, but it is not among his Sententiae."
   },
   {
-    "q": "Every adversity, every failure, every heartache, carries with it the seed of an equal or greater benefit.",
+    "q": "Every adversity, every failure, every heartache carries with it the seed of an equivalent or a greater benefit.",
     "a": "Napoleon Hill",
     "t": [
       "perseverance",
@@ -5700,7 +6211,13 @@
       "creativity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Think and Grow Rich (1937), ch. 2",
+    "work": "Think and Grow Rich (1937)",
+    "passage": "ch. 2, \"Desire\"",
+    "sourceNote": "Hill's wording; the popular form 'an equal or greater benefit' is a later variant.",
+    "pin": "2026-12-08"
   },
   {
     "q": "Where talent is a dwarf, self-esteem is a giant.",
@@ -5709,18 +6226,24 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to the Genevan aphorist J. A. Petit-Senn in 19th-century quotation books; the French original was not checked."
   },
   {
     "q": "There is nothing among the things that I once believed to be true which it is not permissible to doubt.",
-    "a": "Rene Descartes",
+    "a": "René Descartes",
     "t": [
       "creativity",
       "action",
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Meditations on First Philosophy, Meditation I",
+    "work": "Meditations on First Philosophy",
+    "passage": "Meditation I",
+    "sourceNote": "A modern translation of the end of Meditation I. Veitch (1853): 'there is nothing at all that I formerly believed to be true of which it is impossible to doubt.'",
+    "pin": "2026-11-27"
   },
   {
     "q": "If we can forgive what's been done to us... If we can forgive what we've done to others... If we can leave our stories behind. Our being victims and villains. Only then can we maybe rescue the world.",
@@ -5751,7 +6274,14 @@
       "death"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "The Book of Five Rings, Ground Book, trans. Victor Harris",
+    "work": "The Book of Five Rings",
+    "passage": "Ground Book",
+    "translator": "Victor Harris",
+    "sourceNote": "Harris: \"Generally speaking, the Way of the warrior is resolute acceptance of death.\"",
+    "pin": "2027-01-17"
   },
   {
     "q": "Three passions have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind.",
@@ -5771,12 +6301,14 @@
   },
   {
     "q": "Wrong does not cease to be wrong because the majority share in it.",
-    "a": "Leo Tolstoy",
+    "a": "Anonymous",
     "t": [
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Often credited to Tolstoy (sometimes to A Confession), but it is not in that book or found elsewhere in his works. No earlier author located."
   },
   {
     "q": "All men who have turned out worth anything have had the chief hand in their own education.",
@@ -5868,7 +6400,9 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Reported speech, passed down through 19th-century accounts of Chopin’s teaching (von Lenz, Kleczyński); not in his letters.",
+    "pin": "2027-02-23"
   },
   {
     "q": "Life could be limitless joy, if we could only take it for what it is, in the way it is given to us.",
@@ -5918,7 +6452,7 @@
     "passage": "p. 41e"
   },
   {
-    "q": "Listen, as the saying goes, it's crisis time: make a last desperate effort to gain freedom and tranquility - to be Stoic.",
+    "q": "Listen, as the saying goes, it's crisis time: make a last desperate effort to gain freedom and tranquillity – to be Stoic.",
     "a": "Epictetus",
     "t": [
       "discipline",
@@ -5927,7 +6461,15 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Discourses 2.16.41, trans. Robert Dobbin",
+    "work": "Discourses",
+    "passage": "2.16.41",
+    "translator": "Robert Dobbin",
+    "url": "https://www.gutenberg.org/ebooks/10661",
+    "sourceNote": "Robert Dobbin's translation (Penguin, 2008). Long (1890) renders the same line: 'be ready to lose your head, man, for the sake of happiness, for the sake of freedom.'",
+    "pin": "2026-11-30"
   },
   {
     "q": "Grapes. Unripe… ripened… then raisins. Constant transitions. Not the ‘not’ but the ‘not yet.’",
@@ -5939,7 +6481,7 @@
     "status": "unverified"
   },
   {
-    "q": "Silence is worse: all truths that are kept silent become poisonous.",
+    "q": "To be silent is worse; all suppressed truths become poisonous.",
     "a": "Friedrich Nietzsche",
     "t": [
       "wisdom",
@@ -5947,13 +6489,14 @@
       "growth"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Thus Spake Zarathustra Part II, ch. 34, \"Self-Surpassing\", trans. Thomas Common",
     "work": "Thus Spake Zarathustra",
     "url": "https://www.gutenberg.org/ebooks/1998",
     "passage": "Part II, ch. 34, \"Self-Surpassing\"",
     "translator": "Thomas Common",
-    "sourceNote": "Common: \"to be silent is worse; all suppressed truths become poisonous\"."
+    "attribution": "verified",
+    "pin": "2027-04-19"
   },
   {
     "q": "Life is like a storm, my young friend. You will bask in the sunlight one moment, be shattered on the rocks the next. What makes you a man is what you do when the storm comes.",
@@ -6001,14 +6544,22 @@
     "sourceNote": "Einstein attribution unsupported (Quote Investigator)."
   },
   {
-    "q": "Take the course opposite to custom and you will do well.",
+    "q": "Reverse the usual practice and you will almost always do right.",
     "a": "Jean-Jacques Rousseau",
     "t": [
       "nature",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Emile, Book II, trans. Barbara Foxley",
+    "work": "Emile",
+    "passage": "Book II",
+    "translator": "Barbara Foxley",
+    "url": "https://www.gutenberg.org/ebooks/5427",
+    "sourceNote": "Foxley (1911). The earlier wording 'Take the course opposite to custom and you will do well' is a loose rendering of the same sentence.",
+    "pin": "2027-02-06"
   },
   {
     "q": "The secret to doing good research is always to be a little underemployed. You waste years by not being able to waste hours.",
@@ -6021,14 +6572,20 @@
   },
   {
     "q": "A wise man gets more use from his enemies than a fool from his friends.",
-    "a": "Baltasar Gracián y Morales",
+    "a": "Baltasar Gracián",
     "t": [
       "wisdom",
       "death",
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "The Art of Worldly Wisdom, maxim 84, trans. Joseph Jacobs",
+    "work": "The Art of Worldly Wisdom",
+    "passage": "maxim 84 (\"Make use of your Enemies\")",
+    "translator": "Joseph Jacobs",
+    "pin": "2026-12-20"
   },
   {
     "q": "If cattle or lions had hands, so as to paint with their hands and produce works of art as men do, they would paint their gods and give them bodies in form like their own—horses like horses, cattle like cattle.",
@@ -6053,7 +6610,8 @@
     "status": "verified",
     "s": "\"Will,\" in Maurine and Other Poems",
     "work": "\"Will,\" in Maurine and Other Poems",
-    "url": "https://www.gutenberg.org/ebooks/26333"
+    "url": "https://www.gutenberg.org/ebooks/26333",
+    "pin": "2027-03-23"
   },
   {
     "q": "Whatever you think you can do or believe you can do, begin it. Action has magic, grace and power in it. Begin it now.",
@@ -6071,7 +6629,8 @@
     "attribution": "corrected",
     "attributionNote": "Not in Goethe's German: Quote Investigator traces it to John Anster's loose 1835 rendering of Faust, popularised by W. H. Murray (1951).",
     "work": "Faustus: A Dramatic Mystery (free translation of Goethe's Faust)",
-    "sourceNote": "Anster's wording loosely follows Goethe's Faust prelude."
+    "sourceNote": "Anster's wording loosely follows Goethe's Faust prelude.",
+    "pin": "2026-12-16"
   },
   {
     "q": "Suffering becomes beautiful when anyone bears great calamities with cheerfulness, not through insensibility, but through greatness of mind.",
@@ -6088,23 +6647,25 @@
     "url": "https://en.wikiquote.org/wiki/Aristotle",
     "attribution": "corrected",
     "attributionNote": "Misattributed to Aristotle; derives from a 19th-century gloss on Nicomachean Ethics 1.11.",
-    "sourceNote": "19th-century gloss on Aristotle, Nicomachean Ethics 1.11 (1100b)."
+    "sourceNote": "19th-century gloss on Aristotle, Nicomachean Ethics 1.11 (1100b).",
+    "pin": "2027-01-20"
   },
   {
-    "q": "The greatest minds, as they are capable of the highest excellences, are open also to the greatest errors.",
-    "a": "Rene Descartes",
+    "q": "The greatest minds, as they are capable of the highest excellences, are open likewise to the greatest aberrations.",
+    "a": "René Descartes",
     "t": [
       "creativity",
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Discourse on Method Part I, trans. John Veitch",
     "work": "Discourse on Method",
     "url": "https://www.gutenberg.org/ebooks/59",
     "passage": "Part I",
     "translator": "John Veitch",
-    "sourceNote": "Veitch reads \"aberrations\"."
+    "attribution": "verified",
+    "pin": "2027-05-04"
   },
   {
     "q": "Hay personas que van a sentarse a llorar y hay personas que van a vender pañuelos. De cuál grupo quieres ser tú?",
@@ -6126,7 +6687,7 @@
     "status": "unverified"
   },
   {
-    "q": "Thought makes the whole dignity of man; therefore endeavour to think well, that is the only morality.",
+    "q": "All our dignity consists, then, in thought. By it we must elevate ourselves, and not by space and time which we cannot fill. Let us endeavour, then, to think well; this is the principle of morality.",
     "a": "Blaise Pascal",
     "t": [
       "death",
@@ -6134,13 +6695,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Pensées 347, trans. W. F. Trotter",
     "work": "Pensées",
     "url": "https://www.gutenberg.org/ebooks/18269",
     "passage": "347",
     "translator": "W. F. Trotter",
-    "sourceNote": "Trotter: \"All our dignity consists, then, in thought... Let us endeavour, then, to think well; this is the principle of morality.\""
+    "attribution": "verified"
   },
   {
     "q": "Know the true value of time; snatch, seize, and enjoy every moment of it. No idleness, no delay, no procrastination; never put off till tomorrow what you can do today.",
@@ -6177,7 +6738,9 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "sourceNote": "Bashō, Words by a Brushwood Gate (1693), echoing Kūkai: \"Do not seek to follow in the footsteps of the men of old; seek what they sought.\" Wording varies by translator.",
+    "pin": "2027-04-16"
   },
   {
     "q": "Whoever establishes his argument by noise and command, proves that his reason is weak.",
@@ -6193,7 +6756,8 @@
     "work": "Essays",
     "url": "https://en.wikiquote.org/wiki/Michel_de_Montaigne",
     "passage": "Book III, ch. 13",
-    "sourceNote": "Wikiquote lists it under \"Attributed\"; variant: \"He who establishes his argument by noise and command shows that his reason is weak.\""
+    "sourceNote": "Wikiquote lists it under \"Attributed\"; variant: \"He who establishes his argument by noise and command shows that his reason is weak.\"",
+    "pin": "2027-01-13"
   },
   {
     "q": "Don't judge a man by where he is, because you don't know how far he has come.",
@@ -6215,32 +6779,39 @@
       "loss"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Paraphrase of The Sickness unto Death (1849), Part One",
+    "work": "The Sickness unto Death",
+    "sourceNote": "Popular paraphrase of Kierkegaard's argument that not daring is how one loses oneself; the sentence itself is not in his works.",
+    "pin": "2026-12-10"
   },
   {
-    "q": "There is more wisdom in your body than in your deepest philosophy.",
+    "q": "There is more sagacity in thy body than in thy best wisdom.",
     "a": "Friedrich Nietzsche",
     "t": [
       "wisdom",
       "action"
     ],
     "checked": true,
-    "status": "paraphrase",
+    "status": "verified",
     "s": "Thus Spake Zarathustra Part I, ch. 4, \"The Despisers of the Body\", trans. Thomas Common",
     "work": "Thus Spake Zarathustra",
     "url": "https://www.gutenberg.org/ebooks/1998",
     "passage": "Part I, ch. 4, \"The Despisers of the Body\"",
     "translator": "Thomas Common",
-    "sourceNote": "Common: \"There is more sagacity in thy body than in thy best wisdom.\""
+    "attribution": "verified",
+    "pin": "2027-01-01"
   },
   {
     "q": "If you desire to be good, begin by believing that you are wicked.",
-    "a": "Epictetus",
+    "a": "Anonymous",
     "t": [
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Widely credited to Epictetus, but no passage in the Discourses, Enchiridion or fragments matches. No earlier author found."
   },
   {
     "q": "It is a true miracle when a man finally sees himself as his only opposition.",
@@ -6266,7 +6837,7 @@
   },
   {
     "q": "Happy the man who can endure the highest and lowest fortune. He, who has endured such vicissitudes with equanimity, has deprived misfortune of its power.",
-    "a": "Lucius Annaeus Seneca",
+    "a": "Seneca",
     "t": [
       "perseverance",
       "happiness",
@@ -6274,7 +6845,9 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Commonly credited to Seneca; no matching passage found in the Letters, Dialogues or tragedies.",
+    "pin": "2026-11-24"
   },
   {
     "q": "You never know what worse luck your bad luck has saved you from.",
@@ -6295,7 +6868,7 @@
     "status": "unverified"
   },
   {
-    "q": "Youth is the time to study wisdom; old age is the time to practice it.",
+    "q": "Youth is the time to study wisdom, age the time to practise it.",
     "a": "Jean-Jacques Rousseau",
     "t": [
       "wisdom",
@@ -6304,7 +6877,14 @@
       "nature"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Reveries of the Solitary Walker, Third Walk, trans. Peter France",
+    "work": "Reveries of the Solitary Walker",
+    "passage": "Third Walk",
+    "translator": "Peter France",
+    "sourceNote": "Opening sentence of the Third Walk (Penguin, 1979). French: 'La jeunesse est le temps d'étudier la sagesse; la vieillesse est le temps de la pratiquer.'",
+    "pin": "2026-11-23"
   },
   {
     "q": "To myself I am only a child playing on the beach, while vast oceans of truth lie undiscovered before me.",
@@ -6321,7 +6901,8 @@
     "work": "Spence, Anecdotes (1820)",
     "url": "https://en.wikiquote.org/wiki/Isaac_Newton",
     "sourceNote": "As recorded (Joseph Spence, Observations, Anecdotes, and Characters of Books and Men, 1820; repeated in Brewster, Memoirs of Newton, 1855, vol. 2 ch. 27): 'I don't know what I may seem to the world, but, as to myself, I seem to have been only like a boy playing on the sea shore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.'",
-    "attributionNote": "Newton's image, but this English is a modern condensed paraphrase ('child... beach... vast oceans'), not the recorded words. Reported late in his life, second-hand."
+    "attributionNote": "Newton's image, but this English is a modern condensed paraphrase ('child... beach... vast oceans'), not the recorded words. Reported late in his life, second-hand.",
+    "pin": "2027-01-30"
   },
   {
     "q": "The life of man is like a game of dice: if the throw doesn’t give you the number you most need, you have to use your skill to make the best of the number it does give you.",
@@ -6343,17 +6924,18 @@
   },
   {
     "q": "If you are considering the different roads, the variety is immense and the difference infinite; if you consider the goal, they are all in harmony and are one.",
-    "a": "Jalaluddin Muhammad Balkhi (Rumi)",
+    "a": "Rumi",
     "t": [
       "death",
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Commonly credited to Rumi; the Masnavi passage was not identified."
   },
   {
     "q": "We are all in the gutter, but some of us are looking at the stars.",
-    "a": "Oscar Wilde, Lady Windermere’s Fan",
+    "a": "Oscar Wilde",
     "t": [
       "nature",
       "leadership"
@@ -6363,7 +6945,8 @@
     "s": "Lady Windermere's Fan Act III",
     "work": "Lady Windermere's Fan",
     "url": "https://www.gutenberg.org/ebooks/790",
-    "passage": "Act III"
+    "passage": "Act III",
+    "pin": "2027-04-03"
   },
   {
     "q": "Lack of confidence is not the result of difficulty; the difficulty comes from a lack of confidence.",
@@ -6412,7 +6995,12 @@
       "character"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Agamemnon 832–833",
+    "work": "Agamemnon",
+    "passage": "832–833",
+    "sourceNote": "A common English rendering of the chorus-like lines Agamemnon speaks on his return; wording varies by translator.",
+    "pin": "2026-11-22"
   },
   {
     "q": "Know thyself; nothing in excess.",
@@ -6429,7 +7017,8 @@
     "passage": "10.24.1",
     "translator": "W. H. S. Jones",
     "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0160%3Abook%3D10%3Achapter%3D24%3Asection%3D1",
-    "status": "verified"
+    "status": "verified",
+    "pin": "2027-05-23"
   },
   {
     "q": "In difficult situations, when hope seems feeble, the boldest plans are safest.",
@@ -6445,10 +7034,11 @@
     "url": "https://www.gutenberg.org/ebooks/10907",
     "passage": "25.38",
     "translator": "D. Spillan",
-    "sourceNote": "Spillan: \"the boldest counsels are always the safest\"."
+    "sourceNote": "Spillan: \"the boldest counsels are always the safest\".",
+    "pin": "2026-12-17"
   },
   {
-    "q": "Reading furnishes the mind only with materials of knowledge; it is thinking that makes what we read ours.",
+    "q": "Reading furnishes the mind only with materials of knowledge; it is thinking makes what we read ours.",
     "a": "John Locke",
     "t": [
       "wisdom",
@@ -6457,7 +7047,13 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Of the Conduct of the Understanding §20",
+    "work": "Of the Conduct of the Understanding",
+    "passage": "§20",
+    "url": "https://en.wikisource.org/wiki/Page:Of_the_conduct_of_the_understanding_(IA_ofconductofunder00lock).pdf/74",
+    "pin": "2027-02-10"
   },
   {
     "q": "I've never known any trouble than an hour's reading didn't assuage.",
@@ -6577,7 +7173,7 @@
   },
   {
     "q": "No person would give up even an inch of their estate, and the slightest dispute with a neighbor can mean hell to pay; yet we easily let others encroach on our lives—worse, we often pave the way for those who will take it over. No person hands out their money to passersby, but to how many do each of us hand out our lives! We’re tight-fisted with property and money, yet think too little of wasting time, the one thing about which we should all be the toughest misers.",
-    "a": "Seneca the Younger",
+    "a": "Seneca",
     "t": [
       "perseverance",
       "time",
@@ -6585,11 +7181,16 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "On the Shortness of Life 3.1",
+    "work": "On the Shortness of Life",
+    "passage": "3.1",
+    "sourceNote": "A modern translation of De Brevitate Vitae 3.1; wording differs between translators.",
+    "pin": "2027-04-27"
   },
   {
-    "q": "You’ve wandered all over and finally realized that you never found what you were after: how to live. Not in syllogisms, not in money, or fame, or self-indulgence. Nowhere. Then where is it to be found? In doing what human nature requires. How? Through first principles. Which should govern your intentions and your actions.",
-    "a": "Marcus Aurelius, Meditations, 8.1",
+    "q": "You’ve wandered all over and finally realized that you never found what you were after: how to live. Not in syllogisms, not in money, or fame, or self-indulgence. Nowhere. —Then where is it to be found? In doing what human nature requires. —How? Through first principles. Which should govern your intentions and your actions.",
+    "a": "Marcus Aurelius",
     "t": [
       "solitude",
       "time",
@@ -6597,7 +7198,13 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 8.1, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "8.1",
+    "translator": "Gregory Hays",
+    "pin": "2027-04-17"
   },
   {
     "q": "Do the little things - they’re what matter.",
@@ -6627,8 +7234,9 @@
       "nature",
       "leadership"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled from rotation in the Nov 2026 audit: a long excerpt from a modern copyrighted translation of Lecture 6 that could not be checked word for word."
   },
   {
     "q": "Never under compulsion, out of selfishness, without forethought, with misgivings. Don’t gussy up your thoughts. No surplus words or unnecessary actions. Let the spirit in you represent a man, an adult, a citizen, a Roman, a ruler. Taking up his post like a soldier and patiently awaiting his recall from life. Needing no oath or witness. Cheerfulness. Without requiring other people’s help. Or serenity supplied by others. To stand up straight—not straightened.",
@@ -6640,7 +7248,13 @@
       "time"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 3.5, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "3.5",
+    "translator": "Gregory Hays",
+    "pin": "2026-12-24"
   },
   {
     "q": "Time is what we want most, but what, alas! we use worst.",
@@ -6700,7 +7314,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not a literal canonical line. fakebuddhaquotes.com and the Dhammapada translations treat it as a modern compression of Dhammapada 1–2. No author for this English sentence.",
-    "status": "paraphrase"
+    "status": "paraphrase",
+    "pin": "2027-05-12"
   },
   {
     "q": "The man on top of the mountain didn’t fall there.",
@@ -6741,13 +7356,19 @@
   },
   {
     "q": "There is a woman at the beginning of all great things.",
-    "a": "Alphonse De Lamartine",
+    "a": "Alphonse de Lamartine",
     "t": [
       "creativity",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Histoire des Girondins (1847), Book VIII",
+    "work": "Histoire des Girondins (1847)",
+    "passage": "Book VIII",
+    "sourceNote": "French: 'Il y a une femme à l'origine de toutes les grandes choses.'",
+    "pin": "2027-05-21"
   },
   {
     "q": "Know the land, conquer all.",
@@ -6811,7 +7432,8 @@
       "simplicity"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-03-13"
   },
   {
     "q": "You should be a lantern for yourself. Draw close to the light within you and seek no further shelter.",
@@ -6857,7 +7479,7 @@
     "status": "unverified"
   },
   {
-    "q": "Every man I meet is my master in some point, and in that, I learn of him.",
+    "q": "Every man I meet is my master in some point, and in that I learn of him.",
     "a": "Ralph Waldo Emerson",
     "t": [
       "wisdom",
@@ -6867,7 +7489,8 @@
     "status": "verified",
     "s": "Letters and Social Aims, \"Greatness\"",
     "work": "Letters and Social Aims, \"Greatness\"",
-    "url": "https://www.gutenberg.org/ebooks/71393"
+    "url": "https://www.gutenberg.org/ebooks/71393",
+    "pin": "2027-02-22"
   },
   {
     "q": "Do good. Every time you wake up and ask yourself, 'what good things am I going to do today?' remember that when the sun goes down at sunset, it will take a part of your life with it.",
@@ -6892,7 +7515,7 @@
     "status": "unverified"
   },
   {
-    "q": "To think is easy. To act is hard. But the hardest thing in the world is to act in accordance with your thinking.",
+    "q": "To act is easy, to think is hard; to act according to our thought is troublesome.",
     "a": "Johann Wolfgang von Goethe",
     "t": [
       "leadership",
@@ -6900,7 +7523,15 @@
       "mind"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "Wilhelm Meister's Apprenticeship, Book VII, ch. 9, trans. Thomas Carlyle",
+    "work": "Wilhelm Meister's Apprenticeship",
+    "passage": "Book VII, ch. 9 (the Indenture)",
+    "translator": "Thomas Carlyle",
+    "url": "https://www.gutenberg.org/ebooks/36483",
+    "attributionNote": "The popular English ('To think is easy. To act is hard...') reverses Goethe. German: 'Handeln ist leicht, Denken schwer; nach dem Gedanken handeln unbequem.'",
+    "pin": "2027-01-06"
   },
   {
     "q": "You are your possibilities. If you know that you can do anything.",
@@ -6954,7 +7585,7 @@
     "status": "unverified"
   },
   {
-    "q": "You must build up your life action by action, and be content if each one achieves its goal as far as possible—and no one can keep you from this.",
+    "q": "You have to assemble your life yourself—action by action. And be satisfied if each one achieves its goal, as far as it can. No one can keep that from happening.",
     "a": "Marcus Aurelius",
     "t": [
       "happiness",
@@ -6962,7 +7593,12 @@
       "purpose"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "Meditations 8.32, trans. Gregory Hays",
+    "work": "Meditations",
+    "passage": "8.32",
+    "translator": "Gregory Hays"
   },
   {
     "q": "Be strict to yourself, and forgive others, and you will have no enemies.",
@@ -7002,8 +7638,9 @@
       "solitude",
       "action"
     ],
-    "checked": true,
-    "status": "unverified"
+    "checked": false,
+    "status": "unverified",
+    "attributionNote": "Pulled in the Nov 2026 audit: garbled (\"love\" for \"live\") with no traceable source."
   },
   {
     "q": "I will never turn my back on myself again. I will value my relationship with myself above all other relationships. I will always be there for us no matter what, and when no one else is.",
@@ -7053,7 +7690,8 @@
     "attribution": "corrected",
     "attributionNote": "Not Seneca's own line: Seneca quotes Demetrius the Cynic.",
     "work": "On Providence (Minor Dialogues)",
-    "passage": "3.3"
+    "passage": "3.3",
+    "pin": "2027-02-02"
   },
   {
     "q": "Kites rise highest against the wind.",
@@ -7064,7 +7702,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Churchill. Quote Investigator (2019-03-16): John Neal, \"Enterprise and Perseverance\" (1846), \"Kites rise against not with the wind.\" The word \"highest\" is a later compression. Churchill attributions start in 1963.",
-    "status": "paraphrase"
+    "status": "paraphrase",
+    "pin": "2026-12-05"
   },
   {
     "q": "Our passions are the most terrible tyrants, and we can be the slaves of them. Only self-sacrifice can free us from this slavery.",
@@ -7074,7 +7713,9 @@
       "freedom"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to Tolstoy (often via A Calendar of Wisdom); the passage was not checked.",
+    "pin": "2027-03-25"
   },
   {
     "q": "It's amazing that the amount of news that happens in the world every day always just exactly fits the newspaper.",
@@ -7112,7 +7753,9 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not a Fight Club line. The author name \"Tyler Dursen\" is a misspelling, and the sentence is not in the book. No source found.",
-    "status": "unverified"
+    "status": "unverified",
+    "sourceNote": "No earlier source found; kept as an anonymous modern line.",
+    "pin": "2027-01-28"
   },
   {
     "q": "Greatness is when you're tested, when you're willing to step up, when the dream is so big you're scared.",
@@ -7179,7 +7822,8 @@
     "url": "https://quoteinvestigator.com/2021/12/29/plant-tree/",
     "attributionNote": "Not a documented Chinese proverb; anonymous, circulating by 1967 and labelled Chinese only from 1985 (Quote Investigator).",
     "sourceNote": "Not a documented Chinese proverb; anonymous, circulating by 1967 and labelled Chinese only from 1985 (Quote Investigator).",
-    "attribution": "corrected"
+    "attribution": "corrected",
+    "pin": "2027-05-08"
   },
   {
     "q": "If you're not making someone else's life better, you're wasting your time.",
@@ -7245,7 +7889,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not a canonical Buddha quotation. fakebuddhaquotes.com: the wording comes from a 1934 Japanese compendium and distorts Dhammapada 348, which says to let go of the present as well. No single author.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-02-08"
   },
   {
     "q": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
@@ -7257,7 +7902,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Churchill. The International Churchill Society lists it as false. Quote Investigator (2013-09-03): the earliest full form is an anonymous 1938 Budweiser advertisement. A 1948 credit to George F. Tilton has no citation.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-03-11"
   },
   {
     "q": "All you need in this life is ignorance and confidence; then success is sure.",
@@ -7283,7 +7929,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not in the Analects. Wikiquote files it under misattributed, earliest print in Aero Digest (1949), author unknown.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2026-11-28"
   },
   {
     "q": "The best way to predict the future is to create it.",
@@ -7407,20 +8054,25 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not Churchill. Quote Investigator (2014-06-28) and the International Churchill Society: absent from his canon. The earliest close match is anonymous, in David Guy Powers, How to Say a Few Words (1953).",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-01-12"
   },
   {
-    "q": "In the middle of every difficulty lies opportunity.",
+    "q": "In the middle of difficulty lies opportunity.",
     "a": "John Archibald Wheeler",
     "t": [
       "perseverance"
     ],
     "checked": true,
     "attribution": "corrected",
-    "attributionNote": "Not a sourced Einstein sentence. Wikiquote: John Archibald Wheeler, Cosmic Search (1979), described Einstein's work with \"In the middle of difficulty lies opportunity\" and did not present it as Einstein's words. The \"every\" wording has no author.",
-    "status": "unverified",
+    "attributionNote": "Not a sourced Einstein sentence. John Archibald Wheeler used 'In the middle of difficulty lies opportunity' in Cosmic Search (1979) as one of three lessons he drew from Einstein's work. The popular 'every difficulty' form has no source.",
+    "status": "verified",
     "url": "https://quoteinvestigator.com/2021/10/07/difficulty/",
-    "sourceNote": "QI tentatively credits this phrasing to John Archibald Wheeler; Einstein attribution a misreading."
+    "sourceNote": "QI tentatively credits this phrasing to John Archibald Wheeler; Einstein attribution a misreading.",
+    "s": "Cosmic Search (1979)",
+    "work": "Cosmic Search",
+    "passage": "1979",
+    "pin": "2026-12-01"
   },
   {
     "q": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
@@ -7452,8 +8104,11 @@
     ],
     "checked": true,
     "attribution": "corrected",
-    "attributionNote": "No Muhammad Ali source, and it is also pinned on other names. No reliable author.",
-    "status": "unverified"
+    "attributionNote": "No Muhammad Ali source (credited to him from about 1998). Barry Popik finds it as Indiana University football coach Clyde B. Smith's slogan, reported in the Jasper Daily Herald, 11 September 1950.",
+    "status": "unverified",
+    "url": "https://barrypopik.com/blog/dont_count_the_days",
+    "s": "Indiana University football slogan, reported 1950",
+    "pin": "2027-02-05"
   },
   {
     "q": "The only thing that stands between you and your dream is the will to try and the belief that it is actually possible.",
@@ -7645,7 +8300,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Lives of Eminent Philosophers 7.89",
+    "work": "Lives of Eminent Philosophers",
+    "passage": "7.89",
+    "sourceNote": "Summary of Zeno's Stoic doctrine in a modern translation. Hicks (1925): 'virtue is a harmonious disposition, choice-worthy for its own sake and not from hope or fear or any external motive. Moreover, it is in virtue that happiness consists.'",
+    "pin": "2027-01-04"
   },
   {
     "q": "It all balances out, and I am lucky to have both when so many have neither.",
@@ -7667,14 +8327,21 @@
     "status": "unverified"
   },
   {
-    "q": "Absolute power doesn’t corrupt, it reveals.",
-    "a": "Robert Cato",
+    "q": "Power doesn’t always corrupt. Power can cleanse. What I believe is always true about power is that power always reveals.",
+    "a": "Robert A. Caro",
     "t": [
       "leadership",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "corrected",
+    "s": "Interview, The Guardian, 10 June 2012",
+    "work": "Interview, The Guardian",
+    "passage": "10 June 2012",
+    "url": "https://www.theguardian.com/world/2012/jun/10/lyndon-b-johnson-robert-caro-biography",
+    "attributionNote": "The old credit 'Robert Cato' was a misspelling of Robert A. Caro, and 'Absolute power doesn't corrupt, it reveals' a loose version of what he said.",
+    "pin": "2027-04-12"
   },
   {
     "q": "Virtue is a service which a person should do for himself. If there were no heaven and no God who ruled this world, even then virtue would be the necessary law of life.",
@@ -7726,7 +8393,8 @@
       "solitude"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attributionNote": "Credited to Tolstoy (often via A Calendar of Wisdom); the passage was not checked."
   },
   {
     "q": "If you're going to try, go all the way. Otherwise, don't even start. This could mean losing girlfriends, wives, relatives, and maybe even your mind. It could mean not eating for three or four days. It could mean freezing on a park bench. It could mean jail. It could mean derision. It could mean mockery--isolation. Isolation is the gift. All the others are a test of your endurance, of how much you really want to do it. And, you'll do it, despite rejection and the worst odds. And it will be better than anything else you can imagine. If you're going to try, go all the way. There is no other feeling like that. You will be alone with the gods, and the nights will flame with fire. You will ride life straight to perfect laughter. It's the only good fight there is.",
@@ -7741,14 +8409,19 @@
   },
   {
     "q": "In those countries where wise people are in power, their subjects do not notice the existence of their rulers.",
-    "a": "Lao-Tzu",
+    "a": "Lao Tzu",
     "t": [
       "wisdom",
       "leadership",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Tao Te Ching, ch. 17",
+    "work": "Tao Te Ching",
+    "passage": "ch. 17",
+    "sourceNote": "A loose rendering of ch. 17 (the best rulers are those whose subjects barely know they exist).",
+    "pin": "2027-05-06"
   },
   {
     "q": "Similarly, at work there is a quote I consistently think about... teams of great leaders should look around and look back and think 'wow, we did this all by ourselves.' They should not think that it was because of the leader they achieved their greatness.",
@@ -7758,9 +8431,9 @@
       "leadership",
       "mind"
     ],
-    "checked": true,
+    "checked": false,
     "attribution": "corrected",
-    "attributionNote": "The text is a workplace note, not a sentence of John F. Kennedy's. No quotable source.",
+    "attributionNote": "Pulled in the Nov 2026 audit: not a quotation (a workplace note).",
     "status": "unverified"
   },
   {
@@ -7777,7 +8450,7 @@
     "work": "West India Emancipation speech, Canandaigua, N.Y.",
     "passage": "3 August 1857",
     "status": "verified",
-    "pin": "2026-11-03"
+    "pin": "2026-12-29"
   },
   {
     "q": "It is bad to irate people by stepping back from their customs and traditions, but it is even worse to deny the requirements of your conscience and intellect by following customs of the crowd.",
@@ -7847,7 +8520,7 @@
     "status": "unverified"
   },
   {
-    "q": "The reasonable man adapts himself to the world; the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.",
+    "q": "The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.",
     "a": "George Bernard Shaw",
     "t": [
       "perseverance",
@@ -7860,7 +8533,8 @@
     "s": "Man and Superman (1903), \"Maxims for Revolutionists\", #124",
     "work": "Man and Superman (1903), \"Maxims for Revolutionists\"",
     "url": "https://en.wikiquote.org/wiki/George_Bernard_Shaw",
-    "passage": "#124"
+    "passage": "#124",
+    "pin": "2027-02-09"
   },
   {
     "q": "There are 3 types of people. First, there are people who do not believe in anything; then, there are people who believe only in those teachings they were brought up to believe. Finally, there are people who believe in those things which they understand with their hearts, and this last group of people is the wisest and most resolute.",
@@ -7882,7 +8556,8 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-01-22"
   },
   {
     "q": "Such as are thy habitual thoughts, such also will be the character of thy mind; for the soul is dyed by the thoughts.",
@@ -7897,7 +8572,7 @@
     "passage": "5.16",
     "translator": "George Long",
     "status": "verified",
-    "pin": "2026-11-04"
+    "pin": "2027-05-05"
   },
   {
     "q": "Let the refining and improving of your own life keep you so busy that you have little time to criticize others.",
@@ -7926,7 +8601,7 @@
     "status": "unverified"
   },
   {
-    "q": "The duty of a man is to be useful to his fellow-men; if possible, to be useful to many of them; failing this, to be useful to a few; failing this, to be useful to his neighbors, and, failing them, to himself: for when he helps others, he advances the general interests of mankind.",
+    "q": "The duty of a man is to be useful to his fellow-men; if possible, to be useful to many of them; failing this, to be useful to a few; failing this, to be useful to his neighbours, and, failing them, to himself: for when he helps others, he advances the general interests of mankind.",
     "a": "Seneca",
     "t": [
       "perseverance",
@@ -7938,7 +8613,8 @@
     "s": "Of Peace of Mind (Minor Dialogues), trans. Aubrey Stewart",
     "work": "Of Peace of Mind (Minor Dialogues)",
     "url": "https://www.gutenberg.org/ebooks/64576",
-    "translator": "Aubrey Stewart"
+    "translator": "Aubrey Stewart",
+    "pin": "2027-04-13"
   },
   {
     "q": "We are in the habit of saying that it was not in our power to choose the parents who were allotted to us, that they were given to us by chance. But we can choose whose children we would like to be.",
@@ -7954,7 +8630,8 @@
     "url": "https://www.gutenberg.org/ebooks/64576",
     "passage": "ch. 15",
     "translator": "Aubrey Stewart",
-    "sourceNote": "Stewart: \"we are wont to say that we are not able to choose who our parents should be\"."
+    "sourceNote": "Stewart: \"we are wont to say that we are not able to choose who our parents should be\".",
+    "pin": "2027-01-18"
   },
   {
     "q": "It's not enough to do good things. You have to let people know what you're doing.",
@@ -7974,7 +8651,12 @@
       "perseverance"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "paraphrase",
+    "s": "Reported by Aulus Gellius, Attic Nights 17.19",
+    "work": "Aulus Gellius, Attic Nights",
+    "passage": "17.19",
+    "sourceNote": "Gellius says Epictetus summed up his teaching in two words, ἀνέχου καὶ ἀπέχου, usually translated 'bear and forbear'. 'Persist and resist' is a modern rendering.",
+    "pin": "2027-01-26"
   },
   {
     "q": "Supply and Demand causes ulcers.",
@@ -8021,7 +8703,8 @@
     "checked": true,
     "attribution": "corrected",
     "attributionNote": "Not in The Ultimate Quotable Einstein. No primary source; a later paraphrase of the imagination theme.",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2027-01-27"
   },
   {
     "q": "Let the man not be corrupted by external things. Let him be unconquerable and admire only himself. Let him be courageous in spirit and ready for any fate. Let him be the molder of his own life. Let not his confidence be without knowledge, nor his knowledge without firmness. Let his decisions once made abide. Let not his decrees be altered by any alteration. Let him be poised and well-ordered. Let him show majesty mingled with courtesy in his actions.",
@@ -8035,7 +8718,8 @@
     "checked": true,
     "s": "On the Happy Life",
     "work": "On the Happy Life",
-    "status": "unverified"
+    "status": "unverified",
+    "pin": "2026-12-31"
   },
   {
     "q": "Is there anything more absurd than a person having a right to kill me because we live on two opposite banks of the river, and our kings quarrel with each other?",
@@ -8151,14 +8835,16 @@
   },
   {
     "q": "Curb your desire— don't set your heart on so many things and you will get what you need.",
-    "a": "Epictetus",
+    "a": "Anonymous",
     "t": [
       "love",
       "creativity",
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "unverified",
+    "attribution": "corrected",
+    "attributionNote": "Commonly credited to Epictetus, but no passage in the Discourses or Enchiridion matches; a modern line."
   },
   {
     "q": "Your own level of excitement and self-belief will convince people that you know where you are going and should be followed.",
@@ -8218,6 +8904,7 @@
     "attributionNote": "Interview with George Sylvester Viereck, \"What Life Means to Einstein,\" The Saturday Evening Post, 26 October 1929.",
     "s": "Saturday Evening Post interview with G. S. Viereck, 1929",
     "work": "Saturday Evening Post interview with G. S. Viereck, 1929",
-    "status": "verified"
+    "status": "verified",
+    "pin": "2027-04-28"
   }
 ]
