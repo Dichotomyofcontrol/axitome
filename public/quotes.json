@@ -781,7 +781,7 @@
     "status": "unverified"
   },
   {
-    "q": "He who receives an idea from me, receives instruction himself without lessening mine; as he who lites his taper at mine, receives light without darkening me.",
+    "q": "He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me.",
     "a": "Thomas Jefferson",
     "t": [
       "solitude",
@@ -794,7 +794,7 @@
     "url": "https://founders.archives.gov/documents/Jefferson/03-06-02-0322",
     "passage": "13 August 1813",
     "attribution": "verified",
-    "sourceNote": "Jefferson's own words, the sentence after 'its peculiar character too is that no one possesses the less'. Spelling follows the printed editions; the letterpress copy (Founders Online, Papers, Retirement Series 6) reads 'recieves' and 'lights his taper'."
+    "sourceNote": "Jefferson's own words, the sentence after 'its peculiar character too is that no one possesses the less'. 'lights' follows the letterpress copy (Founders Online, Papers, Retirement Series 6); some printed editions read 'lites'. Spelling is otherwise modernized (the manuscript has 'recieves')."
   },
   {
     "q": "There will come a time when you believe everything is finished. That will be the beginning.",
@@ -1790,7 +1790,7 @@
       "death",
       "action"
     ],
-    "checked": true,
+    "checked": false,
     "status": "unverified",
     "url": "https://en.wikiquote.org/wiki/Augustine_of_Hippo",
     "attribution": "corrected",
@@ -2312,7 +2312,12 @@
       "action"
     ],
     "checked": true,
-    "status": "unverified"
+    "status": "verified",
+    "attribution": "verified",
+    "s": "War As I Knew It (1947)",
+    "work": "War As I Knew It (1947)",
+    "url": "https://www.quotationspage.com/quote/38297.html",
+    "sourceNote": "From the advice section, under 'Don't Delay': 'The best is the enemy of the good. By this I mean that a good plan violently executed now is better than a perfect plan next week.' The book prints it without the two commas this line adds."
   },
   {
     "q": "A writer—and, I believe, generally all persons—must think that whatever happens to him or her is a resource. All things have been given to us for a purpose, and an artist must feel this more intensely. All that happens to us, including our humiliations, our misfortunes, our embarrassments, all is given to us as raw material, as clay, so that we may shape our art.",
@@ -5332,10 +5337,12 @@
     ],
     "checked": true,
     "status": "verified",
-    "s": "The Concept of Anxiety p. 61 (English ed. cited by Wikiquote)",
+    "s": "The Concept of Anxiety (1844), ch. II §2, trans. Reidar Thomte",
     "work": "The Concept of Anxiety",
     "url": "https://en.wikiquote.org/wiki/Søren_Kierkegaard",
-    "passage": "p. 61 (English ed. cited by Wikiquote)"
+    "passage": "ch. II §2 (Princeton 1980, p. 61)",
+    "translator": "Reidar Thomte",
+    "sourceNote": "Opening clause of: 'Hence anxiety is the dizziness of freedom, which emerges when the spirit wants to posit the synthesis and freedom looks down into its own possibility, laying hold of finiteness to support itself.' (Thomte with Albert B. Anderson, Princeton, 1980, p. 61; section 'Subjective Anxiety')."
   },
   {
     "q": "To have knowledge one must know the extent of one’s ignorance.",
