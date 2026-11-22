@@ -6230,7 +6230,7 @@
     "attributionNote": "Credited to the Genevan aphorist J. A. Petit-Senn in 19th-century quotation books; the French original was not checked."
   },
   {
-    "q": "There is nothing among the things that I once believed to be true which it is not permissible to doubt.",
+    "q": "There is nothing among the things I once believed to be true which it is not permissible to doubt.",
     "a": "René Descartes",
     "t": [
       "creativity",
@@ -6238,12 +6238,15 @@
       "loss"
     ],
     "checked": true,
-    "status": "paraphrase",
-    "s": "Meditations on First Philosophy, Meditation I",
+    "status": "verified",
+    "s": "Meditations on First Philosophy, Meditation I, trans. Donald A. Cress",
     "work": "Meditations on First Philosophy",
     "passage": "Meditation I",
-    "sourceNote": "A modern translation of the end of Meditation I. Veitch (1853): 'there is nothing at all that I formerly believed to be true of which it is impossible to doubt.'",
-    "pin": "2026-11-27"
+    "sourceNote": "Cress (Hackett, 3rd ed. 1993), end of Meditation I: 'But eventually I am forced to admit that there is nothing among the things I once believed to be true which it is not permissible to doubt.' Veitch (1853): 'there is nothing at all that I formerly believed to be true of which it is impossible to doubt.'",
+    "pin": "2026-11-27",
+    "attribution": "verified",
+    "translator": "Donald A. Cress",
+    "url": "https://hackettpublishing.com/pdfs/Descartes_Med1stPhil_pp13-24.pdf"
   },
   {
     "q": "If we can forgive what's been done to us... If we can forgive what we've done to others... If we can leave our stories behind. Our being victims and villains. Only then can we maybe rescue the world.",
@@ -6836,7 +6839,7 @@
     "pin": "2026-11-08"
   },
   {
-    "q": "Happy the man who can endure the highest and lowest fortune. He, who has endured such vicissitudes with equanimity, has deprived misfortune of its power.",
+    "q": "Happy the man who can endure the highest and the lowest fortune. He, who has endured such vicissitudes with equanimity, has deprived misfortune of its power.",
     "a": "Seneca",
     "t": [
       "perseverance",
@@ -6845,9 +6848,13 @@
       "leadership"
     ],
     "checked": true,
-    "status": "unverified",
-    "attributionNote": "Commonly credited to Seneca; no matching passage found in the Letters, Dialogues or tragedies.",
-    "pin": "2026-11-24"
+    "status": "paraphrase",
+    "pin": "2026-11-24",
+    "s": "Hercules Oetaeus 228–232",
+    "work": "Hercules Oetaeus",
+    "passage": "228–232",
+    "url": "https://en.wikisource.org/wiki/Page:Hoyt%27s_New_Cyclopedia_Of_Practical_Quotations_(1922).djvu/329",
+    "sourceNote": "A free English rendering printed in Hoyt's New Cyclopedia of Practical Quotations (1922, p. 291, no. 22) for the chorus's lines to Iole: 'Felix quisquis novit famulum regemque pati vultusque suos variare potest. Rapuit vires pondusque mali casus animo qui tulit aequo.' Literally: 'Happy whoever knows how to bear being slave and king... He who has borne misfortune with an even mind has stripped it of its force and weight.' Hercules Oetaeus is transmitted with Seneca's tragedies, though many scholars doubt he wrote it."
   },
   {
     "q": "You never know what worse luck your bad luck has saved you from.",
@@ -6883,8 +6890,9 @@
     "work": "Reveries of the Solitary Walker",
     "passage": "Third Walk",
     "translator": "Peter France",
-    "sourceNote": "Opening sentence of the Third Walk (Penguin, 1979). French: 'La jeunesse est le temps d'étudier la sagesse; la vieillesse est le temps de la pratiquer.'",
-    "pin": "2026-11-23"
+    "sourceNote": "Early in the Third Walk (Penguin, 1979, p. 47). French: 'La jeunesse est le tems d'étudier la sagesse ; la vieillesse est le tems de la pratiquer.'",
+    "pin": "2026-11-23",
+    "url": "https://fr.wikisource.org/wiki/Les_R%C3%AAveries_du_promeneur_solitaire/Troisi%C3%A8me_Promenade"
   },
   {
     "q": "To myself I am only a child playing on the beach, while vast oceans of truth lie undiscovered before me.",
@@ -6987,7 +6995,7 @@
     "status": "unverified"
   },
   {
-    "q": "It is in the character of very few men to honor without envy a friend who has prospered.",
+    "q": "Few there are among men in whom it is inborn to admire without envy a friend's good fortune.",
     "a": "Aeschylus",
     "t": [
       "death",
@@ -6995,12 +7003,15 @@
       "character"
     ],
     "checked": true,
-    "status": "paraphrase",
-    "s": "Agamemnon 832–833",
+    "status": "verified",
+    "s": "Agamemnon 832–833, trans. Herbert Weir Smyth",
     "work": "Agamemnon",
     "passage": "832–833",
-    "sourceNote": "A common English rendering of the chorus-like lines Agamemnon speaks on his return; wording varies by translator.",
-    "pin": "2026-11-22"
+    "sourceNote": "Agamemnon to the Chorus on his return. Smyth (Loeb, 1926): 'For few there are among men in whom it is inborn to admire without envy a friend's good fortune.' Greek: παύροις γὰρ ἀνδρῶν ἐστι συγγενὲς τόδε, φίλον τὸν εὐτυχοῦντ᾿ ἄνευ φθόνων σέβειν. Replaces a looser uncredited rendering ('It is in the character of very few men to honor without envy a friend who has prospered').",
+    "pin": "2026-11-22",
+    "attribution": "verified",
+    "translator": "Herbert Weir Smyth",
+    "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0004%3Acard%3D810"
   },
   {
     "q": "Know thyself; nothing in excess.",
@@ -7930,7 +7941,9 @@
     "attribution": "corrected",
     "attributionNote": "Not in the Analects. Wikiquote files it under misattributed, earliest print in Aero Digest (1949), author unknown.",
     "status": "unverified",
-    "pin": "2026-11-28"
+    "pin": "2026-11-28",
+    "url": "https://en.wikiquote.org/wiki/Confucius",
+    "sourceNote": "Often credited to Confucius online but not in the Analects; Wikiquote lists it as misattributed. Earliest print found is the shorter 'Life is simple, but we insist on making it complicated' in Aero Digest, vols. 58–59 (1949), p. 115, author unknown."
   },
   {
     "q": "The best way to predict the future is to create it.",
